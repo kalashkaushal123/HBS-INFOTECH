@@ -8,44 +8,75 @@ export default function Footer() {
         {/* Footer Row */}
         <div className="row">
           {/* About Section */}
-          <div className="col-md-4">
+          <div className="col-md-3">
+            <div className="about-ftr">
             <h5>About Us</h5>
-            <p className='text-white'>
+            <p className='text-white text-justify'>
               We are dedicated to providing the best solutions to help you
               achieve your goals. Join us for a journey of learning and success.
             </p>
+
+            </div>
+            
           </div>
 
           {/* Links Section */}
-          <div className="col-md-4">
-            <h5>Quick Links</h5>
-            <ul className="list-unstyled">
+          <div className="col-md-3">
+            
+            <h5 >Quick Links</h5>
+            <ul className="list-unstyled list-footer">
               <li>
                 <a href="#about" className="text-white text-decoration-none">
-                  About
+                Microsoft Solutions
                 </a>
               </li>
               <li>
                 <a href="#courses" className="text-white text-decoration-none">
-                  Courses
+                Coconut ERP
                 </a>
               </li>
               <li>
                 <a href="#contact" className="text-white text-decoration-none">
-                  Contact Us
+                atsMantra
                 </a>
               </li>
               <li>
                 <a href="#faq" className="text-white text-decoration-none">
-                  FAQ
+                UI/UX Designing
                 </a>
               </li>
             </ul>
           </div>
 
           {/* Contact Section */}
-          <div className="col-md-4">
-            <h5>Contact Us</h5>
+          <div className="col-md-3">
+            
+            <ul className="list-unstyled list-footer">
+              <li>
+                <a href="#about" className="text-white text-decoration-none">
+                Microsoft Solutions
+                </a>
+              </li>
+              <li>
+                <a href="#courses" className="text-white text-decoration-none">
+                Coconut ERP
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="text-white text-decoration-none">
+                atsMantra
+                </a>
+              </li>
+              <li>
+                <a href="#faq" className="text-white text-decoration-none">
+                UI/UX Designing
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div className="col-md-3">
+            <h5>Our Address
+            </h5>
             <ul className="list-unstyled">
               <li>
                 <i className="bi bi-geo-alt-fill me-2"></i>123 Main Street, City
@@ -62,13 +93,16 @@ export default function Footer() {
 
         <hr className="border-secondary" />
 
-        {/* Footer Bottom */}
+       
+      </div>
+      <div className="row">
+  <div className="col-md-12"> {/* Footer Bottom */}
         <div className="text-center">
           <p className="mb-0 text-white">
             © {new Date().getFullYear()} Your Company Name. All Rights Reserved.
           </p>
-        </div>
-      </div>
+        </div></div>
+</div>
     </footer>
   );
 }

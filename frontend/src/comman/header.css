@@ -4,9 +4,11 @@ header {
     margin: 0;
   }
   
-  ul li {
+  .list-footer li {
    
     margin: 0px 0px 0px 0px !important;
+    display: block !important;
+    
 }
   
   .container {
