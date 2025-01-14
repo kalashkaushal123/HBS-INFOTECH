@@ -1,3 +1,9 @@
+.main-section{
+  background-color: #121212;
+  height: 100rem;
+
+}
+
 .course-main {
   background-color: #121212;
   height: 50rem;
@@ -28,11 +34,21 @@
   margin: 1rem 0;
 }
 
-.iit-logo, .microsoft {
+.iit-logo,.microsoft {
   height: 4rem;
   width: 8rem;
   background-color: #00bcd4;
   border-radius: 5px;
+ 
+  background-size: cover;
+}
+
+.img{
+  height: 4rem;
+  width: 8rem;
+  background-color: #00bcd4;
+  border-radius: 5px;
+
 }
 
 .calender {
@@ -97,6 +113,7 @@
   width: 40%;
   border-radius: 10px;
   padding: 2rem;
+
 }
 
 .video-section {
@@ -104,12 +121,14 @@
   border-radius: 10px;
   margin-bottom: 2rem;
   padding: 10px;
-  height: 200px;
+  height: 300px;
+  margin-top: 150px;
 }
 
 .demobutton {
   display: flex;
   justify-content: space-around;
+  
 }
 
 .demobutton button {

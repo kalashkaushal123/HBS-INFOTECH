@@ -12,7 +12,7 @@ export default function Footer() {
             <div className="about-ftr">
             <h5 className='heading-ftr'>About Us</h5>
             <p className='text-white text-justify'>
-            RARR Technologies Pvt. Ltd. is an industry leading software development company building digital products that lasts. By being reasonable product craftsmen, we're able to avoid surprises and focus on the quality of the software and deliver.
+            HBS INFOTECH pvt Ltd. is an industry leading software development company building digital products that lasts. By being reasonable product craftsmen, we're able to avoid surprises and focus on the quality of the software and deliver.
 
             </p>
 
