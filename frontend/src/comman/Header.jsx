@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <div>
-      <header className="py-3 border-bottom">
+      <header className="py-3">
         <div className="container d-flex justify-content-between align-items-center">
           {/* Left Side */}
           <div className='top'>
