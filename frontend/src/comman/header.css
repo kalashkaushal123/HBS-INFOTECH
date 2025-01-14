@@ -3,14 +3,19 @@ header {
     background-color: #062a6c;
     margin: 0;
   }
-  
-  .list-footer li {
-   
-    margin: 0px 0px 0px 0px !important;
-    display: block !important;
-    
+.list-footer li {
+  margin: 0px 0px 15px 0px !important;
+  display: block !important;
+}
+
+.list-footer li {
+  margin: 0px 0px 0px 0px;
 }
   
+.heading-ftr{
+  font-size: 22px;
+  font-weight: 700;
+}
   .container {
     display: flex;
     justify-content: space-between;
