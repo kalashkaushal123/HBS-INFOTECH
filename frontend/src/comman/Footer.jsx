@@ -15,6 +15,13 @@ export default function Footer() {
             RARR Technologies Pvt. Ltd. is an industry leading software development company building digital products that lasts. By being reasonable product craftsmen, we're able to avoid surprises and focus on the quality of the software and deliver.
 
             </p>
+            <div className="social-icons">
+            <i className="bi bi-facebook me-2"></i>
+            <i className="bi bi-linkedin me-2"></i>
+            <i className="bi bi-instagram me-2"></i>
+
+
+            </div>
 
             </div>
             

@@ -111,7 +111,11 @@ header {
       margin-top: 10px;
     }
   }
-  
+  .social-icons i{
+    font-size: 22px;
+  }
+
+
   /* For tablets (740px to 1024px) */
   @media screen and (min-width: 741px) and (max-width: 1024px) {
     .nav-bar ul {
