@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import laptop from "../about/laptop.png";
+import './about.css'
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
             <h1 className="display-4 font-weight-bold" style={{ color: "white" }}>
               Drive Digital Revolution With Us!
             </h1>
-            <p className="lead">
+            <p className="lead text-white">
               At RARR Technologies Pvt. Ltd., we believe in the power of
               collaboration and open communication. Our collaborative approach
               enables us to deeply understand our clients' requirements, allowing
@@ -21,7 +22,7 @@ export default function About() {
               line of code we write contributes to the creation of robust, scalable,
               and future-proof digital solutions that stand the test of time.
             </p>
-            <button className="btn btn-primary">Discuss with us</button>
+            <button className="button btn-primary">Discuss with us</button>
           </div>
 
           {/* Right Side (Image) */}

@@ -3,14 +3,14 @@ import 'bootstrap-icons/font/bootstrap-icons.css'; // For Bootstrap Icons
 
 export default function Footer() {
   return (
-    <footer className="bg-dark text-white py-4" style={{ margin: 0 }}>
-      <div className="container">
+<footer className="text-white py-4" style={{ margin: 0, backgroundColor: '#062868' }}>
+<div className="container">
         {/* Footer Row */}
         <div className="row">
           {/* About Section */}
           <div className="col-md-4">
             <h5>About Us</h5>
-            <p>
+            <p className='text-white'>
               We are dedicated to providing the best solutions to help you
               achieve your goals. Join us for a journey of learning and success.
             </p>

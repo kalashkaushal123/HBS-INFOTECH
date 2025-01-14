@@ -17,7 +17,10 @@ export default function Home() {
           width: "100%",
           backgroundColor: "#062a6c",
         }}
-      ></div>
+      >
+
+        
+      </div>
       <About/>
       <Course/>
       <Solutions/>

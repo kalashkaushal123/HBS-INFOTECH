@@ -3,11 +3,8 @@
     padding: 0;
     box-sizing: border-box;
 }
-.lead{
-    color:#fff;
-}
 
-.btn{margin-top: 20px;
+.button{margin-top: 20px;
 background: rgb(84, 215, 236);
 color: rgb(6, 42, 109);
 border-radius: 10px;

@@ -6,8 +6,11 @@
 :root {
     --main-font: "Mulish", serif;
 }
+
 body {
     font-family: var(--main-font);
+    overflow-x: hidden !important;
+
 }
 .mt-60 {
     margin-top: 60px;
