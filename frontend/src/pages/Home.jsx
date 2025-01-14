@@ -30,7 +30,7 @@ export default function Home() {
       <Outlet />
 
       {showWrapper && (
-        <div className="wrapper">
+        <div className="wrapper" >
           <div className="content">
             <div className="box">
               <div className="content-img">
