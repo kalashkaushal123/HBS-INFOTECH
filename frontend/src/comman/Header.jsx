@@ -56,7 +56,7 @@ export default function Header() {
                 <a className="nav-link text-white" href="#">More</a>
               </li>
               <li className="nav-item">
-                <button className="btn btn-primary">Sign In</button>
+                <button className="button btn-primary">Sign In</button>
               </li>
             </ul>
           </div>
