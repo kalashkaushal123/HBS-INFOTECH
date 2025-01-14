@@ -64,7 +64,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="text-center">
-          <p className="mb-0">
+          <p className="mb-0 text-white">
             © {new Date().getFullYear()} Your Company Name. All Rights Reserved.
           </p>
         </div>
