@@ -11,14 +11,19 @@ export default function Home() {
       <Header />
       <Outlet></Outlet>
       <div
-        className="main m-0 p-0"
-        style={{
-          height: "50rem",
-          width: "100%",
-          backgroundColor: "#062a6c",
-        }}
       >
-
+        <div className='wrapper'>
+        <div class="content">
+<div className='box'>
+                <div className="content-img">
+                    <img src="img/icons/microsoft.png"></img>
+                </div>
+                <h1 className="heading">Microsoft Solutions<span
+                        class="head-clr">Dynamics CRM . Azure . Office
+                        365</span></h1>
+            </div>
+            </div>
+            </div>
         
       </div>
       <About/>
