@@ -4,7 +4,7 @@ import './solutions.css'
 export default function Solutions() {
   return (
     <>
-      <div className="Solutions mt-60">
+      <div className="Solutions mt-60 mb-60">
         <div className="container1">
           <div className="row">
             <div className="col-md-3 line">
