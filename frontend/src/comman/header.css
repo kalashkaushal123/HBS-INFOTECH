@@ -1,0 +1,121 @@
+/* Ensure the header content is properly aligned */
+header {
+    background-color: #062a6c;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Default styles for navbar items */
+  .navbar-toggler-icon {
+    display: none;
+    font-size: 20px;
+    color: white;
+  }
+  
+  /* For larger screens, the nav-bar is displayed horizontally */
+  .nav-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .nav-bar ul li {
+    margin-right: 20px;
+  }
+  
+  .nav-bar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .nav-bar .btn {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  /* For mobile devices */
+  @media screen and (max-width: 740px) {
+    /* Hide the default nav-bar on small screens */
+    .nav-bar {
+      display: block;
+    }
+  
+    .navbar-toggler-icon {
+      display: block;
+    }
+  
+    /* Initially hide the menu */
+    .nav-bar ul {
+      display: block;
+      max-height: 0;
+      overflow: hidden;
+      position: relative;
+      right: 30px;
+      transition: max-height 0.5s ease-in-out;
+    }
+    .top{
+        height: 30px;
+        width: 100%;
+    }
+  
+    /* When the menu is shown */
+    .nav-bar ul.show {
+      max-height: 500px;
+    }
+  
+    .nav-bar ul li {
+      text-align: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #fff;
+    }
+  
+    .nav-bar ul li:last-child {
+      border-bottom: none;
+    }
+  
+    .nav-bar ul li a {
+      color: white;
+      font-size: 18px;
+    }
+  
+    /* Adjust the Sign In button for mobile */
+    .nav-bar .btn {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  /* For tablets (740px to 1024px) */
+  @media screen and (min-width: 741px) and (max-width: 1024px) {
+    .nav-bar ul {
+      display: flex;
+      justify-content: space-between;
+    }
+    .nav-bar .btn {
+      margin-top: 10px;
+    }
+  }
+  
+  /* For laptops and larger screens (1024px and above) */
+  @media screen and (min-width: 1025px) {
+    .nav-bar ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+  

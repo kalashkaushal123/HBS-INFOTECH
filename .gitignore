@@ -1,0 +1,57 @@
+# Python-related
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pdb
+*.log
+*.pot
+*.pyc
+
+# Virtual environments
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+__pycache__/
+db.sqlite3
+/static/
+media/
+
+# Sensitive information
+*.env
+*.ini
+
+# VS Code
+.vscode/
+
+# JetBrains
+.idea/
+
+# PyCharm
+*.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Pytest
+.cache/
+
+# MySQL or PostgreSQL database files
+*.sql
+*.sqlite3
+
+# Coverage reports
+.coverage
+coverage.xml
+*.cover
+*.hypothesis/
