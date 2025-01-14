@@ -1,62 +1,156 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import './solution.css'
 
 export default function Solutions() {
   return (
     <div className="container my-5">
-      <div className="row align-items-center">
-        {/* Left Content */}
-        <div className="col-md-4 text-center text-md-left">
-          <h1 className="font-weight-bold">Bridge the Gap</h1>
-          <p>Between Business and Technology</p>
-        </div>
+      <div class="Solutions mt-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 line">
+                    <div class="inner-text"></div>
+                    <h2 class="head">Bridge the Gap</h2>
+                    <p class="pera">Between Business and Technology</p>
+                </div>
+                <div class="col-md-3 line">
+                    <div class="inner-text">
+                        <h3 class="sub-head pink">
+                            01
+                        </h5>
+                        <h4 class="small-head">Microsoft Solutions</p>
+                        <p>Unlock the power of Microsoft's suite of solutions
+                            and elevate your business. Streamline
+                            operations, boost collaboration, and drive
+                            innovation with our expertly tailored
+                            Microsoft services.
+                        </p>
+                        <div class="btn"><a class="learn-more"
+                                href="/microsoft-solutions/ ">Learn
+                                More</a></div>
+                    </div>
+                </div>
+                <div class="col-md-3 line">
+                    <div class="inner-text">
+                        <h3 class="sub-head sky">
+                            02
+                        </h5>
+                        <h4 class="small-head">Coconut ERP
+                        </p>
+                        <p>With Coconut ERP you get Industry 4.0 compatible ERP.
+                            Now you do have visibility of all
+                            of your plants and sites with single intelligent and
+                            smart age dashboard.
 
-        {/* Vertical Line */}
-        <div className="col-md-1 d-none d-md-block">
-          <div
-            style={{
-              borderLeft: "2px solid #007bff",
-              height: "100%",
-              margin: "0 auto",
-            }}
-          ></div>
-        </div>
+                        </p>
+                        <div class="btn"><a class="learn-more"
+                                href="/microsoft-solutions/ ">Learn
+                                More</a></div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="inner-text">
+                        <h3 class="sub-head yellow ">
+                            03
+                        </h5>
+                        <h4 class="small-head">atsMantra
 
-        {/* Solutions Content */}
-        <div className="col-md-7">
-          <div className="row">
-            {/* Solution 1 */}
-            <div className="col-md-4 text-center">
-              <h2 style={{ color: "#ff1493" }}>01</h2>
-              <h5>Microsoft Solutions</h5>
-              <p>
-                Unlock The Power Of Microsoft’s Suite Of Solutions And Elevate
-                Your Business.
-              </p>
-              <a href="#">Learn More</a>
+                        </p>
+                        <p>Case is defined in businesses as one of issues to be
+                            handled. With Caseio Enterprises can
+                            resolve complex issues and ensure that optimal
+                            solutions are put together.
+
+                        </p>
+                        <div class="btn"><a class="learn-more"
+                                href="/microsoft-solutions/ ">Learn
+                                More</a></div>
+                    </div>
+                </div>
             </div>
-            {/* Solution 2 */}
-            <div className="col-md-4 text-center">
-              <h2 style={{ color: "#007bff" }}>02</h2>
-              <h5>Coconut ERP</h5>
-              <p>
-                With Coconut ERP You Get Industry 4.0 Compatible ERP And Smart
-                Age Dashboard.
-              </p>
-              <a href="#">Learn More</a>
+            <div class="horig">
+                <div class="horig-line"></div>
             </div>
-            {/* Solution 3 */}
-            <div className="col-md-4 text-center">
-              <h2 style={{ color: "#ffa500" }}>03</h2>
-              <h5>atsMantra</h5>
-              <p>
-                Resolve Complex Issues And Ensure Optimal Solutions Are Put
-                Together.
-              </p>
-              <a href="#">Learn More</a>
+            <div class="row">
+                <div class="col-md-3 line">
+                    <div class="inner-text">
+                        <h3 class="sub-head green">
+                            04
+                        </h5>
+                        <h4 class="small-head">Recruitment Services
+
+                        </p>
+                        <p>Unlock the power of Microsoft's suite of solutions
+                            and elevate your business. Streamline
+                            operations, boost collaboration, and drive
+                            innovation with our expertly tailored
+                            Microsoft services.
+                        </p>
+                        <div class="btn"><a class="learn-more"
+                                href="/microsoft-solutions/ ">Learn
+                                More</a></div>
+                    </div>
+                </div>
+                <div class="col-md-3 line">
+                    <div class="inner-text">
+                        <h3 class="sub-head purpal">
+                            05
+                        </h5>
+                        <h4 class="small-head">Application
+                            development
+
+                        </p>
+                        <p>Unlock the power of Microsoft's suite of solutions
+                            and elevate your business. Streamline
+                            operations, boost collaboration, and drive
+                            innovation with our expertly tailored
+                            Microsoft services.
+                        </p>
+                        <div class="btn"><a class="learn-more"
+                                href="/microsoft-solutions/ ">Learn
+                                More</a></div>
+                    </div>
+                </div>
+                <div class="col-md-3 line">
+                    <div class="inner-text">
+                        <h3 class="sub-head yellow">
+                            06
+                        </h5>
+                        <h4 class="small-head">UI/UX Design
+
+                        </p>
+                        <p>With Coconut ERP you get Industry 4.0 compatible ERP.
+                            Now you do have visibility of all
+                            of your plants and sites with single intelligent and
+                            smart age dashboard.
+
+                        </p>
+                        <div class="btn"><a class="learn-more"
+                                href="/microsoft-solutions/ ">Learn
+                                More</a></div>
+                    </div>
+                </div>
+                <div class="col-md-3 ">
+                    <div class="inner-text">
+                        <h3 class="sub-head sky ">
+                            07
+                        </h5>
+                        <h4 class="small-head">atsMantra
+
+                        </p>
+                        <p>Case is defined in businesses as one of issues to be
+                            handled. With Caseio Enterprises can
+                            resolve complex issues and ensure that optimal
+                            solutions are put together.
+
+                        </p>
+                        <div class="btn"><a class="learn-more"
+                                href="/microsoft-solutions/ ">Learn
+                                More</a></div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </div>
     </div>
   );
 }
