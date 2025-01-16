@@ -1,7 +1,7 @@
 /* Main Section Styling */
 .main-section {
   background-color: #121212;
-  height: 100rem; /* Adjusted to 100vh for full viewport height */
+  height: 190rem; /* Adjusted to 100vh for full viewport height */
 }
 
 .course-main {
@@ -228,3 +228,50 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.course{
+  display: flex;
+  align-items: center;
+}
+.course:hover{
+  display: flex;
+  align-items: center;
+  border: solid ;
+  /* background-color: gray; */
+}
+
+
+.course-info {
+  flex-grow: 1;
+}
+
+.course-number{
+  color: red;
+}
+
+.course-info{
+  margin-left: "1rem";
+}
+
+.course-info:hover{
+  margin-left: "1rem";
+  color: white;
+}
+
+.title{
+  color: gray;
+}
+
+.add-on{
+  color: gray;
+}
+
+.title:hover{
+  color: white;
+}
+
+.add-on:hover{
+  color: white;
+}
+
