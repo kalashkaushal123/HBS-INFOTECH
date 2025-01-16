@@ -1,8 +1,9 @@
 /* Main Section Styling */
 .main-section {
   background-color: #121212;
-  height: 100rem; /* Adjusted to 100vh for full viewport height */
+  height: 200rem; /* Adjusted to 100vh for full viewport height */
 }
+
 
 .course-main {
   background-color: #121212;

@@ -98,6 +98,9 @@ export default function Course() {
           ))}
         </div>
       </section>
+      <section className="learning-carculam">
+
+      </section>
     </div>
   );
 }
