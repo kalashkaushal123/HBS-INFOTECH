@@ -1,9 +1,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import laptop from "../about/laptop.png";
+import microsot from '../courses/images/microsoft.png';
+import iitguhati from '../courses/images/iiguhati.png';
 import './about.css'
 
 export default function About() {
   return (
+    <div>
     <div className="" style={{ backgroundColor: "#062969" }}>
       <div className="main" style={{ marginLeft: "4rem" }}>
         <div className="row align-items-center text-white py-5">
@@ -40,6 +43,58 @@ export default function About() {
           </div>
         </div>
       </div>
+
+    </div>
+
+    <div className="course-main">
+            {/* Left Section - Course Details */}
+            <div className="course-left-side">
+              <p>Creating</p>
+              <h1>Certification in Full Stack Data Science and AI</h1>
+              
+              <div className="calender">
+                Next cohort starting on 14th January
+              </div>
+    
+              <p>In collaboration with:</p>
+              <div className="company-logo">
+                <div className="iit-logo">
+                  <img className="img" src={iitguhati} alt="IIT Guwahati Logo" />
+                </div>
+                <div className="microsoft">
+                  <img className="img" src={microsot} alt="Microsoft Logo" />
+                </div>
+              </div>
+    
+              <div className="heding-about-course">
+                <p>Advanced Certification from E&ICT Academy, IIT Guwahati.</p>
+                <p>6 months part-time program with online classes</p>
+                <ul>
+                  <li><p>Revised curriculum for post Chat-GPT era</p></li>
+                  <li><p>No prior coding experience required</p></li>
+                  <li><p>Suitable for final years, graduates, and early professionals.</p></li>
+                </ul>
+              </div>
+    
+              <div className="bottom-button">
+                <button>Explore Program</button>
+                <button id="enroll">Enrol Now</button>
+              </div>
+            </div>
+    
+            {/* Right Section - Video and Demo Buttons */}
+            <div className="course-right-side">
+              <div className="video-section">
+                {/* Video content can be added here */}
+              </div>
+              <div className="demobutton">
+                <button>Book a Demo class</button>
+                <button>Request a Callback</button>
+              </div>
+            </div>
+          </div>
+
+
     </div>
   );
 }

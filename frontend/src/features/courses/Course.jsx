@@ -6,6 +6,8 @@ import courseImage1 from '../courses/images/course1.jpeg'; //
 import courseImage2 from '../courses/images/course2.jpeg'; // Add an image for the course
 import courseImage3 from '../courses/images/course3.jpeg'; // Add an image for the course
 import { useEffect, useState } from "react";
+import Header from "../../comman/Header";
+import Footer from "../../comman/Footer";
 
 export default function Course() {
    // Sample courses data
@@ -173,6 +175,8 @@ export default function Course() {
   }, []);
 
   return (
+    <>
+    <Header></Header>
     <div className="main-section">
 
       <div className="course-main">
@@ -374,5 +378,7 @@ export default function Course() {
 
 
 </div>
+<Footer></Footer>
+</>
   );
 }

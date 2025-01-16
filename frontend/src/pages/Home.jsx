@@ -15,7 +15,7 @@ export default function Home() {
   const location = useLocation();
 
   useEffect(() => {
-    // Hide the wrapper on certain routes (e.g., when on '/about', '/courses', '/solutions')
+    
     if (location.pathname === '/about' || location.pathname === '/course' || location.pathname === '/solutions') {
       setShowWrapper(false);
     } else {
@@ -138,10 +138,6 @@ export default function Home() {
         </>
        
       )}
-
-      {/* Sections for About, Courses, and Solutions */}
-      
-      <Course />
       <Solutions />
 
       <Footer />

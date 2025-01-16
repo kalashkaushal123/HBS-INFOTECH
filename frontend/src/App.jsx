@@ -24,10 +24,7 @@ function App() {
           path:"/about",
           element:<About></About>
         },
-        {
-          path:"/course",
-          element:<Course></Course>
-        },
+        
         {
           path:"/solutions",
           element:<Solutions></Solutions>
@@ -57,6 +54,10 @@ function App() {
           element:<AtsMantra/>
         }
       ]
+    },
+    {
+      path:"/course",
+      element:<Course></Course>
     },
   ]);
 
