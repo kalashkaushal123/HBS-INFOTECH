@@ -1,97 +1,156 @@
-/* Reset default margin and padding */
-* {
-    margin: 0;
+/* syed start */
+.scrolling-container {
+    text-align: justify;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow */
+    width: 100%; 
+    position: relative; /* Position relative for absolute child */
+    top: 10em;
+    left: 10em;
+    margin: auto;
+}
+
+.scrolling-text {
+   
+    display: flex; /* Inline block for animation */
+    animation: scroll-left 6s linear infinite; /* Animation properties */
+}
+
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+        opacity: 4;
+        z-index: 2;
+    }
+
+   
+    30% {
+        transform: translateX(300%);
+        opacity: 4;
+        z-index: 2;
+    }
+    60%{
+        transform: translateX(-10%);
+        opacity: 4;
+        z-index: 2;
+    }
+    
+    75% {
+        transform: translateX(20%);
+        opacity: 4;
+        z-index: 2;
+    }
+    100% {
+        transform: translateX(20%);
+        opacity: 4;
+        z-index: 2;
+    }
+}
+
+
+
+
+.sr {
+
+overflow: hidden; /* Hide overflow */
+width: 100%; /* Full width */
+position: relative; /* Position relative for absolute child */
+/* top: 1em; */
+}
+
+.sc {
+display: inline-block; /* Inline block for animation */
+animation: key 6s linear infinite ; /* Animation properties */
+}
+
+@keyframes key {
+    0% {
+        transform: translateX(-100%);
+        opacity: 4;
+        z-index: 2;
+        display: none;
+       
+    }
+
+    25% {
+        transform: translateX(-100%);
+        opacity: 4;
+        z-index: 2;
+        display: none;
+        
+    }
+    50% {
+        transform: translateX(-50%);
+        opacity: 4;
+        z-index: 2;
+        display: none;
+    }
+    60% {
+        transform: translateX(100%);
+        opacity: 4;
+        z-index: 2;
+    }
+
+    80% {
+        transform: translateX(10%);
+        opacity: 4;
+        z-index: 2;
+    }
+
+    75% {
+        transform: translateX(10%);
+        opacity: 4;
+        z-index: 2;
+    }
+    100% {
+        transform: translateX(10%);
+        opacity: 4;
+        z-index: 2;
+    }
+}
+
+/* syed end */
+
+
+
+
+
+Reset default margin and padding
+ /* * {
+    position: relative;
+    margin: -10;
+    background-color: blue;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 /* Wrapper Styling */
 .wrapper {
+    
+    margin: auto;
     position: relative; /* Changed from absolute to relative */
     top: 50px;
     width: 100%;
-    height: 600px;
-    background: url(../img/bg.png) top center / cover;
+    /* height: 600px; */
+    background-image: url('../assets/bg.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% 600px;
+   
+        
 }
 
 /* Content Layout */
-.content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
 
-.content img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
 
-.box {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    padding-left: 120px;
-    overflow-x: hidden;
-}
 
-/* Heading Styling */
-.heading {
-    font-size: 6rem; /* Use rem for better scalability */
-    font-weight: 600;
-    color: #fff;
-    padding-left: 20px;
-    font-family: var(--main-font, sans-serif); /* Fallback font */
-    line-height: 1.2;
-}
 
-/* Subheading for extra text */
-.head-clr {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    color: #fff;
-    font-family: var(--main-font, sans-serif);
-    margin-top: 0.5rem;
-}
 
 /* Responsive Adjustments */
 @media screen and (max-width: 768px) {
-    .heading {
-        font-size: 4rem; /* Slightly smaller heading */
-    }
 
-    .head-clr {
-        font-size: 1.5rem; /* Adjusted size for readability */
-    }
-
-    .content img {
-        width: 120px;
-        height: 120px;
-    }
-
-    .box {
-        padding-left: 10px; /* Reduced padding on smaller screens */
-    }
 }
 
-@media screen and (max-width: 480px) {
-    .heading {
-        font-size: 3rem; /* Further reduced font size for very small screens */
-    }
+@media screen and (max-width: 400px) {
 
-    .head-clr {
-        font-size: 1.2rem; /* Slightly smaller font size */
-    }
-
-    .content img {
-        width: 100px;
-        height: 100px;
-    }
-
-    .box {
-        padding-left: 5px; /* Less padding for small screens */
-    }
 }

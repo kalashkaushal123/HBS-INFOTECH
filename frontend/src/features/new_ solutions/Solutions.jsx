@@ -25,7 +25,7 @@ export default function Solutions() {
                   Microsoft services.
                 </p>
                 <div className="btn"><a className="learn-more"
-                  href="/microsoft-solutions/">Learn More</a></div>
+                  href="/MicrosoftSolutions/">Learn More</a></div>
               </div>
             </div>
             <div className="col-md-3 line">
@@ -40,7 +40,7 @@ export default function Solutions() {
                   smart age dashboard.
                 </p>
                 <div className="btn"><a className="learn-more"
-                  href="/microsoft-solutions/">Learn More</a></div>
+                  href="/CoconutERP/">Learn More</a></div>
               </div>
             </div>
             <div className="col-md-3">
@@ -55,7 +55,7 @@ export default function Solutions() {
                   solutions are put together.
                 </p>
                 <div className="btn"><a className="learn-more"
-                  href="/microsoft-solutions/">Learn More</a></div>
+                  href="/AtsMantra/">Learn More</a></div>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default function Solutions() {
                   Microsoft services.
                 </p>
                 <div className="btn"><a className="learn-more"
-                  href="/microsoft-solutions/">Learn More</a></div>
+                  href="/RecruitmentServices/">Learn More</a></div>
               </div>
             </div>
             <div className="col-md-3 line">
@@ -92,7 +92,7 @@ export default function Solutions() {
                   Microsoft services.
                 </p>
                 <div className="btn"><a className="learn-more"
-                  href="/microsoft-solutions/">Learn More</a></div>
+                  href="/applicationDevelopment/">Learn More</a></div>
               </div>
             </div>
             <div className="col-md-3 line">
@@ -107,7 +107,7 @@ export default function Solutions() {
                   smart age dashboard.
                 </p>
                 <div className="btn"><a className="learn-more"
-                  href="/microsoft-solutions/">Learn More</a></div>
+                  href="/UI_UXDesign/">Learn More</a></div>
               </div>
             </div>
             <div className="col-md-3">
@@ -122,7 +122,7 @@ export default function Solutions() {
                   solutions are put together.
                 </p>
                 <div className="btn"><a className="learn-more"
-                  href="/microsoft-solutions/">Learn More</a></div>
+                  href="/AtsMantra/">Learn More</a></div>
               </div>
             </div>
           </div>
