@@ -1,17 +1,19 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import './course.css';
+import './course.css'
 import microsot from '../courses/images/microsoft.png';
 import iitguhati from '../courses/images/iiguhati.png';
 import courseImage1 from '../courses/images/course1.jpeg'; // 
 import courseImage2 from '../courses/images/course2.jpeg'; // Add an image for the course
 import courseImage3 from '../courses/images/course3.jpeg'; // Add an image for the course
+
 import { useEffect, useState } from "react";
 import Header from "../../comman/Header";
 import Footer from "../../comman/Footer";
 
+
 export default function Course() {
-   // Sample courses data
-   const courses = [
+  // Sample courses data
+  const courses = [
     {
       id: 1,
       title: "Full Stack Data Science and AI",
@@ -33,15 +35,7 @@ export default function Course() {
       image: courseImage3,
       link: "/course/machine-learning"
     },
-    {
-      id: 4,
-      title: "Machine Learning for Beginners",
-      description: "Introduction to machine learning with hands-on projects.",
-      image: courseImage3,
-      link: "/course/machine-learning"
-    },
   ];
-  
 
 
   const [state, setstate] = useState( [{
@@ -136,8 +130,83 @@ export default function Course() {
       "t10":'Recommender_Systems',
     }
   ]);
-  let aa=state[0]
   const [onedata, setonedata] = useState({});
+  const [languageColl, setlanguageColl] = useState([
+    {'img':'python.webp',
+      'title':'Python'
+    },
+    {'img':'pandas.webp',
+      'title':'Pandas'
+    },
+    {'img':'numpy.webp',
+      'title':'NumPy'
+    },
+    {'img':'matplotlib.webp',
+      'title':'Matplotlib'
+    },
+    {'img':'SQL.webp',
+      'title':'SQL'
+    },
+    {'img':'tableau.webp',
+      'title':'Tableau'
+    },
+    {'img':'power-bi.webp',
+      'title':'PowerBI'
+    },
+    {'img':'git.webp',
+      'title':'GIT'
+    },
+    {'img':'github.webp',
+      'title':'GitHub'
+    },
+    {'img':'scikit.3c999cb6.svg',
+      'title':'Scikit-Learn'
+    },
+    {'img':'xgboost.ce4f3649.svg',
+      'title':'XGBoost'
+    },
+    {'img':'NLTK.webp',
+      'title':'NLTK'
+    },
+    {'img':'scipy.0c3c9f53.svg',
+      'title':'SciPy'
+    },
+    {'img':'pytorch.webp',
+      'title':'PyTorch'
+    },
+    {'img':'tensor-flow.webp',
+      'title':'TensorFlow'
+    },
+    {'img':'gpt.webp',
+      'title':'Chat GPT'
+    },
+    {'img':'claude.58786435.svg',
+      'title':'Claude'
+    },
+    {'img':'langchain.2852fd57.svg',
+      'title':'LangChain'
+    },
+    {'img':'hugging-face.318578d3.svg',
+      'title':'Hugging Face'
+    },
+    {'img':'midway-journey.97430ae0.svg',
+      'title':'MidJourney'
+    },
+    {'img':'gemini.cb778bb8.svg',
+      'title':'Gemini'
+    },
+    {'img':'dall-e.a621d4c5.svg',
+      'title':'Dall-E'
+    },
+    {'img':'runway-ml.43c8523a.svg',
+      'title':'Runway ML'
+    },
+    {'img':'gradio.4e207dfb.svg',
+      'title':'Gradio'
+    },
+    
+
+  ]);
 
   function Introduction() {
       setonedata(state[0])
@@ -174,10 +243,14 @@ export default function Course() {
     setonedata(state[0])
   }, []);
 
+
+
+  
   return (
     <>
     <Header></Header>
     <div className="main-section">
+    
 
       <div className="course-main">
         {/* Left Section - Course Details */}
@@ -244,29 +317,35 @@ export default function Course() {
         </div>
 
 
-        
+       
       </section>
 
-      
 
 
 
-      <section className="vuew">
-      <div className="bg-black text-white p-0 m-0">
-              <h1 className="text-center display-5 fw-bolder text-white mt-5">Curriculum and <a href="" className="text-danger">Learning Track</a></h1>
+
+      <section>
+      <div className="bg-black text-white p-0 mt-5">
+              <h1 className="text-center display-5 fw-bolder text-white">
+                    Curriculum and 
+                    <a href="" className="text-danger">Learning Track</a></h1>
               <center className="p-5 mb-5 h5">
               We have designed our data science course with curriculum and learning pedagogy based on what top tech companies expect when you join them after you graduate. The curriculum focuses on learning by doing including solving real world problems and working on real industry level projects.
               </center>
+
               <center>
               <div align="center" class="container p-0 m-0" >
+       
+
+
 
               <div className="col-md-4">
               <div class="section text-start " style={{position:"relative",left:'40%'}} >
                   
                   <div class="course " onClick={Introduction} >
-                      <div class="course-number">01 &ensp;</div>
+                      <div class="course-number mb-4 ">01 &ensp;</div>
                       <div class="course-info p-0 m-0">
-                          <h6 className="title">Introduction to Computer Programming</h6>
+                          <h6 className="title text-white">Introduction to Computer Programming</h6>
                           <p class="add-on">Add-On: Pair Programming using ChatGPT</p>
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
@@ -274,27 +353,27 @@ export default function Course() {
 
 
                   <div class="course " onClick={Numerical}>
-                      <div class="course-number">02 &ensp;</div>
+                      <div class="course-number mb-4">02 &ensp;</div>
                       <div class="course-info">
-                          <h6 className="title">Numerical Programming in Python</h6>
+                          <h6 className="title text-white">Numerical Programming in Python</h6>
                           <p class="add-on">Add-On: Data Wrangling using Pandas AI</p>
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
 
                   <div class="course " onClick={Relational}>
-                      <div class="course-number">03 &ensp;</div>
+                      <div class="course-number mb-4">03 &ensp;</div>
                       <div class="course-info">
-                          <h6 className="title">Relational Databases</h6>
+                          <h6 className="title text-white">Relational Databases</h6>
                           <p class="add-on">Add-On: ChatGPT for writing SQL queries</p>
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
 
                   <div class="course " onClick={Data}>
-                      <div class="course-number">04 &ensp;</div>
+                      <div class="course-number mb-4">04 &ensp;</div>
                       <div class="course-info">
-                          <h6 className="title">Data Visualization Tools</h6>
+                          <h6 className="title text-white">Data Visualization Tools</h6>
                           <p class="add-on">Add-On: Creating presentations using ChatGPT</p>
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
@@ -302,18 +381,18 @@ export default function Course() {
 
                   <div class="course " onClick={Applied}>
 
-                      <div class="course-number">05 &ensp;</div>
+                      <div class="course-number mb-4">05 &ensp;</div>
                       <div class="course-info">
-                          <h6 className="title">Applied Business Analytics</h6>
+                          <h6 className="title text-white">Applied Business Analytics</h6>
                           <p class="add-on">Add-On: Leveraging AI for equations simplified via ChatGPT</p>
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
 
                   <div class="course " onClick={Machine} >
-                      <div class="course-number">06 &ensp;</div> 
+                      <div class="course-number mb-4">06 &ensp;</div> 
                       <div class="course-info">
-                          <h6 className="title">Machine Learning & Generative AI with Microsoft Azure</h6>
+                          <h6 className="title text-white">Machine Learning & Generative AI with Microsoft Azure</h6>
                           <p class="add-on">Add-On: Use AI to create AI</p>
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
@@ -321,53 +400,65 @@ export default function Course() {
 
               </div>
               </div>
-              
-              <div className="col-md-1"></div>
 
-              <div className="col-md-4 bggray p-0 m-0">
-                    <div style={{display:'flex'}} className="row ">
-                          <div className="row">
-                              <div className="col-md-4 ">
-                                  <h4>Topics</h4>
-                              </div>
-                              <div className="col-md-8 text-end ">
-                                  Dutation : <label htmlFor="" className="text-danger">1 month</label>
-                              </div>
-                              
-                          </div>
-                    
+        <div className="col-md-1"></div>
+
+       <div className="col-md-4 bggray p-0 m-0 bg-dark rounded-3">
+             <div style={{display:'flex'}} className="row ">
+                  <div className="row p-4">
+                      <div className="col-md-4 ">
+                          <h4>Topics</h4>
                       </div>
-                    <hr />
-                    <div className='scrollview' style={{overflow:'scroll',position:"relative",height:'300px', scrollbarWidth: 'none'}}>
-                    <ul className="text-start" >
-                      <li>• {onedata.t1}</li><br /><br />
-                      <li>• {onedata.t2}</li><br /><br />
-                      <li>• {onedata.t3}</li><br /><br />
-                      <li>• {onedata.t4}</li><br /><br />
-                      <li>• {onedata.t5}</li><br /><br />
-                      <li>• {onedata.t6}</li><br /><br />
-                      <li>• {onedata.t7}</li><br /><br />
-                      <li>• {onedata.t8}</li><br /><br />
-                      <li>• {onedata.t9}</li><br /><br />
-                      <li>• {onedata.t10}</li><br /><br />
-                    </ul>
-                    </div>
+                      <div className="col-md-8 text-end ">
+                          Dutation : <label htmlFor="" className="text-danger">1 month</label>
+                      </div>
+                      
+                  </div>
+             
               </div>
+             <hr />
+             <div className='scrollview ' style={{overflow:'scroll',position:"relative",height:'300px', scrollbarWidth: 'none'}}>
+             <ul className="text-start" >
+               <li>• {onedata.t1}</li><br /><br />
+               <li>• {onedata.t2}</li><br /><br />
+               <li>• {onedata.t3}</li><br /><br />
+               <li>• {onedata.t4}</li><br /><br />
+               <li>• {onedata.t5}</li><br /><br />
+               <li>• {onedata.t6}</li><br /><br />
+               <li>• {onedata.t7}</li><br /><br />
+               <li>• {onedata.t8}</li><br /><br />
+               <li>• {onedata.t9}</li><br /><br />
+               <li>• {onedata.t10}</li><br /><br />
+             </ul>
+             </div>
+       </div>
        <div className="col-md-1"></div>
 
    </div>
-              </center>
-          
+</center>
+            
+</div>
 
+     
+        <div className="bg-black pt-5">
+        {/* <img src='iconsset.PNG' alt="" width={'90%'} /> */}
 
-
+       <center>
+       <div className="row container ">
+        {languageColl.map((item,index)=>
+        <>
+        <div align='center' className="col-md-2 col-4 ">
+                <img className="border rounded-2 p-1 imgsizehover"  src={item.img} width={'40px'} height='40px' alt="" />
+                <br /><br />
+                <p className="text-white text-center ">&ensp; {item.title}</p>
+          </div>
+        </>)}
           
         </div>
-        <center>
-        <div  className="bg-black ">
-        <img src='iconsset.PNG' alt="" width={'90%'} />
+       </center>
+        
+              
         </div>
-        </center>
       </section>
 
     

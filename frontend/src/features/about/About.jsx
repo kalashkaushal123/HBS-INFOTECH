@@ -25,7 +25,7 @@ export default function About() {
               line of code we write contributes to the creation of robust, scalable,
               and future-proof digital solutions that stand the test of time.
             </p>
-            <button className="button btn-primary">Discuss with us</button>
+            <a href="/Discusswithus" className="button btn-primary text-decoration-none fs-5">Discuss with us</a>
           </div>
 
           {/* Right Side (Image) */}
@@ -38,6 +38,7 @@ export default function About() {
                 maxHeight: "400px",
                 width: "auto",
                 borderRadius: "10px",
+                
               }}
             />
           </div>

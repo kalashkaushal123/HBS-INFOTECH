@@ -30,7 +30,17 @@ export default function Home() {
 	let threeview=useRef();
 
 
+  
+
+
 	useEffect(() => {
+      oneview.current.style.display='block'
+      setTimeout(() => {
+      // oneview.current.style.display='none'
+      oneview.current.style.display='none'
+      // threeview.current.style.display='none'	
+      two()
+      })
 		console.log(oneview,'o');
 		console.log(twoview,'t');
 		console.log(threeview,'---ueseffect-----start---------');
@@ -39,8 +49,10 @@ export default function Home() {
 		one()
 	}, []);
 
+  
+
 	function one() {
-			oneview.current.style.display='block'
+    	oneview.current.style.display='block'
 			setTimeout(() => {
 				// oneview.current.style.display='none'
 				oneview.current.style.display='none'
@@ -141,6 +153,7 @@ export default function Home() {
       <Solutions />
 
       <Footer />
+      
     </div>
   );
 }

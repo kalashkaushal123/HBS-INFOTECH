@@ -11,6 +11,7 @@ import MicrosoftSolutions from './BridgetheGap/MicrosoftSolutions';
 import RecruitmentServices from './BridgetheGap/RecruitmentServices';
 import UI_UXDesign from './BridgetheGap/UI_UXDesign';
 import ApplicationDevelopment from './BridgetheGap/ApplicationDevelopment';
+import Discusswithus from './Discusswithus/Discusswithus';
 
 
 function App() {
@@ -52,13 +53,18 @@ function App() {
         {
           path:"/AtsMantra",
           element:<AtsMantra/>
-        }
+        },
+       
       ]
     },
     {
       path:"/course",
       element:<Course></Course>
     },
+    {
+      path:"/Discusswithus",
+      element:<Discusswithus/>
+    }
   ]);
 
   return (

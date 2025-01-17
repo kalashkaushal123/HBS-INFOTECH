@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Sail -->
+  <path d="M30 75 Q35 35, 60 25 Q55 55, 70 75 Z" stroke="white" stroke-width="3" fill="none"/>
+  <!-- Boat -->
+  <path d="M30 75 Q50 85, 70 75" stroke="white" stroke-width="3" fill="none"/>
+  <!-- Water waves -->
+  <path d="M25 80 Q35 85, 45 80 Q55 75, 65 80 Q75 85, 85 80" stroke="white" stroke-width="3" fill="none"/>
+</svg>
