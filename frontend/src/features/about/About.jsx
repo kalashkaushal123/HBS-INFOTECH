@@ -6,7 +6,7 @@ import './about.css'
 
 export default function About() {
   return (
-    <div>
+    <>
     <div className="" style={{ backgroundColor: "#062969" }}>
       <div className="main" style={{ marginLeft: "4rem" }}>
         <div className="row align-items-center text-white py-5">
@@ -96,6 +96,6 @@ export default function About() {
           </div>
 
 
-    </div>
+    </>
   );
 }
