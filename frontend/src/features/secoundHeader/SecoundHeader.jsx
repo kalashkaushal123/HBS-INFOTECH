@@ -4,12 +4,19 @@ import Header from '../../comman/Header';
 const SecoundHeader = () => {
     function showelement() {
         let aa=document.getElementById('aaa')
-        aa.style.display='block';
+        if (aa.style.display=='none'){
+            aa.style.display='block'; 
+
+        }
+        else if(aa.style.display=='block'){
+          aa.style.display=='none'
+        }
+        aa.style.display=='none'
         
+
     }
   return (
     <>
-    <Header/>
         <center  style={{width:'100%',backgroundColor:' #062a6c', color:"white"}}>
 
 
@@ -55,12 +62,10 @@ const SecoundHeader = () => {
         <div className='' id='aaa' style={{width:"80%",height:"200px", display:'none'}}>
                <div className="row bg-white" style={{borderBottomRightRadius:'2rem',borderBottomLeftRadius:'2rem'}}>
                 <div className="col-md-3 mt-3">
-                    <button className='btn btn-success'>Degree / Exec. PG  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-</svg></button><br /><br />
-                    <button className='btn btn-success'>Executive Certificate <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
-  <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
-</svg> </button>
+                    <button className='btn btn-success'>Degree / Exec. PG  
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16"><path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg></button><br /><br />
+                    <button className='btn btn-success'>Executive Certificate 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16"><path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/></svg> </button>
                 </div>
                 <div className="col-md-9 ">
                 <br />
