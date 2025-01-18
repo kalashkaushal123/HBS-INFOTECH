@@ -12,6 +12,7 @@ import RecruitmentServices from './BridgetheGap/RecruitmentServices';
 import UI_UXDesign from './BridgetheGap/UI_UXDesign';
 import ApplicationDevelopment from './BridgetheGap/ApplicationDevelopment';
 import Discusswithus from './Discusswithus/Discusswithus';
+import SecoundHeader from './features/secoundHeader/SecoundHeader';
 
 
 function App() {
@@ -64,6 +65,10 @@ function App() {
     {
       path:"/Discusswithus",
       element:<Discusswithus/>
+    },
+    {
+      path:"/SecoundHeader",
+      element:<SecoundHeader/>
     }
   ]);
 
