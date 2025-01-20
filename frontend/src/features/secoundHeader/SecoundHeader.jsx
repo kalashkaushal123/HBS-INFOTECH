@@ -55,23 +55,38 @@ const SecoundHeader = () => {
         let label=document.getElementById('label');
         let hashLink=document.getElementById('hashLink');
         // aa.style.display='block';
-        rotate.style.rotate='0deg';
-        rotate.style.color='red';
-        rotate.style.transition='0.5s ease-in-out';
-        label.style.color='orangered';
-        img.style.filter='none';
-        hashLink.style.display='block';
+        // rotate.style.rotate='0deg';
+        // rotate.style.color='red';
+        // rotate.style.transition='0.5s ease-in-out';
+        // label.style.color='orangered';
+        // img.style.filter='none';
+        // hashLink.style.display='block';
         if (showhide==false){
             console.log('false');
             
             aa.style.display='block';
+            // img.style.filter='none'
             setshowhide(true)
+            rotate.style.rotate='0deg';
+            rotate.style.color='red';
+            rotate.style.transition='0.5s ease-in-out';
+            label.style.color='orangered';
+            img.style.filter='none';
+            img.style.color='orangered'
+            hashLink.style.display='block';
         }
         else if(showhide==true){
             console.log('true');
             
             aa.style.display='none';
             setshowhide(false)
+            rotate.style.rotate='-90deg';
+            rotate.style.color='white';
+            rotate.style.transition='0.5s ease-in-out';
+            label.style.color='white';
+            img.style.filter='grayscale(100%)';
+            // img.style.color='grayscale(100%)'
+            hashLink.style.display='block';
         }
         
        
@@ -89,8 +104,8 @@ const SecoundHeader = () => {
                 <>
                 <div className="col m-0 p-0 " onClick={showelement}>
                     <div className='textChager ' onClick={showelement}>
-                        <a href="#hashLink" className=' text-decoration-none grayscale textChager'>
-                            <img id='img' width='30px' src={item.svg} style={{stroke:"green",strokeWidth:"30"}} /><br />
+                        <a id='img' href="#hashLink" className=' text-decoration-none grayscale textChager'>
+                            <img  width='30px' src={item.svg} style={{stroke:"green",strokeWidth:"30"}} /><br />
                         </a>
                         <span className=' textsize ' >
                             <label id='label' htmlFor="" className='m-auto ' >{item.name}&nbsp;
