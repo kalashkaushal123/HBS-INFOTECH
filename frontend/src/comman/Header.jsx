@@ -84,10 +84,11 @@ export default function Header() {
                     <div className="mid-services-block2">
                       <p>Improve</p>
                      <ul className='mid-link'>
-                      <li>Digital Transformation Services</li>
-                      <li>Generative AI Development Services</li>
-                      <li>Data Engineering and Data Science Services</li>
-                      <li></li>
+                      <Link to="/digitaltransformation"><li>Digital Transformation Services</li></Link>
+                      <Link to="/dataengineering"><li>Data Engineering and Data Science Services</li></Link>
+                      <Link to="/mobile"><li>Mobile App Development Services</li></Link>
+                      <Link to="/ai"><li>AI & ML Services</li></Link>
+                     
                      </ul>
 
 

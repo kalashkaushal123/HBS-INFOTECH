@@ -16,6 +16,10 @@ import Room from './features/videocall/Room';
 import Ui_Ux from './features/services/services_pages/ui_ux/Ui_Ux';
 import Cloud from './features/services/services_pages/colud/Cloud';
 import Software from './features/services/services_pages/software/Software';
+import Ai from './features/services/services_pages/AIml/Ai';
+import DataEngineer from './features/services/services_pages/Data_engineer/DataEngineer';
+import DigitalTransfrommation from './features/services/services_pages/Digital_transformation/DigitalTransfrommation';
+import Mobile from './features/services/services_pages/mobile/Mobile';
 
 
 
@@ -92,6 +96,22 @@ function App() {
       path:"/software",
       element:<Software></Software>
 
+    },
+    {
+      path:"/ai",
+      element:<Ai></Ai>
+    },
+    {
+      path:"/dataengineering",
+      element:<DataEngineer></DataEngineer>
+    },
+    {
+      path:"/digitaltransformation",
+      element:<DigitalTransfrommation></DigitalTransfrommation>
+    },
+    {
+      path:"/mobile",
+      element:<Mobile></Mobile>
     }
     
   ]);
