@@ -4,7 +4,6 @@ import Home from './pages/Home';
 import About from './features/about/About';
 import Course from './features/courses/Course';
 import Solutions from './features/new_ solutions/Solutions';
-
 import AtsMantra from './BridgetheGap/AtsMantra';
 import CoconutERP from './BridgetheGap/CoconutERP';
 import MicrosoftSolutions from './BridgetheGap/MicrosoftSolutions';
@@ -16,6 +15,7 @@ import SecoundHeader from './features/secoundHeader/SecoundHeader';
 import Room from './features/videocall/Room';
 import Ui_Ux from './features/services/services_pages/ui_ux/Ui_Ux';
 import Cloud from './features/services/services_pages/colud/Cloud';
+import Software from './features/services/services_pages/software/Software';
 
 
 
@@ -87,6 +87,11 @@ function App() {
     {
       path:"/cloud",
       element:<Cloud/>
+    },
+    {
+      path:"/software",
+      element:<Software></Software>
+
     }
     
   ]);

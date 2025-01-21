@@ -76,7 +76,7 @@ export default function Header() {
                       <p>Ideate</p>
                       <ul className='mid-link'>
                         <Link to="/ui"><li>UX & UI Design Services </li></Link>
-                        <li>Custom Software Development</li>
+                        <Link to="/software"><li>Software Development Services</li></Link>
                         <Link to="/cloud"><li>Cloud Consulting & Services</li></Link>
                       </ul>
                     </div>
