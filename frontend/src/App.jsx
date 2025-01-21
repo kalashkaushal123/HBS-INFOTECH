@@ -20,6 +20,14 @@ import Ai from './features/services/services_pages/AIml/Ai';
 import DataEngineer from './features/services/services_pages/Data_engineer/DataEngineer';
 import DigitalTransfrommation from './features/services/services_pages/Digital_transformation/DigitalTransfrommation';
 import Mobile from './features/services/services_pages/mobile/Mobile';
+import Devops from './features/services/services_pages/Devops.jsx/Devops';
+import Automation from './features/services/services_pages/Automation/Automation';
+import DevelopmentTeams from './features/services/services_pages/DevelopmentTeams/DevelopmentTeams';
+import EmbeddedSoftware from './features/services/services_pages/EmbeddedSoftware/EmbeddedSoftware';
+import IdentityandAccess from './features/services/services_pages/IdentityandAccess/IdentityandAccess';
+import SoftwareAuditing from './features/services/services_pages/SoftwareAuditing/SoftwareAuditing';
+import SecurityAudit from './features/services/SecurityAudit/SecurityAudit';
+import NearshoringServices from './features/services/services_pages/NearshoringServices/NearshoringServices';
 
 
 
@@ -112,6 +120,40 @@ function App() {
     {
       path:"/mobile",
       element:<Mobile></Mobile>
+    },
+    {
+      path:"/devops",
+      element:<Devops></Devops>
+    },
+    {
+      path:"/automation",
+      element:<Automation></Automation>
+    },
+    {
+      path:"/devlopment_team",
+      element:<DevelopmentTeams></DevelopmentTeams>
+    },
+    {
+      path:"/embeddedsoftware",
+      element:<EmbeddedSoftware></EmbeddedSoftware>
+
+    },
+    {
+      path:"/IdentityandAccess",
+      element:<IdentityandAccess></IdentityandAccess>
+    },
+    {
+      path:"/softwareauditing",
+      element:<SoftwareAuditing></SoftwareAuditing>
+      
+    },
+    {
+      path:"/securityaudit",
+      element:<SecurityAudit></SecurityAudit>
+    },
+    {
+      path:"/nearshoringservices",
+      element:<NearshoringServices></NearshoringServices>
     }
     
   ]);
