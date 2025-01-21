@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './header.css';
 import { useState } from 'react'; 
 import { FaAlignJustify } from "react-icons/fa";
-
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHoveringServices, setIsHoveringServices] = useState(false); 
@@ -11,7 +10,6 @@ export default function Header() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); 
   };
-
   return (
     <div>
       <header className="py-3">
@@ -96,8 +94,8 @@ export default function Header() {
                     <div className="mid-services-block3">
                       <p>Scale</p>
                       <ul className='mid-link'>
-                        <li>Nearshoring Services for the North American Market</li>
-                        <li>Software Development Outsourcing Services</li>
+                       <Link to="/nearshoringservices"><li>Nearshoring Services for the North American Market</li></Link>
+                        <Link to="/software"><li>Software Development Outsourcing Services</li></Link>
                        
                       </ul>
                     </div>
@@ -108,20 +106,20 @@ export default function Header() {
                    <div className="right-side-block1">
                    <p>Build</p>
                     <ul className='mid-link'>
-                      <li>Dedicated Software Development Teams</li>
-                      <li>Cloud Engineering Service</li>
-                      <li>Embedded Software Services</li>
-                      <li>Mobile Apps Development Services</li>
+                     <Link to='/devlopment_team'> <li>Dedicated Software Development Teams</li></Link>
+                     <Link to="/cloud"><li>Cloud Engineering Service</li></Link>
+                      <Link to="/embeddedsoftware"><li>Embedded Software Services</li></Link>
+                     <Link to="/mobile"> <li>Mobile Apps Development Services</li></Link>
                     </ul>
                    </div>
                    <div className="rigth-side-block2">
                     <p>Operate</p>
                     <ul className='mid-link'>
-                      <li>Identity and Access Management Services</li>
-                      <li>Automation Testing Services</li>
-                      <li>DevOps Consulting Services & Solutions</li>
-                      <li>Software Auditing Services</li>
-                      <li>Security Audit and Governance Services</li>
+                      <Link to="/IdentityandAccess"><li>Identity and Access Management Services</li></Link>
+                     <Link to="/automation"><li>Automation Testing Services</li></Link>
+                      <Link to="/devops"><li>DevOps Consulting Services & Solutions</li></Link>
+                      <Link to="/softwareauditing"><li>Software Auditing Services</li></Link>
+                      <Link to="/securityaudit"><li>Security Audit and Governance Services</li></Link>
                     </ul>
                    </div>
                   </div>
