@@ -13,6 +13,10 @@ import UI_UXDesign from './BridgetheGap/UI_UXDesign';
 import ApplicationDevelopment from './BridgetheGap/ApplicationDevelopment';
 import Discusswithus from './Discusswithus/Discusswithus';
 import SecoundHeader from './features/secoundHeader/SecoundHeader';
+import Room from './features/videocall/Room';
+import Ui_Ux from './features/services/services_pages/ui_ux/Ui_Ux';
+import Cloud from './features/services/services_pages/colud/Cloud';
+
 
 
 function App() {
@@ -55,6 +59,7 @@ function App() {
           path:"/AtsMantra",
           element:<AtsMantra/>
         },
+
        
       ]
     },
@@ -69,7 +74,21 @@ function App() {
     {
       path:"/SecoundHeader",
       element:<SecoundHeader/>
+    },
+    {
+      path:"/videocall",
+      element:<Room></Room>
+    },
+    {
+      path:"/ui",
+      element:<Ui_Ux></Ui_Ux>
+
+    },
+    {
+      path:"/cloud",
+      element:<Cloud/>
     }
+    
   ]);
 
   return (

@@ -9,6 +9,7 @@ import courseImage3 from '../courses/images/course3.jpeg'; // Add an image for t
 import { useEffect, useState } from "react";
 import Header from "../../comman/Header";
 import Footer from "../../comman/Footer";
+import { Link } from "react-router-dom";
 
 
 export default function Course() {

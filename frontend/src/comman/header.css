@@ -134,4 +134,105 @@ header {
       justify-content: space-around;
     }
   }
+  .services {
+    position: relative;
+  }
   
+  .services-dropdown {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    /* right: 2rem; */
+    left: -50.5rem;
+    height: 33rem;
+    width: 85rem;
+    border-radius: 4px;
+    z-index: 10;
+    opacity: 0; /* Start with full transparency */
+    visibility: hidden; /* Initially hidden */
+    transform: translateY(-10px); /* Slightly above its final position */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; /* Smooth transitions */
+  }
+  
+  /* To show the dropdown with animation */
+  .services-dropdown.show {
+    opacity: 1; /* Fade in */
+    visibility: visible; /* Make it visible */
+    transform: translateY(0); /* Slide into its final position */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Immediate transition on showing */
+  }
+
+  .services-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .services-left-side{
+    height: 33rem;
+    width: 45%;
+   
+  }
+
+  .services-left-side > h1 {
+    font-size: 2.5rem;
+    position: relative;
+    background: linear-gradient(90deg, #e65c00, #3e3e3e, #8b0000);
+    -webkit-background-clip: text; 
+    color: transparent; 
+    margin-bottom: 1.5rem;
+    text-transform: capitalize;
+    font-weight: bolder;
+    top: 100px;
+   
+  }
+  
+  .services-mid-side{
+    height: 33rem;
+    width: 30%;
+ 
+
+  }
+  .services-rigth-side{
+    height: 33rem;
+    width: 30%;
+  
+
+  }
+.services-mid-side{
+  
+}
+.mid-link{
+  position: relative;
+  margin-bottom: 10px;
+  color: black;
+  font-weight: bold;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  bottom: 30px;
+
+}
+.mid-link li{
+  font-size: 15px;
+  
+}
+/* Corrected font-size */
+/* Corrected font-size */
+.mid-link li {
+  font-size: 15px; /* Font size */
+  color: #555; /* Default text color */
+  transition: all 0.3s ease; /* Smooth transition */
+  padding: 5px 0;
+}
+
+/* Hover effect */
+.mid-link li:hover {
+  color: #d52d2f; /* Change color on hover */
+  transform: scale(1.1) translateX(10px); /* Slightly increase the size and move to the right */
+}
+
+/* Optional: Underline on hover */
+.mid-link li:hover {
+  text-decoration: underline; /* Underline the text on hover */
+}

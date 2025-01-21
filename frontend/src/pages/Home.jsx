@@ -9,6 +9,8 @@ import microsoftpng from '../assets/icons/microsoft.png'
 import  down from '../assets/icons/dwn.png'
 import coconut from '../assets/icons/coconut.png'
 import './Home.css'
+import SecoundHeader from '../features/secoundHeader/SecoundHeader';
+import Services from '../features/services/Services';
 export default function Home() {
   const [showWrapper, setShowWrapper] = useState(true);
   
@@ -88,7 +90,7 @@ export default function Home() {
   return (
     <div>
       <Header />
-
+      <SecoundHeader/>
       {/* Outlet for nested routing */}
       <Outlet />
 
