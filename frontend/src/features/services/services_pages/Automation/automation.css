@@ -1,0 +1,253 @@
+
+.main_div{
+    height: 695px;
+    width: 1650px;
+    overflow: hidden;
+    position: relative;
+}
+.gradient{
+    height: 695px;
+    width: 1650px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgb(181, 7, 7), rgb(170, 47, 13), rgb(225, 55, 8), rgb(255, 213, 0));
+    opacity: 0.7;
+    
+}
+.main_image{
+    scale: 1;
+    color: transparent;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    border: 1px solid white;
+}
+.main_text{
+    position: absolute;
+    margin: 200px 400px;
+}
+
+
+
+.auto{
+    margin: 120px 130px 120px 160px;
+}
+.auto-text{
+    display: flex;
+    margin-bottom: 150px;
+}
+h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+.auto-text p{
+    margin-left: 80px;
+    font-size: 18px;
+    width: 2000px;
+    line-height: 1.5;
+}
+
+
+.testing{
+    display: flex;
+    margin: 65px 0px;
+}
+.testing_block{
+    display: flex;
+    width: 650px;
+    margin-bottom: 20px;
+}
+.testing_text{
+    padding: 16px 20px;
+}
+.testing_text p{
+    font-size: 14px;
+    width: 480px;
+}
+.testing_image{
+    padding: 20px;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 4px 8px 0 rgba(51, 51, 51, 0.2), 0 4px 15px 0 rgba(64, 64, 64, 0.19);
+}
+
+.para{
+    margin: 70px 0px;
+    display: flex;
+}
+.com{
+    display: flex;
+}
+.com_icon{
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(to right, rgb(88, 22, 22), red, rgb(255, 89, 0), rgb(255, 140, 0));
+    border-radius: 50%;
+}
+.com-text{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+.com-text p{
+    margin-top: 20px;
+    font-size: 14px;
+    text-transform: lowercase;
+    width: 460px;
+}   
+
+
+.device{
+    background-color: rgb(236, 236, 236);
+    padding: 130px 160px;
+    height: 450px;
+}
+.device h2{
+    color: black;
+    font-size: 38px;
+}
+.dev_img{
+    margin: 60px;
+    color: transparent;
+}
+
+.case_box{
+    display: flex;
+}
+.case_head{
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.case_head button{
+    margin-left: 750px;
+    border: 2px solid rgb(252, 102, 35);
+    border-radius: 40px;
+    padding: 10px 30px;
+    color: rgb(252, 102, 35);
+    font-weight: 600;
+    background-color: white;
+}
+
+.case_img{
+    width: 1300px;
+    height: 390px;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.case_img img{
+    scale: 1.45;
+    display: block;
+}
+.case_text{
+    padding: 30px 50px;   
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-image: linear-gradient(to right, rgb(3, 3, 84), rgb(109, 4, 4),  rgb(211, 6, 6), orange);
+}
+.case_text a{
+    text-decoration: none;
+}
+.case_text a p,h3{
+    color: white;
+}
+.case_text a h3{
+    margin-top: 0px;
+    font-size: 40px;
+    width: 650px;
+    color: white;
+}
+.case_text a button{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+.box1{
+    margin-top: 30px;
+}
+
+.case_text1{
+    padding: 30px 50px;   
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(185, 185, 185);
+}
+.case_text1 a{
+    text-decoration: none;
+}
+.case_text1 a p,h3{
+    color: BLACK;
+    font-weight: 500;
+}
+.case_text1 a h3{
+    margin-top: 0px;
+    font-size: 37px;
+    width: 650px;
+}
+.case_text1 a button{
+    background-color: transparent;
+    border: none;
+    /* color: white; */
+    font-size: 18px;
+}
+
+.auto_box{
+    display: flex;
+    margin-top: 120px;
+}
+.auto_box_heading{
+    width: 1200px;
+    margin-right: 40px;
+}
+.auto_box p{
+    font-size: 18px;
+}
+
+
+
+
+.gen{
+    margin-right: 60px;
+    height: 280px;
+    width: 400px;
+    background-image: linear-gradient(to right, rgb(88, 22, 22), red, rgb(255, 89, 0), rgb(255, 140, 0));
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.gen img{
+    display: none;
+}
+.gen_text{
+    position: absolute;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 35px ;
+    border-radius: 20px;
+    top: 0;
+    height: 120px;
+    width: 355px;
+    transition: all 0.2s ease;
+}
+.gen:hover{
+    background-image: none;
+
+}
+.gen:hover img{
+    display: block;
+}
+.gen:hover .gen_text{
+    top: 160px;
+}
+.text{
+    margin: 150px 30px 0px 30px;
+    color: white;
+    font-size: 18px;
+    width: 300px;
+    margin-left: 60px;
+}
