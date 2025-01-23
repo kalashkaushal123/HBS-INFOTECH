@@ -21,16 +21,23 @@ import case1 from './image/case1.png'
 import case2 from './image/case2.png'
 
 import card1 from './image/card1.webp'
+import card2 from './image/card2.webp'
+import card3 from './image/card3.webp'
+import card4 from './image/card4.webp'
+import card5 from './image/card5.webp'
+import card6 from './image/card6.webp'
 
 
 export default function Automation() {
   return (
     <div>
     <div className='main_div'>
-      <img src={main_image} alt="" className='main_image' />
+      <img src={main_image} alt="" className='main_image' height='900px' />
       <div className="gradient"></div>
       <div className='main_text'>
-        <img src={setting} alt="" />
+        <div className='main_img'>
+          <img src={setting} alt="" />
+        </div>
         <h1>Automation Testing Services</h1>
         <p>Improve accuracy and speed up software delivery through automated testing strategies that save time, reduce costs and enhance product quality.</p>
         <button>Contact us</button>
@@ -283,7 +290,7 @@ export default function Automation() {
           </div>
 
           <div className='gen'> 
-            <img src={card1} alt="" height='300px' />
+            <img src={card2} alt="" height='300px' />
             <div className='gen_text'>
               Cloud consulting & services
             </div>
@@ -294,7 +301,7 @@ export default function Automation() {
           </div>
 
           <div className='gen'> 
-            <img src={card1} alt="" height='300px' />
+            <img src={card3} alt="" height='300px' />
             <div className='gen_text'>
             Data science services
             </div>
@@ -314,7 +321,7 @@ export default function Automation() {
 
         <div style={{display:'flex'}}>
           <div className='gen'> 
-            <img src={card1} alt="" height='300px' />
+            <img src={card4} alt="" height='300px' />
             <div className='gen_text'>
             Financial services
             </div>
@@ -325,7 +332,7 @@ export default function Automation() {
           </div>
 
           <div className='gen'> 
-            <img src={card1} alt="" height='300px' />
+            <img src={card5} alt="" height='300px' />
             <div className='gen_text'>
             Telecom
             </div>
@@ -336,7 +343,7 @@ export default function Automation() {
           </div>
 
           <div className='gen'> 
-            <img src={card1} alt="" height='300px' />
+            <img src={card6} alt="" height='300px' />
             <div className='gen_text'>
             Sports betting
             </div>
