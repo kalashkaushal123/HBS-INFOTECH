@@ -15,7 +15,6 @@ const Discusswithus = () => {
 
   return (
     <>
-    <Header/>
     
     <div className="container-fuild  text-white" style={{height:"20rem",background:'url(bg.png)'}}>
 

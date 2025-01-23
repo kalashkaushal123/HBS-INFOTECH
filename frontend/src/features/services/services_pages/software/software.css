@@ -1,0 +1,196 @@
+
+/* first img  */
+
+
+/* .main_div{
+    height: 695px;
+    width: 1650px;
+    overflow: hidden;
+    position: relative;
+}
+.gradient{
+    height: 695px;
+    width: 1650px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgb(181, 7, 7), rgb(225, 55, 8), rgb(255, 213, 0));
+    opacity: 0.7;
+    
+}
+.main_image{
+    scale: 1;
+    color: transparent;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+} */
+
+
+
+
+
+
+
+/* flex-div */
+
+.custom-software{
+    margin: 120px 160px;
+}
+
+.software-flex{
+    display: flex;
+}
+
+.tailored-software h2{
+    margin: 0px;
+    font-size: 34px;
+    font-weight: bold;
+    width: 300px;
+}
+
+.diverse-software p{
+    margin: 0px;
+    font-size: 17px;
+    padding-left: 200px;
+    width: 850px;
+    line-height: 25px;
+}
+
+
+
+
+/* image-div */
+
+
+
+.img-box-div{
+    display: flex;
+    margin: 95px 0px;
+
+}
+
+.create-scalable{
+    margin: 0px 50px;
+}
+.create-scalable p{
+    width: 200px;
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: center
+}
+
+
+.this-div{
+    margin: 0px 30px;
+    height: 95px;
+    width: 95px;
+    border-radius: 50%;
+    background-image: linear-gradient(to right, rgb(88, 22, 22), rgb(198, 8, 8), rgb(255, 89, 0), rgb(255, 140, 0));
+}
+
+.this-div img{
+    padding: 25px 25px;
+}
+
+.this-div .leverage-tech .accelerate-digital .speed-up-software{
+    margin-left: 100px;
+}
+
+
+
+
+
+/* stages */
+
+
+.stages{
+    display: flex;
+}
+
+.all-stages h2{
+    width: 700px;
+    font-size: 37px;
+    font-weight: bold;
+}
+
+.stage-1{
+    display: flex;
+    margin-top: 40px;
+}
+
+.stage-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(51, 51, 51, 0.2), 0 4px 15px 0 rgba(64, 64, 64, 0.19);
+}
+
+.stage-img p{
+    background-image: linear-gradient(rgb(88, 22, 22), rgb(198, 8, 8), rgb(255, 89, 0), rgb(255, 140, 0));
+    color: transparent;
+    background-clip: text;
+    font-size: 46px;
+    font-weight: bold;
+    /* padding-left: 50px; */
+    /* background-image: linear-gradient(to right, rgb(88, 22, 22), rgb(198, 8, 8), rgb(255, 89, 0), rgb(255, 140, 0)); */
+}
+
+.stage-text{
+    margin-left: 40px;
+}
+
+.stage-text h3{
+    font-size: 18px;
+    font-weight: 550;
+}
+
+.stage-text p {
+    font-size: 15px;
+    width: 480px;
+    padding-top: 10px;
+}
+
+.one{
+    margin-top: 60px
+}
+
+.two{
+    margin-top: 160px;
+}
+.three{
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+/* marquee */
+
+
+
+
+
+
+.marquee-1{
+    width: 1523px;
+    height: 450px;
+    background-color: rgb(236,236,236);
+}
+
+.marquee-1 h2{
+    font-size: 40px;
+    font-weight: bold;
+    padding-left: 160px;
+    padding-top: 125px;
+}
+
+marquee{
+    margin: 0px 120px 0px 0px;
+}
