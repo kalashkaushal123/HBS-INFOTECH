@@ -2747,14 +2747,12 @@ data-styled.g101[id="sc-1865605d-2"] {
 
 /*!sc*/
 .bNZlex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-align-items: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    
 }
 
 /*!sc*/
@@ -3240,6 +3238,7 @@ data-styled.g135[id="sc-4fc5d34f-3"] {
 
 /*!sc*/
 .bcbQTa {
+    color: white;
     padding: 1.5rem 2rem 2rem 2rem;
     display: -webkit-box;
     display: -webkit-flex;
@@ -5961,3 +5960,48 @@ data-styled.g811[id="sc-keyframes-bIgGFN"] {
 }
 
 /*!sc*/
+
+.mySlides {display:none;}
+
+
+.checkvisible{
+display:none;
+}
+
+.scrollanimi{
+    position: relative;
+    animation: key 20s linear infinite
+}
+@keyframes key {
+    0% {
+        right: 0;
+      }
+      50% { 
+        right: calc(200% - 100px); 
+       }
+      100% {
+        right: 0;     
+      }
+}
+
+
+
+
+
+
+.hoverable:not(:hover) + .show-on-hover {
+    display: none;
+   
+   
+}
+
+.show-on-hover{
+    transform: translateX(0%);
+    opacity: 4;
+    display: inline-block;
+    opacity: 0;
+    animation-name: iTFowI;
+    animation-fill-mode: forwards;
+    animation-duration: 1.5s;
+    animation-delay: 0.075s;
+}
