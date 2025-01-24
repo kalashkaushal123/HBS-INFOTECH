@@ -584,6 +584,7 @@
     width: 15rem;
     
     margin-left: 36rem;
+    margin-top: 1rem;
 
 }
 
@@ -632,7 +633,7 @@
     top: 0;
     width: 250px;
     height: 100%;
-    content: "";
+    /* content: ""; */
     z-index: 2;
 }
 .logos:before {
@@ -710,8 +711,7 @@
 .gen img{
     display: none;
 }
-.gen_text{
-    position: absolute;
+.gen_textt{
     background-color: white;
     font-size: 20px;
     font-weight: 600;
@@ -719,8 +719,9 @@
     border-radius: 20px;
     top: 0;
     height: 120px;
-    width: 355px;
+    width: 400px;
     transition: all 0.2s ease;
+    position: absolute;
 }
 .gen:hover{
     background-image: none;
@@ -728,6 +729,7 @@
 }
 .gen:hover img{
     display: block;
+    
 }
 .gen:hover .gen_text{
     top: 160px;

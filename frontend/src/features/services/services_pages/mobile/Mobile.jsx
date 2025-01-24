@@ -468,7 +468,7 @@ export default function Mobile() {
         </div>
         <div className="first-row1">
           <div className="row-photo1">  
-            <img src="photos/icon-orange-Single-Sign-On-SSO.svg" alt />
+            <img src={imagesign} alt />
           </div>
           <div className="row-des1">
             <h3 className="row-head1">
@@ -591,7 +591,7 @@ export default function Mobile() {
           <div style={{display:'flex'}}>
             <div className='gen'> 
               <img src={card1} alt="" height='300px' />
-              <div className='gen_text'>
+              <div className='gen_textt'>
               Financial services
               </div>
             
