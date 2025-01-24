@@ -59,6 +59,42 @@ export default function Ui_Ux() {
     }]);
 
   
+
+    const [data, setdata] = useState([
+      {
+        id:1,
+        title:"What is the difference between UI and UX design?",
+        desc:`UI and UX design are like two sides of the same coin, both equally important and yet distinct in their roles. The user interface (UI) is all about the look and feel of a product, while the user experience (UX) is all about how it works and how it impacts the user. In other words, the UI is the beauty that attracts the user, while the UX is the functionality that keeps them engaged.So, to create a truly great product, you need both great UI and UX design working together in perfect harmony. Remember, the best designs are not just visually stunning, they are also intuitive, easy to use and create a positive emotional connection with the user. `,
+      },{
+        id:2,
+        title:"What principles does your team follow while designing products?",
+        desc:`We use human-centered design principles. Our mission is to empower users to achieve their goals easily. We believe in the power of "white patterns" of interaction design, which build trust, foster emotional connections and drive ROI for stakeholders.`,
+      },
+      {
+        id:3,
+        title:"How do you know that your design is good?",
+        desc:"Our designs are backed by data, which gives us confidence in delivering the best quality possible. We work tirelessly to ensure that every product, service, or website aligns perfectly with its intended goals. Our comprehensive mix of tests, both quantitative and qualitative, at every stage of the design process guarantees that our designs are always on the right track.",
+      },{
+        id:4,
+        title:"Which businesses do you work with?",
+        desc:"We are proud to have worked with various businesses and organizations in a multitude of industries, ranging from fintech to sports betting and more. Our unwavering commitment to providing exceptional service, coupled with our extensive skills and professionalism, has enabled us to consistently deliver outstanding results. Regardless of the size or reputation of the company we work with, we approach each project with the same level of dedication and strive to exceed expectations every time.",
+      },
+      {
+        id:5,
+        title:"Why is User Experience (UX) important for businesses?",
+        desc:"UX is a powerful tool that can help you create a positive and memorable experience for your users. By understanding their needs and anticipating their thoughts and feelings, you can build a loyal customer base dedicated to your brand. Through a well-crafted UX, you can define customer pathways and pave the way for your business's success.",
+      },{
+        id:6,
+        title:"What is UX & UI Design?",
+        desc:"UX and UI design are related fields that focus on creating functional and user-friendly digital experiences in various environments. User experience (UX) design refers to the overall experience a user has when interacting with a product or service. User interface (UI) design creates software's visual and interactive elements, aiming to create an intuitive and appealing interface that is easy to use. When applied together under the watchful eye of UX and UI designers, companies will be able deliver functional and aesthetically pleasing products and services.",
+      },{
+        id:7,
+        title:"How is Software Mind different from other companies that provide design services?",
+        desc:`Good question! Software Mind is different from other design companies in a few ways. Firstly, we believe in open discussions with our clients to arrive at the best possible solution. We don't expect our clients to do all the work; we conduct our own research, engage in conversations with our clients and amongst ourselves and devise a plan to create a product that exceeds initial expectations.
+              Secondly, we never make assumptions. Every idea or suggestion we present is backed up with data and reasoning.
+               Thirdly, we treat each project as if it were our own. We go above and beyond to ensure that our clients are not just satisfied, but delighted. We understand that emotions drive everyone involved in a project, from the client to the design team to the end user, so we allow ourselves to be human and not just machines.`,
+      }
+    ]);
   return (
     <>
 <Header></Header>
@@ -91,43 +127,49 @@ export default function Ui_Ux() {
         
       </div>
 
-        <div className="container-fluid m-5 p-5">
+      
+</div>
+
+
+{/* Enhance your product with a top UI & UX design team */}
+<div className="container-fluid  p-5">
           <div align="" className="row">
-            <div className="col-md-4  ">
-              <h1 className="m-auto">Enhance your product with a top UI & UX design team</h1>
+            <div className="col-md-4  mb-5">
+              <h1 className="m-auto"><strong>Enhance your product with a top UI & UX design team</strong></h1>
             </div>
+            
             <div className="col-md-8 pe-5">
                   <h5>We’re a team of UI & UX design experts with a track record of delivering exceptional experiences to our clients. Through continuous improvement and development, we’ve refined our design process so that we can quickly understand your business, learn your goals and wow your clients.</h5>
             </div>
           </div>
-        </div>
 </div>
+{/* Enhance your product with a top UI & UX design team End */}
 
 
-     
 
-<div align='justify' className="d-flex rounded-5" style={{marginLeft:"11rem",backgroundColor:"white"}}>
-        <div className=" ">
-              <div className="kuKEcI">
-                  <div className="cplcEN">
-                      <img  width={'70px'} loading="lazy" decoding="async" data-nimg="1" className="sc-29fb4b30-2 hWXZBl" style={{color:'transparent'}}  
-                      src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2023%2F06%2Ficon_Dedicated-Development-Teams-orange.svg&w=1920&q=75" />
 
+<div align='justify' className="rounded-5" style={{backgroundColor:"white"}}>
+        <div className="row">
+              <div className="col-md-2"></div>
+              <div className="col-md-4 border rounded-3 kuKEcI cplcEN  mt-3 " style={{marginLeft:"2rem"}}>
+                      <svg width={'70px'} loading="lazy" decoding="async" data-nimg="1" className="sc-29fb4b30-2 " style={{color:'transparent'}}  xmlns="http://www.w3.org/2000/svg" id="Warstwa_1" data-name="Warstwa 1" viewBox="0 0 100 100"><defs></defs><g><g><path className="cls-1" d="m57.07,34.22c0,3.91-3.17,7.08-7.07,7.08s-7.08-3.17-7.08-7.08,3.17-7.08,7.08-7.08,7.07,3.17,7.07,7.08Z"></path><path className="cls-1" d="m40.75,81.04c-5.17,0-6.95-4.23-6.95-9.39v-13.75c0-5.17,4.23-9.4,9.39-9.4h13.61c5.17,0,9.4,4.23,9.4,9.4v13.75c0,5.17-1.78,9.39-6.95,9.39"></path><g><line className="cls-1" x1="59.33" y1="60.73" x2="59.33" y2="91.78"></line><line className="cls-1" x1="40.67" y1="60.73" x2="40.67" y2="91.78"></line></g></g><g><path className="cls-1" d="m32.96,34.22c0,3.91-3.17,7.08-7.07,7.08s-7.08-3.17-7.08-7.08,3.17-7.08,7.08-7.08,7.07,3.17,7.07,7.08Z"></path><path className="cls-1" d="m16.63,81.04c-5.17,0-6.95-4.23-6.95-9.39v-13.75c0-5.17,4.23-9.4,9.39-9.4h10.1"></path><line className="cls-1" x1="16.55" y1="60.73" x2="16.55" y2="91.78"></line></g><g><path className="cls-1" d="m67.04,34.22c0,3.91,3.17,7.08,7.07,7.08s7.08-3.17,7.08-7.08-3.17-7.08-7.08-7.08-7.07,3.17-7.07,7.08Z"></path><path className="cls-1" d="m83.37,81.04c5.16,0,6.94-4.23,6.94-9.39v-13.75c0-5.17-4.23-9.4-9.39-9.4h-10.1"></path><line className="cls-1" x1="83.45" y1="60.73" x2="83.45" y2="91.78"></line></g></g><g><path className="cls-1" d="m69.13,15.3c0,3.91-3.17,7.08-7.07,7.08s-7.08-3.17-7.08-7.08,3.17-7.08,7.08-7.08,7.07,3.17,7.07,7.08Z"></path><path className="cls-1" d="m45.02,15.3c0,3.91-3.17,7.08-7.07,7.08s-7.08-3.17-7.08-7.08,3.17-7.08,7.08-7.08,7.07,3.17,7.07,7.08Z"></path></g></svg> 
+                      
                       <h3 className="sc-c25bae65-0 bjbLu sc-29fb4b30-0 dBoilV sm-header1">88%</h3>
-                      <p className="sc-ca4a3661-9 kyBtyV sm-body17">of internet users are less likely to return to a website after poor user experience.</p>
-
-                  </div>
-                  <p className="sc-29fb4b30-3 QIRgt">Source: “The Trillion Dollar UX Problem” Report 2020</p>
+                      <p className="sc-ca4a3661-9 kyBtyV sm-body17">of internet users are less likely to return to a website after poor user experience.</p>               
+                      
               </div>
+              <div className="col-md-4  videosizefit " >
+              <video autoPlay={true} muted  className="rounded-3 videoBorder" style={{width:"140%"}}>
+                    <source src={Leipzig_Chargers} type="video/mp4" />
+              </video>
+              </div>
+                
+            
+              <div className="col-md-2"></div>
         </div>
-
-        <div className="" style={{position:'relative',left:"0.5rem"}}>
-            <video autoPlay={true} muted  className="sc-29fb4b30-7 jmYzgU w-75">
-                <source src={Leipzig_Chargers} type="video/mp4" />
-            </video>
-        </div>
-
+        <br /><br /><br />
 </div>
+
 
 {/* Data visualization  Card */}
 <section className="sc-9e3861ef-1 gRDIGO">
@@ -220,10 +262,11 @@ export default function Ui_Ux() {
         </div>
       </div>
       <div className="col-md-8  aaa">
-        <div className="bg-white  rounded-4" style={{height:"40rem"}}>
+        <div className="bg-white  rounded-4" style={{height:"100%"}}>
           <img alt="" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="sc-2518156b-0 bNepPj" sizes="100vw" src="/src/features/services/services_pages/ui_ux/img/service-7-Design-sprint-768x398.webp" style={{ color: "transparent" }}
           />
-          <div className="sc-2518156b-2 gpVdNd"> <h3 className="sc-c25bae65-0 bjbLu sc-2518156b-5 efAofw sm-header5">   Design sprint </h3> <p className="sc-ca4a3661-6 greJTC sm-body15">   Reduce the standard number of steps of new product development to   get maximum value in a short period and shorten time to market.   Instead of waiting to launch a minimal product to verify an idea,   you get precise data from a realistic prototype.&nbsp; </p>
+          <div className="sc-2518156b-2 gpVdNd"> <h3 className="sc-c25bae65-0 bjbLu sc-2518156b-5 efAofw sm-header5">   Design sprint </h3> 
+          <p className="sc-ca4a3661-6 greJTC sm-body15">   Reduce the standard number of steps of new product development to   get maximum value in a short period and shorten time to market.   Instead of waiting to launch a minimal product to verify an idea,   you get precise data from a realistic prototype.&nbsp; </p>
           </div>
         </div>
       </div>
@@ -260,22 +303,20 @@ export default function Ui_Ux() {
 
 
 {/* marque start */}
-<section  className="">
+<section  className=" ">
 
-<h1 className="ms-5"><strong>Who we’ve helped</strong></h1>
+<h1 className="ps-5 pt-5"><strong>Who we’ve helped</strong></h1>
 <br /><br />
-  <div className="container">
-    <marquee behavior="" direction="">
-      <img style={{paddingLeft:"8rem"}} src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-GemOne.svg&w=1920&q=75" alt="" />
-      <img style={{paddingLeft:"8rem"}} src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-TravelCounsellors.svg&w=1920&q=75" alt="" />
-      <img style={{paddingLeft:"8rem"}} src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-yourgolftravel.webp&w=1920&q=75" alt="" />
-      <img style={{paddingLeft:"8rem"}} src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-Snow.webp&w=1920&q=75" alt="" />
-      <img style={{paddingLeft:"8rem"}} src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-Beteast.svg&w=1920&q=75" alt="" />
-      <img style={{paddingLeft:"8rem"}} src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-CoreLogic-1.svg&w=1920&q=75" alt="" />
-      <img style={{paddingLeft:"8rem"}} src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-t-mobile.webp&w=1920&q=75" alt="" />
-      <img style={{paddingLeft:"8rem"}} src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-Procountor-old-finago.svg&w=1920&q=75" alt="" />
+<marquee hspace='50%' style={{marginLeft:"0rem",marginRight:"-3rem"}}>
+      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-GemOne.svg&w=1920&q=75"  /> &ensp;&ensp;&ensp;&ensp;&ensp;
+      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-TravelCounsellors.svg&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
+      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-yourgolftravel.webp&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
+      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-Snow.webp&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
+      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-Beteast.svg&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
+      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-CoreLogic-1.svg&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
+      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-t-mobile.webp&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
+      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-Procountor-old-finago.svg&w=1920&q=75"  />&ensp;&ensp;&ensp;
     </marquee>
-  </div>
 </section>
 {/* marque start */}
 
@@ -329,7 +370,7 @@ export default function Ui_Ux() {
     <hr />
     <div className="row mt-5 " >  
         
-          <div align='' className="col-md-5 fs-1 fw-bolder p-5 text-end">
+          <div align='jusfity' className="col-md-5 fs-1 fw-bolder  ps-5">
               Four steps to revamp your product's UI & UX        
           </div>
           
@@ -341,7 +382,7 @@ export default function Ui_Ux() {
 
 
           <div align='center' style={{backgroundColor:'white'}}>
-            <video autoPlay={true} muted  className="w-50" style={{backgroundColor:'white'}}>
+            <video autoPlay={true} muted  className="w-75" style={{backgroundColor:'white'}}>
                 <source src={'src/features/services/services_pages/ui_ux/img/leipzig_chargers_macbook_2.mp4'} type="video/mp4" />
             </video>
           </div>
@@ -385,7 +426,7 @@ export default function Ui_Ux() {
   <div  className="sc-9e3861ef-4 pt-5"  >
     <div>
         <h3 className="sc-c25bae65-0 bjbLu sc-9e3861ef-3 iacRPG sm-header3">
-          <span className="sc-9e3861ef-2 OfxfR col-md-6 ">
+          <span className="sc-9e3861ef-2 OfxfR col-md-8 mb-5">
             Our user experience design services are a perfect match if you want
             to…
           </span>
@@ -420,13 +461,13 @@ export default function Ui_Ux() {
         <div align='center' className="row">
           {state.map((item,index)=>
         
-              <div key={index} id="abcd" className="myDIV aaaaa col-md-5 p-3 bg-white border border-success rounded-3 m-auto ms-3 me-3 mb-3 " style={{position:"relative",top:"0.4rem"}}>
+              <div key={index} id="abcd" className="myDIV aaaaa col-md-5 p-3 bg-white border border-success rounded-3 m-auto me-3 mb-3 " style={{position:"relative",top:"0.4rem"}}>
                   <div  className="showhim hoverable d-flex ">
                       <img className="aaaaa" style={{width:'15%',minWidth:"50px"}} src={item.svg} alt="" />
                       <h5 className="m-auto ">{item.title}</h5>
                       {/* grSScn     */}
                       <div className="showme  pt-3 grSScn">
-                            <svg className="text-danger " xmlns="http://www.w3.org/2000/svg" width="22" height="14" fill="none" viewBox="0 0 22 14" class="hvisiS"><path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6"></path></svg>
+                            <svg className="hvisiS text-danger " xmlns="http://www.w3.org/2000/svg" width="22" height="14" fill="none" viewBox="0 0 22 14" ><path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6"></path></svg>
                       </div>
                   </div>
                   <p  className="show-on-hover" >{item.arrow} </p>
@@ -471,218 +512,205 @@ export default function Ui_Ux() {
 
 
 
-  <div className="sc-953bb80d-1 gtTrKM">
-    <div className="sc-953bb80d-0 ePPvGo">
-      <div className="swiper swiper-initialized swiper-horizontal sc-a33e4197-0 jASKrq swiper-backface-hidden">
-        <div className="swiper-wrapper d-flex overflow-scroll" >
-        
-        <div className="d-flex" >
-          <div className="col-md-3 "> <div className="" style={{marginRight: 20 }}>
-            <a className="sc-4fc5d34f-5 khqIMH" href="https://softwaremind.com/blog/implementing-a-design-process-that-combines-new-solutions-with-proven-methods/">
-              <div className="sc-4fc5d34f-2 iBTRIq">
-                <img alt="Implementing a Design Process that Combines New Solutions with Proven Methods" className="sc-4fc5d34f-3 dIJiAh"
-                  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F05%2Fblog-hero-image-header-23-may-768x320.webp&w=1920&q=75"
-                  style={{ color: "transparent" }} />
-              </div>
-
-              
-              <div className="sc-4fc5d34f-4 bcbQTa">
-                <div className="sc-144bd507-0 bUMhHQ">
-                <div class="sc-144bd507-0 bUMhHQ">                
-                  <div class="sc-1865605d-3 bNZlex">
-                  <img  class="sc-1865605d-0 hZOqNx"  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F07%2FAgata_Polny-1-150x150.webp&w=1920&q=75" />
-                  <div class="sc-1865605d-2 kSEuet">
-                      <p class="sc-ca4a3661-0 sc-1865605d-4 laTSeM cSKAKg sm-overline">Agata Polny</p>
-                      <p class="sc-ca4a3661-13 sc-1865605d-5 kDQSjW bdCFfJ sm-hint">2024/07/11</p>
-                      </div>
-                  </div>
-                 </div>
-                </div>
-                <p className="sc-c25bae65-0 htUqiQ sc-4fc5d34f-7 koBQVO sm-header4">
-                  Implementing a Design Process that Combines New Solutions with
-                  Proven Methods
-                </p>
-                <div className="sc-4fc5d34f-6 eehoUh">
-                  <button className="sc-ff402c-0 kaBMTH">
-                    Read more
-                    <svg xmlns="http://www.w3.org/2000/svg" width={8} height={14} fill="none" viewBox="0 0 8 14" className="sc-ff402c-1 djQrSY"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 1 6 6-6 6"/></svg>
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div></div>
-
-          <div className="col-md-3"><div className="" style={{ marginRight: 20 }}>
-            <a className="sc-4fc5d34f-5 diNtOS" href="https://softwaremind.com/blog/implementing-a-design-process-that-combines-new-solutions-with-proven-methods/">
-              <div className="sc-4fc5d34f-2 iBTRIq">
-                <img alt="Implementing a Design Process that Combines New Solutions with Proven Methods" className="sc-4fc5d34f-3 dIJiAh"
-                  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2023%2F11%2FGrafika-UX-and-UI-Guidelines-for-Building-a-Better-Sports-Betting-Experience1-768x320.webp&w=1920&q=75"
-                  style={{ color: "transparent" }} />
-              </div>
-
-              
-              <div className="sc-4fc5d34f-4 bcbQTa">
-                <div className="sc-144bd507-0 bUMhHQ">
-                <div class="sc-144bd507-0 bUMhHQ">                
-                  <div class="sc-1865605d-3 bNZlex">
-                  <img  class="sc-1865605d-0 hZOqNx"  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F07%2FAgata_Polny-1-150x150.webp&w=1920&q=75" />
-                  <div class="sc-1865605d-2 kSEuet">
-                      <p class="sc-ca4a3661-0 sc-1865605d-4 laTSeM cSKAKg sm-overline">Agata Polny</p>
-                      <p class="sc-ca4a3661-13 sc-1865605d-5 kDQSjW bdCFfJ sm-hint">2024/07/11</p>
-                      </div>
-                  </div>
-                 </div>
-                </div>
-                <p className="sc-c25bae65-0 htUqiQ sc-4fc5d34f-7 koBQVO sm-header4">
-                  Implementing a Design Process that Combines New Solutions with
-                  Proven Methods
-                </p>
-                <div className="sc-4fc5d34f-6 eehoUh">
-                  <button className="sc-ff402c-0 kaBMTH">
-                    Read more
-                    <svg xmlns="http://www.w3.org/2000/svg" width={8} height={14} fill="none" viewBox="0 0 8 14" className="sc-ff402c-1 djQrSY"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 1 6 6-6 6"/></svg>
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div></div>
-
-          <div className="col-md-3"><div className="" style={{ marginRight: 20 }}>
-            <a className="sc-4fc5d34f-5 fHcyk" href="https://softwaremind.com/blog/implementing-a-design-process-that-combines-new-solutions-with-proven-methods/">
-              <div className="sc-4fc5d34f-2 iBTRIq">
-                <img alt="Implementing a Design Process that Combines New Solutions with Proven Methods" className="sc-4fc5d34f-3 dIJiAh"
-                  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2023%2F07%2Fblog-featured-image-less-can-be-more-how-empty-states-create-engaging-user-experiences-and-drive-business-goals-768x320.webp&w=1920&q=75"
-                  style={{ color: "transparent" }} />
-              </div>
-
-              
-              <div className="sc-4fc5d34f-4 bcbQTa">
-                <div className="sc-144bd507-0 bUMhHQ">
-                <div class="sc-144bd507-0 bUMhHQ">                
-                  <div class="sc-1865605d-3 bNZlex">
-                  <img  class="sc-1865605d-0 hZOqNx"  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F07%2FAgata_Polny-1-150x150.webp&w=1920&q=75" />
-                  <div class="sc-1865605d-2 kSEuet">
-                      <p class="sc-ca4a3661-0 sc-1865605d-4 laTSeM cSKAKg sm-overline">Agata Polny</p>
-                      <p class="sc-ca4a3661-13 sc-1865605d-5 kDQSjW bdCFfJ sm-hint">2024/07/11</p>
-                      </div>
-                  </div>
-                 </div>
-                </div>
-                <p className="sc-c25bae65-0 htUqiQ sc-4fc5d34f-7 koBQVO sm-header4">
-                  Implementing a Design Process that Combines New Solutions with
-                  Proven Methods
-                </p>
-                <div className="sc-4fc5d34f-6 eehoUh">
-                  <button className="sc-ff402c-0 kaBMTH">
-                    Read more
-                    <svg xmlns="http://www.w3.org/2000/svg" width={8} height={14} fill="none" viewBox="0 0 8 14" className="sc-ff402c-1 djQrSY"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 1 6 6-6 6"/></svg>
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div></div>
-
-
-          <div className="col-md-3"> <div className="" style={{ marginRight: 20 }}>
-            <a className="sc-4fc5d34f-5 khqIMH" href="https://softwaremind.com/blog/implementing-a-design-process-that-combines-new-solutions-with-proven-methods/">
-              <div className="sc-4fc5d34f-2 iBTRIq">
-                <img alt="Implementing a Design Process that Combines New Solutions with Proven Methods" className="sc-4fc5d34f-3 dIJiAh"
-                  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F08%2Fblog-hero-image-header-22-Aug-768x320.webp&w=1920&q=75"
-                  style={{ color: "transparent" }} />
-              </div>
-
-              
-              <div className="sc-4fc5d34f-4 bcbQTa">
-                <div className="sc-144bd507-0 bUMhHQ">
-                <div class="sc-144bd507-0 bUMhHQ">                
-                  <div class="sc-1865605d-3 bNZlex">
-                  <img  class="sc-1865605d-0 hZOqNx"  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F07%2FAgata_Polny-1-150x150.webp&w=1920&q=75" />
-                  <div class="sc-1865605d-2 kSEuet">
-                      <p class="sc-ca4a3661-0 sc-1865605d-4 laTSeM cSKAKg sm-overline">Agata Polny</p>
-                      <p class="sc-ca4a3661-13 sc-1865605d-5 kDQSjW bdCFfJ sm-hint">2024/07/11</p>
-                      </div>
-                  </div>
-                 </div>
-                </div>
-                <p className="sc-c25bae65-0 htUqiQ sc-4fc5d34f-7 koBQVO sm-header4">
-                  Implementing a Design Process that Combines New Solutions with
-                  Proven Methods
-                </p>
-                <div className="sc-4fc5d34f-6 eehoUh">
-                  <button className="sc-ff402c-0 kaBMTH">
-                    Read more
-                    <svg xmlns="http://www.w3.org/2000/svg" width={8} height={14} fill="none" viewBox="0 0 8 14" className="sc-ff402c-1 djQrSY"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 1 6 6-6 6"/></svg>
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div>
-          </div>
-
-          <div className="col-md-3"><div className="" style={{ marginRight: 20 }}>
-            <a className="sc-4fc5d34f-5 diNtOS" href="https://softwaremind.com/blog/implementing-a-design-process-that-combines-new-solutions-with-proven-methods/">
-              <div className="sc-4fc5d34f-2 iBTRIq">
-                <img alt="Implementing a Design Process that Combines New Solutions with Proven Methods" className="sc-4fc5d34f-3 dIJiAh"
-                  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2023%2F07%2Fblog-featured-image-less-can-be-more-how-empty-states-create-engaging-user-experiences-and-drive-business-goals-768x320.webp&w=1920&q=75"
-                  style={{ color: "transparent" }} />
-              </div>
-
-              
-              <div className="sc-4fc5d34f-4 bcbQTa">
-                <div className="sc-144bd507-0 bUMhHQ">
-                <div class="sc-144bd507-0 bUMhHQ">                
-                  <div class="sc-1865605d-3 bNZlex">
-                  <img  class="sc-1865605d-0 hZOqNx"  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F07%2FAgata_Polny-1-150x150.webp&w=1920&q=75" />
-                  <div class="sc-1865605d-2 kSEuet">
-                      <p class="sc-ca4a3661-0 sc-1865605d-4 laTSeM cSKAKg sm-overline">Agata Polny</p>
-                      <p class="sc-ca4a3661-13 sc-1865605d-5 kDQSjW bdCFfJ sm-hint">2024/07/11</p>
-                      </div>
-                  </div>
-                 </div>
-                </div>
-                <p className="sc-c25bae65-0 htUqiQ sc-4fc5d34f-7 koBQVO sm-header4">
-                  Implementing a Design Process that Combines New Solutions with
-                  Proven Methods
-                </p>
-                <div className="sc-4fc5d34f-6 eehoUh">
-                  <button className="sc-ff402c-0 kaBMTH">
-                    Read more
-                    <svg xmlns="http://www.w3.org/2000/svg" width={8} height={14} fill="none" viewBox="0 0 8 14" className="sc-ff402c-1 djQrSY"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 1 6 6-6 6"/></svg>
-                  </button>
-                </div>
-              </div>
-            </a>
-          </div></div>
-
-
-
-        </div>
-         
-
-          
-
-
-          
-
-
-         
-         
-        
-         
-        </div>
-
-        
-       
+  <div className="sc-953bb80d-1 gtTrKM ">
     
-      </div>
-    </div>
+      
+        <div className=" d-flex overflow-scroll ps-3" >
+        
+            <div className="d-flex " >
+              <div className="col-md-3 "> <div className="" style={{marginRight: 20 }}>
+                <a className="sc-4fc5d34f-5 khqIMH" >
+                  <div className="sc-4fc5d34f-2 iBTRIq">
+                    <img alt="Implementing a Design Process that Combines New Solutions with Proven Methods" className="sc-4fc5d34f-3 dIJiAh"
+                      src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F05%2Fblog-hero-image-header-23-may-768x320.webp&w=1920&q=75"
+                      style={{ color: "transparent" }} />
+                  </div>
+
+                  
+                  <div className="sc-4fc5d34f-4 bcbQTa">
+                    <div className="sc-144bd507-0 bUMhHQ">
+                    <div className="sc-144bd507-0 bUMhHQ">                
+                      <div className="sc-1865605d-3 bNZlex">
+                      <img  className="sc-1865605d-0 hZOqNx"  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F07%2FAgata_Polny-1-150x150.webp&w=1920&q=75" />
+                      <div className="sc-1865605d-2 kSEuet">
+                          <p className="sc-ca4a3661-0 sc-1865605d-4 laTSeM cSKAKg sm-overline">Agata Polny</p>
+                          <p className="sc-ca4a3661-13 sc-1865605d-5 kDQSjW bdCFfJ sm-hint">2024/07/11</p>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                    <p className="sc-c25bae65-0 htUqiQ sc-4fc5d34f-7 koBQVO sm-header4">
+                      Implementing a Design Process that Combines New Solutions with
+                      Proven Methods
+                    </p>
+                    <div className="sc-4fc5d34f-6 eehoUh">
+                      <button className="sc-ff402c-0 kaBMTH">
+                        Read more
+                        <svg xmlns="http://www.w3.org/2000/svg" width={8} height={14} fill="none" viewBox="0 0 8 14" className="sc-ff402c-1 djQrSY"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 1 6 6-6 6"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div></div>
+
+              <div className="col-md-3"><div className="" style={{ marginRight: 20 }}>
+                <a className="sc-4fc5d34f-5 diNtOS" >
+                  <div className="sc-4fc5d34f-2 iBTRIq">
+                    <img alt="Implementing a Design Process that Combines New Solutions with Proven Methods" className="sc-4fc5d34f-3 dIJiAh"
+                      src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2023%2F11%2FGrafika-UX-and-UI-Guidelines-for-Building-a-Better-Sports-Betting-Experience1-768x320.webp&w=1920&q=75"
+                      style={{ color: "transparent" }} />
+                  </div>
+
+                  
+                  <div className="sc-4fc5d34f-4 bcbQTa">
+                    <div className="sc-144bd507-0 bUMhHQ">
+                    <div className="sc-144bd507-0 bUMhHQ">                
+                      <div className="sc-1865605d-3 bNZlex">
+                      <img  className="sc-1865605d-0 hZOqNx"  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F07%2FAgata_Polny-1-150x150.webp&w=1920&q=75" />
+                      <div className="sc-1865605d-2 kSEuet">
+                          <p className="sc-ca4a3661-0 sc-1865605d-4 laTSeM cSKAKg sm-overline">Agata Polny</p>
+                          <p className="sc-ca4a3661-13 sc-1865605d-5 kDQSjW bdCFfJ sm-hint">2024/07/11</p>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                    <p className="sc-c25bae65-0 htUqiQ sc-4fc5d34f-7 koBQVO sm-header4">
+                      Implementing a Design Process that Combines New Solutions with
+                      Proven Methods
+                    </p>
+                    <div className="sc-4fc5d34f-6 eehoUh">
+                      <button className="sc-ff402c-0 kaBMTH">
+                        Read more
+                        <svg xmlns="http://www.w3.org/2000/svg" width={8} height={14} fill="none" viewBox="0 0 8 14" className="sc-ff402c-1 djQrSY"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 1 6 6-6 6"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div></div>
+
+              <div className="col-md-3"><div className="" style={{ marginRight: 20 }}>
+                <a className="sc-4fc5d34f-5 fHcyk" >
+                  <div className="sc-4fc5d34f-2 iBTRIq">
+                    <img alt="Implementing a Design Process that Combines New Solutions with Proven Methods" className="sc-4fc5d34f-3 dIJiAh"
+                      src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2023%2F07%2Fblog-featured-image-less-can-be-more-how-empty-states-create-engaging-user-experiences-and-drive-business-goals-768x320.webp&w=1920&q=75"
+                      style={{ color: "transparent" }} />
+                  </div>
+
+                  
+                  <div className="sc-4fc5d34f-4 bcbQTa">
+                    <div className="sc-144bd507-0 bUMhHQ">
+                    <div className="sc-144bd507-0 bUMhHQ">                
+                      <div className="sc-1865605d-3 bNZlex">
+                      <img  className="sc-1865605d-0 hZOqNx"  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F07%2FAgata_Polny-1-150x150.webp&w=1920&q=75" />
+                      <div className="sc-1865605d-2 kSEuet">
+                          <p className="sc-ca4a3661-0 sc-1865605d-4 laTSeM cSKAKg sm-overline">Agata Polny</p>
+                          <p className="sc-ca4a3661-13 sc-1865605d-5 kDQSjW bdCFfJ sm-hint">2024/07/11</p>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                    <p className="sc-c25bae65-0 htUqiQ sc-4fc5d34f-7 koBQVO sm-header4">
+                      Implementing a Design Process that Combines New Solutions with
+                      Proven Methods
+                    </p>
+                    <div className="sc-4fc5d34f-6 eehoUh">
+                      <button className="sc-ff402c-0 kaBMTH">
+                        Read more
+                        <svg xmlns="http://www.w3.org/2000/svg" width={8} height={14} fill="none" viewBox="0 0 8 14" className="sc-ff402c-1 djQrSY"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 1 6 6-6 6"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div></div>
+
+
+              <div className="col-md-3"> <div className="" style={{ marginRight: 20 }}>
+                <a className="sc-4fc5d34f-5 khqIMH" >
+                  <div className="sc-4fc5d34f-2 iBTRIq">
+                    <img alt="Implementing a Design Process that Combines New Solutions with Proven Methods" className="sc-4fc5d34f-3 dIJiAh"
+                      src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F08%2Fblog-hero-image-header-22-Aug-768x320.webp&w=1920&q=75"
+                      style={{ color: "transparent" }} />
+                  </div>
+
+                  
+                  <div className="sc-4fc5d34f-4 bcbQTa">
+                    <div className="sc-144bd507-0 bUMhHQ">
+                    <div className="sc-144bd507-0 bUMhHQ">                
+                      <div className="sc-1865605d-3 bNZlex">
+                      <img  className="sc-1865605d-0 hZOqNx"  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F07%2FAgata_Polny-1-150x150.webp&w=1920&q=75" />
+                      <div className="sc-1865605d-2 kSEuet">
+                          <p className="sc-ca4a3661-0 sc-1865605d-4 laTSeM cSKAKg sm-overline">Agata Polny</p>
+                          <p className="sc-ca4a3661-13 sc-1865605d-5 kDQSjW bdCFfJ sm-hint">2024/07/11</p>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                    <p className="sc-c25bae65-0 htUqiQ sc-4fc5d34f-7 koBQVO sm-header4">
+                      Implementing a Design Process that Combines New Solutions with
+                      Proven Methods
+                    </p>
+                    <div className="sc-4fc5d34f-6 eehoUh">
+                      <button className="sc-ff402c-0 kaBMTH">
+                        Read more
+                        <svg xmlns="http://www.w3.org/2000/svg" width={8} height={14} fill="none" viewBox="0 0 8 14" className="sc-ff402c-1 djQrSY"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 1 6 6-6 6"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              </div>
+
+              <div className="col-md-3"><div className="" style={{ marginRight: 20 }}>
+                <a className="sc-4fc5d34f-5 diNtOS" >
+                  <div className="sc-4fc5d34f-2 iBTRIq">
+                    <img alt="Implementing a Design Process that Combines New Solutions with Proven Methods" className="sc-4fc5d34f-3 dIJiAh"
+                      src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2023%2F07%2Fblog-featured-image-less-can-be-more-how-empty-states-create-engaging-user-experiences-and-drive-business-goals-768x320.webp&w=1920&q=75"
+                      style={{ color: "transparent" }} />
+                  </div>
+
+                  
+                  <div className="sc-4fc5d34f-4 bcbQTa">
+                    <div className="sc-144bd507-0 bUMhHQ">
+                    <div className="sc-144bd507-0 bUMhHQ">                
+                      <div className="sc-1865605d-3 bNZlex">
+                      <img  className="sc-1865605d-0 hZOqNx"  src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F07%2FAgata_Polny-1-150x150.webp&w=1920&q=75" />
+                      <div className="sc-1865605d-2 kSEuet">
+                          <p className="sc-ca4a3661-0 sc-1865605d-4 laTSeM cSKAKg sm-overline">Agata Polny</p>
+                          <p className="sc-ca4a3661-13 sc-1865605d-5 kDQSjW bdCFfJ sm-hint">2024/07/11</p>
+                          </div>
+                      </div>
+                    </div>
+                    </div>
+                    <p className="sc-c25bae65-0 htUqiQ sc-4fc5d34f-7 koBQVO sm-header4">
+                      Implementing a Design Process that Combines New Solutions with
+                      Proven Methods
+                    </p>
+                    <div className="sc-4fc5d34f-6 eehoUh">
+                      <button className="sc-ff402c-0 kaBMTH">
+                        Read more
+                        <svg xmlns="http://www.w3.org/2000/svg" width={8} height={14} fill="none" viewBox="0 0 8 14" className="sc-ff402c-1 djQrSY"><path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" d="m1 1 6 6-6 6"/></svg>
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              </div>
+
+
+
+            </div>
+         
+        </div>
+    
+     
+   
   </div>
 </section>
 {/* card with <u;fi Color End */}
 
 
 
-
+{/* Design engaging products that set your brand apart */}
 <section className="sc-63cd0f-2 hkitw">
   <div className="sc-63cd0f-1 bTIAYg">
     <div className="sc-63cd0f-3 bfNsic">
@@ -694,7 +722,7 @@ export default function Ui_Ux() {
           <div className="sc-8be7c32f-5 gguYMo">
             <a
               className="sc-8be7c32f-0 sc-8be7c32f-1 fBnrFY knIAgO"
-              href="https://softwaremind.com/contact/"
+             
             >
               Contact us
             </a>
@@ -724,126 +752,176 @@ export default function Ui_Ux() {
     </div>
   </div>
 </section>
+{/* Design engaging products that set your brand apart End */}
 
+<section align='justify' className="sc-9e3861ef-1 dVcJZQ">
+  <div className="sc-953bb80d-0 ePPvGo">
+    <div className="sc-9e3861ef-4 cUVos row" > 
+    <div className="col-md-4">
+       <h2 className="sc-c25bae65-0 bjbLu sc-9e3861ef-3 iJLRot sm-header3">
+            <span className="sc-9e3861ef-2 OfxfR">UI &amp; UX design FAQs</span>
+      </h2>
+    </div> 
+    <div   className="col-md-6 sc-884c5c01-2 dTzmhu"   >
+      <div className="sc-b263a12c-0 irxYKK">
+      
+          {data.map((item,index)=>
+            <div key={index} className="showhim sc-f9ea8f54-0 gvDaqZ" >
+                    <div className="showhim  nothover sc-f9ea8f54-1 eEvJRF">
+                        <h3 className="  sc-c25bae65-0 bjbLu sm-subtitle">
+                            {item.title}
+                        </h3>
 
+                        <div className="showme sc-f9ea8f54-2 hjWOgD">
+                            <svg className=" sc-81ec6d4d-0 hvisiS" xmlns="http://www.w3.org/2000/svg" width={22} height={14} fill="none" viewBox="0 0 22 14" >
+                                <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                    d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div  id="cont" aria-hidden="true" role="region" className="showhim  shownothover  ffVvmJ">
+                        <p className="sc-ca4a3661-6 sc-f9ea8f54-3 greJTC drWCXn sm-body15">
+                          {item.desc}&nbsp;
+                        </p>
+                    </div>
+              </div>
+          )}
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
 
 
 <section align=''>
 
-        <div  className="container justify ms-5 m-auto">
-        <div  className=" sc-7927336c-2 mt-5 m-auto">
-          <div className="row">
-                <div className="col-md-4 mb-4 "><div style={{ boxSizing: "border-box", minHeight: 1, position: "relative", paddingLeft: 0, paddingRight: 0, flexGrow: 0, flexShrink: 0,  marginLeft: "0%", }}
-                  className="sc-7927336c-1 ftbyDi"          >
-                  <div className="sc-27806405-6 jGEIQa">
-                    <img alt="" loading="lazy" decoding="async" data-nimg="fill" className="sc-27806405-5 gnDFbz" style={{   position: "absolute",   height: "100%",   width: "100%",   left: 0,   top: 0,   right: 0,   bottom: 0,   objectFit: "cover",   color: "transparent" }} sizes="100vw" src="/src/features/services/services_pages/ui_ux/img/main-pages-featured-image-Generative-AI-Development-Services2-768x430.webp"
-                    />
-                    <a
-                      className="sc-43d1ba49-0 kobdgU"
-                      href="https://softwaremind.com/services/generative-ai-development-services/" >
-                      <div className="sc-27806405-3 ZEDbb">
-                        <img alt="" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="sc-27806405-4 jzkMcX" style={{ color: "transparent" }} sizes="100vw"
-                          
-                          src="/src/features/services/services_pages/ui_ux/img/icon_Generative_AI_Development_Services_orange1.svg" />
-                        <div className="sc-27806405-0 cDaeWI">
-                          <p className="sc-ca4a3661-9 sc-27806405-2 kyBtyV eltRhB sm-body17">
-                            Generative AI development services
-                          </p>
-                          <svg xmlns="http://www.w3.org/2000/svg" width={22} height={14} fill="none" viewBox="0 0 22 14" className="sc-27806405-1 gKVDRY">
-                              <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6"/>
-                          </svg>
+<div className="row p-4">
+<div className="col-md-1"></div>
+  <div className="col-md-4 fs-1 m-auto ">
+      <strong>Looking for other software services?</strong>
+  </div>
+  <div className="col m-auto">For over two decades we’ve been helping companies across markets and sectors develop disruptive solutions. Proven ways of working, domain knowledge and an open culture that prioritizes ownership mean we contribute from day one.</div>
+</div>
+
+
+<div className=" justify ms-4 m-auto">
+    <div className=" sc-7927336c-2 mt-5 m-auto" style={{width:"80%"}}>
+        <div className="row">
+            <div className="col-md-4 mb-4 ">
+                <div style={{ boxSizing: "border-box" , minHeight: 1, position: "relative" , paddingLeft: 0,
+                    paddingRight: 0, flexGrow: 0, flexShrink: 0, marginLeft: "0%" , }} className="sc-7927336c-1 ftbyDi">
+                    <div className="sc-27806405-6 jGEIQa"> 
+                        <img alt="" loading="lazy" decoding="async" data-nimg="fill" className="sc-27806405-5 gnDFbz" style={{ position: "absolute" , height: "100%" ,width: "100%" , left: 0, top: 0, right: 0, bottom: 0, objectFit: "cover" ,color: "transparent" }} sizes="100vw"
+                            src="/src/features/services/services_pages/ui_ux/img/main-pages-featured-image-Generative-AI-Development-Services2-768x430.webp" />
+                        <a className="sc-43d1ba49-0 kobdgU">
+                            <div className="sc-27806405-3 ZEDbb">
+                                <img alt="" loading="lazy"  decoding="async" data-nimg={1}
+                                    className="sc-27806405-4 jzkMcX" style={{ color: "transparent" }} sizes="100vw"
+                                    src="/src/features/services/services_pages/ui_ux/img/icon_Generative_AI_Development_Services_orange1.svg" />
+                                <div className="sc-27806405-0 cDaeWI">
+                                    <p className="sc-ca4a3661-9 sc-27806405-2 kyBtyV eltRhB sm-body17">
+                                        Generative AI development services
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width={22} height={14} fill="none"
+                                        viewBox="0 0 22 14" className="sc-27806405-1 gKVDRY">
+                                        <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                            d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div className="sc-27806405-8 hEhKDF">
+                            <p className="sc-ca4a3661-9 sc-27806405-7 kyBtyV klutVo sm-body17">
+                                Operationalize data to drive efficiency, insights and decision-making.
+                            </p>
                         </div>
-                      </div>
-                    </a>
-                    <div className="sc-27806405-8 hEhKDF">
-                      <p className="sc-ca4a3661-9 sc-27806405-7 kyBtyV klutVo sm-body17">
-                          Operationalize data to drive efficiency, insights and decision-making.
-                      </p>
                     </div>
-                  </div>
                 </div>
-                </div>
+            </div>
 
-                <div className="col-md-4 mb-4 ">
-                <div
-                style={{ boxSizing: "border-box", minHeight: 1, position: "relative", paddingLeft: 0, paddingRight: 0, flexGrow: 0, flexShrink: 0, marginLeft: "0%", right: "auto", left: "auto"
-                }}
-                className="sc-7927336c-1 ftbyDi"          >
-                <div className="sc-27806405-6 jGEIQa">
-                  <img alt="" loading="lazy" decoding="async" data-nimg="fill" className="sc-27806405-5 gnDFbz" style={{   position: "absolute",   height: "100%",   width: "100%",   left: 0,   top: 0,   right: 0,   bottom: 0,   objectFit: "cover",   color: "transparent"
-                    }}
-                    sizes="100vw"
-                    
-                    src="/src/features/services/services_pages/ui_ux/img/main-pages-featured-image-cloud-consulting-services-768x410.webp"
-                  />
-                  <a className="sc-43d1ba49-0 kobdgU"              >
-                    <div className="sc-27806405-3 ZEDbb">
-                      <img alt="" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="sc-27806405-4 jzkMcX" style={{ color: "transparent" }} sizes="100vw"
-                        
-                        src="/src/features/services/services_pages/ui_ux/img/icons-_Cloud-Consulting-Services-orange.svg" />
-                      <div className="sc-27806405-0 cDaeWI">
-                        <p className="sc-ca4a3661-9 sc-27806405-2 kyBtyV eltRhB sm-body17">
-                          Cloud consulting &amp;services
-                        </p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width={22} height={14} fill="none" viewBox="0 0 22 14" className="sc-27806405-1 gKVDRY">
-                          <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6"
-                          />
-                        </svg>
-                      </div>
+            <div className="col-md-4 mb-4 ">
+                <div style={{ boxSizing: "border-box" , minHeight: 1, position: "relative" , paddingLeft: 0,
+                    paddingRight: 0, flexGrow: 0, flexShrink: 0, marginLeft: "0%" , right: "auto" , left: "auto" }}
+                    className="sc-7927336c-1 ftbyDi">
+                    <div className="sc-27806405-6 jGEIQa">
+                        <img alt="" loading="lazy" decoding="async" data-nimg="fill" className="sc-27806405-5 gnDFbz"
+                            style={{ position: "absolute" , height: "100%" , width: "100%" , left: 0, top: 0, right: 0,
+                            bottom: 0, objectFit: "cover" , color: "transparent" }} sizes="100vw"
+                            src="/src/features/services/services_pages/ui_ux/img/main-pages-featured-image-cloud-consulting-services-768x410.webp" />
+                        <a className="sc-43d1ba49-0 kobdgU">
+                            <div className="sc-27806405-3 ZEDbb">
+                                <img alt="" loading="lazy"  decoding="async" data-nimg={1}
+                                    className="sc-27806405-4 jzkMcX" style={{ color: "transparent" }} sizes="100vw"
+                                    src="/src/features/services/services_pages/ui_ux/img/icons-_Cloud-Consulting-Services-orange.svg" />
+                                <div className="sc-27806405-0 cDaeWI">
+                                    <p className="sc-ca4a3661-9 sc-27806405-2 kyBtyV eltRhB sm-body17">
+                                        Cloud consulting &amp;services
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width={22} height={14} fill="none"
+                                        viewBox="0 0 22 14" className="sc-27806405-1 gKVDRY">
+                                        <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                            d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div className="sc-27806405-8 hEhKDF">
+                            <p className="sc-ca4a3661-9 sc-27806405-7 kyBtyV klutVo sm-body17">
+                                Accelerate your cloud migration strategy and develop cloud-native
+                                apps.
+                            </p>
+                        </div>
                     </div>
-                  </a>
-                  <div className="sc-27806405-8 hEhKDF">
-                    <p className="sc-ca4a3661-9 sc-27806405-7 kyBtyV klutVo sm-body17">
-                      Accelerate your cloud migration strategy and develop cloud-native
-                      apps.
-                    </p>
-                  </div>
                 </div>
-              </div>
-                </div>
+            </div>
 
 
-                <div className="col-md-4 mb-4">
-                <div style={{ marginBottom:"1rem", boxSizing: "border-box", minHeight: 1, position: "relative", paddingLeft: 0, paddingRight: 0,  flexGrow: 0, flexShrink: 0, marginLeft: "0%", right: "auto", left: "auto"}}
-                className="sc-7927336c-1 ftbyDi"          >
-                <div className="sc-27806405-6 jGEIQa">
-                  <img alt="" loading="lazy" decoding="async" data-nimg="fill" className="sc-27806405-5 gnDFbz" style={{   position: "absolute",   height: "100%",   width: "100%",   left: 0,   top: 0,   right: 0,   bottom: 0,   objectFit: "cover",   color: "transparent" }} sizes="100vw" src="/src/features/services/services_pages/ui_ux/img/main-pages-featured-image-Automation-Testing-Services-768x410.webp"              />
-                  <a
-                    className="sc-43d1ba49-0 kobdgU"
-                    href="https://softwaremind.com/services/automation-testing-services/"
-                  >
-                    <div className="sc-27806405-3 ZEDbb">
-                      <img alt="" loading="lazy" width={0} height={0} decoding="async" data-nimg={1} className="sc-27806405-4 jzkMcX" style={{ color: "transparent" }} sizes="100vw"
-                        src="/src/features/services/services_pages/ui_ux/img/icon-automation-testing-services-orange (1).svg"                  />
-                      <div className="sc-27806405-0 cDaeWI">
-                        <p className="sc-ca4a3661-9 sc-27806405-2 kyBtyV eltRhB sm-body17">
-                          Automation testing
-                        </p>
-                        <svg xmlns="http://www.w3.org/2000/svg" width={22} height={14} fill="none" viewBox="0 0 22 14" className="sc-27806405-1 gKVDRY">
-                          <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6"/>
-                        </svg>
-                      </div>
+            <div className="col-md-4 mb-4">
+                <div style={{ marginBottom:"1rem", boxSizing: "border-box" , minHeight: 1, position: "relative" ,
+                    paddingLeft: 0, paddingRight: 0, flexGrow: 0, flexShrink: 0, marginLeft: "0%" , right: "auto" ,
+                    left: "auto" }} className="sc-7927336c-1 ftbyDi">
+                    <div className="sc-27806405-6 jGEIQa">
+                        <img alt="" loading="lazy" decoding="async" data-nimg="fill" className="sc-27806405-5 gnDFbz"
+                            style={{ position: "absolute" , height: "100%" , width: "100%" , left: 0, top: 0, right: 0,
+                            bottom: 0, objectFit: "cover" , color: "transparent" }} sizes="100vw"
+                            src="/src/features/services/services_pages/ui_ux/img/main-pages-featured-image-Automation-Testing-Services-768x410.webp" />
+                        <a className="sc-43d1ba49-0 kobdgU">
+                            <div className="sc-27806405-3 ZEDbb">
+                                <img alt="" loading="lazy"  decoding="async" data-nimg={1}
+                                    className="sc-27806405-4 jzkMcX" style={{ color: "transparent" }} sizes="100vw"
+                                    src="/src/features/services/services_pages/ui_ux/img/icon-automation-testing-services-orange (1).svg" />
+                                <div className="sc-27806405-0 cDaeWI">
+                                    <p className="sc-ca4a3661-9 sc-27806405-2 kyBtyV eltRhB sm-body17">
+                                        Automation testing
+                                    </p>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width={22} height={14} fill="none"
+                                        viewBox="0 0 22 14" className="sc-27806405-1 gKVDRY">
+                                        <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
+                                            d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </a>
+                        <div className="sc-27806405-8 hEhKDF">
+                            <p className="sc-ca4a3661-9 sc-27806405-7 kyBtyV klutVo sm-body17">
+                                Build tailored testing platforms and boost test coverage for critical
+                                app areas.
+                            </p>
+                        </div>
                     </div>
-                  </a>
-                  <div className="sc-27806405-8 hEhKDF">
-                    <p className="sc-ca4a3661-9 sc-27806405-7 kyBtyV klutVo sm-body17">
-                      Build tailored testing platforms and boost test coverage for critical
-                      app areas.
-                    </p>
-                  </div>
                 </div>
-              </div>
-                </div>
-          </div>
-
-
-          
-          
+            </div>
         </div>
 
-        </div>
 
+
+
+    </div>
+
+</div>
 </section>
+
+
 <Footer></Footer>
     </>
   )
