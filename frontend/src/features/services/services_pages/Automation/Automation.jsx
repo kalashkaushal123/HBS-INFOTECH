@@ -268,7 +268,7 @@ export default function Automation() {
             Looking for other software services?
           </h2>
           <p>
-            For over two decades we’ve been helping companies across markets and sectors develop disruptive solutions. Proven ways of working, domain knowledge and an open culture that prioritizes ownership mean we contribute from day one.
+            For over two decades we've been helping companies across markets and sectors develop disruptive solutions. Proven ways of working, domain knowledge and an open culture that prioritizes ownership mean we contribute from day one.
           </p>
         </div>
 
