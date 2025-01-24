@@ -1,0 +1,284 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+.photo{
+    position: absolute;
+    width: 100%;
+    height: 41.25rem; /* 650px */
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+    color: transparent;
+}
+.main-photo{
+    width: 100%;
+    height: 41.25rem; /* 650px */
+    align-content: baseline;
+    justify-content: center;
+    background: linear-gradient(135deg, rgb(18, 38, 77) 0%, rgb(132, 12, 49) 24.48%, rgb(199, 9, 39) 49.3%, rgb(252, 102, 35) 74.31%, rgb(255, 189, 48) 100%);
+    opacity: 0.9;            
+    inset: 0;
+}
+.firstphoto{
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-left: 47.5%;
+    margin-top: 15.625rem; /* 250px */
+    padding: 0.625rem; /* 10px */
+}
+.main-heading{
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem; /* 40px */
+    margin-top: 0.188rem; /* 3px */
+}
+.next-line{
+    color: white; 
+    text-align: center; 
+    margin-top: 2.5rem; /* 40px */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.contact{
+    color: white;
+    background-color: black;
+    border-radius: 1.25rem; /* 20px */
+    border: none;
+    height: 1.875rem; /* 30px */
+    width: 5.625rem; /* 90px */
+    margin-left: 48.7%;
+    margin-top: 4.375rem; /* 70px */
+    font-weight: 500;
+}
+.contact:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(106, 38, 4);
+    transition: 0.8s;
+}
+
+.auto{
+    margin: 7.5rem 8.125rem 7.5rem 10rem; /* 120px 130px 120px 160px */
+}
+.auto-text{
+    display: flex;
+    margin-bottom: 9.375rem; /* 150px */
+}
+h2{
+    font-size: 2.25rem; /* 36px */
+    font-weight: bold;
+}
+.auto-text p{
+    margin-left: 5rem; /* 80px */
+    font-size: 1.125rem; /* 18px */
+    width: 125rem; /* 2000px */
+    line-height: 1.5;
+}
+
+.whole-div{
+    margin-left: 12%;
+    text-transform: capitalize;
+}
+
+.testing{
+    display: flex;
+    margin: 4.063rem 0; /* 65px 0px */
+}
+.testing_block{
+    display: flex;
+    max-width: 40.625rem; /* 650px */
+    margin-bottom: 1.25rem; /* 20px */
+}
+.testing_text{
+    padding: 1rem 1.25rem; /* 16px 20px */
+}
+.testing_text p{
+    font-size: 0.875rem; /* 14px */
+    max-width: 25rem; /* 400px */
+}
+.testing_image{
+    padding: 1.25rem; /* 20px */
+    border-radius: 50%;
+    width: 6.25rem; /* 100px */
+    height: 6.25rem; /* 100px */
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(51, 51, 51, 0.2), 0 0.25rem 0.938rem 0 rgba(64, 64, 64, 0.19);
+}
+
+.para{
+    margin: 4.375rem 0; /* 70px 0px */
+    display: flex;
+}
+.com{
+    display: flex;
+}
+.com_icon{
+    height: 3.125rem; /* 50px */
+    width: 3.125rem; /* 50px */
+    background-image: linear-gradient(to right, rgb(88, 22, 22), red, rgb(255, 89, 0), rgb(255, 140, 0));
+    border-radius: 50%;
+}
+.com-text{
+    margin-left: 1.875rem; /* 30px */
+    margin-top: 0.313rem; /* 5px */
+}
+.com-text p{
+    margin-top: 1.25rem; /* 20px */
+    font-size: 0.875rem; /* 14px */
+    text-transform: lowercase;
+    width: 28.75rem; /* 460px */
+}   
+
+
+
+
+
+
+
+
+.Slider{
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 25rem; /* 400px */
+}
+@keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+}
+.logos {
+    overflow: hidden;
+    padding: 3.75rem 0; /* 60px 0 */
+    background: #F2F2F2;
+    white-space: nowrap;
+    position: relative;
+}
+.logos:before,
+.logos:after {
+    position: absolute;
+    top: 0;
+    width: 15.625rem; /* 250px */
+    height: 100%;
+    content: "";
+    z-index: 2;
+}
+.logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+.logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+.logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+}
+.logos-slide img {
+    height: 3.75rem; /* 60px */
+    margin: 0 2.5rem; /* 40px */
+    filter: grayscale(100%);
+}
+.logos-slide img:hover {
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+.card-slider-section {
+    text-align: center;
+    padding: 3.125rem 0; /* 50px 0 */
+}
+.slider-title {
+    font-size: 2rem;
+    margin-bottom: 1.25rem; /* 20px */
+}
+.card-slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1.25rem; /* 20px */
+    padding: 1.25rem; /* 20px */
+}
+.slider-card {
+    background-color: white;
+    border-radius: 0.625rem; /* 10px */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+    padding: 1.25rem; /* 20px */
+    min-width: 18.75rem; /* 300px */
+    scroll-snap-align: start;
+}
+.card-rating {
+    font-size: 1.2rem;
+    color: #ff9800;
+}
+.card-comment {
+    margin: 0.625rem 0; /* 10px 0 */
+}
+.card-author {
+    font-weight: bold;
+    margin-top: 0.625rem; /* 10px */
+}
+.card-verified {
+    color: #4caf50;
+    margin-top: 0.313rem; /* 5px */
+}
+
+.auto_box{
+    display: flex;
+    margin-top: 7.5rem; /* 120px */
+}
+.auto_box_heading{
+    width: 75rem; /* 1200px */
+    margin-right: 2.5rem; /* 40px */
+}
+.auto_box p{
+    font-size: 1.125rem; /* 18px */
+}
+
+.gen{
+    margin-right: 3.75rem; /* 60px */
+    height: 17.5rem; /* 280px */
+    width: 25rem; /* 400px */
+    background-image: linear-gradient(to right, rgb(88, 22, 22), red, rgb(255, 89, 0), rgb(255, 140, 0));
+    border-radius: 1.25rem; /* 20px */
+    position: relative;
+    overflow: hidden;
+}
+.gen img{
+    display: none;
+}
+.gen_text{
+    position: absolute;
+    background-color: white;
+    font-size: 0.75rem; /* 12px */
+    font-weight: 600;
+    padding: 2.188rem; /* 35px */
+    border-radius: 1.25rem; /* 20px */
+    top: 0;
+    height: 7.5rem; /* 120px */
+    width: 22.188rem; /* 355px */
+    transition: all 5s ease;
+    transition-delay: 10s;
+}
+.gen:hover{
+    background-image: none;
+}
+.gen:hover img{
+    display: block;
+}
+.gen:hover .gen_text{
+    top: 10rem; /* 160px */
+}
+.TEXT{
+    position: relative;
+    margin: 9.375rem 1.875rem 0 1.875rem; /* 150px 30px 0px 30px */
+    color: white;
+    font-size: 1rem; /* 16px */
+    width: 14.375rem; /* 230px */
+    margin-left: 3.75rem; /* 60px */
+}

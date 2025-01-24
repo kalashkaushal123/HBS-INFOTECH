@@ -139,6 +139,8 @@ export default function Mobile() {
         </div>
       </div>
     </div>
+
+    
     <div className="th8head">
       <h1 style={{fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif'}}>Benefits of our mobile app services
       </h1>
@@ -220,6 +222,9 @@ export default function Mobile() {
         </div>
       </div>
     </div>
+
+
+
     <div className="th5head">
       <h1 style={{fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif'}}>We support different industries <br />with mobile application development
       </h1>
