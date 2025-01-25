@@ -71,21 +71,21 @@ export default function Header() {
                   </div>
                   <div className="services-mid-side">
                     <div className="mid-services-block1">
-                      <p>Ideate</p>
+                      <p className='correct2'>Ideate</p>
                       <ul className='mid-link'>
-                        <Link to="/ui"><li>UX & UI Design Services </li></Link>
-                        <Link to="/software"><li>Software Development Services</li></Link>
-                        <Link to="/cloud"><li>Cloud Consulting & Services</li></Link>
+                        <Link to="/ui"><li className='correct'>UX & UI Design Services </li></Link>
+                        <Link to="/software"><li >Software Development Services</li></Link>
+                        <Link to="/cloud"><li >Cloud Consulting & Services</li></Link>
                       </ul>
                     </div>
 
                     <div className="mid-services-block2">
                       <p>Improve</p>
                      <ul className='mid-link'>
-                      <Link to="/digitaltransformation"><li>Digital Transformation Services</li></Link>
-                      <Link to="/dataengineering"><li>Data Engineering and Data Science Services</li></Link>
-                      <Link to="/mobile"><li>Mobile App Development Services</li></Link>
-                      <Link to="/ai"><li>AI & ML Services</li></Link>
+                      <Link to="/digitaltransformation"><li className='correct'>Digital Transformation Services</li></Link>
+                      <Link to="/dataengineering"><li >Data Engineering and Data Science Services</li></Link>
+                      <Link to="/mobile"><li  >Mobile App Development Services</li></Link>
+                      <Link to="/ai"><li  >AI & ML Services</li></Link>
                      
                      </ul>
 
@@ -94,7 +94,7 @@ export default function Header() {
                     <div className="mid-services-block3">
                       <p>Scale</p>
                       <ul className='mid-link'>
-                       <Link to="/nearshoringservices"><li>Nearshoring Services for the North American Market</li></Link>
+                       <Link to="/nearshoringservices"><li className='correct'>Nearshoring Services for the North American Market</li></Link>
                         <Link to="/software"><li>Software Development Outsourcing Services</li></Link>
                        
                       </ul>
@@ -104,9 +104,9 @@ export default function Header() {
                   </div>
                   <div className="services-rigth-side">
                    <div className="right-side-block1">
-                   <p>Build</p>
+                   <p className='correct2'>Build</p>
                     <ul className='mid-link'>
-                     <Link to='/devlopment_team'> <li>Dedicated Software Development Teams</li></Link>
+                     <Link to='/devlopment_team'> <li className='correct'>Dedicated Software Development Teams</li></Link>
                      <Link to="/cloud"><li>Cloud Engineering Service</li></Link>
                       <Link to="/embeddedsoftware"><li>Embedded Software Services</li></Link>
                      <Link to="/mobile"> <li>Mobile Apps Development Services</li></Link>
@@ -115,7 +115,7 @@ export default function Header() {
                    <div className="rigth-side-block2">
                     <p>Operate</p>
                     <ul className='mid-link'>
-                      <Link to="/IdentityandAccess"><li>Identity and Access Management Services</li></Link>
+                      <Link to="/IdentityandAccess"><li className='correct'>Identity and Access Management Services</li></Link>
                      <Link to="/automation"><li>Automation Testing Services</li></Link>
                       <Link to="/devops"><li>DevOps Consulting Services & Solutions</li></Link>
                       <Link to="/softwareauditing"><li>Software Auditing Services</li></Link>

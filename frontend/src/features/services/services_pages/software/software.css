@@ -61,7 +61,7 @@
 /* flex-div */
 
 .custom-software{
-    margin: 120px 160px;
+    margin: 0
 }
 
 .software-flex{
@@ -142,7 +142,9 @@
 
 .stage-1{
     display: flex;
-    margin-top: 40px;
+    /* margin-top: 40px; */
+    margin: 0;
+    margin-bottom: 2rem;
 }
 
 .stage-img{
@@ -164,7 +166,8 @@
 }
 
 .stage-text{
-    margin-left: 40px;
+    
+    margin-left: 2%;
 }
 
 .stage-text h3{

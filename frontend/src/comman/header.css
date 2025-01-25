@@ -236,3 +236,13 @@ header {
 .mid-link li:hover {
   text-decoration: underline; /* Underline the text on hover */
 }
+
+
+.correct{
+  margin-top: 2rem;
+}
+
+
+.correct2{
+  margin-top: 0.5rem;
+}

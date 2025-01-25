@@ -26,13 +26,17 @@ import card3 from './image/card3.webp'
 import card4 from './image/card4.webp'
 import card5 from './image/card5.webp'
 import card6 from './image/card6.webp'
+import Header from "/src/comman/Header.jsx";
 
+import Footer from "/src/comman/Footer.jsx";
 
 export default function Automation() {
   return (
-    <div>
-    <div className='main_div'>
-      <img src={main_image} alt="" className='main_image' height='900px' />
+    <>
+    <Header/>
+    <div className='main_div '>
+      <img src={main_image} alt="" className='main_image' height='' />
+      <br /><br /><br /><br /><br />
       <div className="gradient"></div>
       <div className='main_text'>
         <div className='main_img'>
@@ -40,6 +44,7 @@ export default function Automation() {
         </div>
         <h1>Automation Testing Services</h1>
         <p>Improve accuracy and speed up software delivery through automated testing strategies that save time, reduce costs and enhance product quality.</p>
+        <br /><br />
         <button>Contact us</button>
       </div>
     </div>
@@ -54,7 +59,7 @@ export default function Automation() {
         </p>
       </div>
       
-      <h2 style={{fontWeight:"bold", fontSize:'36px'}}>Our testing services cover all stages of software development</h2>
+      <h2 ><strong>Our testing services cover all stages of software development</strong></h2>
 
       <div className='testing'>
         <div>
@@ -102,49 +107,53 @@ export default function Automation() {
         </div>
         <div>
 
-          <div className='testing_block'>
+          <div className='testing_block  '>
             <div className='testing_image'>
               <img src={manual_test} alt="" height="60px"  />
             </div>
             <div className='testing_text'>
               <h5 style={{fontWeight:'600'}}>Manual Testing</h5>
-              <p>Test whether new functionalities comply with requirements, deliver a rewarding interface and are intuitive to use.</p>
+              <p className='pe-5'>Test whether new functionalities comply with requirements, deliver a rewarding interface and are intuitive to use.</p>
             </div>
           </div>
 
-          <div className='testing_block'>
+          <div className='testing_block '>
             <div className='testing_image'>
               <img src={performance} alt="" height="60px"  />
             </div>
             <div className='testing_text'>
               <h5 style={{fontWeight:'600'}}>Performance Testing</h5>
-              <p>Identify application performance problems (slow response times, bottlenecks and poor scalability) before running your solution in a production environment.</p>
+              <p className='pe-5'>Identify application performance problems (slow response times, bottlenecks and poor scalability) before running your solution in a production environment.</p>
             </div>
           </div>
 
-          <div className='testing_block'>
+          <div className='testing_block '>
             <div className='testing_image'>
               <img src={manage} alt="" height="60px"  />
             </div>
             <div className='testing_text'>
               <h5 style={{fontWeight:'600'}}>Managed Testing</h5>
-              <p>Manage your test processes so you can focus on your core business.</p>
+              <p className='pe-5'>Manage your test processes so you can focus on your core business.</p>
             </div>
           </div>
 
-          <div className='testing_block'>
+          <div className='testing_block '>
             <div className='testing_image'>
               <img src={data_test} alt="" height="60px"  />
             </div>
             <div className='testing_text'>
               <h5 style={{fontWeight:'600'}}>Test Data Management</h5>
-              <p>Create and manage test data in an efficient and automated manner.</p>
+              <p className='pe-5'>Create and manage test data in an efficient and automated manner.</p>
             </div>
           </div>
 
         </div>
       </div>
 
+
+
+
+<br />
       <h2>Why do companies turn to us?</h2>
 
       <div className='para'>
@@ -268,7 +277,7 @@ export default function Automation() {
             Looking for other software services?
           </h2>
           <p>
-            For over two decades we’ve been helping companies across markets and sectors develop disruptive solutions. Proven ways of working, domain knowledge and an open culture that prioritizes ownership mean we contribute from day one.
+            For over two decades we've been helping companies across markets and sectors develop disruptive solutions. Proven ways of working, domain knowledge and an open culture that prioritizes ownership mean we contribute from day one.
           </p>
         </div>
 
@@ -361,7 +370,7 @@ export default function Automation() {
 
 
     
-      
-    </div>
+      <Footer/>
+    </>
   )
 }
