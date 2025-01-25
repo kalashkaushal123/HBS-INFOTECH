@@ -34,6 +34,9 @@ import imagetelecom from './photos/Telecom.svg'
 import imagetravel from './photos/travel-and-leisure-.svg'
 import imagewebser from './photos/web-services.svg'
 
+import Header from "/src/comman/Header.jsx"
+import Footer from "/src/comman/Footer.jsx"
+
 // import image9 from './images/feature.image.webp'
 
 
@@ -41,7 +44,9 @@ export default function Mobile() {
   return (
     <>
 
-
+<div style={{zIndex:"1",position:'relative'}}>
+<Header/>
+</div>
 
 <div>
   <img className="photo" src={imagemobileapp} alt />
@@ -51,6 +56,10 @@ export default function Mobile() {
     <p className="next-line">Empower your mobile presence by delivering innovative apps that drive <br />growth</p>
     <button className="contact"> Contact us</button>
   </div>
+
+
+
+
   <div className="next-box">
     <h1 className="main-head2">A mobile apps <br />
       development <br />
@@ -332,11 +341,12 @@ export default function Mobile() {
 
       <div className="case">
         <div className="th5head">
-          <h1 style={{fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif'}}>Case studies
-          </h1>
+            <h1 style={{fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif'}}>
+                  Case studies
+            </h1>
         </div>
         <div>
-          <button className="class-studies">More case studies</button>
+            <button className="class-studies">More case studies</button>
         </div>
       </div>
       <div className="first-case">
@@ -404,7 +414,7 @@ export default function Mobile() {
               </div>
             </div>
           </div>
-          <div className="row-des1">
+          <div className="row-des1 mt-5">
             <h3 className="row-head1">Skilled and experienced specialists</h3>
             <p className="row-para1">Our specialized developers have the experience to handle tasks efficiently and <br />
               autonomously, saving clients’ time and costs associated with recruiting, onboarding <br />
@@ -427,7 +437,8 @@ export default function Mobile() {
       </div>
     </div>
     <div className="th6head">
-      <h1 style={{fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif'}}>Mobile app development trends we can implement
+      <h1 style={{fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif'}}>
+      <strong>Mobile app development trends we can implement</strong>
       </h1>
     </div>
     <div className="end-table-part1">
@@ -533,7 +544,8 @@ export default function Mobile() {
       </div>
     </div>
     <div className="th6head">
-      <h1 style={{fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif'}}>Technology Stack
+      <h1 style={{fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif'}}>
+      <strong>Technology Stack</strong>
       </h1>
     </div>
     <div className="buttons">
@@ -545,7 +557,7 @@ export default function Mobile() {
   
 
 
-        <div className='main-gen'>
+        <div className='main-gen mb-5'>
           <div style={{display:'flex'}}>
             <div className='gen'> 
               <img src={card1} alt="" height='300px' />
@@ -637,7 +649,7 @@ export default function Mobile() {
 
 
 
-
+        <Footer/>
     </>
   )
 }

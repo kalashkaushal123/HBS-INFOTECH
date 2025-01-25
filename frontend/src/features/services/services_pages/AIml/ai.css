@@ -93,18 +93,16 @@ h2{
     max-width: 40.625rem; /* 650px */
     margin-bottom: 1.25rem; /* 20px */
 }
-.testing_text{
-    padding: 1rem 1.25rem; /* 16px 20px */
+/* .testing_text{
+ padding: 1rem 1.25rem; 16px 20px 
 }
 .testing_text p{
-    font-size: 0.875rem; /* 14px */
-    max-width: 25rem; /* 400px */
-}
+   * font-size: 0.875rem; 14px 
+    max-width: 25rem; 400px 
+} */
 .testing_image{
     padding: 1.25rem; /* 20px */
     border-radius: 50%;
-    width: 6.25rem; /* 100px */
-    height: 6.25rem; /* 100px */
     box-shadow: 0 0.25rem 0.5rem 0 rgba(51, 51, 51, 0.2), 0 0.25rem 0.938rem 0 rgba(64, 64, 64, 0.19);
 }
 
@@ -168,35 +166,43 @@ h2{
     content: "";
     z-index: 2;
 }
+
 .logos:before {
     left: 0;
     background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
 }
+
 .logos:after {
     right: 0;
     background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
 }
+
 .logos-slide {
     display: inline-block;
     animation: 35s slide infinite linear;
 }
+
 .logos-slide img {
     height: 3.75rem; /* 60px */
     margin: 0 2.5rem; /* 40px */
     filter: grayscale(100%);
 }
+
 .logos-slide img:hover {
     filter: grayscale(0);
     transition: 0.5s;
 }
+
 .card-slider-section {
     text-align: center;
     padding: 3.125rem 0; /* 50px 0 */
 }
+
 .slider-title {
     font-size: 2rem;
     margin-bottom: 1.25rem; /* 20px */
 }
+
 .card-slider {
     display: flex;
     overflow-x: auto;
@@ -204,6 +210,7 @@ h2{
     gap: 1.25rem; /* 20px */
     padding: 1.25rem; /* 20px */
 }
+
 .slider-card {
     background-color: white;
     border-radius: 0.625rem; /* 10px */
@@ -212,17 +219,21 @@ h2{
     min-width: 18.75rem; /* 300px */
     scroll-snap-align: start;
 }
+
 .card-rating {
     font-size: 1.2rem;
     color: #ff9800;
 }
+
 .card-comment {
     margin: 0.625rem 0; /* 10px 0 */
 }
+
 .card-author {
     font-weight: bold;
     margin-top: 0.625rem; /* 10px */
 }
+
 .card-verified {
     color: #4caf50;
     margin-top: 0.313rem; /* 5px */
