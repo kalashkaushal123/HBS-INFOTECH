@@ -1,30 +1,56 @@
 
 /* first img  */
 
-
-/* .main_div{
-    height: 695px;
+.main_div{
+    height: 750px;
     width: 1650px;
     overflow: hidden;
     position: relative;
 }
+
 .gradient{
-    height: 695px;
+    height: 750px;
     width: 1650px;
     position: absolute;
     top: 0;
     left: 0;
-    background-image: linear-gradient(rgb(181, 7, 7), rgb(225, 55, 8), rgb(255, 213, 0));
-    opacity: 0.7;
-    
+    background-image: linear-gradient(to right, rgb(181, 7, 7), rgb(225, 55, 8), rgb(255, 213, 0));
+    opacity: 0.8; 
 }
+
 .main_image{
     scale: 1;
     color: transparent;
     object-fit: cover;
     display: block;
-    position: absolute;
-} */
+    position: absolute;
+}
+
+.main_text{
+    /* color: black; */
+    position: absolute;
+    margin: 100px 400px;
+    text-align: center;
+    /* z-index: 1000px; */
+}
+
+.main_img{
+    border: 1px solid white;
+    padding: 25px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-left: 300px;
+    margin-bottom: 35px;
+}
+
+.main_text h1{
+    color: white;
+    font-weight: bold;
+    font-size: 42px;
+}
+
+
 
 
 
@@ -193,4 +219,236 @@
 
 marquee{
     margin: 0px 120px 0px 0px;
+    margin-top: 100px;
+    justify-content: space-between;
+    margin: 5% 10%;
 }
+
+
+
+
+
+
+
+/* transition of box  */
+
+
+
+.gen{
+    margin-right: 60px;
+    height: 280px;
+    width: 400px;
+    background-image: linear-gradient(to right, rgb(88, 22, 22), red, rgb(255, 89, 0), rgb(255, 140, 0));
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.gen img{
+    display: none;
+}
+.gen_text{
+    position: absolute;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 35px ;
+    border-radius: 20px;
+    top: 0;
+    height: 120px;
+    transition: all 0.2s ease;
+}
+.gen:hover{
+    background-image: none;
+
+}
+.gen:hover img{
+    display: block;
+}
+.gen:hover .gen_text{
+    top: 160px;
+}
+.text{
+    margin: 150px 30px 0px 10px;
+    color: white;
+    font-size: 18px;
+    width: 300px;
+    margin-left: 60px;
+}
+
+
+
+
+
+
+
+
+
+.client h2{
+    margin: 130px 0px 70px 0px;
+    color: black;
+}
+
+.client_review{
+    background-color: rgb(242, 242, 242);
+    padding: 25px 50px;
+    position: relative;
+}
+
+.client_heading a{
+    font-size: 28px;
+    text-decoration: none;
+    color: black;
+}
+
+.client_heading a:hover{
+    text-decoration: underline;
+}
+
+.c_review{
+    font-size: 18px;
+    margin-left: 30px;
+}
+.star{
+    font-size: 20px;
+    color: rgb(225, 55, 8);
+    margin: 0px 10px;
+}
+.review{
+    font-size: 12px;
+    letter-spacing: .3em;
+    color: rgb(225, 55, 8);
+}
+.client1{
+    display: flex;
+    justify-content: space-between;
+}
+.clientT1{
+    background-color: white;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 20px;
+    width: 230px;
+    box-shadow: 0 4px 8px 0 rgba(112, 112, 112, 0.2), 0 4px 15px 0 rgba(115, 115, 115, 0.19);
+    flex-shrink: 0;
+}
+
+.clientT1 p{
+    font-size: 13px;
+    height: 50px;
+    overflow: hidden;
+    margin: 10px 0px;
+    
+}
+.client_text{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.c_btn{
+    position: absolute;
+    border: none;
+    font-size: 4rem;
+    background-color: transparent;
+    top: 7rem;
+    color: rgb(225, 55, 8);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* slider  */
+
+
+
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+  }
+  
+  /* Control Buttons */
+  .control-btn {
+    background-color: rgb(246, 246, 246);
+    color: rgb(255, 106, 0);
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.3s ease;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .control-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .prev-btn {
+    position: absolute;
+    left: -60px;
+  }
+  
+  .next-btn {
+    position: absolute;
+    right: -60px;
+  }
+  
+  /* Review Card */
+  .card {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.5s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-heading {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    margin: 10px 0;
+    color: #555;
+  }
+  
+  .card-foot {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .verified {
+    font-weight: bold;
+    color: green;
+  }
+
+
+
