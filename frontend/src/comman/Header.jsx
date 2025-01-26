@@ -7,8 +7,8 @@ import { FaAlignJustify } from "react-icons/fa";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHoveringServices, setIsHoveringServices] = useState(false); 
-  const [isHoveringIndustries, setIsHoveringIndustries] = useState(false);
   const [isHoveringProduct, setIsHoveringProduct] = useState(false);
+  const [isHoveringIndustries, setIsHoveringIndustries] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen); 
@@ -74,7 +74,7 @@ export default function Header() {
                         border:"none",
                         borderRadius:"10px",
                         color:"white"
-                      }}>Lets together work</button>
+                      }}>Let's work together</button>
                     </div>
                     <div className="services-mid-side">
                       <div className="mid-services-block1">
@@ -89,34 +89,37 @@ export default function Header() {
                       <div className="mid-services-block2">
                         <p>Improve</p>
                         <ul className='mid-link'>
-                          <Link to="/digitaltransformation"><li className='correct'>Digital Transformation Services</li></Link>
-                          <Link to="/dataengineering"><li >Data Engineering and Data Science Services</li></Link>
-                          <Link to="/mobile"><li  >Mobile App Development Services</li></Link>
-                          <Link to="/ai"><li  >AI & ML Services</li></Link>
+                          <Link to="/digitaltransformation"><li>Digital Transformation Services</li></Link>
+                          <Link to="/dataengineering"><li>Data Engineering and Data Science Services</li></Link>
+                          <Link to="/mobile"><li>Mobile App Development Services</li></Link>
+                          <Link to="/ai"><li>AI & ML Services</li></Link>
                         </ul>
                       </div>
+
                       <div className="mid-services-block3">
                         <p>Scale</p>
                         <ul className='mid-link'>
-                          <Link to="/nearshoringservices"><li className='correct'>Nearshoring Services for the North American Market</li></Link>
+                          <Link to="/nearshoringservices"><li>Nearshoring Services for the North American Market</li></Link>
                           <Link to="/software"><li>Software Development Outsourcing Services</li></Link>
                         </ul>
                       </div>
                     </div>
-                    <div className="services-rigth-side">
+
+                    <div className="services-right-side">
                       <div className="right-side-block1">
-                        <p className='correct2'>Build</p>
+                        <p>Build</p>
                         <ul className='mid-link'>
-                          <Link to='/devlopment_team'><li className='correct'>Dedicated Software Development Teams</li></Link>
+                          <Link to='/devlopment_team'> <li>Dedicated Software Development Teams</li></Link>
                           <Link to="/cloud"><li>Cloud Engineering Service</li></Link>
                           <Link to="/embeddedsoftware"><li>Embedded Software Services</li></Link>
-                          <Link to="/mobile"><li>Mobile Apps Development Services</li></Link>
+                          <Link to="/mobile"> <li>Mobile Apps Development Services</li></Link>
                         </ul>
                       </div>
+
                       <div className="right-side-block2">
                         <p>Operate</p>
                         <ul className='mid-link'>
-                          <Link to="/IdentityandAccess"><li className='correct'>Identity and Access Management Services</li></Link>
+                          <Link to="/IdentityandAccess"><li>Identity and Access Management Services</li></Link>
                           <Link to="/automation"><li>Automation Testing Services</li></Link>
                           <Link to="/devops"><li>DevOps Consulting Services & Solutions</li></Link>
                           <Link to="/softwareauditing"><li>Software Auditing Services</li></Link>
@@ -141,7 +144,7 @@ export default function Header() {
                       <li>Our Apps</li>
                       <li>Our Websites</li>
                       <li>Our Services</li>
-                      <li>Our Ai Ml Products</li>
+                      <li>Our AI/ML Products</li>
                     </ul>
                   </div>
                 </div>
