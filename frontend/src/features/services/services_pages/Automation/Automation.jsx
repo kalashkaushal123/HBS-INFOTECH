@@ -28,9 +28,35 @@ import card5 from './image/card5.webp'
 import card6 from './image/card6.webp'
 import Header from "/src/comman/Header.jsx";
 
+import slide from './image/slide_image.png'
+import slide1 from './image/slide_image1.png'
+import slide2 from './image/slide_image2.png'
+import slide3 from './image/slide_image3.png'
+import slide4 from './image/slide_image4.png'
+import slide5 from './image/slide_image5.png'
+
 import Footer from "/src/comman/Footer.jsx";
+import { useRef } from 'react'
 
 export default function Automation() {
+
+  const containerRef = useRef(null);
+
+  const scrollLeft = () => {
+      containerRef.current.scrollBy({
+        left: -300,
+        behavior: "smooth",
+      });
+    };
+  
+  const scrollRight = () => {
+    containerRef.current.scrollBy({
+      left: 300, 
+      behavior: "smooth",
+    });
+  };
+
+
   return (
     <>
     <Header/>
@@ -228,7 +254,7 @@ export default function Automation() {
       <section className='auto'>
         <div className='case_head'>
           <h2>Case studies</h2>
-          <button>More case studies</button>
+          <button>More case studies <span style={{fontSize:'25px'}}>&#8250;</span> </button>
         </div>
 
         <div className='case_box'>
@@ -240,7 +266,7 @@ export default function Automation() {
               <p style={{marginBottom:'10px'}}>FANANCIAL SERVICES</p>
               <h3>Building a test automation platform for a mulinational insurance company</h3>
               <p>Software Mind prepared a test automation framework based on Selenium WebDriver and created robots to automate labor-intensive and repetitive work, automated web and desktop applications, as well as installed and configured a test suite launching platform.</p>
-              <button>Learn more</button>
+              <button>Learn more <span style={{fontSize:'25px'}}>&#8250;</span> </button>
             </a>
           </div>
         </div>
@@ -255,9 +281,101 @@ export default function Automation() {
               <p style={{marginBottom:'10px'}}>Telecom</p>
               <h3>Building and developing a test automation platform for an international mobile telecommunications company </h3>
               <p>Software Mind helped a global telco company build a test automation platform for physical and virtual machines. Beyond enabling reporting on various platforms and developing a GUI to access data, we migrated and rebuilt existing automated scripts. </p>
-              <button>Learn more</button>
+              <button>Learn more <span style={{fontSize:'25px'}}>&#8250;</span> </button>
             </a>
           </div>
+        </div>
+
+
+        <div className="client">
+          <h2>Client reviews</h2>
+
+          <div className='client_review'>
+            <div className='client1'>
+              <h3 className='client_heading'> 
+                <a href="">Software Mind Reviews</a>
+                <span className='c_review'>4.9</span>
+                <span className="star">★★★★★</span>
+                <span className="review">50 REVIEWS</span>
+              </h3>
+
+              <div className='clutch'>
+                <span style={{fontSize:'12px'}}>Powered by</span>
+                <span style={{fontWeight:'700'}}>Clutch</span>
+              </div>
+            </div>
+
+            <div>
+
+            <button className='c_btn' onClick={scrollLeft} style={{zIndex:1000}}>&#8249;</button>
+
+            <div className='client_text' ref={containerRef}>
+
+              <div className='clientT1' style={{marginLeft:'60px'}}>
+                <div>2.0 <span className="star">★★★★★</span> </div>
+                <p>"They are very professional and always try to accommodate any requests we have concerning resources or projects."</p>
+                <span style={{color:'grey',fontSize:'12px'}}>Sr. Dir. of Software Engineering, Default Solutions Company</span> <br />
+                <span style={{margin:'5px 0px', color:'grey', fontSize:'12px'}}>Verified Review</span>
+              </div>
+
+              <div className='clientT1'>
+                <div>3.0 <span className="star">★★★★★</span> </div>
+                <p>"They are very professional and always try to accommodate any requests we have concerning resources or projects."</p>
+                <span style={{color:'grey',fontSize:'12px'}}>Sr. Dir. of Software Engineering, Default Solutions Company</span> <br />
+                <span style={{margin:'5px 0px', color:'grey', fontSize:'12px'}}>Verified Review</span>
+              </div>
+
+              <div className='clientT1'>
+                <div>4.0 <span className="star">★★★★★</span> </div>
+                <p>"They are very professional and always try to accommodate any requests we have concerning resources or projects."</p>
+                <span style={{color:'grey',fontSize:'12px'}}>Sr. Dir. of Software Engineering, Default Solutions Company</span> <br />
+                <span style={{margin:'5px 0px', color:'grey', fontSize:'12px'}}>Verified Review</span>
+              </div>
+
+              <div className='clientT1'>
+                <div>5.0 <span className="star">★★★★★</span> </div>
+                <p>"They are very professional and always try to accommodate any requests we have concerning resources or projects."</p>
+                <span style={{color:'grey',fontSize:'12px'}}>Sr. Dir. of Software Engineering, Default Solutions Company</span> <br />
+                <span style={{margin:'5px 0px', color:'grey', fontSize:'12px'}}>Verified Review</span>
+              </div>
+
+              <div className='clientT1'>
+                <div>4.0 <span className="star">★★★★★</span> </div>
+                <p>"They are very professional and always try to accommodate any requests we have concerning resources or projects."</p>
+                <span style={{color:'grey',fontSize:'12px'}}>Sr. Dir. of Software Engineering, Default Solutions Company</span> <br />
+                <span style={{margin:'5px 0px', color:'grey', fontSize:'12px'}}>Verified Review</span>
+              </div>
+
+
+              <div className='clientT1'>
+                <div>3.0 <span className="star">★★★★★</span> </div>
+                <p>"They are very professional and always try to accommodate any requests we have concerning resources or projects."</p>
+                <span style={{color:'grey',fontSize:'12px'}}>Sr. Dir. of Software Engineering, Default Solutions Company</span> <br />
+                <span style={{margin:'5px 0px', color:'grey', fontSize:'12px'}}>Verified Review</span>
+              </div>
+
+
+              <div className='clientT1'>
+                <div>2.0 <span className="star">★★★★★</span> </div>
+                <p>"They are very professional and always try to accommodate any requests we have concerning resources or projects."</p>
+                <span style={{color:'grey',fontSize:'12px'}}>Sr. Dir. of Software Engineering, Default Solutions Company</span> <br />
+                <span style={{margin:'5px 0px', color:'grey', fontSize:'12px'}}>Verified Review</span>
+              </div>
+
+
+              <div className='clientT1'>
+                <div>1.0 <span className="star">★★★★★</span> </div>
+                <p>"They are very professional and always try to accommodate any requests we have concerning resources or projects."</p>
+                <span style={{color:'grey',fontSize:'12px'}}>Sr. Dir. of Software Engineering, Default Solutions Company</span> <br />
+                <span style={{margin:'5px 0px', color:'grey', fontSize:'12px'}}>Verified Review</span>
+              </div>
+
+            </div>
+            
+            <button className='c_btn' style={{right:'1.5rem'}} onClick={scrollRight}>&#8250;</button> 
+            </div>
+          </div>
+
         </div>
 
 
@@ -269,6 +387,126 @@ export default function Automation() {
             Get expert advice and best practices on efficiently testing solutions, automating tests and conducting effective quality assurance.
           </p>
         </div>
+
+
+      </section>
+
+
+
+      
+      <div className="slider">
+          <button className='btn left' onClick={scrollLeft}>&#8249;</button>
+          <div className="slides" ref={containerRef}>
+
+            <div className="slide" style={{marginLeft:'160px'}}>
+              <div className="slide_img">
+                <img src={slide1} alt="" />
+              </div>
+              <div className="slide_text">
+                <div className="image">
+                  <img src={slide} alt="" />
+                  <div className="txt">
+                    KAROLINA BLOK <br/>
+                    2024/04/04
+                  </div>
+                </div>
+                <p>Google Chrome Tools and Extensions to Make Software Testing More Efficient</p>
+                <button>Read more <span className='icon'>&#8250;</span> </button>
+              </div>
+            </div>
+
+            <div className="slide">
+            <div className="slide_img">
+                <img src={slide2} alt="" />
+              </div>
+              <div className="slide_text" style={{backgroundColor:'black'}}>
+                <div className="image">
+                  <img src={slide} alt="" />
+                  <div className="txt">
+                    KAROLINA BLOK <br/>
+                    2023/09/28
+                  </div>
+                </div>
+                <p>Tips & Best Practices for Choosing the Right Automation Testing Framework for Your Software Project</p>
+                <button>Read more <span className='icon'>&#8250;</span> </button>
+              </div>
+            </div>
+
+            <div className="slide">
+            <div className="slide_img">
+                <img src={slide3} alt="" />
+              </div>
+              <div className="slide_text" style={{backgroundColor:'rgb(210, 210, 210)', color:'black'}}>
+                <div className="image">
+                  <img src={slide} alt="" />
+                  <div className="txt">
+                    KAROLINA BLOK <br/>
+                    2023/08/03
+                  </div>
+                </div>
+                <p style={{color:'black'}}>Why Automation Testing is Essential for Quality Assurance</p>
+                <button style={{color:'black', border:'1px solid black'}}>Read more <span className='icon'>&#8250;</span> </button>
+              </div>
+            </div>
+
+            <div className="slide">
+            <div className="slide_img">
+                <img src={slide4} alt="" />
+              </div>
+              <div className="slide_text">
+                <div className="image">
+                  <img src={slide} alt="" />
+                  <div className="txt">
+                    KAROLINA BLOK <br/>
+                    2023/03/23
+                  </div>
+                </div>
+                <p>Microservices & Non-functional Testing – How Can You Ensure High Performance of Your Microservice-based App?</p>
+                <button>Read more <span className='icon'>&#8250;</span> </button>
+              </div>
+            </div>
+
+            <div className="slide" style={{marginRight:'160px'}}>
+            <div className="slide_img">
+                <img src={slide5} alt="" />
+              </div>
+              <div className="slide_text" style={{backgroundColor:'black'}}>
+                <div className="image">
+                  <img src={slide} alt="" />
+                  <div className="txt">
+                    KAROLINA BLOK <br/>
+                    2023/02/16
+                  </div>
+                </div>
+                <p>Quality Assurance – Software Development’s Guarantee of Business Value</p>
+                <button>Read more <span className='icon'>&#8250;</span> </button>
+              </div>
+            </div>
+
+          </div>
+          <button className='btn right' onClick={scrollRight}>&#8250;</button>
+        </div>
+
+
+      <div className='contain'>
+        <div>
+          <h2>
+            Improve delivery accuracy and effectiveness
+          </h2>
+
+          <button>
+            Contact us
+          </button>
+        </div>
+        <div className='contain_text'>
+          <p>1500+ experts</p>
+          <p>25+ years of innovation</p>
+          <p>250+ clients who trust us</p>
+        </div>
+      </div>
+      
+
+      <section className='auto'>
 
 
 

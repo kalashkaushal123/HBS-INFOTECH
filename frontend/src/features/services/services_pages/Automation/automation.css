@@ -56,6 +56,11 @@
     border-radius: 30px;
 }
 
+.main_text button:hover{
+    color: rgb(225, 55, 8);
+    background-color: white;
+}
+
 
 
 .auto{
@@ -152,10 +157,19 @@ h2{
     margin-left: 750px;
     border: 2px solid rgb(252, 102, 35);
     border-radius: 40px;
-    padding: 10px 30px;
+    padding: 6px 30px;
     color: rgb(252, 102, 35);
     font-weight: 600;
     background-color: white;
+}
+
+.case_head button span{
+    transition: all 0.2s ease;
+}
+
+
+.case_head button:hover span{
+    margin-left: 10px;
 }
 
 .case_img{
@@ -171,7 +185,7 @@ h2{
     display: block;
 }
 .case_text{
-    padding: 30px 50px;   
+    padding: 20px 50px;   
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     background-image: linear-gradient(to right, rgb(3, 3, 84), rgb(109, 4, 4),  rgb(211, 6, 6), orange);
@@ -193,7 +207,16 @@ h2{
     border: none;
     color: white;
     font-size: 18px;
+    margin-top: 40px;
 }
+
+.case_text a button span{
+    transition: all 0.2s ease;
+}
+.case_text a button:hover span{
+    margin-left: 10px;
+}
+
 .box1{
     margin-top: 30px;
 }
@@ -219,8 +242,15 @@ h2{
 .case_text1 a button{
     background-color: transparent;
     border: none;
-    /* color: white; */
     font-size: 18px;
+    margin-top: 60px;
+}
+
+.case_text1 a button span{
+    transition: all 0.2s ease;
+}
+.case_text1 a button:hover span{
+    margin-left: 10px;
 }
 
 .auto_box{
@@ -278,4 +308,206 @@ h2{
     font-size: 18px;
     width: 300px;
     margin-left: 60px;
+}
+
+
+
+.slider{
+    position: relative;
+}
+
+.slides{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+}
+
+.slides::-webkit-scrollbar {
+    display: none;
+}
+
+.slide{
+    height: 560px;
+    width: 380px;
+    margin-right: 20px;
+    flex-shrink: 0;
+    background-image: linear-gradient(94.59deg, rgb(18, 38, 77) 0%, rgb(132, 12, 49) 24.48%, rgb(199, 9, 39) 49.3%, rgb(252, 102, 35) 74.31%, rgb(255, 189, 48) 100%);
+    overflow: hidden;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.slide_img img{
+    height: 220px;
+    margin-left: -80px;
+    transition: all 0.3s ease-in-out; 
+}
+
+.slide:hover{
+    height: 580px;
+}
+.slide:hover .slide_img img{
+    height: 240px;
+}
+
+.image{
+    display: flex;
+}
+.image img{
+    border-radius: 50%;
+    height: 3.5rem;
+}
+.slide_text{
+    padding: 30px;
+    color: white;
+    font-size: 16px;
+}
+.txt{
+    margin-left: 1rem;
+}
+.slide_text p{
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+    padding-top: .3em;
+    height: 180px;
+    overflow: hidden;
+}
+.slide_text button{
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    padding: 0px 30px;
+    border-radius: 3em;
+    margin-top: 1em;
+}
+.icon{
+    font-size: 30px;
+}
+
+.btn{
+    position: absolute;
+    font-size: 3em;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    color: rgb(255, 25, 0);
+    background-color: white;
+    display: none;
+}
+.left{
+    top: 5em;
+    left: 4em;
+}
+.right{
+    right: 0;
+    top: 5.8em;
+    transform: translateY(-50%);
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(255, 25, 0);
+}
+
+.slider:hover .btn{
+    display: block;
+}
+
+
+
+.contain{
+    background: linear-gradient(94.2deg, rgb(18, 38, 77) -13.61%, rgb(132, 12, 49) 16.11%, rgb(199, 9, 39) 46.25%, rgb(252, 102, 35) 76.61%, rgb(255, 189, 48) 107.8%);
+    margin: 150px 0px;
+    padding: 60px 80px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.contain h2{
+    width: 400px;
+    font-size: 50px;
+}
+.contain button{
+    background-color: rgb(241, 75, 29);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 3rem;
+    margin-top: 5rem;
+}
+
+.contain_text p{
+    color: white;
+    font-size: 32px;
+    margin-right: 6rem;
+    margin-top: 3rem;
+    font-weight: 800;
+}
+
+
+.client h2{
+    margin: 130px 0px 70px 0px;
+}
+
+.client_review{
+    background-color: rgb(242, 242, 242);
+    padding: 25px 50px;
+    position: relative;
+}
+
+.client_heading a{
+    font-size: 28px;
+}
+.client_heading a:hover{
+    color: black;
+    text-decoration: underline;
+}
+.c_review{
+    font-size: 18px;
+    margin-left: 30px;
+}
+.star{
+    font-size: 20px;
+    color: rgb(225, 55, 8);
+    margin: 0px 10px;
+}
+.review{
+    font-size: 12px;
+    letter-spacing: .3em;
+    color: rgb(225, 55, 8);
+}
+.client1{
+    display: flex;
+    justify-content: space-between;
+}
+.clientT1{
+    background-color: white;
+    margin: 20px 20px 20px 20px;
+    padding: 10px 20px;
+    width: 230px;
+    box-shadow: 0 4px 8px 0 rgba(112, 112, 112, 0.2), 0 4px 15px 0 rgba(115, 115, 115, 0.19);
+    flex-shrink: 0;
+}
+
+.clientT1 p{
+    font-size: 13px;
+    height: 50px;
+    overflow: hidden;
+    margin: 10px 0px;
+    
+}
+.client_text{
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+.c_btn{
+    position: absolute;
+    border: none;
+    font-size: 5rem;
+    background-color: transparent;
+    top: 6rem;
+    color: rgb(225, 55, 8);
 }
