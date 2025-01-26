@@ -246,3 +246,127 @@ header {
 .correct2{
   margin-top: 0.5rem;
 }
+
+/* Initial state of the industries dropdown (hidden) */
+.industries-dropdown {
+  display: none;
+  position: absolute; /* You can adjust this based on your layout */
+  background-color: #fff;
+  height: 13rem;
+  width: 85rem;
+  left: -5.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  min-width: 200px; /* Adjust the width as needed */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Show the dropdown when hovered */
+.industries-dropdown.show {
+  display: block;
+}
+
+/* Optional: Add styling for the dropdown links */
+.industries-dropdown a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.industries-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+.industries-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px;
+
+}
+
+.industries-menu li {
+  font-size: 15px; /* Font size */
+  color: #555; /* Default text color */
+  transition: all 0.3s ease; /* Smooth transition */
+  font-weight: bolder;
+  padding: 5px 0;
+}
+
+/* Hover effect */
+.industries-menu li:hover {
+  color: #d52d2f; /* Change color on hover */
+  transform: scale(1.1) translateX(10px); /* Slightly increase the size and move to the right */
+}
+
+/* Optional: Underline on hover */
+.industries-menu li:hover {
+  text-decoration: underline; /* Underline the text on hover */
+}
+
+
+.signIn{
+  border: none;
+  background-color:white;
+  color: black;
+  outline: none;
+  border-radius: 5px;
+  height: 2rem;
+  width: 5rem;
+
+}
+.products-dropdown{
+  display: none;
+  position: absolute; /* You can adjust this based on your layout */
+  background-color: #fff;
+  height: 13rem;
+  width: 85rem;
+  left: -5.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  min-width: 200px; /* Adjust the width as needed */
+  border-radius: 5px;
+  padding: 10px;
+
+}
+.products-dropdown.show {
+  display: block;
+}
+.products-dropdown a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #333;
+}
+
+.products-dropdown a:hover {
+  background-color: #f1f1f1;
+}
+.products-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px;
+
+}
+
+.products-menu li {
+  font-size: 20px; /* Font size */
+  color: #555; /* Default text color */
+  transition: all 0.3s ease; /* Smooth transition */
+  font-weight: bolder;
+
+  padding: 5px 0;
+}
+
+/* Hover effect */
+.products-menu li:hover {
+  color: #d52d2f; /* Change color on hover */
+  transform: scale(1.1) translateX(10px); /* Slightly increase the size and move to the right */
+}
+
+/* Optional: Underline on hover */
+.products-menu li:hover {
+  text-decoration: underline; /* Underline the text on hover */
+}
