@@ -41,6 +41,7 @@ import { useRef } from 'react'
 export default function Automation() {
 
   const containerRef = useRef(null);
+  const clientRef = useRef(null);
 
   const scrollLeft = () => {
       containerRef.current.scrollBy({
@@ -55,6 +56,21 @@ export default function Automation() {
       behavior: "smooth",
     });
   };
+
+
+  const Left = () => {
+    clientRef.current.scrollBy({
+      left:-1000,
+      behavior: "smooth",
+    });
+  }
+
+  const Right = () => {
+    clientRef.current.scrollBy({
+      left:-1000,
+      behavior: "smooth",
+    });
+  }
 
 
   return (
@@ -307,9 +323,9 @@ export default function Automation() {
 
             <div>
 
-            <button className='c_btn' onClick={scrollLeft} style={{zIndex:1000}}>&#8249;</button>
+            <button className='c_btn' onClick={Left} style={{zIndex:1000}}>&#8249;</button>
 
-            <div className='client_text' ref={containerRef}>
+            <div className='client_text' ref={clientRef}>
 
               <div className='clientT1' style={{marginLeft:'60px'}}>
                 <div>2.0 <span className="star">★★★★★</span> </div>
@@ -372,7 +388,7 @@ export default function Automation() {
 
             </div>
             
-            <button className='c_btn' style={{right:'1.5rem'}} onClick={scrollRight}>&#8250;</button> 
+            <button className='c_btn' style={{right:'1.5rem'}} onClick={Right}>&#8250;</button> 
             </div>
           </div>
 
