@@ -31,6 +31,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'channels',  # Channels for WebSockets
     'video_call',  # Your app for video calls
+    'my_auth',  # Your app for authentication
+    'rest_framework',  # Django REST framework
+
 ]
 
 MIDDLEWARE = [
@@ -118,3 +121,20 @@ STATIC_URL = 'static/'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+AUTH_USER_MODEL  = 'my_auth.User'
+
+EMAIL_FROM = f"HBS_INFOTECH <{os.getenv('EMAIL_HOST_USER')}>"
+ORG_NAME = "HBS_INFOTECH"
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD")
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': [
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+    ],
+}
