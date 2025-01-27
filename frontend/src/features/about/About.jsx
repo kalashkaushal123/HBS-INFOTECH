@@ -3,6 +3,7 @@ import laptop from "../about/laptop.png";
 import microsot from '../courses/images/microsoft.png';
 import iitguhati from '../courses/images/iiguhati.png';
 import './about.css'
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -47,7 +48,9 @@ export default function About() {
 
     </div>
 
-    <div className="course-main">
+   <Link to="/course">
+
+   <div className="course-main">
             {/* Left Section - Course Details */}
             <div className="course-left-side">
               <p>Creating</p>
@@ -94,6 +97,7 @@ export default function About() {
               </div>
             </div>
           </div>
+   </Link>
 
 
     </>

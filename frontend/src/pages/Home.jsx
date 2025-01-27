@@ -3,7 +3,7 @@ import { Outlet, useLocation } from 'react-router-dom';
 import Header from '../comman/Header';
 import Footer from '../comman/Footer';
 import About from '../features/about/About';
-import Course from '../features/courses/Course';
+
 import Solutions from '../features/new_ solutions/Solutions';
 import microsoftpng from '../assets/icons/microsoft.png'
 import  down from '../assets/icons/dwn.png'

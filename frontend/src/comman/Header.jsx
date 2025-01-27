@@ -77,8 +77,8 @@ export default function Header() {
                       }}>Let's work together</button>
                     </div>
                     <div className="services-mid-side">
-                      <div className="mid-services-block1">
-                        <p className='correct2'>Ideate</p>
+                      <div className="mid-services-block1" style={{marginTop:"30px"}}>
+                        <p className='correct2' style={{position:"relative", bottom:"25px"}}>Ideate</p>
                         <ul className='mid-link'>
                           <Link to="/ui"><li className='correct'>UX & UI Design Services </li></Link>
                           <Link to="/software"><li>Software Development Services</li></Link>
@@ -86,8 +86,8 @@ export default function Header() {
                         </ul>
                       </div>
 
-                      <div className="mid-services-block2">
-                        <p>Improve</p>
+                      <div className="mid-services-block2" style={{marginTop:"20px"}}>
+                        <p style={{position:"relative", bottom:"25px"}}>Improve</p>
                         <ul className='mid-link'>
                           <Link to="/digitaltransformation"><li>Digital Transformation Services</li></Link>
                           <Link to="/dataengineering"><li>Data Engineering and Data Science Services</li></Link>
@@ -96,8 +96,8 @@ export default function Header() {
                         </ul>
                       </div>
 
-                      <div className="mid-services-block3">
-                        <p>Scale</p>
+                      <div className="mid-services-block3" style={{marginTop:"20px"}}>
+                        <p style={{position:"relative", bottom:"25px"}}>Scale</p>
                         <ul className='mid-link'>
                           <Link to="/nearshoringservices"><li>Nearshoring Services for the North American Market</li></Link>
                           <Link to="/software"><li>Software Development Outsourcing Services</li></Link>
@@ -105,9 +105,9 @@ export default function Header() {
                       </div>
                     </div>
 
-                    <div className="services-right-side">
+                    <div className="services-right-side" style={{marginTop:"20px", marginRight:"20px"}}>
                       <div className="right-side-block1">
-                        <p>Build</p>
+                        <p style={{position:"relative", bottom:"20px"}}>Build</p>
                         <ul className='mid-link'>
                           <Link to='/devlopment_team'> <li>Dedicated Software Development Teams</li></Link>
                           <Link to="/cloud"><li>Cloud Engineering Service</li></Link>
@@ -117,7 +117,7 @@ export default function Header() {
                       </div>
 
                       <div className="right-side-block2">
-                        <p>Operate</p>
+                        <p style={{position:"relative", bottom:"20px"}}>Operate</p>
                         <ul className='mid-link'>
                           <Link to="/IdentityandAccess"><li>Identity and Access Management Services</li></Link>
                           <Link to="/automation"><li>Automation Testing Services</li></Link>
@@ -160,12 +160,16 @@ export default function Header() {
                 <div className={`industries-dropdown ${isHoveringIndustries ? 'show' : ''}`}>
                   <div className="industries-menu">
                     <ul>
-                      <li>Financial Services</li>
-                      <li>Telecom</li>
-                      <li>Biotech & Healthcare</li>
-                      <li>Media & Entertainment</li>
-                      <li>Sports Betting</li>
-                      <li>Manufacturing</li>
+                      <li><Link to="/financialservices" style={{color:"black"}}>Financial Services</Link></li>
+                      <li><Link to="/telecom" style={{color:"black"}}>Telecom</Link></li>
+                      <li><Link to="biotech_healthcare" style={{color:"black"}}>Biotech & Healthcare</Link></li>
+                      <li><Link to="/media_entertainment" style={{color:"black"}}>Media & Entertainment</Link></li>
+                      <li><Link to="/SportsBetting" style={{color:"black"}}>Sports Betting</Link></li>
+                      <li><Link to="/Manufacturing"  style={{color:"black"}}>Manufacturing</Link></li>
+                      
+                    
+                     
+                     
                     </ul>
                   </div>
                 </div>
