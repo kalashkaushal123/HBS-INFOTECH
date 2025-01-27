@@ -63,13 +63,15 @@ const SecoundHeader = () => {
                         <div key={index} className="col m-0 p-0 " 
                             onMouseEnter={() => setIsHoveringService(true)} >
                             <div className='hovercolor btn-color' >
-                                <a id='img'  href="" className=' text-decoration-none grayscale '>
-                                    <img  width='30px' src={item.svg} style={{stroke:"green",strokeWidth:"30"}} /><br />
-                                </a>
+                                                            
+                                    <img  id='img'  className=' text-decoration-none grayscale '
+                                        width='30px' src={item.svg} style={{stroke:"green",strokeWidth:"30"}} /><br />
+                              
                                 <span className=' textsize'>
-                                    <label id='label' htmlFor="" className='showhim  m-auto ' >{item.name}&nbsp;
+                                    <label id='label' htmlFor="" className='showhim  m-auto ' >
+                                        {item.name}&nbsp;
                                         <svg  xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" 
-                                                className="svgrotate bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/></svg>
+                                            className="svgrotate bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/></svg>
                                     </label>
                                 </span> 
                             </div>
@@ -84,7 +86,7 @@ const SecoundHeader = () => {
                         <div className="col-md-4 mt-3 card bg-transparent rounded-0 " style={{ borderRight: "1px solid gray", borderTop: "0", borderLeft: '0', borderBottom: "0" }}>
 
                            
-                            <button className='hovercolor btn-color'>Degree / Exec. PG  
+                            <button className=' btn-color'>Degree / Exec. PG  
                                 <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24" className="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                             </button><br />
  

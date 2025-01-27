@@ -101,14 +101,14 @@ body {
     filter: none;
     cursor:alias;
     rotate: 0deg;
-    transition:0.5s ease-in;
+    transition:0.3s ease-in;
     color: red;
 }
 .btn-color:hover .grayscale  {
   filter: none;
   cursor:alias;
   rotate: 0deg;
-  transition:0.5s ease-in;
+  transition:0.3s ease-in;
   color: red;
 }
 
@@ -116,7 +116,7 @@ body {
   filter: none;
   cursor:alias;
   rotate: 0deg;
-  transition:0.5s ease-in;
+  transition:0.3s ease-in;
   color: red;
 }
 
