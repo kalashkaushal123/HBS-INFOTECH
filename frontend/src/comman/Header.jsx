@@ -51,14 +51,14 @@ export default function Header() {
               </li>
 
               {/* Services Link with Hover */}
-              <li 
+              <li
                 className="nav-item services" 
                 onMouseEnter={() => setIsHoveringServices(true)} 
-                onMouseLeave={() => setIsHoveringServices(false)}
-              >
+                onMouseLeave={() => setIsHoveringServices(false)}>
+
                 <Link className="nav-link text-white" to="/solutions">Services</Link>
                 {/* Conditionally show the dropdown */}
-                <div className={`services-dropdown ${isHoveringServices ? 'show' : ''}`}>
+                <div className={`services-dropdown ${isHoveringServices?'show' : ''}`}>
                   <div className="services-menu">
                     <div className="services-left-side" style={{position:"relative",left:"30px"}}>
                       <h1 className='m-5'>AI expertise tailored to business goals </h1>
@@ -85,6 +85,14 @@ export default function Header() {
                           <Link to="/cloud"><li>Cloud Consulting & Services</li></Link>
                         </ul>
                       </div>
+                  <div className="services-left-side">
+                    <h1 className='m-5'>AI expertise tailored to business goals </h1>
+                    <button className="btn btn-danger m-5" style={{backgroundColor:"red",
+                      position:"relative",
+                      top:"100px", left:"20px",
+                      height:"4rem",fontSize:"25px",
+                      fontWeight:"bolder"
+                    }}>Lets together work</button>
 
                       <div className="mid-services-block2" style={{marginTop:"20px"}}>
                         <p style={{position:"relative", bottom:"25px"}}>Improve</p>
@@ -128,6 +136,7 @@ export default function Header() {
                       </div>
                     </div>
                   </div>
+                </div>
                 </div>
               </li>
 

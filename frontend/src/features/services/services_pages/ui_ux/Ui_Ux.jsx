@@ -55,7 +55,7 @@ export default function Ui_Ux() {
     {id:8,
       svg:"/src/features/services/services_pages/ui_ux/img/icons-_Cloud-Consulting-Services-orange.svg",
       title:'Accessibility design',
-      arrow:"At Software Mind, we believe that everyone deserves to feel empowered and included. That's why we offer accessibility audits, assistive technology testing and user testing with people with disabilities. Our goal is to promote compliance and inclusivity that makes products and services accessible to everyone."
+      arrow:"At Software Sys, we believe that everyone deserves to feel empowered and included. That's why we offer accessibility audits, assistive technology testing and user testing with people with disabilities. Our goal is to promote compliance and inclusivity that makes products and services accessible to everyone."
     }]);
 
   
@@ -89,21 +89,22 @@ export default function Ui_Ux() {
         desc:"UX and UI design are related fields that focus on creating functional and user-friendly digital experiences in various environments. User experience (UX) design refers to the overall experience a user has when interacting with a product or service. User interface (UI) design creates software's visual and interactive elements, aiming to create an intuitive and appealing interface that is easy to use. When applied together under the watchful eye of UX and UI designers, companies will be able deliver functional and aesthetically pleasing products and services.",
       },{
         id:7,
-        title:"How is Software Mind different from other companies that provide design services?",
-        desc:`Good question! Software Mind is different from other design companies in a few ways. Firstly, we believe in open discussions with our clients to arrive at the best possible solution. We don't expect our clients to do all the work; we conduct our own research, engage in conversations with our clients and amongst ourselves and devise a plan to create a product that exceeds initial expectations.
+        title:"How is Software Sys different from other companies that provide design services?",
+        desc:`Good question! Software Sys is different from other design companies in a few ways. Firstly, we believe in open discussions with our clients to arrive at the best possible solution. We don't expect our clients to do all the work; we conduct our own research, engage in conversations with our clients and amongst ourselves and devise a plan to create a product that exceeds initial expectations.
               Secondly, we never make assumptions. Every idea or suggestion we present is backed up with data and reasoning.
                Thirdly, we treat each project as if it were our own. We go above and beyond to ensure that our clients are not just satisfied, but delighted. We understand that emotions drive everyone involved in a project, from the client to the design team to the end user, so we allow ourselves to be human and not just machines.`,
       }
     ]);
   return (
     <>
-<Header></Header>
+  <Header></Header>
 
  <div className="fluid" style={{backgroundColor:"white"}}>
       <div className="backgroundimg w-100" >
         <div className="trnbox" style={{width:"100%",height:"600px"}}>
         <center className="m-auto mt-5 ">
-          <img width={'100px'} className="rcicel" src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2023%2F07%2Ficon-white-ux-ui-design-services.svg&w=1920&q=75" alt="" />
+        
+          <svg width={'100px'} className="rcicel" xmlns="http://www.w3.org/2000/svg" id="Warstwa_1" version="1.1" viewBox="0 0 48 48"><defs></defs><path class="st0" d="M5.8,45l6.1-21.2h24.2l6.1,21.2M16.4,23.8l4.6-18.5c.8-3.1,5.1-3.1,5.9,0l4.6,18.5"></path></svg> 
 
           <div className="firNyj"> <h1 className="fRjBVq sm-header2">UX & UI Design Services</h1></div>
 
@@ -148,7 +149,7 @@ export default function Ui_Ux() {
 
 
 
-<div align='justify' className="rounded-5" style={{backgroundColor:"white"}}>
+<div align='justify' className="rounded-5" >
         <div className="row">
               <div className="col-md-2"></div>
               <div className="col-md-4 border rounded-3 kuKEcI cplcEN  mt-3 " style={{marginLeft:"2rem"}}>
@@ -170,9 +171,9 @@ export default function Ui_Ux() {
         <br /><br /><br />
 </div>
 
-
+<hr />
 {/* Data visualization  Card */}
-<section className="sc-9e3861ef-1 gRDIGO">
+<section className="sc-9e3861ef-1 gRDIGO" style={{backgroundColor:"rgb(248, 248, 248)"}}>
   <div align='justify' className="sc-953bb80d-0 ePPvGo">
     <div 
       className="sc-9e3861ef-4 cgNtKC"
@@ -303,25 +304,27 @@ export default function Ui_Ux() {
 
 
 {/* marque start */}
-<section  className=" ">
+<section  className=" " >
 
 <h1 className="ps-5 pt-5"><strong>Who we’ve helped</strong></h1>
 <br /><br />
-<marquee hspace='50%' style={{marginLeft:"0rem",marginRight:"-3rem"}}>
-      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-GemOne.svg&w=1920&q=75"  /> &ensp;&ensp;&ensp;&ensp;&ensp;
-      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-TravelCounsellors.svg&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
-      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-yourgolftravel.webp&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
-      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-Snow.webp&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
-      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-Beteast.svg&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
-      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-CoreLogic-1.svg&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
-      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-t-mobile.webp&w=1920&q=75"  />&ensp;&ensp;&ensp;&ensp;
-      <img src="https://softwaremind.com/_next/image/?url=https%3A%2F%2Fprod-cms.softwaremind.com%2Fapp%2Fuploads%2F2024%2F12%2Flogo-v2-Procountor-old-finago.svg&w=1920&q=75"  />&ensp;&ensp;&ensp;
+<marquee hspace='50%' style={{marginLeft:"0rem",marginRight:"0rem"}}>
+      <img style={{width:'140px'}} src="/src/features/services/services_pages/ui_ux/marqueSVG/logo-v2-Procountor-old-finago.svg"  /> &ensp;&ensp;&ensp;&ensp;&ensp;
+      <img style={{width:'140px'}} src="/src/features/services/services_pages/ui_ux/marqueSVG/logo-v2-Beteast.svg"  />&ensp;&ensp;&ensp;&ensp;
+      <img style={{width:'140px'}} src="/src/features/services/services_pages/ui_ux/marqueSVG/logo-v2-CoreLogic-1.svg"  />&ensp;&ensp;&ensp;&ensp;
+      <img style={{width:'140px'}} src="/src/features/services/services_pages/ui_ux/marqueSVG/logo-v2-GemOne.svg"  />&ensp;&ensp;&ensp;&ensp;
+      <img style={{width:'140px'}} src="/src/features/services/services_pages/ui_ux/marqueSVG/logo-v2-Snow.webp"  />&ensp;&ensp;&ensp;&ensp;
+      <img style={{width:'140px'}} src="/src/features/services/services_pages/ui_ux/marqueSVG/logo-v2-t-mobile.webp"  />&ensp;&ensp;&ensp;&ensp;
+      <img style={{width:'140px'}} src="/src/features/services/services_pages/ui_ux/marqueSVG/logo-v2-TravelCounsellors.svg"  />&ensp;&ensp;&ensp;&ensp;
+      <img style={{width:'140px'}} src="/src/features/services/services_pages/ui_ux/marqueSVG/logo-v2-yourgolftravel.webp"  />&ensp;&ensp;&ensp;
     </marquee>
 </section>
 {/* marque start */}
 
+
+
 {/* Step Understand */}
-        
+<hr />
 <div align='' className="row mt-5 pt-5 m-auto" style={{backgroundColor:"rgb(248, 248, 248)"}}>
     
         <label align='justify' className="eKNbte p-2 ms-5 mb-3 bg-white">
@@ -375,7 +378,7 @@ export default function Ui_Ux() {
           </div>
           
           <div align='justify' className="col-md-5 p-5 mt-5 text-start">
-              At Software Mind, we follow these essential steps in our design and development process 
+              At Software Sys, we follow these essential steps in our design and development process 
               that enable us to offer quality services and ensure our clients receive outstanding solutions.
           </div>
     
@@ -394,7 +397,7 @@ export default function Ui_Ux() {
 
 
 
-
+<hr />
 <section className="sc-2513f5e2-0 kYudVh"  style={{backgroundImage:'url("/src/features/services/services_pages/ui_ux/img/dribbble_baner.webp")'}}>
   <div className="sc-953bb80d-0 ePPvGo">
     <div className="sc-2513f5e2-4 jrQBPI">
@@ -467,7 +470,7 @@ export default function Ui_Ux() {
                       <h5 className="m-auto ">{item.title}</h5>
                       {/* grSScn     */}
                       <div className="showme  pt-3 grSScn">
-                            <svg className="hvisiS text-danger " xmlns="http://www.w3.org/2000/svg" width="22" height="14" fill="none" viewBox="0 0 22 14" ><path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6"></path></svg>
+                            <svg className=" text-danger " xmlns="http://www.w3.org/2000/svg" width="22" height="14" fill="none" viewBox="0 0 22 14" ><path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6"></path></svg>
                       </div>
                   </div>
                   <p  className="show-on-hover" >{item.arrow} </p>
@@ -484,7 +487,7 @@ export default function Ui_Ux() {
 
 
 {/* Card with Multi color */}
-<section className="sc-9e3861ef-1 ">
+<section className="sc-9e3861ef-1 " style={{backgroundColor:"white"}}>
   <div className="sc-953bb80d-0 ePPvGo">
     <div
       className="sc-9e3861ef-4 cgNtKC">
@@ -709,9 +712,9 @@ export default function Ui_Ux() {
 {/* card with <u;fi Color End */}
 
 
-
+<hr/>
 {/* Design engaging products that set your brand apart */}
-<section className="sc-63cd0f-2 hkitw">
+<section className="sc-63cd0f-2 hkitw" style={{backgroundColor:"rgb(248, 248, 248)"}}>
   <div className="sc-63cd0f-1 bTIAYg">
     <div className="sc-63cd0f-3 bfNsic">
       <div className="sc-63cd0f-6 eQKwsQ">
@@ -754,7 +757,9 @@ export default function Ui_Ux() {
 </section>
 {/* Design engaging products that set your brand apart End */}
 
-<section align='justify' className="sc-9e3861ef-1 dVcJZQ">
+
+<hr />
+<section align='justify' className="sc-9e3861ef-1 dVcJZQ" >
   <div className="sc-953bb80d-0 ePPvGo">
     <div className="sc-9e3861ef-4 cUVos row" > 
     <div className="col-md-4">
@@ -762,24 +767,21 @@ export default function Ui_Ux() {
             <span className="sc-9e3861ef-2 OfxfR">UI &amp; UX design FAQs</span>
       </h2>
     </div> 
-    <div   className="col-md-6 sc-884c5c01-2 dTzmhu"   >
+    <div   className="col-md-6 sc-884c5c01-2 "   >
       <div className="sc-b263a12c-0 irxYKK">
       
           {data.map((item,index)=>
-            <div key={index} className="showhim sc-f9ea8f54-0 gvDaqZ" >
-                    <div className="showhim  nothover sc-f9ea8f54-1 eEvJRF">
-                        <h3 className="  sc-c25bae65-0 bjbLu sm-subtitle">
+            <div key={index} className="sc-f9ea8f54-0 gvDaqZ" >
+                    <div className="hoverable showhim sc-f9ea8f54-1 eEvJRF">
+                        <h3 className="sc-c25bae65-0 bjbLu sm-subtitle">
                             {item.title}
                         </h3>
 
-                        <div className="showme sc-f9ea8f54-2 hjWOgD">
-                            <svg className=" sc-81ec6d4d-0 hvisiS" xmlns="http://www.w3.org/2000/svg" width={22} height={14} fill="none" viewBox="0 0 22 14" >
-                                <path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
-                                    d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6" />
-                            </svg>
-                        </div>
+                        <div className="showme p-1 grSScn">
+                            <svg className=" text-danger " xmlns="http://www.w3.org/2000/svg" width="22" height="14" fill="none" viewBox="0 0 22 14" ><path stroke="#fff" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.91 7H1.002M14.274 1l6.636 6-6.636 6"></path></svg>
+                      </div>
                     </div>
-                    <div  id="cont" aria-hidden="true" role="region" className="showhim  shownothover  ffVvmJ">
+                    <div  id="cont" aria-hidden="true" role="region" className="show-on-hover">
                         <p className="sc-ca4a3661-6 sc-f9ea8f54-3 greJTC drWCXn sm-body15">
                           {item.desc}&nbsp;
                         </p>
@@ -790,10 +792,11 @@ export default function Ui_Ux() {
     </div>
     </div>
   </div>
+
 </section>
 
 
-<section align=''>
+<section align='' style={{backgroundColor:"rgb(248, 248, 248)"}}>
 
 <div className="row p-4">
 <div className="col-md-1"></div>

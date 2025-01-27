@@ -141,13 +141,14 @@ header {
   .services-dropdown {
     position: absolute;
     background-color: white;
-    top: 100%;
+    top: 3rem;
     /* right: 2rem; */
-    left: -50.5rem;
-    height: 33rem;
-    width: 85rem;
-    border-radius: 4px;
     z-index: 10;
+    left: -790%;
+    height: 35rem;
+    width: 1350%;
+    border-radius: 4px;
+    
     opacity: 0; /* Start with full transparency */
     visibility: hidden; /* Initially hidden */
     transform: translateY(-10px); /* Slightly above its final position */
@@ -156,10 +157,11 @@ header {
   
   /* To show the dropdown with animation */
   .services-dropdown.show {
-    opacity: 1; /* Fade in */
-    visibility: visible; /* Make it visible */
-    transform: translateY(0); /* Slide into its final position */
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Immediate transition on showing */
+   
+    opacity: 1; /* Start with full transparency */
+    visibility: visible; /* Initially hidden */
+    transform: translateY(-10px); /* Slightly above its final position */
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; /* Smooth transitions */
   }
 
   .services-menu{

@@ -81,7 +81,7 @@ export default function Ai() {
                     <div className='testing_image'>
                     <img src={eye} height="60px" />
                     </div>
-                    <div  className='' style={{margin:"-3% 2rem 1rem"}}>
+                    <div align=''  className='' style={{margin:"-2% -2rem 2rem 1rem"}}>
                       <h5 ><strong>Computer vision</strong></h5>
                       <p>Leverage advanced algorithms to enable machines to interpret and make decisions based on existing visual data. Empower applications – from security systems to automated quality inspection in manufacturing - with image and video analysis, object detection, facial recognition, and image segmentation.</p>
                     </div>
@@ -93,7 +93,7 @@ export default function Ai() {
                     <div className='testing_image'>
                       <img src={tick} height="60px"  />
                     </div>
-                    <div  className='' style={{margin:"-3% 2rem 1rem"}}>
+                    <div align=''  className='' style={{margin:"-2% -2rem 2rem 1rem"}}>
                       <h5 ><strong>MLOps</strong></h5>
                       <p>Streamline the deployment, monitoring, and management of machine learning models. Integrate DevOps practices with ML to ensure seamless model lifecycle management, from development and testing to deployment and scaling.</p>
                     </div>
@@ -103,7 +103,7 @@ export default function Ai() {
                     <div className='testing_image'>
                       <img src={lock} height="60px"  />
                     </div>
-                    <div  className='' style={{margin:"-3% 2rem 1rem"}}>
+                    <div align=''  className='' style={{margin:"-2% -2rem 2rem 1rem"}}>
                       <h5 ><strong>AI governance</strong></h5>
                       <p>Ensure ethical, transparent, and compliant AI practices by providing frameworks and tools for managing AI risks, assuring data privacy, and maintaining accountability in AI operations. Learn how to navigate complex regulatory requirements and build trust in your AI systems.</p>
                     </div>
@@ -113,7 +113,7 @@ export default function Ai() {
                     <div className='testing_image'>
                       <img src={face_recognition} height="60px"  />
                     </div>
-                    <div  className='' style={{margin:"-3% 2rem 1rem"}}>
+                    <div align=''  className='' style={{margin:"-2% -2rem 2rem 1rem"}}>
                       <h5 ><strong>Facial recognition</strong></h5>
                       <p>Improve security devices, save time and maximize resources by replacing traditional keys or passwords and automating identification processes. Enhance patient identification and simplify administrative processes. Enable personalized services and experiences in various leisure sectors.</p>
                     </div>
@@ -123,7 +123,7 @@ export default function Ai() {
                   <div className='testing_image'>
                     <img src={upscale} height="60px"  />
                   </div>
-                  <div  className='' style={{margin:"-3% 2rem 1rem"}}>
+                  <div align=''  className='' style={{margin:"-2% -2rem 2rem 1rem"}}>
                     <h5 ><strong>Predictive maintenance</strong></h5>
                     <p>Use ML and AI to stop equipment failures before they occur. Minimize downtime, reduce maintenance costs and extend the lifespan of critical assets in your organization, while ensuring optimal operational efficiency by analyzing historical and real-time data.</p>
                   </div>
@@ -133,7 +133,7 @@ export default function Ai() {
                     <div className='testing_image'>
                       <img src={cloud} height="60px"  />
                     </div>
-                    <div  className='' style={{margin:"-3% 2rem 1rem"}}>
+                    <div align=''  className='' style={{margin:"-2% -2rem 2rem 1rem"}}>
                       <h5 ><strong>Cloud-based AI&ML</strong></h5>
                       <p>Maximize your cloud infrastructure with our cloud-based AI/ML services. Implement cost-effective, secure, and efficient AI and ML operations tailored to your business needs thanks to scalable and flexible AI solutions that leverage cloud platforms for data storage, processing, and model deployment. </p>
                     </div>
@@ -143,7 +143,7 @@ export default function Ai() {
                   <div className='testing_image'>
                     <img src={text} height="60px"  />
                   </div>
-                  <div  className='' style={{margin:"-3% 2rem 1rem"}}>
+                  <div align=''  className='' style={{margin:"-2% -2rem 2rem 1rem"}}>
                     <h5 ><strong>Text translation</strong></h5>
                     <p>Overcome language barriers with our text translation services. Utilize state-of-the-art natural language processing (NLP) models that offer accurate and contextually appropriate translations across multiple languages. Support global communication, content localization, and multilingual content creation. </p>
                   </div>
@@ -153,7 +153,7 @@ export default function Ai() {
                   <div className='testing_image'>
                     <img src={analysis} height="60px"  />
                   </div>
-                  <div  className='' style={{margin:"-3% 2rem 1rem"}}>
+                  <div align=''  className='' style={{margin:"-2% -2rem 2rem 1rem"}}>
                     <h5 ><strong>Sentiment analysis</strong></h5>
                     <p>Gain insights into customer opinions and market trends. By analyzing text data from social media, reviews, and other sources, you can understand public sentiment, track brand reputation, and make informed decisions based on customer feedback and market sentiment. </p>
                   </div>
@@ -460,7 +460,7 @@ export default function Ai() {
             Telecom
             </div>
           
-            <div className='TEXT'>
+            <div align='left' className='TEXT'>
             Transform your telecommunication services with customized solutions for modern and legacy systems. 
             </div>
           </div>

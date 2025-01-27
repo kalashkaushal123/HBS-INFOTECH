@@ -44,18 +44,40 @@ export default function Mobile() {
   return (
     <>
 
-<div style={{zIndex:"1",position:'relative'}}>
+
 <Header/>
+<div>
+ <div className="fluid" style={{backgroundColor:"white"}}>
+      <div className="backgroundimg w-100" >
+        <div className="trnbox" style={{width:"100%",height:"600px"}}>
+        <center className="m-auto mt-5 ">
+          <img width={'100px'} className="rcicel" src={imagea} alt="" />
+
+          <div className="firNyj"> <h1 className="fRjBVq sm-header2">Mobile Apps Development Services</h1></div>
+          <div className="dwCooV cCEOnh sm-body20 m-auto">
+          Empower your mobile presence by delivering innovative apps that drive <br />growth&nbsp;
+          </div>
+        
+        <br /><br /><br />
+        <button className="btn btn-dark rounded-5">Contact Us</button>
+
+        </center>        
+        {/* <div className="backgroundimg" style={{width:"100%",height:"600px"}}></div> */}
+        </div>
+        
+      </div>
+
+      
 </div>
 
-<div>
-  <img className="photo" src={imagemobileapp} alt />
+
+  {/* <img className="photo" src={imagemobileapp} alt />
   <div className="main-photo">
     <img className="firstphoto" src={imagea} alt />
     <h1 className="main-heading">Mobile Apps Development Services</h1>
     <p className="next-line">Empower your mobile presence by delivering innovative apps that drive <br />growth</p>
     <button className="contact"> Contact us</button>
-  </div>
+  </div> */}
 
 
 

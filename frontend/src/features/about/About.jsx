@@ -26,6 +26,7 @@ export default function About() {
               line of code we write contributes to the creation of robust, scalable,
               and future-proof digital solutions that stand the test of time.
             </p>
+            <br />
             <a href="/Discusswithus" className="button btn-primary text-decoration-none fs-5">Discuss with us</a>
           </div>
 

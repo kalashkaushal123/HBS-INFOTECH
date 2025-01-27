@@ -1,3 +1,6 @@
+.st0 {fill: none; stroke: #fff; stroke-linecap: round; stroke-width: 1.4px;}
+
+
 .background{
    
     background: linear-gradient(135deg, rgb(18, 38, 77) 0%, rgb(132, 12, 49) 24.48%, rgb(199, 9, 39) 49.3%, rgb(252, 102, 35) 74.31%, rgb(255, 189, 48) 100%);
@@ -5946,11 +5949,9 @@ display:none;
 }
 
 
-
+/* soow desc */
 .hoverable:not(:hover) + .show-on-hover {
     display: none;
-   
-   
 }
 
 .show-on-hover{
@@ -5963,22 +5964,35 @@ display:none;
     animation-duration: 1.5s;
     animation-delay: 0.075s;
 }
+/* soow desc */
 
 
 
 
 .showme {
     cursor:alias;
-    rotate: 0deg;
+    rotate: -90deg;
     transition:0.5s ease-in
   }
   
   .showhim:hover .showme {
     cursor:alias;
-    rotate: 90deg;
+    rotate: 0deg;
     transition:0.5s ease-in
   }
   
+
+  .shownothover {
+    cursor:alias;
+    rotate: -90deg;
+    transition:0.5s ease-in
+  }
+  
+  .nothover:hover .shownothover {
+    cursor:alias;
+    rotate: 90deg;
+    transition:0.5s ease-in
+  }
 
 /*!sc*/
 

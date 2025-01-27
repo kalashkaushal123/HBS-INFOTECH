@@ -80,13 +80,15 @@ export default function Automation() {
       <img src={main_image} alt="" className='main_image' height='' />
       <br /><br /><br /><br /><br />
       <div className="gradient"></div>
-      <div className='main_text'>
+      <div className='main_text '>
         <div className='main_img'>
           <img src={setting} alt="" />
         </div>
-        <h1>Automation Testing Services</h1>
-        <p>Improve accuracy and speed up software delivery through automated testing strategies that save time, reduce costs and enhance product quality.</p>
-        <br /><br />
+       
+          <h1>Automation Testing Services</h1>
+          <p align='center'style={{margin:"5rem"}}>Improve accuracy and speed up software delivery through automated testing strategies that save time, reduce costs and enhance product quality.</p>
+    
+       <br /><br /><br />
         <button>Contact us</button>
       </div>
     </div>
@@ -101,96 +103,7 @@ export default function Automation() {
         </p>
       </div>
       
-      <h2 ><strong>Our testing services cover all stages of software development</strong></h2>
-
-      <div className='testing'>
-        <div>
-
-          <div className='testing_block'>
-            <div className='testing_image'>
-              <img src={functional_testing} alt="" height="60px" />
-            </div>
-            <div className='testing_text'>
-              <h5 style={{fontWeight:'600'}}>Functional Testing</h5>
-              <p>Provide full functionality of your software to meet your customers’ needs and increase customer trust in your product.</p>
-            </div>
-          </div>
-
-          <div className='testing_block'>
-            <div className='testing_image'>
-              <img src={automated_testing} alt="" height="60px"  />
-            </div>
-            <div className='testing_text'>
-              <h5 style={{fontWeight:'600'}}>Automated Testing</h5>
-              <p>Automate critical application areas or build end-to-end test automation platforms using the latest tools.</p>
-            </div>
-          </div>
-
-          <div className='testing_block'>
-            <div className='testing_image'>
-              <img src={security_testing} alt="" height="60px"  />
-            </div>
-            <div className='testing_text'>
-              <h5 style={{fontWeight:'600'}}>Security Testing</h5>
-              <p>Carry out environmental safety audits and protect your customers’ data.</p>
-            </div>
-          </div>
-
-          <div className='testing_block'>
-            <div className='testing_image'>
-              <img src={dedicated_term} alt="" height="60px"  />
-            </div>
-            <div className='testing_text'>
-              <h5 style={{fontWeight:'600'}}>Dedicated team or end-to-end service</h5>
-              <p>Build a dedicated team of carefully selected specialists or deliver our service in a Fix Price model.</p>
-            </div>
-          </div>
-
-        </div>
-        <div>
-
-          <div className='testing_block  '>
-            <div className='testing_image'>
-              <img src={manual_test} alt="" height="60px"  />
-            </div>
-            <div className='testing_text'>
-              <h5 style={{fontWeight:'600'}}>Manual Testing</h5>
-              <p className='pe-5'>Test whether new functionalities comply with requirements, deliver a rewarding interface and are intuitive to use.</p>
-            </div>
-          </div>
-
-          <div className='testing_block '>
-            <div className='testing_image'>
-              <img src={performance} alt="" height="60px"  />
-            </div>
-            <div className='testing_text'>
-              <h5 style={{fontWeight:'600'}}>Performance Testing</h5>
-              <p className='pe-5'>Identify application performance problems (slow response times, bottlenecks and poor scalability) before running your solution in a production environment.</p>
-            </div>
-          </div>
-
-          <div className='testing_block '>
-            <div className='testing_image'>
-              <img src={manage} alt="" height="60px"  />
-            </div>
-            <div className='testing_text'>
-              <h5 style={{fontWeight:'600'}}>Managed Testing</h5>
-              <p className='pe-5'>Manage your test processes so you can focus on your core business.</p>
-            </div>
-          </div>
-
-          <div className='testing_block '>
-            <div className='testing_image'>
-              <img src={data_test} alt="" height="60px"  />
-            </div>
-            <div className='testing_text'>
-              <h5 style={{fontWeight:'600'}}>Test Data Management</h5>
-              <p className='pe-5'>Create and manage test data in an efficient and automated manner.</p>
-            </div>
-          </div>
-
-        </div>
-      </div>
+    
 
 
 
@@ -201,61 +114,175 @@ export default function Automation() {
       <div className='para'>
         <div>
 
-          <div className='com'>
+          <div className='com mb-4'>
             <div className='com_icon'></div>
             <div className='com-text'>
               <h5 style={{fontWeight:'600'}}>Extensive experience</h5>
-              <p>across the financial services, telecommunications, sports betting and other industries</p>
+              <p>across the financial services, telecommunications,<br />_ sports betting and other industries</p>
             </div>
           </div>
 
-          <div className='com'>
+          <div className='com mb-4'>
             <div className='com_icon'></div>
               <div className='com-text'>
                 <h5 style={{fontWeight:'600'}}>Extensive experience</h5>
-                <p>across the financial services, telecommunications, sports betting and other industries</p>
+                <p>across the financial services, telecommunications,<br /> sports betting and other industries</p>
             </div>
           </div>
 
-          <div className='com'>
+          <div className='com mb-4'>
             <div className='com_icon'></div>
               <div className='com-text'>
                 <h5 style={{fontWeight:'600'}}>Extensive experience</h5>
-                <p>across the financial services, telecommunications, sports betting and other industries</p>
+                <p>across the financial services, telecommunications,<br /> sports betting and other industries</p>
               </div>
             </div>
         </div>
  
         <div style={{marginLeft:'80px'}}>
 
-          <div className='com'>
+          <div className='com mb-4'>
             <div className='com_icon'></div>
             <div className='com-text'>
               <h5 style={{fontWeight:'600'}}>Extensive experience</h5>
-              <p>across the financial services, telecommunications, sports betting and other industries</p>
+              <p>across the financial services, telecommunications,<br /> sports betting and other industries</p>
             </div>
           </div>
 
-          <div className='com'>
+          <div className='com mb-4'>
             <div className='com_icon'></div>
             <div className='com-text'>
               <h5 style={{fontWeight:'600'}}>Extensive experience</h5>
-              <p>across the financial services, telecommunications, sports betting and other industries</p>
+              <p>across the financial services, telecommunications,<br /> sports betting and other industries</p>
             </div>
           </div>
 
-          <div className='com'>
+          <div className='com mb-4'>
             <div className='com_icon'></div>
             <div className='com-text'>
               <h5 style={{fontWeight:'600'}}>Extensive experience</h5>
-              <p>across the financial services, telecommunications, sports betting and other industries</p>
+              <p>across the financial services, telecommunications,<br /> sports betting and other industries</p>
             </div>
           </div>
         </div>
  
       </div>
+    </div>
+
+
+<section>
+<h2 className='' style={{marginLeft:"8rem"}}><strong className=''>Our testing services cover all stages of software development</strong></h2>
+
+<div className='testing'>
+  <div className='row' style={{marginLeft:"8rem"}}>
+
+    <div className='col-md-6 mb-4 '>
+      <div className="d-flex">
+      <div className='testing_image'>
+        <img src={functional_testing} alt="" height="60px" />
       </div>
+      <div className='testing_text'>
+        <h5 style={{fontWeight:'600'}}>Functional Testing</h5>
+        <p className='pe-5'>Provide full functionality of your software to meet your customers’ needs and increase customer trust in your product.</p>
+      </div>
+      </div>
+    </div>
+
+    <div className='col-md-6 mb-4 '>
+      <div className='d-flex'>
+      <div className='testing_image'>
+        <img src={automated_testing} alt="" height="60px"  />
+      </div>
+      <div className='testing_text'>
+        <h5 style={{fontWeight:'600'}}>Automated Testing</h5>
+        <p className='pe-5'>Automate critical application areas or build end-to-end test automation platforms using the latest tools.</p>
+      </div>
+      </div>
+    </div>
+
+    <div className='col-md-6 mb-4 '>
+    <div className="d-flex">
+      <div className='testing_image'>
+        <img src={security_testing} alt="" height="60px"  />
+      </div>
+      <div className='testing_text'>
+        <h5 style={{fontWeight:'600'}}>Security Testing</h5>
+        <p className='pe-5'>Carry out environmental safety audits and protect your customers’ data.</p>
+      </div>
+      </div>
+    </div>
+
+    <div className='col-md-6 mb-4 '>
+    <div className="d-flex">
+      <div className='testing_image'>
+        <img src={dedicated_term} alt="" height="60px"  />
+      </div>
+      <div className='testing_text'>
+        <h5 style={{fontWeight:'600'}}>Dedicated team or end-to-end service</h5>
+        <p className='pe-5'>Build a dedicated team of carefully selected specialists or deliver our service in a Fix Price model.</p>
+      </div>
+      </div>
+    </div>
+
+    <div className='col-md-6 mb-4 '>
+    <div className="d-flex">
+      <div className='testing_image'>
+        <img src={manual_test} alt="" height="60px"  />
+      </div>
+      <div className='testing_text'>
+        <h5 ><strong>Manual Testing</strong></h5>
+        <p className='pe-5'>Test whether new functionalities comply with requirements, deliver a rewarding interface and are intuitive to use.</p>
+      </div>
+      </div>
+    </div>
+
+    <div className='col-md-6 mb-4 '>
+    <div className="d-flex">
+      <div className='testing_image'>
+        <img src={performance} alt="" height="60px"  />
+      </div>
+      <div className='testing_text'>
+        <h5 ><strong>Performance Testing</strong></h5>
+        <p className='pe-5'>Identify application performance problems (slow response <br /> times, bottlenecks and poor scalability) before running your solution in a production environment.</p>
+      </div>
+      </div>
+    </div>
+
+    <div className='col-md-6 mb-4 '>
+    <div className="d-flex">
+      <div className='testing_image'>
+        <img src={manage} alt="" height="60px"  />
+      </div>
+      <div className='testing_text'>
+        <h5 ><strong>Managed Testing</strong></h5>
+        <p className='pe-5'>Manage your test processes so you can focus on your core business.</p>
+      </div>
+      </div>
+    </div>
+
+    <div className='col-md-6 mb-4 '>
+    <div className="d-flex">
+      <div className='testing_image'>
+        <img src={data_test} alt="" height="60px"  />
+      </div>
+      <div className='testing_text'>
+        <h5 ><strong>Test Data Management</strong></h5>
+        <p className='pe-5'>Create and manage test data in an efficient and automated manner.</p>
+      </div>
+      </div>
+    </div>
+
+
+  </div>
+  <div>
+
+
+
+  </div>
+</div>
       
+</section>
+
       <section className='device'>
         <h2>Who we’ve helped</h2>
 

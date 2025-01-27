@@ -28,12 +28,14 @@ import IdentityandAccess from './features/services/services_pages/IdentityandAcc
 import SoftwareAuditing from './features/services/services_pages/SoftwareAuditing/SoftwareAuditing';
 import SecurityAudit from './features/services/SecurityAudit/SecurityAudit';
 import NearshoringServices from './features/services/services_pages/NearshoringServices/NearshoringServices';
+
 import FinancialServices from './features/industries/industriesPages/FinancialServices/FinancialServices';
 import Telecom from './features/industries/industriesPages/Telecom/Telecom';
 import Media_Entertainment from './features/industries/industriesPages/Media&Entertainment/Media_Entertainment';
 import Biotech_Healthcare from './features/industries/industriesPages/Biotech&Healthcare/Biotech_Healthcare';
 import SportsBetting from './features/industries/industriesPages/SportsBetting/SportsBetting';
 import Manufacturing from './features/industries/industriesPages/Manufacturing/Manufacturing';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 
 
@@ -190,7 +192,7 @@ function App() {
   ]);
 
   return (
-    <>     
+    <>
       <RouterProvider router={router} />
     </>
   );
