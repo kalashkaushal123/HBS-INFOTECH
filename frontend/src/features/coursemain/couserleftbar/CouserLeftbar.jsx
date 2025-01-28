@@ -25,7 +25,7 @@ export default function CouserLeftbar() {
     <div>
       <Link to="/CourseMain/courseHome">
       <div className={`home-left ${clicked === 'home' ? 'clicked' : ''}`} onClick={() => handleClick('home')}>
-        <div className="logo">
+        <div className="logo" style={{color:"black"}}>
           <CiHome />
         </div>
         <p>Home</p>
@@ -33,7 +33,7 @@ export default function CouserLeftbar() {
       </Link>
       <Link to="/CourseMain/courseLean">
       <div className={`learn-left ${clicked === 'learn' ? 'clicked' : ''}`} onClick={() => handleClick('learn')}>
-        <div className="logo">
+        <div className="logo" style={{color:"black"}}>
           <SiK3S />
         </div>
         <p>Learn</p>
@@ -41,7 +41,7 @@ export default function CouserLeftbar() {
       </Link>
       <Link to="/courseMain/CourseClassroom">
       <div className={`classroom-left ${clicked === 'classroom' ? 'clicked' : ''}`} onClick={() => handleClick('classroom')}>
-        <div className="logo">
+        <div className="logo" style={{color:"black"}}>
           <SiGoogleclassroom />
         </div>
         <p>Classroom</p>
@@ -49,7 +49,7 @@ export default function CouserLeftbar() {
       </Link>
       <Link to="/CourseMain/courspractice">
       <div className={`practice-left ${clicked === 'practice' ? 'clicked' : ''}`} onClick={() => handleClick('practice')}>
-        <div className="logo">
+        <div className="logo" style={{color:"black"}}>
           <IoSparkles />
         </div>
         <p>Practice</p>
@@ -57,37 +57,39 @@ export default function CouserLeftbar() {
       </Link>
       
       <div className={`projects-left ${clicked === 'projects' ? 'clicked' : ''}`} onClick={() => handleClick('projects')}>
-        <div className="logo">
+        <div className="logo" style={{color:"black"}}>
           <FaProjectDiagram />
         </div>
         <p>Projects</p>
       </div>
       <div className={`carriar-left ${clicked === 'carriar' ? 'clicked' : ''}`} onClick={() => handleClick('carriar')}>
-        <div className="logo">
+        <div className="logo" style={{color:"black"}}>
           <MdWork />
         </div>
         <p>Carriar</p>
       </div>
+      <Link to="/CourseMain/Mentorship">
       <div className={`mentorship-left ${clicked === 'mentorship' ? 'clicked' : ''}`} onClick={() => handleClick('mentorship')}>
-        <div className="logo">
+        <div className="logo" style={{color:"black"}}>
           <BiGitRepoForked />
         </div>
         <p>Mentorship</p>
       </div>
+      </Link>
       <div className={`job-bord-left ${clicked === 'job-bord' ? 'clicked' : ''}`} onClick={() => handleClick('job-bord')}>
-        <div className="logo">
+        <div className="logo" style={{color:"black"}}>
           <MdWork />
         </div>
         <p>Jobboard</p>
       </div>
       <div className={`refer-eran-left ${clicked === 'refer-eran' ? 'clicked' : ''}`} onClick={() => handleClick('refer-eran')}>
-        <div className="logo">
+        <div className="logo" style={{color:"black"}}>
           <AiOutlineUsergroupAdd />
         </div>
-        <p>Refereran</p>
+        <p>Refereran</p >
       </div>
       <div className={`community-left ${clicked === 'community' ? 'clicked' : ''}`} onClick={() => handleClick('community')}>
-        <div className="logo">
+        <div className="logo" style={{color:"black"}}>
           <IoIosPeople />
         </div>
         <p>Community</p>
