@@ -245,6 +245,7 @@
   /* display: flex
 ; */
   height: 150px;
+  position: relative;
   width: 33%;
   margin-top: 50px;
   margin-left: 0px;
@@ -277,4 +278,6 @@
   text-align: left;
   width: 100%;
   margin-top: 13px;
+  position: absolute;
+  bottom: 13px;
 }
