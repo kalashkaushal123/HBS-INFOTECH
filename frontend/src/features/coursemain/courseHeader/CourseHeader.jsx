@@ -15,12 +15,8 @@ export default function CourseHeader() {
           <div className="coin">
             <button>10,000 Coins</button>
           </div>
-          <div className="track-performance">
-            <button>APs 2735</button>
-          </div>
-          <div className="myperformance">
-            <button>Track Performance</button>
-          </div>
+          
+          
           <div className="learn-about-master">
             <button>Learn About Master</button>
           </div>

@@ -3,13 +3,231 @@
     width: 100%;
 
 }
-.course-home-block1{
-    height: 10%;
-    width: 100%;
+
+
+.introdution{
+    height: 4%;
+    margin-top: 30px;
+    position: relative;
+    top: 40px;
+}
+.introdution h4 {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: #062a6c; 
+    text-align: center; 
+    margin-top: 20px; 
+    margin-bottom: 10px;
+    text-transform: capitalize; 
+    font-family: 'Arial', sans-serif;
+  }
+/*   
+  block1 */
+  /* Style for the main block */
+
+  .course-home-block1{
+    height: 15%;
+    width: 90%;
     background-color: black;
+    margin-top: 30px;
+    margin-left: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
 }
-.course-home-block2{
-    height: 10%;
+
+  
+  /* Left side styling (video container) */
+  .course-home-block1-lfet-side {
+    flex: 1;
+    margin-right: 20px;
+  }
+  
+  .course-home-block1-lfet-side video {
     width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 10px;
+    border-radius: 8px;
     background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Right side styling */
+  .course-home-block1-right-side {
+    flex: 1.5;
+    color: #333;
+  }
+  
+  .course-home-block1-right-side h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  .course-home-block1-right-side p {
+    font-size: 1.1rem;
+    color:white;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+  
+  /* Bottom section of the right side (buttons and link) */
+  .course-home-block1-right-side-bottom {
+    display: flex;
+    gap: 15px;
+    
+    flex-wrap: wrap;
+  }
+  
+  .course-home-block1-right-side-bottom button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    background-color:white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .course-home-block1-right-side-bottom button:hover {
+    background-color: red; /* Lighter blue on hover */
+    color: white;
+  }
+  
+  .course-home-block1-right-side-bottom a {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .course-home-block1-right-side-bottom a:hover {
+    color: red; /* Change color on hover */
+  }
+  .course-home-block2{
+    display: flex;
+    height: 15%;
+    width: 90%;
+  
+    margin-top: 50px;
+    margin-left: 50px;
+    border-radius: 10px;
+    gap: 20px;
+  }
+  .course-home-block2-left-side{
+    height: 100%;
+    width: 70%;
+    background-color:white;
+    border-radius: 5px;
+  }
+  .course-home-block2-right-side{
+    height: 100%;
+    width: 30%;
+    background-color:white;
+    border-radius: 5px;
+
+  }
+  
+  /* Block 2 Styles */
+.course-home-block2 {
+  display: flex;
+  height: 20%; /* Allowing the content to expand */
+  width: 90%;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+  gap: 20px;
+  background-color: #f4f7fc; /* Light background color */
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adding shadow for depth */
 }
+
+/* Left side of the block */
+.course-home-block2-left-side {
+  height: 100%;
+  width: 70%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.course-home-block2-left-side-inside {
+  margin-bottom: 20px;
+}
+
+.course-home-block2-left-side-inside h4 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #062a6c;
+  margin-bottom: 10px;
+}
+
+.buttun-inside {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+.button-inside {
+  background-color: #f4f7fc;
+  color: #062a6c;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  width: fit-content;
+  margin-bottom: 15px;
+}
+
+.btn-course-inside {
+  padding: 12px 25px;
+  font-size: 1rem;
+  background-color: #062a6c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.course-home-block2-left-side-inside button:hover {
+  background-color: #007bff; /* Lighter blue on hover */
+}
+
+
+
+.course-home-block2-right-side-inside {
+  width: 80%;
+  height: auto;
+ 
+}
+.course-home-block2-right-side>h5{
+  position: relative;
+  left: 50px;
+  top: 10px;
+  font-weight: bolder;
+}
+
+
+.learning-ciriculam-block2{
+  height: 7.5rem;
+  width: 100%;
+  background-color: #f4f7fc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  padding: 10px;
+}
+
+
