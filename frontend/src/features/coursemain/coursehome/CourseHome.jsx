@@ -1,4 +1,5 @@
 import "./CourseHome.css";
+// import coding from '../courses/images/microsoft.png';
 export default function CourseHome() {
   return (
     <div>
@@ -51,6 +52,27 @@ export default function CourseHome() {
           </div>
 
         </div>
+
+  <div className="card-opretor">
+<div className="card-inner">
+{/* <div className="card-inner-img">
+  <img className="img" src={coding} alt="image" />
+    </div> */}
+  <h5>Accenture Coding Problems</h5>
+  <p>5 Question 75 min</p>
+  <a href="#">Strat Now</a>
+</div>
+<div className="card-inner">
+  <h5>Accenture Coding Problems</h5>
+  <p>5 Question 75 min</p>
+</div>
+<div className="card-inner">
+  <h5>Accenture Coding Problems</h5>
+  <p>5 Question 75 min</p>
+</div>
+          </div>
+
+
         <div className="course-home-block3">
           <div className="course-home-block3-top d-flex justify-content-between m-1
           font-bold
@@ -58,6 +80,8 @@ export default function CourseHome() {
             <h3>Practice Coding Assessments</h3>
             <p>see all</p>
           </div>
+
+         
 
           <div className="coding_assessments">
 
