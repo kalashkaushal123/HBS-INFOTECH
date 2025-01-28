@@ -230,16 +230,19 @@
   padding: 10px;
 }
 .card-opretor {
-  display: flex;
-  height: 30%;
-  width: 90%;
-  margin-top: 50px;
-  margin-left: 50px;
+  display: flex
+;
+  /* height: 30%; */
+  width: 100%;
+  /* justify-content: center; */
+  /* align-items: center; */
+  margin-top: 0px;
+  margin-left: 0px;
   border-radius: 10px;
   gap: 20px;
-  background-color: #f4f7fc;
-  padding: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #f5f1ec;
+  padding: 0px 30px;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
 }
 .card-inner {
   /* display: flex
@@ -247,9 +250,8 @@
   height: 150px;
   position: relative;
   width: 33%;
-  margin-top: 50px;
+  margin-top: 10px;
   margin-left: 0px;
-  border-radius: 10px;
   gap: 20px;
   background-color: #fff;
   padding: 11px;
@@ -273,11 +275,18 @@
 
 .card-inner a {
   font-size: 14px;
-  color: #790950;
+  color: #fe0320;
   font-weight: 600;
   text-align: left;
   width: 100%;
   margin-top: 13px;
   position: absolute;
   bottom: 13px;
+}
+.head-opretor h2 {
+  font-size: 18px;
+  margin-left: 30px;
+  color: #000;
+  margin-top: 50px;
+  font-weight: 600;
 }

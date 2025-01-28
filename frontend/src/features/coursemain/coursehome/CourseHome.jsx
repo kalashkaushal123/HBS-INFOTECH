@@ -52,7 +52,7 @@ export default function CourseHome() {
           </div>
 
         </div>
-
+        <div className="head-opretor"><h2>Practice Coding Assetments</h2></div>   
   <div className="card-opretor">
 <div className="card-inner">
 {/* <div className="card-inner-img">
@@ -63,24 +63,64 @@ export default function CourseHome() {
   <a href="#">Strat Now</a>
 </div>
 <div className="card-inner">
-  <h5>Accenture Coding Problems</h5>
+  <h5>Dropbox Python Coding Problems</h5>
   <p>5 Question 75 min</p>
+  <a href="#">Strat Now</a>
 </div>
 <div className="card-inner">
-  <h5>Accenture Coding Problems</h5>
+  <h5>HCLTech Python Coding Problems</h5>
   <p>5 Question 75 min</p>
+  <a href="#">Strat Now</a>
+</div>
+          </div>
+          <div className="head-opretor"><h2>Practice quiz  Assetments</h2></div>   
+  <div className="card-opretor">
+<div className="card-inner">
+{/* <div className="card-inner-img">
+  <img className="img" src={coding} alt="image" />
+    </div> */}
+  <h5>Neural Networks</h5>
+  <p>5 Question 75 min</p>
+  <a href="#">Strat Now</a>
+</div>
+<div className="card-inner">
+  <h5>Microsoft Data Analyst Mock Test</h5>
+  <p>5 Question 75 min</p>
+  <a href="#">Strat Now</a>
+</div>
+<div className="card-inner">
+  <h5>Meta Data Scientist Mock Test</h5>
+  <p>5 Question 75 min</p>
+  <a href="#">Strat Now</a>
+</div>
+          </div>
+        
+          <div className="head-opretor"><h2>Capstone Project</h2></div>   
+  <div className="card-opretor">
+<div className="card-inner">
+{/* <div className="card-inner-img">
+  <img className="img" src={coding} alt="image" />
+    </div> */}
+  <h5>Myntra Online Retail Customer Segmentaion</h5>
+  <p>Unsupervised ML</p>
+
+  <a href="#">Strat Now</a>
+</div>
+<div className="card-inner">
+  <h5>Kindle Book Recommendation System</h5>
+  <p>Unsupervised ML</p>
+  <a href="#">Strat Now</a>
+</div>
+<div className="card-inner">
+  <h5>Toping Modeling On News Art</h5>
+  <p>Unsupervised ML</p>
+  <a href="#">Strat Now</a>
 </div>
           </div>
 
 
         <div className="course-home-block3">
-          <div className="course-home-block3-top d-flex justify-content-between m-1
-          font-bold
-          ">
-            <h3>Practice Coding Assessments</h3>
-            <p>see all</p>
-          </div>
-
+        
          
 
           <div className="coding_assessments">
