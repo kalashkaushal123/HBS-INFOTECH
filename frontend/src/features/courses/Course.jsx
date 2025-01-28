@@ -12,6 +12,17 @@ import Footer from "../../comman/Footer";
 import { Link } from "react-router-dom";
 
 
+// Logo
+import application from './logos/application.webp'
+import assement from './logos/assement.webp'
+import champion from './logos/champion.webp'
+import course from './logos/crash course.webp'
+import foundation from './logos/foundation.webp'
+import graduation from './logos/graduation.webp'
+import interview from './logos/interview.webp'
+import resume from './logos/resume.webp'
+import support from './logos/support.webp'
+
 
 
 
@@ -432,6 +443,7 @@ export default function Course() {
           </div>
         </div>
       </section>
+      <br /><br /><br />
 
 
       <section>
@@ -583,9 +595,12 @@ export default function Course() {
 
 
 
-      
+      <br /><br />
       <div className="certification-box">
-        <h1 className="data-head">unlock your data science </h1>
+        <br /><br />
+
+        
+        <h1 style={{color:'black', marginLeft:'33%',fontSize:'28px', textTransform:'capitalize'}}>unlock your data science </h1><br /><br />
         <h1 className="data-head2"><u style={{color: 'red'}}>certifiction</u></h1>
         <p className="data-head3">elevate your career with esteemed certifiction, unlock new oppertunites and demonstrate your mastery in data science.</p>
         <div className="Certificate-option">
@@ -614,8 +629,8 @@ export default function Course() {
               (optional)</h3>
             <br />
             <p className="nexthead2">Experential learning opportunity at IIT Guwahati campus</p>
-            <div className="certificate-button">
-              <button className="button-explore"> explore programe</button>
+            <div className="certificate-button" >
+              <button className="button-explore"> explore programe</button> 
               <button className="button-download"> download brochure</button>
             </div>
           </div>
@@ -626,10 +641,20 @@ export default function Course() {
       </div>
 
 
-<div style={{backgroundColor:'black' , width:'100%', height:'2100px'}}>
+
+
+
+
+
+
+
+
+
+
+<div style={{backgroundColor:'black' , width:'100%', height:'2000px', color:'white'}}>
       <div >
-        <h1 className="job-head">100% job assurance with</h1>
-        <h1 className="job-head2"><u className="job-headu">allemx career track</u></h1>
+        <br />
+        <h1 style={{marginLeft:'27%',fontSize:'32px',marginTop:'10px', textTransform:'capitalize'}}>100% job assurance with</h1> <h1 className="job-head2"> <br /> <u className="job-headu">allemx career track</u></h1> <br /><br /> <br /><br />
         <p className="job-para">We have designed a dedicated data science career track along with career support services to help you become industry ready and make sure you land your dream job!</p>
       </div>
       <h2 className="job-headmain">AlmaX Eligibility Requirements</h2>
@@ -639,19 +664,19 @@ export default function Course() {
 
       <div className="cert-cards">
         <div className="cert-cards-in">
-          <img className="cert-img" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
+          <img className="cert-img" src={graduation}/>
           <h3 className="cert-head">Graduation Degree</h3>
           <p className="cert-para">Must be a graduate at the time of AlmaX <br /> enrollment</p>
         </div>
         <div className="cert-cards-in">
-          <img className="cert-img" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
-          <h3 className="cert-head">Graduation Degree</h3>
-          <p className="cert-para">Must be a graduate at the time of AlmaX <br /> enrollment</p>
+          <img className="cert-img" src={foundation}/>
+          <h3 className="cert-head">Completed the Foundation Track</h3>
+          <p className="cert-para">Completed the foundation track of the course.</p>
         </div>
         <div className="cert-cards-in">
-          <img className="cert-img" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
-          <h3 className="cert-head">Graduation Degree</h3>
-          <p className="cert-para">Must be a graduate at the time of AlmaX <br /> enrollment</p>
+          <img className="cert-img" src={assement}/>
+          <h3 className="cert-head">Completed the foundation track of the course.</h3>
+          <p className="cert-para">Take entrance exam for AlmaX</p>
         </div>
       </div>
       <br />
@@ -664,37 +689,37 @@ export default function Course() {
       <div className="almax-div">
         <div className="cert-cards">
           <div className="cert-cards-in">
-            <img className="cert-img" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
-            <h3 className="cert-head">Graduation Degree</h3>
-            <p className="cert-para">Must be a graduate at the time of AlmaX <br /> enrollment</p>
+            <img className="cert-img" src={support}/>
+            <h3 className="cert-head">Placement Support</h3>
+            <p className="cert-para">Complete support from our dedicated placement team until you get a job</p>
+          </div>
+          <div className="cert-cards-in">           
+            <img className="cert-img" src={resume}/>
+            <h3 className="cert-head">Resume Building</h3>
+            <p className="cert-para">Resume sharing in our network of 700+ hiring partners</p>
           </div>
           <div className="cert-cards-in">
-            <img className="cert-img" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
-            <h3 className="cert-head">Graduation Degree</h3>
-            <p className="cert-para">Must be a graduate at the time of AlmaX <br /> enrollment</p>
-          </div>
-          <div className="cert-cards-in">
-            <img className="cert-img" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
-            <h3 className="cert-head">Graduation Degree</h3>
-            <p className="cert-para">Must be a graduate at the time of AlmaX <br /> enrollment</p>
+            <img className="cert-img" src={application}/>
+            <h3 className="cert-head">AlmaX Job Application</h3>
+            <p className="cert-para">End to end application tracking of multiple interview rounds</p>
           </div>
         </div>
         <br />
         <div className="cert-cards">
           <div className="cert-cards-in">
-            <img className="cert-img" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
-            <h3 className="cert-head">Graduation Degree</h3>
-            <p className="cert-para">Must be a graduate at the time of AlmaX <br /> enrollment</p>
+            <img className="cert-img" src={interview}/>
+            <h3 className="cert-head">Mock Interviews</h3>
+            <p className="cert-para">Professional mock interviews assistance</p>
           </div>
           <div className="cert-cards-in">
-            <img className="cert-img" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
-            <h3 className="cert-head">Graduation Degree</h3>
-            <p className="cert-para">Must be a graduate at the time of AlmaX <br /> enrollment</p>
+            <img className="cert-img" src={course}/>
+            <h3 className="cert-head">Dedicated Career Coach</h3>
+            <p className="cert-para">Expert data science career coaches to guide you throughout the program</p>
           </div>
           <div className="cert-cards-in">
-            <img className="cert-img" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
-            <h3 className="cert-head">Graduation Degree</h3>
-            <p className="cert-para">Must be a graduate at the time of AlmaX <br /> enrollment</p>
+            <img className="cert-img" src={champion}/>
+            <h3 className="cert-head">Growth Champion</h3>
+            <p className="cert-para">Know learning strategies and get mentorship from our top Alumni.</p>
           </div>
         </div>
       </div>
@@ -721,6 +746,7 @@ export default function Course() {
             Add-On : Automated Coding Challenges with AI</h3>
         </div>
         <div className="almax-curr-main-img">
+          <img src="" />
         </div>
       </div>
 
@@ -1171,142 +1197,7 @@ export default function Course() {
     <br /><br /><br />
     
     
-    <section>
-      <div className="bg-black text-white p-0 mt-5">
-              <h1 className="text-center display-5 fw-bolder text-white">
-                    Curriculum and 
-                    <a href="" className="text-danger">Learning Track</a></h1>
-              <center className="p-5 mb-5 h5">
-              We have designed our data science course with curriculum and learning pedagogy based on what top tech companies expect when you join them after you graduate. The curriculum focuses on learning by doing including solving real world problems and working on real industry level projects.
-              </center>
-
-              <center>
-              <div align="center" class="container p-0 m-0" >
-       
-
-
-
-              <div className="col-md-4">
-              <div class="section text-start " style={{position:"relative",left:'40%'}} >
-                  
-                  <div class="course " onClick={Introduction} >
-                      <div class="course-number mb-4 ">01 &ensp;</div>
-                      <div class="course-info p-0 m-0">
-                          <h6 className="title text-white">Introduction to Computer Programming</h6>
-                          <p class="add-on">Add-On: Pair Programming using ChatGPT</p>
-                      </div>
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
-                  </div>
-
-
-                  <div class="course " onClick={Numerical}>
-                      <div class="course-number mb-4">02 &ensp;</div>
-                      <div class="course-info">
-                          <h6 className="title text-white">Numerical Programming in Python</h6>
-                          <p class="add-on">Add-On: Data Wrangling using Pandas AI</p>
-                      </div>
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
-                  </div>
-
-                  <div class="course " onClick={Relational}>
-                      <div class="course-number mb-4">03 &ensp;</div>
-                      <div class="course-info">
-                          <h6 className="title text-white">Relational Databases</h6>
-                          <p class="add-on">Add-On: ChatGPT for writing SQL queries</p>
-                      </div>
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
-                  </div>
-
-                  <div class="course " onClick={Data}>
-                      <div class="course-number mb-4">04 &ensp;</div>
-                      <div class="course-info">
-                          <h6 className="title text-white">Data Visualization Tools</h6>
-                          <p class="add-on">Add-On: Creating presentations using ChatGPT</p>
-                      </div>
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
-                  </div>
-
-                  <div class="course " onClick={Applied}>
-
-                      <div class="course-number mb-4">05 &ensp;</div>
-                      <div class="course-info">
-                          <h6 className="title text-white">Applied Business Analytics</h6>
-                          <p class="add-on">Add-On: Leveraging AI for equations simplified via ChatGPT</p>
-                      </div>
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
-                  </div>
-
-                  <div class="course " onClick={Machine} >
-                      <div class="course-number mb-4">06 &ensp;</div> 
-                      <div class="course-info">
-                          <h6 className="title text-white">Machine Learning & Generative AI with Microsoft Azure</h6>
-                          <p class="add-on">Add-On: Use AI to create AI</p>
-                      </div>
-                      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
-                  </div>
-
-              </div>
-              </div>
-
-        <div className="col-md-1"></div>
-
-       <div className="col-md-4 bggray p-0 m-0 bg-dark rounded-3">
-             <div style={{display:'flex'}} className="row ">
-                  <div className="row p-4">
-                      <div className="col-md-4 ">
-                          <h4>Topics</h4>
-                      </div>
-                      <div className="col-md-8 text-end ">
-                          Dutation : <label htmlFor="" className="text-danger">1 month</label>
-                      </div>
-                      
-                  </div>
-             
-              </div>
-             <hr />
-             <div className='scrollview ' style={{overflow:'scroll',position:"relative",height:'300px', scrollbarWidth: 'none'}}>
-             <ul className="text-start" >
-               <li>• {onedata.t1}</li><br /><br />
-               <li>• {onedata.t2}</li><br /><br />
-               <li>• {onedata.t3}</li><br /><br />
-               <li>• {onedata.t4}</li><br /><br />
-               <li>• {onedata.t5}</li><br /><br />
-               <li>• {onedata.t6}</li><br /><br />
-               <li>• {onedata.t7}</li><br /><br />
-               <li>• {onedata.t8}</li><br /><br />
-               <li>• {onedata.t9}</li><br /><br />
-               <li>• {onedata.t10}</li><br /><br />
-             </ul>
-             </div>
-       </div>
-       <div className="col-md-1"></div>
-
-   </div>
-</center>
-            
-</div>
-
-     
-        <div className="bg-black pt-5">
-        {/* <img src='iconsset.PNG' alt="" width={'90%'} /> */}
-
-       <center>
-       <div className="row container ">
-        {languageColl.map((item,index)=>
-        <>
-        <div align='center' className="col-md-2 col-4 ">
-                <img className="border rounded-2 p-1 imgsizehover"  src={item.img} width={'40px'} height='40px' alt="" />
-                <br /><br />
-                <p className="text-white text-center ">&ensp; {item.title}</p>
-          </div>
-        </>)}
-          
-        </div>
-       </center>
-        
-              
-        </div>
-      </section>
+    
 
     
     
