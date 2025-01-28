@@ -312,6 +312,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
 }
 
 /* Hero Section */
@@ -320,6 +321,7 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  background-color: #111;
   color: #fff;
   padding: 20px;
 }
@@ -472,6 +474,7 @@ h1 {
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: #121212;
   color: #ffffff;
 }
 
@@ -480,7 +483,6 @@ body {
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  color: white;
 }
 
 header h1 {
@@ -516,7 +518,6 @@ header h1 {
 }
 
 .description {
-  color: white;
   margin-bottom: 40px;
 }
 
@@ -750,7 +751,7 @@ header h1 {
 
   background-color: white;
   width: 100%;
-  height: 930px;
+  height: 1000px;
   
   
   
@@ -900,14 +901,12 @@ header h1 {
 .cert-head{
   text-align: center; 
   margin-top: 10px;
-  color: white;
 
 }
 
 .cert-para{
   text-align: center; 
   margin-top: 10px;
-  color: white;
 }
 
 .almax-carrer-services{
@@ -923,19 +922,16 @@ header h1 {
 .almax-curr-main{
   display: flex; 
   justify-content: space-evenly;
-  color: white;
 }
 
 
 .almax-1{
   margin-left: 50px;
-  color: white;
 }
 
 .almax-2{
   margin-top: 30px; 
   margin-left: 50px;
-  color: white;
 }
 
 .almax-curr-main-img{
@@ -948,11 +944,212 @@ header h1 {
 .div-after-almax{
   background-color: white; 
   width: 100%; 
-  height: 2200px;
+  height: 3000px;
   align-content: baseline;
 }
 
+.course-fees{
+  color: black;
+  margin-left: 40%;
+  margin-top: 90px;
+}
 
+.course-red{
+  color: red; 
+  margin-left: 700px;
+  margin-top: -67px;
+  align-content: baseline;
+  
+}
+
+
+
+
+
+
+
+.card {
+  width: 400px;
+  height: 600px;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+}
+
+.card2 {
+  width: 400px;
+  height: 600px;
+  background: #ffffff;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vmin solid #05060f;
+  box-shadow: 0.4rem 0.4rem #05060f;
+  overflow: hidden;
+  color: black;
+  margin-left: 20px;
+}
+
+
+.pricing-block-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.pricing-plan {
+  color: #ff1414;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  font-weight: 700;
+  text-align: center;
+  font-size: 32px;
+}
+
+.price-value {
+  /* display: flex; */
+  color: #05060f;
+  font-size: 1.8rem;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.pricing-note {
+  opacity: 0.8;
+}
+
+
+.check-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.check-list-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+
+.price-company{
+  text-align: center;
+  font-size: 19px;
+}
+
+.price-number{
+  margin-top: 25px;
+  text-align: center;
+}
+
+
+
+/* From Uiverse.io by absoluteSTrange */ 
+.button {
+  padding: 12px 40px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(255, 56, 86);
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.button:hover {
+  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+}
+
+.button:active {
+  background-color: rgb(255, 56, 86);
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+
+.button2 {
+  padding: 12px 40px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(238, 200, 205);
+  letter-spacing: 1.5px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+  color: hsl(0, 100%, 42%);
+  cursor: pointer;
+}
+
+
+.button2:hover {
+  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+}
+
+.button2:active {
+  background-color: rgb(255, 56, 86);
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  transform: translateY(5px);
+  transition: 200ms;
+}
+
+
+.cards-in-line{
+  display: inline-flex;
+  
+  margin-left: 250px;
+}
+
+
+.Tution-fees{
+  color: black;
+  margin-left: 140px;
+  background-color: white;
+  border: none;
+  font-size: 25px;
+
+  
+}
+
+.career-fees{
+  color: black;
+  margin-right: 120px;
+  background-color: white;
+  border: none;
+  font-size: 25px;
+  
+  
+}
+
+
+.feeeees{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.career-fees:active{
+  color: red;
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  
+  
+}
+
+
+
+.Tution-fees:active{
+  color: red;
+  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+  
+  
+}
 
 
 
@@ -970,164 +1167,6 @@ header h1 {
   align-content: baseline;
   
 }
-
-
-/* From Uiverse.io by alexruix */ 
-
-
-
-
-
-
-
-
-.justify-table-first{
-  margin-top: 50px;
-  height: 300px;
-  width: 100%;
-  margin-left: 60px;
-  display: flex;
-
-}
-
-.justify-table-first2{
-  margin-top: -120px;
-  height: 300px;
-  width: 100%;
-  margin-left: 60px;
-  display: flex;
-
-}
-
-.first-table{
-  height: 400px;
-  width: 100%;
-
-}
-
-
-
-
-.first-row{
-  height: 250px;
-  width: 42%;
-  border: 0.5px solid grey;
-  box-shadow: gray 0px 2px 2px ;
-  align-content: baseline;
-  margin-left: 50px;
-  border-radius: 10px;
-
-}
-
-.first-row-1{
-  height: 200px;
-  width: 42%;
-  border: 0.5px solid grey;
-  box-shadow: gray 0px 2px 2px ;
-  margin-left: 20px;
-  align-content: baseline;
-  border-radius: 10px;
-
-}
-
-
-.row-des{
-  margin-top: 40px;
-
-}
-
-.row-des1{
-  margin-top: 40px;
-
-}
-
-.row-photo{
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
-  border: none;
-  box-shadow: 1px 2px 3px;
-  padding: 15px;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-
-.row-head{
-  margin-left: 120px;
-  margin-top: -85px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;   
-}
-
-.row-para{
-  margin-left: 120px;
-  margin-top: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: black;  
-
-}
-
-
-
-.first-row1{
-  height: 160px;
-  width: 42%;
-  border: 0.5px solid grey;
-  box-shadow: gray 0px 2px 2px ;
-  align-content: baseline;
-  margin-left: 50px;
-  border-radius: 10px;
-}
-
-.first-row1-1{
-  height: 200px;
-  width: 42%;
-  border: 0.5px solid grey;
-  box-shadow: gray 0px 2px 2px ;
-  margin-left: 20px;
-  align-content: baseline;
-  border-radius: 10px;
-
-}
-
-.row-photo1{
-  height: 55px;
-  width: 55px;
-  border-radius: 50%;
-  border: none;
-  box-shadow: 1px 2px 3px;
-  padding: 15px;
-  margin-top: 20px;
-  margin-left: 10px;
-}
-
-
-.row-head1{
-  margin-left: 120px;
-  margin-top: -85px;
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;  
-  
-}
-
-.row-para1{
-  margin-left: 120px;
-  margin-top: 10px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: black;  
-
-}
-
-
-
-
-.buttons{
-  margin-left: 200px;
-}
-
-
-
 
 
 
@@ -1216,207 +1255,167 @@ header h1 {
 }
 
 
-.course-fees{
-  color: black;
-  margin-left: 40%;
-  margin-top: 90px;
+.buttons{
+  margin-left: 200px;
 }
 
-.course-red{
-  color: red; 
-  margin-left: 750px;
-  margin-top: -67px;
+
+
+
+
+.justify-table-first{
+  margin-top: 50px;
+  height: 300px;
+  width: 100%;
+  margin-left: 60px;
+  display: flex;
+
+}
+
+.justify-table-first2{
+  margin-top: -120px;
+  height: 300px;
+  width: 100%;
+  margin-left: 60px;
+  display: flex;
+
+}
+
+.first-table{
+  height: 400px;
+  width: 100%;
+
+}
+
+
+
+
+.first-row{
+  height: 180px;
+  width: 42%;
+  border: 0.5px solid grey;
+  box-shadow: gray 0px 2px 2px ;
   align-content: baseline;
-  
+  margin-left: 50px;
+  border-radius: 10px;
+
 }
 
-.Tution-fees{
-  color: black;
-  margin-left: 140px;
-  background-color: white;
-  border: none;
-  font-size: 25px;
-
-  
-}
-
-.career-fees{
-  color: black;
-  margin-right: 120px;
-  background-color: white;
-  border: none;
-  font-size: 25px;
-  
-  
-}
-
-
-.feeeees{
-  display: flex;
-  justify-content: space-evenly;
-}
-
-
-.career-fees:active{
-  color: red;
-  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
-  
-  
-}
-
-
-
-.Tution-fees:active{
-  color: red;
-  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
-  
-  
-}
-
-
-
-
-
-
-
-.cards-in-line{
-  display: inline-flex;
-  
-  margin-left: 350px;
-}
-
-.card {
-  width: 400px;
-  height: 780px;
-  background: #ffffff;
-  padding: 1rem;
-  border-radius: 1rem;
-  border: 0.5vmin solid #05060f;
-  box-shadow: 0.4rem 0.4rem #05060f;
-  overflow: hidden;
-  color: black;
-}
-
-.card2 {
-  width: 400px;
-  height: 780px;
-  background: #ffffff;
-  padding: 1rem;
-  border-radius: 1rem;
-  border: 0.5vmin solid #05060f;
-  box-shadow: 0.4rem 0.4rem #05060f;
-  overflow: hidden;
-  color: black;
+.first-row-1{
+  height: 200px;
+  width: 42%;
+  border: 0.5px solid grey;
+  box-shadow: gray 0px 2px 2px ;
   margin-left: 20px;
-}
-
-
-.pricing-block-content {
-  display: flex;
-  height: 100%;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.pricing-plan {
-  color: #ff1414;
-  font-size: 1.3rem;
-  line-height: 1.25;
-  font-weight: 700;
-  text-align: center;
-  font-size: 32px;
-}
-
-.price-value {
-  /* display: flex; */
-  color: #05060f;
-  font-size: 1.8rem;
-  line-height: 1.25;
-  font-weight: 700;
-}
-
-.pricing-note {
-  opacity: 0.8;
-}
-
-.check-list {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.check-list-item {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-
-.price-company{
-  text-align: center;
-  font-size: 19px;
-}
-
-.price-number{
-  margin-top: 25px;
-  text-align: center;
-}
-
-
-
-/* From Uiverse.io by absoluteSTrange */ 
-.button {
-  padding: 12px 40px;
+  align-content: baseline;
   border-radius: 10px;
-  border: 0;
-  background-color: rgb(255, 56, 86);
-  letter-spacing: 1.5px;
-  font-size: 15px;
-  transition: all 0.3s ease;
-  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
-  color: hsl(0, 0%, 100%);
-  cursor: pointer;
+
 }
 
-.button:hover {
-  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+
+.row-des{
+  margin-top: 40px;
+
 }
 
-.button:active {
-  background-color: rgb(255, 56, 86);
+.row-des1{
+  margin-top: 40px;
+
+}
+
+.row-photo{
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 1px 2px 3px;
+  padding: 15px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+
+.row-head{
+  margin-left: 120px;
+  margin-top: -85px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;   
+}
+
+.row-para{
+  margin-left: 120px;
+  margin-top: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;  
+
+}
+
+
+
+.first-row1{
+  height: 160px;
+  width: 42%;
+  border: 0.5px solid grey;
+  box-shadow: gray 0px 2px 2px ;
+  align-content: baseline;
+  margin-left: 50px;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.first-row1-1{
+  height: 200px;
+  width: 42%;
+  border: 0.5px solid grey;
+  box-shadow: gray 0px 2px 2px ;
+  margin-left: 20px;
+  align-content: baseline;
+  border-radius: 10px;
+  margin-top: 40px;
+
+}
+
+.row-photo1{
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 1px 2px 3px;
+  padding: 15px;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+
+.row-head1{
+  margin-left: 120px;
+  margin-top: 85px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;  
   
-  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
-  transform: translateY(5px);
-  transition: 200ms;
+}
+
+.row-para1{
+  margin-left: 120px;
+  margin-top: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+
 }
 
 
-.button2 {
-  padding: 12px 40px;
-  border-radius: 10px;
-  border: 0;
-  background-color: rgb(238, 200, 205);
-  letter-spacing: 1.5px;
-  font-size: 15px;
-  transition: all 0.3s ease;
-  box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
-  color: hsl(0, 100%, 42%);
-  cursor: pointer;
-}
 
 
-.button2:hover {
-  box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
-}
 
-.button2:active {
-  background-color: rgb(255, 56, 86);
- 
-  box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
-  transform: translateY(5px);
-  transition: 200ms;
-}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1481,9 +1480,13 @@ header h1 {
 .logos-slide img {
   height: 50px;
   margin: 0 40px;
+  filter: grayscale(100%);
 }
 
-
+.logos-slide img:hover {
+  filter: grayscale(0);
+  transition: 0.5s;
+}
 
 .Reverse-Slider .logos-slide {
   animation: 35s reverse-slide infinite linear;
