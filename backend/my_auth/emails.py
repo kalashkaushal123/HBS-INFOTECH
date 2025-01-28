@@ -6,13 +6,18 @@ from django.utils.timezone import now
 from django.utils import timezone
 from datetime import timedelta
 
+otp_expiration_time = settings.OTP_EXPIRATION_TIME_MINUTES
+
+def generate_otp():
+    return random.randint(10000, 99999)
+
 def send_otp(email, subject, purpose="verification", otp=None):
     try:
         # Generate OTP if not provided
         if otp is None:
-            otp = random.randint(10000, 99999)
+            otp = generate_otp()
 
-        # otp_expiration = timezone.now() + timedelta(minutes=5)
+        otp_expiration = timezone.now() + timedelta(minutes=otp_expiration_time)
 
         # Define the HTML message template
         if purpose == "verification":
@@ -28,7 +33,7 @@ def send_otp(email, subject, purpose="verification", otp=None):
             <body style="font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 0;">
             <div style="max-width: 600px; margin: 20px auto; background: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
                 <div style="text-align: center;">
-                <img src="https://iili.io/2kwdvCF.png" alt="Logo" style="width: 100%; margin-bottom: 10px;">
+                <img src="https://envs.sh/ooq.png" alt="Logo" style="width: 100%; margin-bottom: 10px;">
                 </div>
                 <div style="padding: 20px; text-align: center;">
                 <h2 style="font-size: 20px; color: #333;">Email OTP Verification</h2>
@@ -39,11 +44,11 @@ def send_otp(email, subject, purpose="verification", otp=None):
                 </div>
                 <div style="background-color: #f0f0f0; text-align: center; padding: 15px; font-size: 14px; color: #888;">
                 <p style="margin: 10px;">Stay in touch</p>
-                <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kUfwkN.png" alt="Twitter" width="24" height="24"></a>
-                <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kSmTTx.png" alt="Facebook" width="24" height="24"></a>
-                <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kSDdas.png" alt="Instagram" width="24" height="24"></a>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ovQ.jpg" alt="Twitter" width="24" height="24"></a>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ov2.jpg" alt="Facebook" width="24" height="24"></a>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ovd.jpg" alt="Instagram" width="24" height="24"></a>
                 <p style="font-size: 14px; color: #888; margin: 10px 0;">&copy; HBS-INFOTECH LTD. All rights reserved.</p>
-                <a href="#"><img src="https://iili.io/2LB90F4.png" alt="HBS-INFOTECH" height="40px" width="auto"></a>
+                <a href="#"><img src="https://envs.sh/a0r.jpg" alt="HBS-INFOTECH" height="40px" width="auto"></a>
                 </div>
             </div>
             </body>
@@ -62,7 +67,7 @@ def send_otp(email, subject, purpose="verification", otp=None):
             <body style="font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 0;">
             <div style="max-width: 600px; margin: 20px auto; background: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
                 <div style="text-align: center;">
-                <img src="https://iili.io/2kN0yYu.png" alt="Logo" style="width: 100%; margin-bottom: 10px;">
+                <img src="https://envs.sh/oo0.png" alt="Logo" style="width: 100%; margin-bottom: 10px;">
                 </div>
                 <div style="padding: 20px; text-align: center;">
                 <h2 style="font-size: 20px; color: #333;">OTP to Reset Password</h2>
@@ -72,18 +77,18 @@ def send_otp(email, subject, purpose="verification", otp=None):
                 <p style="font-size: 16px; color: #555; margin: 10px 0;">Thank you for choosing HBS-INFOTECH.</p>
                 </div>
                 <div style="background-color: #f0f0f0; text-align: center; padding: 15px; font-size: 14px; color: #888;">
-                <p style="margin: 10px 0;">Stay in touch</p>
-                <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kUfwkN.png" alt="Twitter" width="24" height="24"></a>
-                <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kSmTTx.png" alt="Facebook" width="24" height="24"></a>
-                <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kSDdas.png" alt="Instagram" width="24" height="24"></a>
+                <p style="margin: 10px;">Stay in touch</p>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ovQ.jpg" alt="Twitter" width="24" height="24"></a>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ov2.jpg" alt="Facebook" width="24" height="24"></a>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ovd.jpg" alt="Instagram" width="24" height="24"></a>
                 <p style="font-size: 14px; color: #888; margin: 10px 0;">&copy; HBS-INFOTECH LTD. All rights reserved.</p>
-                <a href="#"><img src="https://iili.io/2LB90F4.png" alt="HBS-INFOTECH" height="40px" width="auto"></a>
+                <a href="#"><img src="https://envs.sh/a0r.jpg" alt="HBS-INFOTECH" height="40px" width="auto"></a>
                 </div>
             </div>
             </body>
             </html>
             """
-        elif purpose == "reset_Mail":
+        elif purpose == "reset_mail":
             message = f"Your OTP for {purpose.replace('_', ' ')} is {otp}."
             html_message = f"""
             <!DOCTYPE html>
@@ -97,7 +102,7 @@ def send_otp(email, subject, purpose="verification", otp=None):
                 <div
                     style="max-width: 600px; margin: 20px auto; background: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
                     <div style="text-align: center;">
-                        <img src="https://iili.io/2kN0yYu.png" alt="Logo" style="width: 100%; margin-bottom: 10px;">
+                        <img src="https://envs.sh/oJV.png" alt="Logo" style="width: 100%; margin-bottom: 10px;">
                     </div>
                     <div style="padding: 20px; text-align: center;">
                         <h2 style="font-size: 20px; color: #333;">OTP to Reset Email</h2>
@@ -108,13 +113,13 @@ def send_otp(email, subject, purpose="verification", otp=None):
                         <p style="font-size: 16px; color: #555; margin: 10px 0;">Thank you for choosing HBS-INFOTECH.</p>
                     </div>
                     <div style="background-color: #f0f0f0; text-align: center; padding: 15px; font-size: 14px; color: #888;">
-                        <p style="margin: 10px 0;">Stay in touch</p>
-                        <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kUfwkN.png" alt="Twitter" width="24" height="24"></a>
-                        <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kSmTTx.png" alt="Facebook" width="24" height="24"></a>
-                        <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kSDdas.png" alt="Instagram" width="24" height="24"></a>
-                        <p style="font-size: 14px; color: #888; margin: 10px 0;">&copy; HBS-INFOTECH LTD. All rights reserved.</p>
-                        <a href="#"><img src="https://iili.io/2LB90F4.png" alt="HBS-INFOTECH" height="40px" width="auto"></a>
-                    </div>
+                        <p style="margin: 10px;">Stay in touch</p>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ovQ.jpg" alt="Twitter" width="24" height="24"></a>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ov2.jpg" alt="Facebook" width="24" height="24"></a>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ovd.jpg" alt="Instagram" width="24" height="24"></a>
+                <p style="font-size: 14px; color: #888; margin: 10px 0;">&copy; HBS-INFOTECH LTD. All rights reserved.</p>
+                <a href="#"><img src="https://envs.sh/a0r.jpg" alt="HBS-INFOTECH" height="40px" width="auto"></a>
+                </div>
                 </div>
             </body>
         </html>
@@ -132,7 +137,7 @@ def send_otp(email, subject, purpose="verification", otp=None):
             <body style="font-family: Arial, sans-serif; background-color: #f9f9f9; margin: 0; padding: 0;">
             <div style="max-width: 600px; margin: 20px auto; background: #ffffff; border: 1px solid #e0e0e0; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
                 <div style="text-align: center;">
-                <img src="https://iili.io/2kwZKhJ.png" alt="Logo" style="width: 100%; margin-bottom: 10px;">
+                <img src="https://envs.sh/oJV.png" alt="Logo" style="width: 100%; margin-bottom: 10px;">
                 </div>
                 <div style="padding: 20px; text-align: center;">
                 <h2 style="font-size: 20px; color: #333;">Account Activated</h2>
@@ -142,13 +147,13 @@ def send_otp(email, subject, purpose="verification", otp=None):
                 <p style="font-size: 16px; color: #555; margin: 10px 0;">Thank you for choosing HBS-INFOTECH.</p>
               </div>
               <div style="background-color: #f0f0f0; text-align: center; padding: 15px; font-size: 14px; color: #888;">
-              <p style="margin: 10px 0;">Stay in touch</p>
-              <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kUfwkN.png" alt="Twitter" width="24" height="24"></a>
-              <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kSmTTx.png" alt="Facebook" width="24" height="24"></a>
-              <a href="#" style="margin: 0 5px;"><img src="https://iili.io/2kSDdas.png" alt="Instagram" width="24" height="24"></a>
-              <p style="font-size: 14px; color: #888; margin: 10px 0;">&copy; HBS-INFOTECH LTD. All rights reserved.</p>
-              <a href="#"><img src="https://iili.io/2LB90F4.png" alt="HBS-INFOTECH" height="40px" width="auto"></a>
-              </div>
+              <p style="margin: 10px;">Stay in touch</p>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ovQ.jpg" alt="Twitter" width="24" height="24"></a>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ov2.jpg" alt="Facebook" width="24" height="24"></a>
+                <a href="#" style="margin: 0 5px;"><img src="https://envs.sh/ovd.jpg" alt="Instagram" width="24" height="24"></a>
+                <p style="font-size: 14px; color: #888; margin: 10px 0;">&copy; HBS-INFOTECH LTD. All rights reserved.</p>
+                <a href="#"><img src="https://envs.sh/a0r.jpg" alt="HBS-INFOTECH" height="40px" width="auto"></a>
+                </div>
             </div>
             </body>
             </html>
@@ -181,6 +186,7 @@ def send_otp(email, subject, purpose="verification", otp=None):
         # Save the OTP to the user's model
         user_obj = User.objects.get(email=email)
         user_obj.otp = otp
+        user_obj.otp_expiration = otp_expiration  # Save expiration time
         user_obj.save()
 
     except User.DoesNotExist:
@@ -220,3 +226,21 @@ def send_account_verified_email(email):
     subject = f"{settings.ORG_NAME} Account Verified"
     send_otp(email, subject, purpose="mail_verified")
 
+def verify_otp(email, otp):
+    try:
+        user_obj = User.objects.get(email=email)
+        if user_obj.otp == otp:
+            if timezone.now() < user_obj.otp_expiration:
+                return True
+            else:
+                print("OTP has expired.")
+                return False
+        else:
+            print("Invalid OTP.")
+            return False
+    except User.DoesNotExist:
+        print(f"User with email {email} does not exist.")
+        return False
+    except Exception as e:
+        print(f"Failed to verify OTP for {email}: {str(e)}")
+        return False

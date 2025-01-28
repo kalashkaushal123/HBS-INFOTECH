@@ -23,8 +23,7 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     otp = models.CharField(max_length=6, null=True, blank=True)
     otp_expiration = models.DateTimeField(null=True, blank=True)
-
-
+    otp_type = models.CharField(max_length=20, null=True, blank=True)  # Add this line
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['first_name', 'last_name']  # Ensure name fields are required on signup
@@ -33,50 +32,24 @@ class User(AbstractBaseUser, PermissionsMixin):
     def __str__(self):
         return self.email
 
-# class Profile(models.Model):
-#     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
-#     first_name = models.CharField(max_length=100, blank=True, null=True)
-#     last_name = models.CharField(max_length=100, blank=True, null=True)
-#     email = models.EmailField(max_length=255, blank=True, null=True)  # New email field
-#     gender = models.CharField(max_length=10,blank=True,null=True)
-#     mobile_number = models.CharField(
-#         max_length=10,
-#         unique=True,
-#         blank=True,
-#         null=True
-#     ) 
+def is_otp_expired(self):
+        """
+        Check if OTP has expired (more than 5 minutes).
+        """
+        if not self.otp_expiration:
+            return True  # OTP hasn't been generated yet
+        return timezone.now() > self.otp_expiration
 
-
-# class Address(models.Model):
-#     profile = models.ForeignKey(Profile, on_delete=models.CASCADE, related_name='addresses')
-#     name = models.CharField(max_length=50)  # name of the user of that adress
-#     mobile_number = models.CharField(max_length=10, blank=True, null=True)  # Mobile number for the address
-#     pin_code = models.CharField(max_length=6)
-#     address = models.TextField()
-#     city = models.CharField(max_length=50)
-#     state = models.CharField(max_length=20)
-#     landmark = models.CharField(max_length=100, blank=True, null=True)
-#     address_type = models.CharField(max_length=10,default='Home')
-
-# @receiver(post_save, sender=User)
-# def create_user_profile(sender, instance, created, **kwargs):
-#     if created:
-#         # Create a profile only if the user is newly created
-#         profile, created = Profile.objects.get_or_create(user=instance)
-#         if created:
-#             profile.email = instance.email
-#             profile.save()
-
-# @receiver(post_save, sender=User)
-# def save_user_profile(sender, instance, **kwargs):
-#     profile = instance.profile
-#     profile.email = instance.email  # Ensure that the email is updated in the profile
-#     profile.save()
-
-# def is_otp_expired(self):
-#         """
-#         Check if OTP has expired (more than 5 minutes).
-#         """
-#         if not self.otp_expiration:
-#             return True  # OTP hasn't been generated yet
-#         return timezone.now() > self.otp_expiration
+def verify_otp(self, otp):
+        """
+        Verify OTP for the user.
+        """
+        # Check if OTP is expired
+        if self.is_otp_expired():
+            return "Your OTP has expired. Please try again."  # OTP expired message
+        
+        # Check if OTP matches
+        if self.otp == otp:
+            return "OTP verified successfully."
+        
+        return "Invalid OTP. Please try again."
