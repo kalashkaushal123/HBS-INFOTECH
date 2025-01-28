@@ -36,6 +36,11 @@ import Biotech_Healthcare from './features/industries/industriesPages/Biotech&He
 import SportsBetting from './features/industries/industriesPages/SportsBetting/SportsBetting';
 import Manufacturing from './features/industries/industriesPages/Manufacturing/Manufacturing';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import CourseMain from './features/coursemain/CourseMain';
+import CourseHome from './features/coursemain/coursehome/CourseHome'
+import CourseLearn from './features/coursemain/courselearn/CourseLearn';
+import CoursePractice from './features/coursemain/coursePractice/CoursePractice';
+import CourseClassroom from './features/coursemain/courseClassroom/CourseClassroom';
 
 
 
@@ -187,6 +192,28 @@ function App() {
     {
       path:"/Manufacturing",
       element:<Manufacturing></Manufacturing>
+    },
+    {
+      path:"/CourseMain",
+      element:<CourseMain></CourseMain>,
+      children:[
+        {
+          path:"/CourseMain/courseHome",
+          element:<CourseHome></CourseHome>
+        },
+        {
+          path:"/CourseMain/courseLean",
+          element:<CourseLearn></CourseLearn>
+        },
+        {
+          path:"/CourseMain/courspractice",
+          element:<CoursePractice></CoursePractice>
+        },
+        {
+          path:"/CourseMain/CourseClassroom",
+          element:<CourseClassroom></CourseClassroom>
+        }
+      ]
     }
     
   ]);

@@ -1,0 +1,15 @@
+.course-home-main{
+    height: 100rem;
+    width: 100%;
+
+}
+.course-home-block1{
+    height: 10%;
+    width: 100%;
+    background-color: black;
+}
+.course-home-block2{
+    height: 10%;
+    width: 100%;
+    background-color: white;
+}

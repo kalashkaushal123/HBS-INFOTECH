@@ -1,0 +1,86 @@
+.CourseMain-main {
+    height: 4.5rem;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Left Section */
+.course-header-left-side {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.course-header-left-side h1 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+.course-header-left-side button {
+    padding: 8px 16px;
+    background-color: #f5f1ec;
+    color: black;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.course-header-left-side button:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Right Section */
+.course-header-right-side {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.course-header-right-side button {
+    padding: 6px 12px;
+    background-color: #f5f1ec;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.course-header-right-side button:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Specific Buttons */
+.coin button {
+    border-radius: 5px; /* Rounded rectangle for coins */
+}
+
+.learn-about-master button {
+    border-radius: 5px;
+    padding: 8px 16px;
+}
+
+.profile button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
