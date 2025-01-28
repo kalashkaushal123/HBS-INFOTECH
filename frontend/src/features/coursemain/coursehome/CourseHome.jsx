@@ -1,5 +1,14 @@
 import "./CourseHome.css";
-// import coding from '../courses/images/microsoft.png';
+
+import acenture from './image/acenture.png'
+import hcltech from './image/HCLTech.png'
+import dropbox from './image/Dropbox.png'
+import metaimage from './image/meta.png'
+import microsoftiamge  from "./image/microsoft.png"
+import nural_network from './image/nural_network.png'
+import myntra from "./image/Myntra.png"
+import amezon_kendle from "./image/Amazon-Kindle.png"
+import newsartical from './image/newsarticale.png'
 export default function CourseHome() {
   return (
     <div>
@@ -52,92 +61,127 @@ export default function CourseHome() {
           </div>
 
         </div>
-        <div className="head-opretor"><h2>Practice Coding Assetments</h2></div>   
+
+
+
+  <div className="course-home-block3-top d-flex justify-content-between m-5
+          font-bold
+          ">
+            <h3>Practice Coding Assessments</h3>
+            <p>see all</p>
+          </div>
   <div className="card-opretor">
+    
 <div className="card-inner">
-{/* <div className="card-inner-img">
-  <img className="img" src={coding} alt="image" />
-    </div> */}
+<div className="card-inner-img">
+  <img className="img" style={{backgroundColor:"white"}} src={acenture } alt="image"  />
+    </div>
   <h5>Accenture Coding Problems</h5>
+
   <p>5 Question 75 min</p>
   <a href="#">Strat Now</a>
 </div>
 <div className="card-inner">
-  <h5>Dropbox Python Coding Problems</h5>
+<div className="card-inner-img">
+  <img className="img" style={{backgroundColor:"white"}} src={hcltech } alt="image"  />
+    </div>
+  <h5>Hcl tech Coding Problems</h5>
   <p>5 Question 75 min</p>
   <a href="#">Strat Now</a>
 </div>
 <div className="card-inner">
-  <h5>HCLTech Python Coding Problems</h5>
+
+<div className="card-inner-img">
+  <img className="img" style={{backgroundColor:"white"}} src={dropbox } alt="image"/>
+    </div>
+  <h5>Dropbox Coding Problems</h5>
   <p>5 Question 75 min</p>
   <a href="#">Strat Now</a>
 </div>
+   </div>
+
+   <div className="course-home-block3-top d-flex justify-content-between m-5
+          font-bold
+          ">
+            <h3>Practice Quiz Assessments</h3>
+            <p>see all</p>
           </div>
-          <div className="head-opretor"><h2>Practice quiz  Assetments</h2></div>   
-  <div className="card-opretor">
-<div className="card-inner">
-{/* <div className="card-inner-img">
-  <img className="img" src={coding} alt="image" />
-    </div> */}
-  <h5>Neural Networks</h5>
-  <p>5 Question 75 min</p>
-  <a href="#">Strat Now</a>
-</div>
-<div className="card-inner">
-  <h5>Microsoft Data Analyst Mock Test</h5>
-  <p>5 Question 75 min</p>
-  <a href="#">Strat Now</a>
-</div>
-<div className="card-inner">
-  <h5>Meta Data Scientist Mock Test</h5>
-  <p>5 Question 75 min</p>
-  <a href="#">Strat Now</a>
-</div>
-          </div>
-        
-          <div className="head-opretor"><h2>Capstone Project</h2></div>   
-  <div className="card-opretor">
-<div className="card-inner">
-{/* <div className="card-inner-img">
-  <img className="img" src={coding} alt="image" />
-    </div> */}
-  <h5>Myntra Online Retail Customer Segmentaion</h5>
-  <p>Unsupervised ML</p>
-
-  <a href="#">Strat Now</a>
-</div>
-<div className="card-inner">
-  <h5>Kindle Book Recommendation System</h5>
-  <p>Unsupervised ML</p>
-  <a href="#">Strat Now</a>
-</div>
-<div className="card-inner">
-  <h5>Toping Modeling On News Art</h5>
-  <p>Unsupervised ML</p>
-  <a href="#">Strat Now</a>
-</div>
-          </div>
-
-
-        <div className="course-home-block3">
-        
-         
-
-          <div className="coding_assessments">
-
-          <div className="coding_assessments-items"></div>
-          <div className="coding_assessments-items"></div>
-          <div className="coding_assessments-items"></div>
-          <div className="coding_assessments-items"></div>
-          </div>
-          
-
+          <div className="card-opretor">
+    
+    <div className="card-inner">
+    <div className="card-inner-img">
+      <img className="img" style={{backgroundColor:"white"}} src={nural_network } alt="image"  />
         </div>
-        <div className="course-home-block4"></div>
-        <div className="course-home-block5"></div>
-        <div className="course-home-block6"></div>
-        <div className="course-home-block7"></div>
-        <div className="course-home-block7"></div>
+      <h5>Neural Networks</h5>
+
+    
+      
+      <a href="#">Strat Now</a>
+    </div>
+    <div className="card-inner">
+    <div className="card-inner-img">
+      <img className="img" style={{backgroundColor:"white"}} src={microsoftiamge } alt="image"  />
+        </div>
+      <h5>Microsoft Data Analyst Mock Test</h5>
+      
+      <a href="#">Strat Now</a>
+    </div>
+    <div className="card-inner">
+    
+    <div className="card-inner-img">
+      <img className="img" style={{backgroundColor:"white"}} src={metaimage } alt="image"/>
+        </div>
+      <h5>Meta Data Scientist Mock Test</h5>
+      
+      <a href="#">Strat Now</a>
+    </div>
+       </div>
+
+       <div className="course-home-block3-top d-flex justify-content-between m-5
+          font-bold
+          ">
+            <h3>Capstone Projects</h3>
+            <p>see all</p>
+          </div>
+
+          <div className="card-opretor">
+    
+    <div className="card-inner">
+    <div className="card-inner-img">
+      <img className="img" style={{backgroundColor:"white"}} src={ myntra } alt="image"  />
+        </div>
+      <h5>Myntra Online Retail Customer Segmentation</h5>
+      <p>Unsupervised ML</p>
+
+    
+      
+      <a href="#">Strat Now</a>
+    </div>
+    <div className="card-inner">
+    <div className="card-inner-img">
+      <img className="img" style={{backgroundColor:"white"}} src={amezon_kendle } alt="image"  />
+        </div>
+      <h5>Kindle Book Recommendation System</h5>
+      <p>Unsupervised ML</p>
+      
+      <a href="#">Strat Now</a>
+    </div>
+    <div className="card-inner">
+    
+    <div className="card-inner-img">
+      <img className="img" style={{backgroundColor:"white"}} src={newsartical } alt="image"/>
+        </div>
+      <h5>Topic Modeling on News Articles</h5>
+      <p>Unsupervised ML</p>
+      
+      <a href="#">Strat Now</a>
+    </div>
+       </div>
+
+
+
+
+        
       </div>
     </div>
   );
