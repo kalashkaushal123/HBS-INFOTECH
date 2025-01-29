@@ -294,10 +294,11 @@ export default function Course() {
           <p className="rating">4.6+ ★★★★☆ (22534 Reviews)</p>
           <p className="cohort">Next Cohort Starting On 14th January</p>
           <div className="collaborations">
-            <p>In collaboration with:</p>
-            <div className="logos">
-              <img src="logo_eict.png" alt="E&ICT Academy IIT Guwahati" />
-              <img src="logo_microsoft.png" alt="Microsoft" />
+            <p className="text-white">In collaboration with:</p>
+            <div className="row">
+             <div className="col-3"> <img className="bg-white rounded-4" width={'100%'} src="/src/features/courses/logos/IIT Guwahati.webp" alt="E&ICT Academy IIT Guwahati" />
+             </div>
+             <div className="col-3"><img className="bg-white rounded-4" width={'100%'} src="/src/features/courses/images/microsoft.png" alt="Microsoft" /></div>
             </div>
           </div>
           
@@ -314,7 +315,7 @@ export default function Course() {
           </div>
         </div>
         <div className="hero-image">
-          <img src="iit_guwahati_campus.jpg" alt="IIT Guwahati Campus" />
+          <img src="/src/features/courses/images/course2.jpeg" alt="IIT Guwahati Campus" />
         </div>
       </section>
       {/* Placement Section */}
@@ -345,48 +346,53 @@ export default function Course() {
 
 
      
-        <div style={{fontSize:'32px',marginLeft:'30%'}}>
-          <h1>In Collaboration with <span className="highlight">E&amp;ICT, IIT Guwahati</span></h1>
+        <div className="pt-3" style={{fontSize:'32px',marginLeft:'30%'}}>
+          <label>In Collaboration with <span className="highlight">E&amp;ICT, IIT Guwahati</span></label>
           </div>
-          <div className="container">
-        <section className="partners">
-          <div className="partner-logo">
-            <img src="almabetter-logo.png" alt="AlmaBetter Logo" />
-            <span className="partner-name">AlmaBetter</span>
-          </div>
-          <div className="partner-logo">
-            <img src="eict-iit-logo.png" alt="E&ICT Academy IIT Guwahati Logo" />
-            <span className="partner-name">E&amp;ICT Academy IIT Guwahati</span>
-          </div>
-        </section>
-        <section className="description">
-          <p style={{color:'white'}}>Our partnership with E&amp;ICT Academy at IIT Guwahati reflects a shared commitment to advancing global education standards. This collaboration leverages IIT Guwahati's prestigious reputation in India and beyond to offer world-class educational opportunities and foster a global academic community.</p>
-        </section>
+        <div className="bg-dark">
+              <section className="partners">
+                <div className="partner-logo">
+                  <img src="/src/features/courses/logos/almabetter.webp" alt="AlmaBetter Logo" />
+                  <span className="partner-name">AlmaBetter</span>
+                </div>
+                <div className="partner-logo">
+                  <img className="bg-white" src="/src/features/courses/logos/IIT Guwahati.webp" alt="E&ICT Academy IIT Guwahati Logo" />
+                  <span className="partner-name">E&amp;ICT Academy IIT Guwahati</span>
+                </div>
+              </section>
+              <section className="description">
+                <p style={{color:'white'}}>Our partnership with E&amp;ICT Academy at IIT Guwahati reflects a shared commitment to advancing global education standards. This collaboration leverages IIT Guwahati's prestigious reputation in India and beyond to offer world-class educational opportunities and foster a global academic community.</p>
+              </section>
         </div>
         
         <section className="benefits">
           <div className="benefit">
-            <img src="certificate-icon.png" alt="Certificate Icon" />
+            <img src="/src/features/courses/logos/image_removebg_preview_40_1_f5daeee54f.webp" alt="Certificate Icon" />
             <p style={{color:'white'}}>Advanced Certification from E&amp;ICT Academy, IIT Guwahati</p>
           </div>
+
           <div className="benefit">
-            <img src="guest-lectures-icon.png" alt="Guest Lectures Icon" />
+          <img src="/src/features/courses/logos/Group_65_242481ba3b.webp" alt="Guest Lectures Icon" />
             <p style={{color:'white'}}>Guest lectures from IIT Guwahati Faculty</p>
           </div>
+
           <div className="benefit">
-            <img src="deadline-extension-icon.png" alt="Deadline Extension Icon" />
+          <img src="/src/features/courses/logos/calender_front_color_13231195c8.webp" alt="Deadline Extension Icon" />
             <p style={{color:'white'}}>Deadline extension of 6 months for AlmaX Career Track</p>
           </div>
+
           <div className="benefit">
-            <img src="campus-immersion-icon.png" alt="Campus Immersion Icon" />
+          <img src="/src/features/courses/logos/industry_immersion_17b9dd5bc8.webp" alt="Campus Immersion Icon" />
             <p style={{color:'white'}}>2-day campus immersion program at IIT Guwahati</p>
           </div>
+
           <div className="benefit">
-            <img src="mentors-icon.png" alt="Mentors Icon" />
+          <img src="/src/features/courses/medium_Group_59_35ea989540.webp" alt="Mentors Icon" />
             <p style={{color:'white'}}>Mentors from MAANG, Top Product companies</p>
           </div>
+
           <div className="benefit">
-            <img src="curriculum-icon.png" alt="Curriculum Icon" />
+          <img src="/src/features/courses/logos/medium_Group_56_3fb6dbb2c1.webp" alt="Curriculum Icon" />
             <p style={{color:'white'}}>Intensive curriculum covering fundamentals to advanced concepts</p>
           </div>
         </section>
@@ -400,7 +406,7 @@ export default function Course() {
             <div className="story-header">
             </div>
             <div className="story-content">
-              <img src="path/to/image1.jpg" alt="Vanshika Raj" />
+              <img  className='bg-danger' src="/src/features/courses/person/Arkoparavo_Pradhan_e68d486271.webp" alt="Vanshika Raj" />
               <div className="story-info">
                 <span className="status">Fresher</span>
                 <span className="arrow">→</span>
@@ -417,7 +423,7 @@ export default function Course() {
             <div className="story-header">
             </div>
             <div className="story-content">
-              <img src="path/to/image2.jpg" alt="Arkoparavo Pradhan" />
+              <img  className='bg-danger' src="/src/features/courses/person/calender_front_color_13231195c8.webp" alt="Arkoparavo Pradhan" />
               <div className="story-info">
                 <span className="status">Fresher</span>
                 <span className="arrow">→</span>
@@ -434,7 +440,7 @@ export default function Course() {
             <div className="story-header">
             </div>
             <div className="story-content">
-              <img src="path/to/image3.jpg" alt="Kamya Malhotra" />
+              <img  className='bg-danger'  src="/src/features/courses/person/Kamya_Malhotra_removebg_preview_de470a6afc.webp" alt="Kamya Malhotra" />
               <div className="story-info">
                 <span className="status">Fresher</span>
                 <span className="arrow">→</span>
@@ -570,13 +576,13 @@ export default function Course() {
      
         <div className="bg-black pt-5">
         {/* <img src='iconsset.PNG' alt="" width={'90%'} /> */}
-
+<hr />
        <center>
        <div className="row container ">
         {languageColl.map((item,index)=>
         <>
-        <div align='center' className="col-md-2 col-4 ">
-                <img className="border rounded-2 p-1 imgsizehover"  src={item.img} width={'40px'} height='40px' alt="" />
+        <div align='center' className="col-md-2 col-4 mb-5">
+                <img className=" rounded-2 p-1 imgsizehover"  src={item.img} width={'40px'} height='40px' alt="" />
                 <br /><br />
                 <p className="text-white text-center ">&ensp; {item.title}</p>
           </div>
@@ -602,17 +608,17 @@ export default function Course() {
 
 
       <br /><br />
-      <div className="certification-box">
+      <div className="certification-box mb-5">
         <br /><br />
 
         
-        <h1 style={{color:'black', marginLeft:'33%',fontSize:'28px', textTransform:'capitalize'}}>unlock your data science </h1><br /><br />
-        <h1 className="data-head2"><u style={{color: 'red'}}>certifiction</u></h1>
+        <h1 style={{color:'black', marginLeft:'33%',fontSize:'28px', textTransform:'capitalize'}}>unlock your data science  <span style={{color: 'red'}}>certifiction</span></h1><br /><br />
+        {/* <h1 className="data-head2"><u style={{color: 'red'}}></u></h1> */}
         <p className="data-head3">elevate your career with esteemed certifiction, unlock new oppertunites and demonstrate your mastery in data science.</p>
         <div className="Certificate-option">
-          <h3>E&amp;ITC, IIT Guwahati</h3>
-          <h3 className="data-iit"> Microsoft</h3>
-          <h3 className="data-iit">almaBetter</h3>
+          <h3 className="border-bottom">E&amp;ITC, IIT Guwahati</h3>
+          <h3 className="data-iit border-bottom"> Microsoft</h3>
+          <h3 className="data-iit border-bottom">almaBetter</h3>
         </div>
         <div className="certificate-mainbox">
           <div className="certificate-des">
@@ -732,6 +738,7 @@ export default function Course() {
       <br />
       <br />
       <br />
+
       <h2 className="almax-curriculam">AlmaX curriculam</h2>
       <br />
       <br />
@@ -751,9 +758,9 @@ export default function Course() {
             Coding &amp; Technical Revision <br />
             Add-On : Automated Coding Challenges with AI</h3>
         </div>
-        <div className="almax-curr-main-img">
-          <img src="" />
-        </div>
+        {/* <div className="almax-curr-main-img"> */}
+          {/* <img src="" /> */}
+        {/* </div> */}
       </div>
 
   </div>
