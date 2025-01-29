@@ -230,7 +230,6 @@
   padding: 10px;
 }
 .card-opretor {
-
   display: flex
 ;
   /* height: 30%; */
@@ -244,16 +243,17 @@
   background-color: #f5f1ec;
   padding: 0px 30px;
   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
-
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  margin: 50px auto 0;  /* Center the cards and add space at the top */
-  gap: 20px;
 }
 
 .card-inner {
-  width: 32%;  /* To give some space between the cards */
+  /* display: flex
+; */
+  height: 150px;
+  position: relative;
+  width: 33%;
+  margin-top: 10px;
+  margin-left: 0px;
+  gap: 20px;
   background-color: #fff;
   border-radius: 8px;
   padding: 20px;
@@ -299,6 +299,18 @@
   font-size: 14px;
   color: #fe0320;
   font-weight: 600;
+  text-align: left;
+  width: 100%;
+  margin-top: 13px;
+  position: absolute;
+  bottom: 13px;
+}
+.head-opretor h2 {
+  font-size: 18px;
+  margin-left: 30px;
+  color: #000;
+  margin-top: 50px;
+  font-weight: 600;
   text-decoration: none;
   border: 1px solid #790950;
   border-radius: 4px;
@@ -329,3 +341,4 @@
   color: #790950;
   cursor: pointer;
 }
+
