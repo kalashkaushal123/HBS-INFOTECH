@@ -12,6 +12,8 @@ import Footer from "../../comman/Footer";
 import { Link } from "react-router-dom";
 
 
+
+
 // Logo
 import application from './logos/application.webp'
 import assement from './logos/assement.webp'
@@ -22,6 +24,9 @@ import graduation from './logos/graduation.webp'
 import interview from './logos/interview.webp'
 import resume from './logos/resume.webp'
 import support from './logos/support.webp'
+
+
+
 
 
 
@@ -282,7 +287,7 @@ export default function Course() {
 
   
 
-    <div>
+    <div style={{color:'white'}}>
       <section className="hero-section">
         <div className="hero-content">
           <h1>Certification in Full Stack Data Science and AI</h1>
@@ -296,7 +301,7 @@ export default function Course() {
             </div>
           </div>
           
-          <ul className="features">
+          <ul className="features" >
             <li>Advanced Certification from E&amp;ICT Academy, IIT Guwahati</li>
             <li>6 months part-time program with online classes</li>
             <li>Revised curriculum for post Chat-GPT era</li>
@@ -339,10 +344,11 @@ export default function Course() {
       </section>
 
 
-      <div className="container">
-        <header>
+     
+        <div style={{fontSize:'32px',marginLeft:'30%'}}>
           <h1>In Collaboration with <span className="highlight">E&amp;ICT, IIT Guwahati</span></h1>
-        </header>
+          </div>
+          <div className="container">
         <section className="partners">
           <div className="partner-logo">
             <img src="almabetter-logo.png" alt="AlmaBetter Logo" />
@@ -354,40 +360,40 @@ export default function Course() {
           </div>
         </section>
         <section className="description">
-          <p>Our partnership with E&amp;ICT Academy at IIT Guwahati reflects a shared commitment to advancing global education standards. This collaboration leverages IIT Guwahati's prestigious reputation in India and beyond to offer world-class educational opportunities and foster a global academic community.</p>
+          <p style={{color:'white'}}>Our partnership with E&amp;ICT Academy at IIT Guwahati reflects a shared commitment to advancing global education standards. This collaboration leverages IIT Guwahati's prestigious reputation in India and beyond to offer world-class educational opportunities and foster a global academic community.</p>
         </section>
         </div>
         
         <section className="benefits">
           <div className="benefit">
             <img src="certificate-icon.png" alt="Certificate Icon" />
-            <p>Advanced Certification from E&amp;ICT Academy, IIT Guwahati</p>
+            <p style={{color:'white'}}>Advanced Certification from E&amp;ICT Academy, IIT Guwahati</p>
           </div>
           <div className="benefit">
             <img src="guest-lectures-icon.png" alt="Guest Lectures Icon" />
-            <p>Guest lectures from IIT Guwahati Faculty</p>
+            <p style={{color:'white'}}>Guest lectures from IIT Guwahati Faculty</p>
           </div>
           <div className="benefit">
             <img src="deadline-extension-icon.png" alt="Deadline Extension Icon" />
-            <p>Deadline extension of 6 months for AlmaX Career Track</p>
+            <p style={{color:'white'}}>Deadline extension of 6 months for AlmaX Career Track</p>
           </div>
           <div className="benefit">
             <img src="campus-immersion-icon.png" alt="Campus Immersion Icon" />
-            <p>2-day campus immersion program at IIT Guwahati</p>
+            <p style={{color:'white'}}>2-day campus immersion program at IIT Guwahati</p>
           </div>
           <div className="benefit">
             <img src="mentors-icon.png" alt="Mentors Icon" />
-            <p>Mentors from MAANG, Top Product companies</p>
+            <p style={{color:'white'}}>Mentors from MAANG, Top Product companies</p>
           </div>
           <div className="benefit">
             <img src="curriculum-icon.png" alt="Curriculum Icon" />
-            <p>Intensive curriculum covering fundamentals to advanced concepts</p>
+            <p style={{color:'white'}}>Intensive curriculum covering fundamentals to advanced concepts</p>
           </div>
         </section>
       
 
       <section className="success-stories" style={{backgroundColor: '#FFFFFF'}}>
-        <h1>Success <span>Stories</span></h1>
+        <h1 style={{color:'black'}}>Success <span>Stories</span></h1>
         <p>Meet our graduates who have not only secured new and better jobs but have also experienced significant salary hikes.</p>
         <div className="stories-container">
           <div className="story-card">
@@ -811,8 +817,10 @@ export default function Course() {
         </div>
         <br />
         <br />
-        <div className="buttons"> 
-          <button className="program-button">
+        <br />
+        <br />
+        <div className="Buttons"> 
+          <button className="program-button" style={{marginLeft: '150px'}}>
             <span className="button_top"> Download brochure </span>
           </button>
           <button className="program-button2">

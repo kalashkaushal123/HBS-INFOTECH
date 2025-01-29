@@ -365,17 +365,19 @@ h1 {
 .features {
   list-style-type: none;
   margin: 20px 0;
+  color: white;
 }
 
 .features li {
   margin: 10px 0;
   padding-left: 20px;
   position: relative;
+  color: white;
 }
 
 .features li::before {
   content: '\2713';
-  color: #4caf50;
+  color: white;
   font-weight: bold;
   position: absolute;
   left: 0;
@@ -519,18 +521,22 @@ header h1 {
 
 .description {
   margin-bottom: 40px;
+  color: white;
+  font-size: 20px;
 }
 
 .benefits {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  color: white;
 }
 
 .benefit {
   width: 200px;
   margin: 20px;
   text-align: center;
+  color: white;
 }
 
 .benefit img {
@@ -987,7 +993,6 @@ header h1 {
 .a-program{
   color: black;
   margin-left: 24%;
-  margin-top: 90px;
 }
 
 .just-for-u{
@@ -1149,8 +1154,8 @@ header h1 {
 
 
 
-.buttons{
-  margin-left: 200px;
+.Buttons{
+  margin-left: 35%;
 }
 
 
@@ -1215,7 +1220,6 @@ header h1 {
   background: var(--button_outline_color);
   color: white;
   width: 300px;
-  margin-left: 50px;
 }
 
 .button_top2 {
