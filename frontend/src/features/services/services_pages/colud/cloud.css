@@ -1,31 +1,5 @@
 
 
-/* test online css */
-
-
-            body {
-                font-style: normal;
-                margin: 0;
-            }
-
-            /*!sc*/
-            html {
-                -webkit-scroll-behavior: smooth;
-                -moz-scroll-behavior: smooth;
-                -ms-scroll-behavior: smooth;
-                scroll-behavior: smooth;
-            }
-
-            /*!sc*/
-            body * {
-                box-sizing: border-box;
-            }
-
-            /*!sc*/
-            p {
-                margin: 0;
-            }
-
             /*!sc*/
             .sm-header1 {
                 margin: 0;
