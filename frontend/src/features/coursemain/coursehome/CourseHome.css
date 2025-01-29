@@ -230,6 +230,7 @@
   padding: 10px;
 }
 .card-opretor {
+<<<<<<< Updated upstream
   display: flex
 ;
   /* height: 30%; */
@@ -244,11 +245,14 @@
   padding: 0px 30px;
   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
 
+=======
+>>>>>>> Stashed changes
   display: flex;
   justify-content: space-between;
   width: 90%;
   margin: 50px auto 0;  /* Center the cards and add space at the top */
   gap: 20px;
+<<<<<<< Updated upstream
 }
 
 .card-inner {
@@ -261,6 +265,20 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
+=======
+}
+
+.card-inner {
+  width: 32%;  /* To give some space between the cards */
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);  /* Slightly more shadow for a modern look */
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+>>>>>>> Stashed changes
 .card-inner:hover {
   transform: translateY(-10px);  /* Hover effect for floating feel */
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
