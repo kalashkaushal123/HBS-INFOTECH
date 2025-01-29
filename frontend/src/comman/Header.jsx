@@ -58,7 +58,7 @@ export default function Header() {
               >
                 <Link className="nav-link text-white" to="/solutions">Services</Link>
                 {/* Conditionally show the dropdown */}
-                <div className={`services-dropdown ${isHoveringServices ? 'show' : ''}`}>
+                <div align='left' className={`services-dropdown ${isHoveringServices ? 'show' : ''}`}>
                   <div className="services-menu">
                     <div className="services-left-side" style={{position:"relative",left:"30px"}}>
                       <h1 className='m-5'>AI expertise tailored to business goals </h1>
