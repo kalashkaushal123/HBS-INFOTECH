@@ -42,10 +42,6 @@ import CourseLearn from './features/coursemain/courselearn/CourseLearn';
 import CoursePractice from './features/coursemain/coursePractice/CoursePractice';
 import CourseClassroom from './features/coursemain/courseClassroom/CourseClassroom';
 import Mentorship from './features/coursemain/Mentorship/Mentorship';
-<<<<<<< Updated upstream
-import CourseProject from './features/coursemain/courseProject/CourseProject';
-=======
->>>>>>> Stashed changes
 
 
 
@@ -221,13 +217,6 @@ function App() {
         {
           path:"/CourseMain/Mentorship",
           element:<Mentorship></Mentorship>
-<<<<<<< Updated upstream
-        },
-        {
-          path:"/CourseMain/courseProject",
-          element:<CourseProject></CourseProject>
-=======
->>>>>>> Stashed changes
         }
       ]
     }

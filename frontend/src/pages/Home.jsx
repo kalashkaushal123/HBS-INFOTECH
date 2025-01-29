@@ -89,7 +89,7 @@ function Recruitment(params) {
         <>
 
         
-          <div className='' style={{backgroundImage:`url(https://www.rarrtech.com/static/media/backgroundimg.16a86810b2614911e6b8.png)`, height: '300px'}}>
+          <div className='' style={{backgroundImage:`url(https://www.rarrtech.com/static/media/backgroundimg.16a86810b2614911e6b8.png)`, height: '300px',padding:"10rem"}}>
           {showanimation==false ?<>
               <div style={{backgroundColor:'transparent'}}>
                       <div className="scrolling-container " style={{display:'flex'}}>

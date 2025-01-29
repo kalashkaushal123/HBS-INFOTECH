@@ -106,40 +106,71 @@ export default function CoursePractice() {
     }
   };
   // share button end
+
+
+  const [CodingProblems, setCodingProblems] = useState(true);
+  const [SupplementaryCourses, setSupplementaryCourses] = useState(false);
+  const [CodingAssessments, setCodingAssessments] = useState(false);
+  const [QuizAssessments, setQuizAssessments] = useState(false);
+
+  function showCodingProblems() {  
+    setCodingProblems(true)
+    setSupplementaryCourses(false)
+    setCodingAssessments(false)
+    setQuizAssessments(false)
+  }
+
+  function showSupplementaryCourses() {
+      setCodingProblems(false)
+      setSupplementaryCourses(true)
+      setCodingAssessments(false)
+      setQuizAssessments(false)
+  }
+  function showCodingAssessments() {
+   
+      setCodingProblems(false)
+      setSupplementaryCourses(false)
+      setCodingAssessments(true)
+      setQuizAssessments(false)    
+  }
+  function showQuizAssessments() {
+    
+    setCodingProblems(false)
+    setSupplementaryCourses(false)
+    setCodingAssessments(false)
+    setQuizAssessments(true)      
+  }
   return (
+
+
     <>
     <div className="container p-5">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-8">
           <h1>Practice</h1>
           <h6>Put your learning to use. Practice and test your skills through curated coding problems and assessments.</h6>
 
           </div>
 
-          <div className="col-md-6 border m-auto">
-              <img width={'50%'} src="/src/features/coursemain/Images/1st.jpg" alt="" />
+          <div className="col-md-4  m-auto">
+              <img className='shadow' width={'100%'} src="/src/features/coursemain/Images/1st.jpg" alt="" />
           </div>
         </div>
-
-       
-
-
-        
-    
     </div>
 
 
     <div className="container">
     <div class="navbar">
-        <a href="#" class="nav-item active">Coding Problems</a>
-        <a href="#" class="nav-item">Supplementary Courses</a>
-        <a href="#" class="nav-item">Coding Assessments</a>
-        <a href="#" class="nav-item">Quiz Assessments</a>
+        <a href="#" class="nav-item active" onClick={showCodingProblems}>Coding Problems</a>
+        <a href="#" class="nav-item" onClick={showSupplementaryCourses}>Supplementary Courses</a>
+        <a href="#" class="nav-item" onClick={showCodingAssessments}>Coding Assessments</a>
+        <a href="#" class="nav-item" onClick={showQuizAssessments}>Quiz Assessments</a>
     </div>
     </div>
 
 
-    <div class="filter-container">
+    {CodingProblems==true ? 
+    <><div class="filter-container">
         <div class="filter-item active">All Problems <span class="filter-count">132</span></div>
         <div class="filter-item">Solved <span class="filter-count">0</span></div>
         <div class="filter-item active">Unsolved <span class="filter-count">132</span></div>
@@ -149,17 +180,10 @@ export default function CoursePractice() {
           <option value="">Sql</option>
           <option value="">Intiger,Float,Bulion</option>
           </select>
-        <select class="filter-item active" style={{padding:"0.7rem",width:"13%"}} placeholder="Company" id="course-lms-select"><option value="default">Company</option><option value="HCL">HCL</option><option value="Fingent">Fingent</option><option value="OpeninApp">OpeninApp</option><option value="Microsoft">Microsoft</option><option value="SwanCapital">SwanCapital</option><option value="Quantzig">Quantzig</option><option value="Oracle">Oracle</option><option value="Capgemini">Capgemini</option><option value="Unacademy">Unacademy</option><option value="Meta">Meta</option><option value="Nissan">Nissan</option><option value="Cartesian">Cartesian</option><option value="GOQii">GOQii</option><option value="Eaglytics">Eaglytics</option><option value="Agoda">Agoda</option><option value="Freecharge">Freecharge</option><option value="StayVista">StayVista</option><option value="Novartis">Novartis</option><option value="Accenture">Accenture</option><option value="Cisco">Cisco</option><option value="Cognizant">Cognizant</option><option value="Blitzpoker">Blitzpoker</option><option value="Adobe">Adobe</option><option value="IBM">IBM</option><option value="HSBC">HSBC</option><option value="Airtel">Airtel</option><option value="IndiaMART">IndiaMART</option><option value="HCLTech">HCLTech</option><option value="Octalogic Tech">Octalogic Tech</option><option value="Kriyadocs">Kriyadocs</option><option value="Seven Square Technosoft">Seven Square Technosoft</option><option value="CostaCloud">CostaCloud</option><option value="Next Labs">Next Labs</option><option value="Unstop">Unstop</option><option value="Vishleshan">Vishleshan</option><option value="Richpanel Inc">Richpanel Inc</option></select>
-       
-        <button class="reset-button">Reset</button>
+        <select class="filter-item active" style={{padding:"0.7rem",width:"13%"}} placeholder="Company" id="course-lms-select"><option value="default">Company</option><option value="HCL">HCL</option><option value="Fingent">Fingent</option><option value="OpeninApp">OpeninApp</option><option value="Microsoft">Microsoft</option><option value="SwanCapital">SwanCapital</option><option value="Quantzig">Quantzig</option><option value="Oracle">Oracle</option><option value="Capgemini">Capgemini</option><option value="Unacademy">Unacademy</option><option value="Meta">Meta</option><option value="Nissan">Nissan</option><option value="Cartesian">Cartesian</option><option value="GOQii">GOQii</option><option value="Eaglytics">Eaglytics</option><option value="Agoda">Agoda</option><option value="Freecharge">Freecharge</option><option value="StayVista">StayVista</option><option value="Novartis">Novartis</option><option value="Accenture">Accenture</option><option value="Cisco">Cisco</option><option value="Cognizant">Cognizant</option><option value="Blitzpoker">Blitzpoker</option><option value="Adobe">Adobe</option><option value="IBM">IBM</option><option value="HSBC">HSBC</option><option value="Airtel">Airtel</option><option value="IndiaMART">IndiaMART</option><option value="HCLTech">HCLTech</option><option value="Octalogic Tech">Octalogic Tech</option><option value="Kriyadocs">Kriyadocs</option><option value="Seven Square Technosoft">Seven Square Technosoft</option><option value="CostaCloud">CostaCloud</option><option value="Next Labs">Next Labs</option><option value="Unstop">Unstop</option><option value="Vishleshan">Vishleshan</option><option value="Richpanel Inc">Richpanel Inc</option></select> <button class="reset-button">Reset</button>
 
         
     </div>
-
-
-   
-
-
       <br /><br /><br />
       <hr />
       
@@ -201,12 +225,28 @@ export default function CoursePractice() {
                 {number}
               </button>
             ))}
-      </div>
-  
+      </div></> 
+    : 
+    <></>}
+  {SupplementaryCourses==true ? 
+  <> <label htmlFor="" className='bg-dark text-white'>SupplementaryCourses</label></> 
+  :
+  <></>}
+
+  {CodingAssessments==true ? 
+  <> <label htmlFor="" className='bg-dark text-white'>CodingAssessments</label></> 
+  :
+  <></>}
+
+  {QuizAssessments==true ? 
+  <> <label htmlFor="" className='bg-dark text-white'>QuizAssessments</label></> 
+  :
+  <></>}
 
 
 {/* ----------------------------------------------- */}
-{/* <div className="container p-5">
+
+<div className="container p-5">
        <div className="row">
         <div className="col-md-8">
         <div class="">
@@ -535,33 +575,26 @@ export default function CoursePractice() {
       <stop offset={1} stopColor="#E15F7A" />
     </linearGradient>
   </defs>
-</svg>
+        </svg>
 
         </div>
        </div>
 </div>
 
-<div className='container p-5'>
-  <h2 className="">AlmaX Placement Programme Status Board</h2>
+<div className=' p-5'>
+  <h2 className="">AlmaX Placement Programme Status Board</h2> <br />
   <div className="row">
-    <div className="col-md-3 bg-white ">
-      <h3
-       
-        style={{
-          background:
-            "-webkit-linear-gradient(top, rgb(104, 74, 167), rgb(225, 95, 122)) text",
-          WebkitTextFillColor: "transparent"
-        }}
-      >
-        450
-      </h3>
-      <p className="mt-1 text-sm text-gray-600">Students placed</p>
+    <div className="col-md-3 bg-white">
+      <div className=''>
+        <h3 style={{ background: "-webkit-linear-gradient(top, rgb(104, 74, 167), rgb(225, 95, 122)) text",WebkitTextFillColor: "transparent" }}>
+          450
+        </h3>
+        <p className="mt-1 text-sm text-gray-600">Students placed</p>
+      </div>
     </div>
 
     <div className="col-md-3 bg-white ">
-      <h3
-       
-        style={{
+      <h3 style={{
           background:
             "-webkit-linear-gradient(top, rgb(104, 74, 167), rgb(225, 95, 122)) text",
           WebkitTextFillColor: "transparent"
@@ -600,7 +633,7 @@ export default function CoursePractice() {
       <p className="mt-1 text-sm text-gray-600">Hiring partners</p>
     </div>
   </div>
-</div> */}
+</div> 
 
 
 
