@@ -55,13 +55,14 @@ export default function CouserLeftbar() {
         <p>Practice</p>
       </div>
       </Link>
-      
+      <Link to="/CourseMain/courseProject">
       <div className={`projects-left ${clicked === 'projects' ? 'clicked' : ''}`} onClick={() => handleClick('projects')}>
         <div className="logo" style={{color:"black"}}>
           <FaProjectDiagram />
         </div>
         <p>Projects</p>
       </div>
+      </Link>
       <div className={`carriar-left ${clicked === 'carriar' ? 'clicked' : ''}`} onClick={() => handleClick('carriar')}>
         <div className="logo" style={{color:"black"}}>
           <MdWork />

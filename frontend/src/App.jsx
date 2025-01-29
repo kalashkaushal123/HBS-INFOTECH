@@ -42,6 +42,7 @@ import CourseLearn from './features/coursemain/courselearn/CourseLearn';
 import CoursePractice from './features/coursemain/coursePractice/CoursePractice';
 import CourseClassroom from './features/coursemain/courseClassroom/CourseClassroom';
 import Mentorship from './features/coursemain/Mentorship/Mentorship';
+import CourseProject from './features/coursemain/courseProject/CourseProject';
 
 
 
@@ -217,6 +218,10 @@ function App() {
         {
           path:"/CourseMain/Mentorship",
           element:<Mentorship></Mentorship>
+        },
+        {
+          path:"/CourseMain/courseProject",
+          element:<CourseProject></CourseProject>
         }
       ]
     }

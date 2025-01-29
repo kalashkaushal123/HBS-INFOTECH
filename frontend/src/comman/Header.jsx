@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import './header.css';
 import { useState } from 'react'; 
 import { FaAlignJustify } from "react-icons/fa";
-
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isHoveringServices, setIsHoveringServices] = useState(false); 
@@ -19,10 +18,11 @@ export default function Header() {
       <header className="py-3">
         <div className="container d-flex justify-content-between align-items-center">
           {/* Left Side */}
-          <div className='top'>
-            <div className="logo d-flex align-items-center">
-              <h1 className="mb-0 fs-4 fw-bold text-white">HBS INFOTECH</h1>
+          <div className='top d-flex'>
+            <div className="">
+            
             </div>
+            <h1>HBS INFOTECH</h1>
           </div>
 
           {/* Right Side */}
