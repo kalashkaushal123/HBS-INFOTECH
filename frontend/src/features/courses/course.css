@@ -296,25 +296,6 @@
 
 
 
-
-
-
-
-
-
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
-}
-
 /* Hero Section */
 .hero-section {
   display: flex;
@@ -331,10 +312,7 @@ body {
   max-width: 600px;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
+
 
 .rating {
   font-size: 1.2em;
@@ -473,12 +451,7 @@ h1 {
 /*  */
 
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #121212;
-  color: #ffffff;
-}
+
 
 .container {
   max-width: 1200px;
@@ -1303,11 +1276,6 @@ header h1 {
   
   
 }
-
-
-
-
-
 
 
 .cards-in-line{

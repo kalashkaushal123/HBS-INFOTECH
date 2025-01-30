@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
 import './CoursePractice.css'
-import ('https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css');
-import ('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900');
-import ('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-
+import { useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 export default function CoursePractice() {
   const [Allproblems, setAllproblems] = useState([     
@@ -108,43 +106,207 @@ export default function CoursePractice() {
   // share button end
 
 
-  const [CodingProblems, setCodingProblems] = useState(true);
+  const [CodingProblems, setCodingProblems]= useState(true);
   const [SupplementaryCourses, setSupplementaryCourses] = useState(false);
-  const [CodingAssessments, setCodingAssessments] = useState(false);
-  const [QuizAssessments, setQuizAssessments] = useState(false);
+  const [CodingAssessments, setCodingAssessments]= useState(false);
+  const [QuizAssessments, setQuizAssessments]= useState(false);
 
-  function showCodingProblems() {  
-    setCodingProblems(true)
-    setSupplementaryCourses(false)
-    setCodingAssessments(false)
-    setQuizAssessments(false)
-  }
 
-  function showSupplementaryCourses() {
-      setCodingProblems(false)
-      setSupplementaryCourses(true)
-      setCodingAssessments(false)
-      setQuizAssessments(false)
-  }
-  function showCodingAssessments() {
-   
-      setCodingProblems(false)
-      setSupplementaryCourses(false)
-      setCodingAssessments(true)
-      setQuizAssessments(false)    
-  }
-  function showQuizAssessments() {
-    
-    setCodingProblems(false)
-    setSupplementaryCourses(false)
-    setCodingAssessments(false)
-    setQuizAssessments(true)      
-  }
+  const [CoddAssdata, setCoddAssdata] = useState([
+    {
+        "field 1": "/src/features/coursemain/Images/CoddAssdata/small_Accenture_Emblem_1deca2b994 (1).png",
+        "field 2": "5 Questions | 75 Min"
+    },
+    {
+        "field 1": "/src/features/coursemain/Images/QuizImg/small_adobe_a9ebe257f8.png",
+        "field 2": "4 Questions | 60 Min"
+    },
+    {
+        "field 1": "/src/features/coursemain/Images/CoddAssdata/small_hsbc_1_b4965fbd87.png",
+        "field 2": "5 Questions | 75 Min"
+    },
+    {
+        "field 1": "/src/features/coursemain/Images/CoddAssdata/small_indiamart_6af6d5ae62.png",
+        "field 2": "5 Questions | 75 Min"
+    },
+    {
+        "field 1": "/src/features/coursemain/Images/CoddAssdata/small_Untitled_design_1_d4eb74df8e.png",
+        "field 2": "5 Questions | 75 Min"
+    },
+    {
+        "field 1": "/src/features/coursemain/Images/CoddAssdata/small_Untitled_design_8_f73954ab70.png",
+        "field 2": "5 Questions | 75 Min"
+    }
+]);
+const [SuplCouData, setSuplCouData] = useState(
+  [
+    {
+        "title": " Introduction to Python",
+        "img": " IT ",
+        "lesson": "15 Lessons",
+        "min": "180 min",
+        "desc": "Dive into the world of 'Deep Learning.' Explore why neural networ..."
+    },
+    {
+        "title": " Conditionals And Loops in Python",
+        "img": "CA",
+        "lesson": "9 Lessons",
+        "min": "180 min",
+        "desc": "Dive into the world of 'Deep Learning.' Explore why neural networ..."
+    },
+    {
+        "title": " Functions and Methods in Python",
+        "img": "AF",
+        "lesson": "9 Lessons",
+        "min": "180 min",
+        "desc": "Dive into the world of 'Deep Learning.' Explore why neural networ..."
+    },
+    {
+        "title": " Analytics Frameworks for Beginners",
+        "img": "IT",
+        "lesson": "16 Lessons",
+        "min": "180 min",
+        "desc": "Dive into the world of 'Deep Learning.' Explore why neural networ..."
+    },
+    {
+        "title": " Data Science for Beginners",
+        "img": "JR",
+        "lesson": "14 Lessons",
+        "min": "180 min",
+        "desc": "Dive into the world of 'Deep Learning.' Explore why neural networ..."
+    },
+    {
+        "title": " Introduction to Python 15 Lessons 180 min",
+        "img": "IT",
+        "lesson": "5 Lessons",
+        "min": "180 min",
+        "desc": "Dive into the world of 'Deep Learning.' Explore why neural networ..."
+    },
+    {
+        "title": " Conditionals And Loops in Python",
+        "img": "IN",
+        "lesson": "4 Lessons",
+        "min": "180 min",
+        "desc": "Boost your neural networks with short course on 'Improving Neural..."
+    },
+    {
+        "title": " Functions and Methods in Python",
+        "img": "ML",
+        "lesson": "3 Lessons",
+        "min": "180 min",
+        "desc": "Elevate your ML game with 'Machine Learning Strategy.' Dive into ..."
+    },
+    {
+        "title": " Analytics Frameworks for Beginners",
+        "img": "CV",
+        "lesson": "5 Lessons",
+        "min": "180 min",
+        "desc": "Unleash the power of 'Computer Vision and Convolutional Networks...."
+    },
+    {
+        "title": " Data Science for Beginners",
+        "img": "RN",
+        "lesson": "4 Lessons",
+        "min": "180 min",
+        "desc": "Dive into the realm of 'Recurrent Neural Networks and NLP.' Disco..."
+    },
+    {
+        "title": " Introduction to Python 15 Lessons 180 min",
+        "img": "FO",
+        "lesson": "4 Lessons",
+        "min": "180 min",
+        "desc": "Discover the essence of Machine Learning Engineering. Cover Linux..."
+    },
+    {
+        "title": " Conditionals And Loops in Python",
+        "img": "WA",
+        "lesson": "4 Lessons",
+        "min": "180 min",
+        "desc": "Explore 'Web APIs and Microservices' to master the basics with Fl..."
+    },
+    {
+        "title": " Functions and Methods in Python",
+        "img": "CA",
+        "lesson": "4 Lessons",
+        "min": "180 min",
+        "desc": "Dive into 'Containerization and Cloud Platforms' with an intro to..."
+    },
+    {
+        "title": " Analytics Frameworks for Beginners",
+        "img": "MA",
+        "lesson": "3 Lessons",
+        "min": "180 min",
+        "desc": "Unlock the world of 'MLOps and Big Data Tools.' Streamline ML wor..."
+    },
+    {
+        "title": " Data Science for Beginners",
+        "img": "CW",
+        "lesson": "15 Lessons",
+        "min": "120 min",
+        "desc": "A short course on Business Communication to pique your interests...."
+    }
+
+]
+);
+
+const [QuizData, setQuizData] = useState(
+  [
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_Accenture_Emblem_1deca2b994.png",
+        "title": "Microsoft Data Analyst Mock Test"
+    },
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_adobe_a9ebe257f8.png",
+        "title": "Meta Data Scientist Mock Test"
+    },
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_Capgemini_Emblem_b3ee9f3498.png",
+        "title": "Cisco Junior Data Analyst Mock Test"
+    },
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_cisco_41f2a09251.png",
+        "title": "Cognizant Associate Data Analyst Mock Test"
+    },
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_HCL_Technologies_Symbol_20bd1ab075.png",
+        "title": "Accenture ML Engineer Mock Test"
+    },
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_ibm_445d234dfc.png",
+        "title": "Capgemini Associate Business Analyst Mock Test"
+    },
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_Logo_Cognizant_644b10e455.png",
+        "title": "HCL Business Analyst Mock Test"
+    },
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_microsoft_5867d21a95.jpg",
+        "title": "IBM Associate Data Scientist Mock Test"
+    },
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_Oracle_Logo_9115ca7108.jpg",
+        "title": "Adobe Junior Data Scientist Mock Test"
+    },
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_adobe_a9ebe257f8.png",
+        "title": "Oracle Data Analyst Mock Test"
+    },
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_Accenture_Emblem_1deca2b994.png",
+        "title": "Dealing With Multiple Tables"
+    },
+    {
+        "Image": "/src/features/coursemain/Images/QuizImg/small_ibm_445d234dfc.png",
+        "title": "Unsupervised Algorithm Implementation"
+    }
+]
+);
   return (
 
 
     <>
-    <div className="container p-5">
+<div className='p-5'>
+<div className=" ">
         <div className="row">
           <div className="col-md-8">
           <h1>Practice</h1>
@@ -159,18 +321,49 @@ export default function CoursePractice() {
     </div>
 
 
-    <div className="container">
-    <div class="navbar">
-        <a href="#" class="nav-item active" onClick={showCodingProblems}>Coding Problems</a>
-        <a href="#" class="nav-item" onClick={showSupplementaryCourses}>Supplementary Courses</a>
-        <a href="#" class="nav-item" onClick={showCodingAssessments}>Coding Assessments</a>
-        <a href="#" class="nav-item" onClick={showQuizAssessments}>Quiz Assessments</a>
-    </div>
+    <div className="">
+        <div class="navbarrrr">
+            <a href="#" class={`nav-itemmmm ${CodingProblems===true ? ' active': ''}`}
+              onClick={()=>{
+                  setCodingProblems(true);
+                  setSupplementaryCourses(false);
+                  setCodingAssessments(false);
+                  setQuizAssessments(false);
+              }}            
+              >Coding Problems</a>
+
+            <a href="#" class={`nav-itemmmm ${SupplementaryCourses===true ? ' active': ''} }`} 
+                onClick={()=>{
+                      setCodingProblems(false);
+                      setSupplementaryCourses(true);
+                      setCodingAssessments(false);
+                      setQuizAssessments(false);
+                  }}
+                >Supplementary Courses</a>
+
+            <a href="#" class={`nav-itemmmm ${CodingAssessments===true ? ' active': ''} }`} 
+                onClick={()=>{
+                      setCodingProblems(false);
+                      setSupplementaryCourses(false);
+                      setCodingAssessments(true);
+                      setQuizAssessments(false);
+                  }}
+                >Coding Assessments</a>
+            <a href="#" class={`nav-itemmmm ${QuizAssessments===true ? ' active': ''} }`} 
+                  onClick={()=>{
+                    setCodingProblems(false)
+                    setSupplementaryCourses(false)
+                    setCodingAssessments(false)
+                    setQuizAssessments(true)
+                  }}
+                  >Quiz Assessments</a>
+        </div>
     </div>
 
 
-    {CodingProblems==true ? 
-    <><div class="filter-container">
+  {CodingProblems==true ? 
+    <>
+    <div class="filter-container">
         <div class="filter-item active">All Problems <span class="filter-count">132</span></div>
         <div class="filter-item">Solved <span class="filter-count">0</span></div>
         <div class="filter-item active">Unsolved <span class="filter-count">132</span></div>
@@ -179,33 +372,73 @@ export default function CoursePractice() {
           <option value="">Python</option>
           <option value="">Sql</option>
           <option value="">Intiger,Float,Bulion</option>
-          </select>
-        <select class="filter-item active" style={{padding:"0.7rem",width:"13%"}} placeholder="Company" id="course-lms-select"><option value="default">Company</option><option value="HCL">HCL</option><option value="Fingent">Fingent</option><option value="OpeninApp">OpeninApp</option><option value="Microsoft">Microsoft</option><option value="SwanCapital">SwanCapital</option><option value="Quantzig">Quantzig</option><option value="Oracle">Oracle</option><option value="Capgemini">Capgemini</option><option value="Unacademy">Unacademy</option><option value="Meta">Meta</option><option value="Nissan">Nissan</option><option value="Cartesian">Cartesian</option><option value="GOQii">GOQii</option><option value="Eaglytics">Eaglytics</option><option value="Agoda">Agoda</option><option value="Freecharge">Freecharge</option><option value="StayVista">StayVista</option><option value="Novartis">Novartis</option><option value="Accenture">Accenture</option><option value="Cisco">Cisco</option><option value="Cognizant">Cognizant</option><option value="Blitzpoker">Blitzpoker</option><option value="Adobe">Adobe</option><option value="IBM">IBM</option><option value="HSBC">HSBC</option><option value="Airtel">Airtel</option><option value="IndiaMART">IndiaMART</option><option value="HCLTech">HCLTech</option><option value="Octalogic Tech">Octalogic Tech</option><option value="Kriyadocs">Kriyadocs</option><option value="Seven Square Technosoft">Seven Square Technosoft</option><option value="CostaCloud">CostaCloud</option><option value="Next Labs">Next Labs</option><option value="Unstop">Unstop</option><option value="Vishleshan">Vishleshan</option><option value="Richpanel Inc">Richpanel Inc</option></select> <button class="reset-button">Reset</button>
+        </select>
+        <select class="filter-item active" style={{ padding: "0.7rem" , width: "13%" }} placeholder="Company"
+              id="course-lms-select">
+              <option value="default">Company</option>
+              <option value="HCL">HCL</option>
+              <option value="Fingent">Fingent</option>
+              <option value="OpeninApp">OpeninApp</option>
+              <option value="Microsoft">Microsoft</option>
+              <option value="SwanCapital">SwanCapital</option>
+              <option value="Quantzig">Quantzig</option>
+              <option value="Oracle">Oracle</option>
+              <option value="Capgemini">Capgemini</option>
+              <option value="Unacademy">Unacademy</option>
+              <option value="Meta">Meta</option>
+              <option value="Nissan">Nissan</option>
+              <option value="Cartesian">Cartesian</option>
+              <option value="GOQii">GOQii</option>
+              <option value="Eaglytics">Eaglytics</option>
+              <option value="Agoda">Agoda</option>
+              <option value="Freecharge">Freecharge</option>
+              <option value="StayVista">StayVista</option>
+              <option value="Novartis">Novartis</option>
+              <option value="Accenture">Accenture</option>
+              <option value="Cisco">Cisco</option>
+              <option value="Cognizant">Cognizant</option>
+              <option value="Blitzpoker">Blitzpoker</option>
+              <option value="Adobe">Adobe</option>
+              <option value="IBM">IBM</option>
+              <option value="HSBC">HSBC</option>
+              <option value="Airtel">Airtel</option>
+              <option value="IndiaMART">IndiaMART</option>
+              <option value="HCLTech">HCLTech</option>
+              <option value="Octalogic Tech">Octalogic Tech</option>
+              <option value="Kriyadocs">Kriyadocs</option>
+              <option value="Seven Square Technosoft">Seven Square Technosoft</option>
+              <option value="CostaCloud">CostaCloud</option>
+              <option value="Next Labs">Next Labs</option>
+              <option value="Unstop">Unstop</option>
+              <option value="Vishleshan">Vishleshan</option>
+              <option value="Richpanel Inc">Richpanel Inc</option>
+            </select> <button class="reset-button">Reset</button>
 
         
     </div>
-      <br /><br /><br />
+      
       <hr />
       
-    <div className="container p-3 ">
+    <div className="">
     
-          <table  width={'100%'} className='table table-striped'>  
-          <thead className='bg-white m'><tr>
-            
-          <th className='ps-3' >Problem</th>
-            <th className='ps-3'>Ask in</th>
-            <th className='ps-3'>Skill</th>
-            <th className='ps-3'>Difficulty</th>
-            <th className='ps-3'>Status</th>
-            <th className='ps-3'></th>
-          </tr>
+          <table align=''  width={'100%'} className='table table-striped'>  
+          <thead className='bg-white m'>
+              <tr>
+                <th className='ps-3' >Problem</th>
+                <th className='ps-3'>Ask in</th>
+                <th className='ps-3'>Skill</th>
+                <th className='ps-3'>Difficulty</th>
+                <th className='ps-3'>Status</th>
+                <th className='ps-3'></th>
+              </tr>
           </thead>
-          <tbody>
+          <tbody align='left'>
            {currentItems.map((item,index)=>
             <tr>
               <td>{item.problem}</td>
-              <td>{item.asked_in.map((icon,index)=>
-                <><img width={'30px'} src={icon} alt="" /></>)}</td>
+              <td>
+              {item.asked_in.map((icon,index)=>
+                <><img className='ms-1' width={'30px'} src={icon} alt="" /></>)}</td>
               <td>{item.skill}</td>
               <td>{item.difficulty}</td>
               <td><button className='border btn-color' >{item.status}</button></td>
@@ -228,25 +461,97 @@ export default function CoursePractice() {
       </div></> 
     : 
     <></>}
-  {SupplementaryCourses==true ? 
-  <> <label htmlFor="" className='bg-dark text-white'>SupplementaryCourses</label></> 
+    
+  {SupplementaryCourses===true ? 
+  <>
+  <div className='row mt-3 p-5'>
+  {SuplCouData.map((item,index)=>
+    <div className="col-md-4 mb-4 ">
+          <div className='bg-white p-2 shadow' style={{height:"16rem"}}>
+          <div className='d-flex m-auto '>
+              <label htmlFor="" className='bg-primary  fs-5 p-1 ps-2 text-white' 
+                  style={{borderRadius:'50%',width:"40px",height:"40px"}}>
+                  {item.img}
+              </label>
+              <label htmlFor="" className='pt-2 ps-2'>{item.title}</label>
+          </div>
+          <div className='d-flex mt-2 text-white mt-3 mb-3'>
+                <label htmlFor="" className='rounded-3 bg-success me-3 p-1'>{item.lesson}</label>
+                <label htmlFor="" className='rounded-3 bg-success p-1'>{item.min}</label>
+          </div>
+
+          <div>
+                {item.desc}
+                <br />
+                <button className='pt-3 ps-2 pe-2 text-danger' style={{background:"transparent",border:"0"}}>
+                    View &nbsp;
+                    <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class=""><path d="M14.312 5.42426C14.5464 5.18995 14.5464 4.81005 14.312 4.57574L10.4937 0.757359C10.2593 0.523045 9.87945 0.523045 9.64513 0.757359C9.41082 0.991674 9.41082 1.37157 9.64513 1.60589L13.0392 5L9.64513 8.39411C9.41082 8.62843 9.41082 9.00833 9.64513 9.24264C9.87945 9.47696 10.2593 9.47696 10.4937 9.24264L14.312 5.42426ZM0.186401 5.6H13.8878V4.4H0.186401V5.6Z" fill="#F00037"></path></svg>
+                </button>
+          </div>
+          </div>
+      </div>
+  )}
+      
+  </div>
+  <br /><br /><br />
+  </> 
   :
   <></>}
 
-  {CodingAssessments==true ? 
-  <> <label htmlFor="" className='bg-dark text-white'>CodingAssessments</label></> 
+  {CodingAssessments===true ? 
+  <div className='p-5'>
+         <div className="row">
+         {CoddAssdata.map((item,index)=><>
+                <div className='col-md-4 '>
+                <div className='text-center bg-white shadow mb-3' style={{height:"200px"}}>
+                    <img width={'80px'} className='p-2' src={item['field 1']} alt="" />
+                    <hr />
+                    <div htmlFor="" className='p-2'>{item['field 2']}</div>
+                    
+                  
+                    <button className='  pt-3 ps-2 pe-2 text-danger' style={{background:"transparent",border:"0"}}>
+                        View &nbsp;
+                        <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class=""><path d="M14.312 5.42426C14.5464 5.18995 14.5464 4.81005 14.312 4.57574L10.4937 0.757359C10.2593 0.523045 9.87945 0.523045 9.64513 0.757359C9.41082 0.991674 9.41082 1.37157 9.64513 1.60589L13.0392 5L9.64513 8.39411C9.41082 8.62843 9.41082 9.00833 9.64513 9.24264C9.87945 9.47696 10.2593 9.47696 10.4937 9.24264L14.312 5.42426ZM0.186401 5.6H13.8878V4.4H0.186401V5.6Z" fill="#F00037"></path></svg>
+                    </button>
+
+                </div>
+                </div>
+          </>)}
+         </div>
+  </div> 
   :
   <></>}
 
-  {QuizAssessments==true ? 
-  <> <label htmlFor="" className='bg-dark text-white'>QuizAssessments</label></> 
+  {QuizAssessments===true ? 
+  <> 
+  <div className="row">
+  {QuizData.map((item,index)=>
+
+  <div className='col-md-4 '>
+                <div className='text-center bg-white shadow mb-3' style={{height:"190px"}}>
+                    <img width={'80px'} className='p-2' src={item.Image} alt="" />
+                    <br />
+                    <label htmlFor="" className='p-2'>{item.title}</label>
+                    
+                    <br />
+                    <button className='pt-3 ps-2 pe-2 text-danger' style={{background:"transparent",border:"0"}}>
+                        View &nbsp;
+                        <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class=""><path d="M14.312 5.42426C14.5464 5.18995 14.5464 4.81005 14.312 4.57574L10.4937 0.757359C10.2593 0.523045 9.87945 0.523045 9.64513 0.757359C9.41082 0.991674 9.41082 1.37157 9.64513 1.60589L13.0392 5L9.64513 8.39411C9.41082 8.62843 9.41082 9.00833 9.64513 9.24264C9.87945 9.47696 10.2593 9.47696 10.4937 9.24264L14.312 5.42426ZM0.186401 5.6H13.8878V4.4H0.186401V5.6Z" fill="#F00037"></path></svg>
+                    </button>
+
+                </div>
+                </div>
+  
+  )}
+  </div>
+  </> 
   :
   <></>}
 
 
 {/* ----------------------------------------------- */}
 
-<div className="container p-5">
+<div className="">
        <div className="row">
         <div className="col-md-8">
         <div class="">
@@ -581,7 +886,7 @@ export default function CoursePractice() {
        </div>
 </div>
 
-<div className=' p-5'>
+<div className=' '>
   <h2 className="">AlmaX Placement Programme Status Board</h2> <br />
   <div className="row">
     <div className="col-md-3 bg-white">
@@ -636,6 +941,7 @@ export default function CoursePractice() {
 </div> 
 
 
+</div>
 
    
     </>

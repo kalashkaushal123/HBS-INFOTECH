@@ -1,21 +1,21 @@
-.navbar {
+.navbarrrr {
     display: flex;
     gap: 20px;
     padding: 10px 20px;
     border-bottom: 2px solid #eee;
 }
-.nav-item {
+.nav-itemmmm {
     text-decoration: none;
     color: gray;
     font-size: 16px;
     font-weight: 500;
     position: relative;
 }
-.nav-item.active {
+.nav-itemmmm.active {
     color: #e9004e;
     font-weight: bold;
 }
-.nav-item.active::after {
+.nav-itemmmm.active::after {
     content: "";
     display: block;
     width: 100%;
@@ -86,20 +86,6 @@
 }
 /* filter end */
 
-
-
-
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-    display: block
-}
-
-body {
-    line-height: 1
-}
-
-ol,ul {
-    list-style: none
-}
 
 blockquote,q {
     quotes: none
