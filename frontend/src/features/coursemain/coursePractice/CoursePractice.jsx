@@ -507,9 +507,8 @@ const [QuizData, setQuizData] = useState(
                     <img width={'80px'} className='p-2' src={item['field 1']} alt="" />
                     <hr />
                     <div htmlFor="" className='p-2'>{item['field 2']}</div>
-                    
-                  
-                    <button className='  pt-3 ps-2 pe-2 text-danger' style={{background:"transparent",border:"0"}}>
+                    <button className='pt-3 ps-2 pe-2 text-danger' 
+                             style={{background:"transparent",border:"0"}}>
                         View &nbsp;
                         <svg width="15" height="10" viewBox="0 0 15 10" fill="none" xmlns="http://www.w3.org/2000/svg" class=""><path d="M14.312 5.42426C14.5464 5.18995 14.5464 4.81005 14.312 4.57574L10.4937 0.757359C10.2593 0.523045 9.87945 0.523045 9.64513 0.757359C9.41082 0.991674 9.41082 1.37157 9.64513 1.60589L13.0392 5L9.64513 8.39411C9.41082 8.62843 9.41082 9.00833 9.64513 9.24264C9.87945 9.47696 10.2593 9.47696 10.4937 9.24264L14.312 5.42426ZM0.186401 5.6H13.8878V4.4H0.186401V5.6Z" fill="#F00037"></path></svg>
                     </button>
@@ -551,7 +550,7 @@ const [QuizData, setQuizData] = useState(
 
 {/* ----------------------------------------------- */}
 
-<div className="">
+{/* <div className="">
        <div className="row">
         <div className="col-md-8">
         <div class="">
@@ -939,7 +938,7 @@ const [QuizData, setQuizData] = useState(
     </div>
   </div>
 </div> 
-
+ */}
 
 </div>
 
