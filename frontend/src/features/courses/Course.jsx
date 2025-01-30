@@ -349,7 +349,7 @@ export default function Course() {
         <div className="pt-3" style={{fontSize:'32px',marginLeft:'30%'}}>
           <label>In Collaboration with <span className="highlight">E&amp;ICT, IIT Guwahati</span></label>
           </div>
-        <div className="bg-dark">
+        <div align='justify' className=" p-5">
               <section className="partners">
                 <div className="partner-logo">
                   <img src="/src/features/courses/logos/almabetter.webp" alt="AlmaBetter Logo" />
@@ -380,6 +380,7 @@ export default function Course() {
           <img src="/src/features/courses/logos/calender_front_color_13231195c8.webp" alt="Deadline Extension Icon" />
             <p style={{color:'white'}}>Deadline extension of 6 months for AlmaX Career Track</p>
           </div>
+          
 
           <div className="benefit">
           <img src="/src/features/courses/logos/industry_immersion_17b9dd5bc8.webp" alt="Campus Immersion Icon" />
@@ -397,6 +398,9 @@ export default function Course() {
           </div>
         </section>
       
+
+
+
 
       <section className="success-stories" style={{backgroundColor: '#FFFFFF'}}>
         <h1 style={{color:'black'}}>Success <span>Stories</span></h1>
@@ -485,7 +489,7 @@ export default function Course() {
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
 
-
+<hr />
                   <div class="course " onClick={Numerical}>
                       <div class="course-number mb-4">02 &ensp;</div>
                       <div class="course-info">
@@ -494,7 +498,7 @@ export default function Course() {
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-
+<hr />
                   <div class="course " onClick={Relational}>
                       <div class="course-number mb-4">03 &ensp;</div>
                       <div class="course-info">
@@ -503,7 +507,7 @@ export default function Course() {
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-
+<hr />
                   <div class="course " onClick={Data}>
                       <div class="course-number mb-4">04 &ensp;</div>
                       <div class="course-info">
@@ -512,7 +516,7 @@ export default function Course() {
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-
+<hr />
                   <div class="course " onClick={Applied}>
 
                       <div class="course-number mb-4">05 &ensp;</div>
@@ -522,7 +526,7 @@ export default function Course() {
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-
+<hr />
                   <div class="course " onClick={Machine} >
                       <div class="course-number mb-4">06 &ensp;</div> 
                       <div class="course-info">
@@ -593,6 +597,57 @@ export default function Course() {
         
               
         </div>
+      </section>
+
+
+
+
+  <section>
+  <div className="certification-box mb-5">
+        <br /><br />
+        
+        <h1 style={{color:'black', marginLeft:'33%',fontSize:'28px', textTransform:'capitalize'}}>unlock your data science  
+        <span style={{color: 'red'}}> certifiction</span></h1>
+        <br />      
+        <p  className="text-center">elevate your career with esteemed certifiction, unlock new oppertunites and demonstrate your mastery in data science.</p>
+        
+        <div className="Certificate-option">
+          <h3 className="border-bottom">E&amp;ITC, IIT Guwahati</h3>
+          <h3 className="data-iit border-bottom"> Microsoft</h3>
+          <h3 className="data-iit border-bottom">almaBetter</h3>
+        </div>
+        <div className="row Certificate-option">
+          <div className="col-md-5">
+            <h6 className=""><strong>Advanced Certification from E&amp;ICT <br /> Academy, IIT Guwahati</strong></h6>
+            
+            <p className="">Upon successfully completing this program,<br />
+              you'll earn an Advanced Certiification in Full <br />
+              stack Data Science that is jointly offered by E&amp;ICT <br />
+              Academy, IIT Guwahati as the Knowledge Partner.
+              </p>
+            <br />
+            
+            <h6 className="">
+              <strong>Guest lectures from IIT G faculty</strong>
+            </h6>
+            
+            <p className="">Access to lectures from top faculties of IIT Guwahati</p>
+        
+            <h6 className=""><strong>2-day campus immersion at IIT Guwahati <br />
+            (optional)</strong></h6>
+            
+            <p className="">Experential learning opportunity at IIT Guwahati campus</p>
+            <br />
+            <div align='' className="m-start" >
+              <button className="button-explore p-2 me-2 rounded-3"> explore programe</button> 
+              <button className="button-download p-1  rounded-3"> download brochure</button>
+            </div>
+          </div>
+          <div className="col-md-5">
+            <img width={'100%'} className="" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
+          </div>
+        </div>
+      </div>
   </section>
 
 
@@ -606,237 +661,170 @@ export default function Course() {
 
 
 
-
-      <br /><br />
-      <div className="certification-box mb-5">
-        <br /><br />
-
-        
-        <h1 style={{color:'black', marginLeft:'33%',fontSize:'28px', textTransform:'capitalize'}}>unlock your data science  <span style={{color: 'red'}}>certifiction</span></h1><br /><br />
-        {/* <h1 className="data-head2"><u style={{color: 'red'}}></u></h1> */}
-        <p className="data-head3">elevate your career with esteemed certifiction, unlock new oppertunites and demonstrate your mastery in data science.</p>
-        <div className="Certificate-option">
-          <h3 className="border-bottom">E&amp;ITC, IIT Guwahati</h3>
-          <h3 className="data-iit border-bottom"> Microsoft</h3>
-          <h3 className="data-iit border-bottom">almaBetter</h3>
-        </div>
-        <div className="certificate-mainbox">
-          <div className="certificate-des">
-            <h3 className="next-head">Advanced Certification from E&amp;ICT <br /> Academy, IIT Guwahati</h3>
-            <br />
-            <p className="next-para">Upon successfully completing this program,<br />
-              you'll earn an Advanced Certiification in Full <br />
-              stack Data Science that is jointly offered by E&amp;ICT <br />
-              Academy, IIT Guwahati as the Knowledge Partner.</p>
-            <br />
-            <br />
-            <h3 className="nexthead2">
-              Guest lectures from IIT G faculty
-            </h3>
-            <br />
-            <p className="nexthead2">Access to lectures from top faculties of IIT Guwahati</p>
-            <br />
-            <br />
-            <h3 className="nexthead2">2-day campus immersion at IIT Guwahati <br />
-              (optional)</h3>
-            <br />
-            <p className="nexthead2">Experential learning opportunity at IIT Guwahati campus</p>
-            <div className="certificate-button" >
-              <button className="button-explore"> explore programe</button> 
-              <button className="button-download"> download brochure</button>
-            </div>
-          </div>
-          <div className="certificate-image-box">
-            <img className="certificate" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
-          </div>
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-
-<div style={{backgroundColor:'black' , width:'100%', height:'2000px', color:'white'}}>
-      <div >
+<div style={{backgroundColor:'black' , width:'100%',  color:'white'}}>
+      <div  align='center'>
         <br />
-        <h1 style={{marginLeft:'27%',fontSize:'32px',marginTop:'10px', textTransform:'capitalize'}}>100% job assurance with</h1> <h1 className="job-head2"> <br /> <u className="job-headu">allemx career track</u></h1> <br /><br /> <br /><br />
-        <p className="job-para">We have designed a dedicated data science career track along with career support services to help you become industry ready and make sure you land your dream job!</p>
+        <h1  style={{fontSize:'32px', textTransform:'capitalize'}}>100% job assurance with <span className="text-danger "><u>allemx career track</u></span></h1>
+        <sub  className="">We have designed a dedicated data science career track along with career support services to help you become industry ready and make sure you land your dream job!</sub>
+        
       </div>
       <h2 className="job-headmain">AlmaX Eligibility Requirements</h2>
-      <br />
-      <br />
-      <br />
-
-      <div className="cert-cards">
-        <div className="cert-cards-in">
+      <div className="cert-cards m-4 p-5">
+        <div className="cert-cards-in m-3">
           <img className="cert-img" src={graduation}/>
           <h3 className="cert-head">Graduation Degree</h3>
           <p className="cert-para">Must be a graduate at the time of AlmaX <br /> enrollment</p>
         </div>
-        <div className="cert-cards-in">
+        <div className="cert-cards-in m-3">
           <img className="cert-img" src={foundation}/>
           <h3 className="cert-head">Completed the Foundation Track</h3>
           <p className="cert-para">Completed the foundation track of the course.</p>
         </div>
-        <div className="cert-cards-in">
+        <div className="cert-cards-in m-3">
           <img className="cert-img" src={assement}/>
           <h3 className="cert-head">Completed the foundation track of the course.</h3>
           <p className="cert-para">Take entrance exam for AlmaX</p>
         </div>
       </div>
-      <br />
-      <br />
+    
+  
       <br />
       <h2 className="almax-carrer-services">AlmaX carrer services</h2>
-      <br />
-      <br />
-      <br />
+   
+
       <div className="almax-div">
-        <div className="cert-cards">
-          <div className="cert-cards-in">
+        <div className="cert-cards p-5">
+          <div className="cert-cards-in m-3">
             <img className="cert-img" src={support}/>
             <h3 className="cert-head">Placement Support</h3>
             <p className="cert-para">Complete support from our dedicated placement team until you get a job</p>
           </div>
-          <div className="cert-cards-in">           
+          <div className="cert-cards-in m-3">           
             <img className="cert-img" src={resume}/>
             <h3 className="cert-head">Resume Building</h3>
             <p className="cert-para">Resume sharing in our network of 700+ hiring partners</p>
           </div>
-          <div className="cert-cards-in">
+          <div className="cert-cards-in m-3">
             <img className="cert-img" src={application}/>
             <h3 className="cert-head">AlmaX Job Application</h3>
             <p className="cert-para">End to end application tracking of multiple interview rounds</p>
           </div>
         </div>
-        <br />
-        <div className="cert-cards">
-          <div className="cert-cards-in">
+        
+        <div className="cert-cards p-5 ">
+          <div className="cert-cards-in m-3">
             <img className="cert-img" src={interview}/>
             <h3 className="cert-head">Mock Interviews</h3>
             <p className="cert-para">Professional mock interviews assistance</p>
           </div>
-          <div className="cert-cards-in">
+          <div className="cert-cards-in m-3">
             <img className="cert-img" src={course}/>
             <h3 className="cert-head">Dedicated Career Coach</h3>
             <p className="cert-para">Expert data science career coaches to guide you throughout the program</p>
           </div>
-          <div className="cert-cards-in">
+          <div className="cert-cards-in m-3">
             <img className="cert-img" src={champion}/>
             <h3 className="cert-head">Growth Champion</h3>
             <p className="cert-para">Know learning strategies and get mentorship from our top Alumni.</p>
           </div>
         </div>
       </div>
-      <br />
-      <br />
-      <br />
 
-      <h2 className="almax-curriculam">AlmaX curriculam</h2>
-      <br />
-      <br />
-      <div className="almax-curr-main">
-        <div>
-          <h3 className="almax-1">01 <br />
-            Business Communication   <br />
-            Add-On : Optimizing Business Emails with AI</h3>
-          <h3 className="almax-2">02 <br />
-            Profile and Resume Building   <br />
-            Add-On : AI-Driven Resume Optimization Techniques</h3>
-          <h3 className="almax-2">
-            03 <br />
-            Interview Prep &amp; Mock Interviews  <br />
-            Add-On : Interview preparation assistance with our own AI tool "WiseChat"</h3>
-          <h3 className="almax-2">04 <br />
-            Coding &amp; Technical Revision <br />
-            Add-On : Automated Coding Challenges with AI</h3>
+
+      <div>
+        <div align='center'>
+        <h5><strong>Land your dream job at one of the leading tech companies</strong></h5>
+        <img  className="btn-secondary rounded-3 p-2" width={'80%'} src="/src/features/courses/images/companies.png" alt="" />
+        <br />
+        <br />
+        <u>Go to Program Fee section to know Career Services Fee.</u><br /><br />
+        <button className="btn-danger rounded-3 p-1">Explore Program</button><br /><br />
         </div>
-        {/* <div className="almax-curr-main-img"> */}
-          {/* <img src="" /> */}
-        {/* </div> */}
       </div>
-
   </div>
       <br />
-      <br />
-      <br />
 
-      <div className="div-after-almax">
+    
+
+      <div className="">
         <h1 className="a-program">A flex program created</h1>
-        <h1 className="just-for-u"><u className="job-headu">Just for you!</u></h1>
-        <div className="first-table">
-          <div className="justify-table-first">
-            <div className="first-row">
-              <div className="row-photo">  
-                <img src />
-              </div>
-              <div className="row-des">
-                <h3 className="row-head">    What if I miss a class?</h3>
-                <p className="row-para"> Our class timings are 8 PM to 10:30 PM. In case you miss a <br />
-                  class, you can watch the recording later. If you miss multiple <br />
-                  classes, you can switch to another Cohort.</p>
-              </div>
-            </div>
-            <div className="first-row-1">
-              <div className="row-photo">  
-                <img src alt />
-              </div>
-              <div className="row-des">
-                <h3 className="row-head">What if I am not able to manage my job <br />or 
-                  schedule with the class timings?</h3>
-                <p className="row-para"> You can complete the data science course or program at your <br />
-                  own pace through lecture recordings and learning materials.</p>
-              </div>
-            </div>
-          </div>
-          <br /><br />
-          <div className="justify-table-first2">
-            <div className="first-row1">
-              <div className="row-photo1">  
-                <img src alt />
-              </div>
-              <div className="row-des1">
-                <h3 className="row-head1">Do I get lifetime access?</h3>
-                <p className="row-para1">You will have lifetime access to the entire full stack data <br />
-                  science course content, including recordings, materials, assessments, and <br />
-                  projects.
-                </p>
-              </div>
-            </div>
-            <div className="first-row1-1">
-              <div className="row-photo1">  
-                <img src alt />
-              </div>
-              <div className="row-des1">
-                <h3 className="row-head1">How will I resolve my doubts?</h3>
-                <p className="row-para1"> ou can get your doubts resolved by connecting with our <br />
-                  subject matter experts over text or video call!</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br />
-        <br />
-        <br />
-        <br />
-        <div className="Buttons"> 
-          <button className="program-button" style={{marginLeft: '150px'}}>
-            <span className="button_top"> Download brochure </span>
-          </button>
-          <button className="program-button2">
-            <span className="button_top2"> Download Placement Report </span>
-          </button>
-          </div>
-          <br /><br />
+        <h1 className="just-for-u"><u className="">Just for you!</u></h1>
 
-          <div className="Slider">
+<div align='justify' className="row ms-5 m-auto text-black">
+  <div className="col-md-6 p-0 m-3 first-row">
+      <div className="row ">
+        <div className="col-md-3 m-auto">
+        <img width='100%' src="/src/features/courses/images/Icon_1_8d39ad9702.webp" />
+        </div>
+        <div className="col-md-9 p-4">
+          <strong>What if I miss a class?</strong><br />
+          <i>Our class timings are 8 PM to 10:30 PM. In case you miss a
+            class, you can watch the recording later. If you miss multiple
+            classes, you can switch to another Cohort.</i>
+        </div>
+      </div>
+  </div>
+  <div className="col-md-6 p-0 m-3 first-row">
+      <div className="row ">
+        <div className="col-md-3 m-auto">
+        <img width='100%' src="/src/features/courses/images/icon_2_4b29c8db5a.webp" alt />
+        </div>
+        <div className="col-md-9 p-4">
+          <strong>What if I miss a class?</strong><br />
+          <i>Our class timings are 8 PM to 10:30 PM. In case you miss a
+            class, you can watch the recording later. If you miss multiple
+            classes, you can switch to another Cohort.</i>
+        </div>
+      </div>
+  </div>
+  <div className="col-md-6 p-0 m-3 first-row">
+      <div className="row ">
+        <div className="col-md-3 m-auto">
+        <img width='100%' src="/src/features/courses/images/icon_3_c030482cc1.webp" alt />
+        </div>
+        <div className="col-md-9 p-4">
+          <strong>What if I miss a class?</strong><br />
+          <i>Our class timings are 8 PM to 10:30 PM. In case you miss a
+            class, you can watch the recording later. If you miss multiple
+            classes, you can switch to another Cohort.</i>
+        </div>
+      </div>
+  </div>
+  <div className="col-md-6 p-0 m-3 first-row">
+      <div className="row ">
+        <div className="col-md-3 m-auto">
+        <img width='100%' src="/src/features/courses/images/icon4_ef18ddc009.webp" alt />
+        </div>
+        <div className="col-md-9 p-4">
+          <strong>What if I miss a class?</strong><br />
+          <i>Our class timings are 8 PM to 10:30 PM. In case you miss a
+            class, you can watch the recording later. If you miss multiple
+            classes, you can switch to another Cohort.</i>
+        </div>
+      </div>
+  </div>
+</div>
+       
+
+  <div className="Buttons"> 
+    <button className="program-button me-4" style={{marginLeft: '150px'}}>
+      <span className="button_top"> Download brochure </span>
+    </button>
+    <button className="program-button2">
+      <span className="button_top2"> Download Placement Report </span>
+    </button>
+  </div>
+    
+
+
+
+
+
+
+
+
+
+          <div className="Slider text-dark">
                 <h1 style={{ marginLeft: '250px' }}>Who we've helped</h1>
                 <div className="logos">
                     <div className="logos-slide">
@@ -1204,12 +1192,15 @@ export default function Course() {
               <button className="button ">Enroll now</button>
               <br />
               <button className="button2"> Talk to our admission team</button>
+              <br /><br /><br /><br />
             </div>
           </div>
         </div>
       </div>
     </div>
-    <br /><br /><br />
+    <br />
+    <br />
+
     
     
     
