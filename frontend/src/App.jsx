@@ -40,6 +40,7 @@ import CourseMain from './features/coursemain/CourseMain';
 import CourseHome from './features/coursemain/coursehome/CourseHome'
 import CourseLearn from './features/coursemain/courselearn/CourseLearn';
 import CoursePractice from './features/coursemain/coursePractice/CoursePractice';
+import CourseProject from './features/coursemain/courseProject/CourseProject';
 import CourseClassroom from './features/coursemain/courseClassroom/CourseClassroom';
 import Mentorship from './features/coursemain/Mentorship/Mentorship';
 
@@ -209,6 +210,10 @@ function App() {
         {
           path:"/CourseMain/courspractice",
           element:<CoursePractice></CoursePractice>
+        },
+        {
+          path:"/CourseMain/courseproject",
+          element:<CourseProject></CourseProject>
         },
         {
           path:"/CourseMain/CourseClassroom",
