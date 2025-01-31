@@ -3,8 +3,10 @@ import './CoursePractice.css'
 import { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
+import ReactPaginate from 'react-paginate'
+
 export default function CoursePractice() {
-  const [Allproblems, setAllproblems] = useState([     
+  const [Allproblems, setAllproblems] = useState([
     { "problem": "Count the Characters", "asked_in": ["https://images.seeklogo.com/logo-png/9/1/nissan-logo-png_seeklogo-99770.png?v=1957936019898231880", "https://images.seeklogo.com/logo-png/36/1/accenture-logo-png_seeklogo-369971.png?v=1957672401658995128"], "skill": "Python", "difficulty": "Easy", "status": "unsolved"
 },
 { "problem": "Race for the Armstrong Award", "asked_in": ["https://almablog-media.s3.ap-south-1.amazonaws.com/Microsoft_f28c3c1eef.png", "https://almablog-media.s3.ap-south-1.amazonaws.com/cognizant_875a8dfcea.jpg"], "skill": "Python", "difficulty": "Easy", "status": "unsolved"
@@ -68,27 +70,6 @@ export default function CoursePractice() {
     
   ]);
 
-
-  // for Pagination start
-  const itemsPerPage = 7;
-  const [currentPage, setCurrentPage] = useState(1);
-  
-  // Calculate the start and end index of items to display on the current page
-  const indexOfLastItem = currentPage * itemsPerPage;
-  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = Allproblems.slice(indexOfFirstItem, indexOfLastItem);
-
-  // Handle page changes
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
-
-  // Create page numbers
-  const pageNumbers = [];
-  for (let i = 1; i <= Math.ceil(Allproblems.length / itemsPerPage); i++) {
-    pageNumbers.push(i);
-  }
-  // for pagination end
-
-
   // share  button
   const [isCopied, setIsCopied] = useState(false);
 
@@ -103,6 +84,7 @@ export default function CoursePractice() {
       console.error('Failed to copy: ', err);
     }
   };
+
   // share button end
 
 
@@ -301,6 +283,44 @@ const [QuizData, setQuizData] = useState(
     }
 ]
 );
+
+
+// Pagination start
+
+const [data, setData] = useState([]);       // To store data
+const [loading, setLoading] = useState(true); // To handle loading state
+const [currentPage, setCurrentPage] = useState(0);  // To store current page
+const itemsPerPage = 4; // Number of items per page
+
+// Fetch data from API
+useEffect(() => {
+  const fetchData = async () => {
+    setLoading(true);
+    try {
+      // const response = await axios.get('http://localhost:5000/posts');
+      setData(Allproblems);
+    } catch (error) {
+      console.error('Error fetching data', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  fetchData();
+}, []);
+
+// Get data for the current page
+const currentItems = Allproblems.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage);
+
+// Handle page change
+const handlePageClick = (selectedItem) => {
+  setCurrentPage(selectedItem.selected);
+};
+
+// pagination end
+
+
+
   return (
 
 
@@ -420,6 +440,7 @@ const [QuizData, setQuizData] = useState(
       <hr />
       
     <div className="">
+
     
           <table align=''  width={'100%'} className='table table-striped'>  
           <thead className='bg-white m'>
@@ -449,16 +470,42 @@ const [QuizData, setQuizData] = useState(
            )}
           </tbody>
           </table>
+
+          <ReactPaginate
+            previousLabel="< Previous"
+            previousClassName={'page-item'}
+            previousLinkClassName={'page-link'}
+            pageCount={Math.ceil(data.length / itemsPerPage)}
+            marginPagesDisplayed={2} //view number page
+            pageRangeDisplayed={3} //first number to page .... phala
+            onPageChange={handlePageClick} //function get next link 
+            containerClassName={"pagination"} //css view
+            pageClassName={'p-0 m-0'} //size style
+            pageLinkClassName={'page-link'} //every page link view number 
+        
+            breakClassName={'page-item m-0 '}
+            breakLinkClassName={'page-link'}
+            activeClassName={'active '}  //view current page bg-active
+
+            nextClassName={'page-item m-0'}
+            nextLinkClassName={'page-link'}
+            nextLabel="Next >" 
+
+        />
           
         </div>
       
-        <div align='right' className='p-4'>
-            {pageNumbers.map(number => (
-              <button className='border-success btn:hover ms-2 bg-white p-2 ' key={number} onClick={() => paginate(number)}>
-                {number}
-              </button>
-            ))}
-      </div></> 
+        {/* <div align='right' className='p-4'>
+          <button  onClick={BackButton} className='border-success btn:hover ms-2 bg-white p-2 rounded-circle '><i class="bi bi-caret-left-fill"></i></button>
+              {pageNumbers.map(number => (
+                <button className='border-success btn:hover ms-2 bg-white p-2 rounded-circle ' key={number} onClick={() => paginate(number)}>
+                  {number}
+                </button>
+              ))}
+          <button  onClick={NextButton} className='border-success btn:hover ms-2 bg-white p-2 rounded-circle '><i class="bi bi-caret-right-fill"></i></button> */}
+      {/* </div> */}
+
+      </> 
     : 
     <></>}
     
