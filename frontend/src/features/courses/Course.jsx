@@ -12,31 +12,64 @@ import Footer from "../../comman/Footer";
 import { Link } from "react-router-dom";
 
 
+
+
+// Logo
+import application from './logos/application.webp'
+import assement from './logos/assement.webp'
+import champion from './logos/champion.webp'
+import course from './logos/crash course.webp'
+import foundation from './logos/foundation.webp'
+import graduation from './logos/graduation.webp'
+import interview from './logos/interview.webp'
+import resume from './logos/resume.webp'
+import support from './logos/support.webp'
+
+
+
+
+
+
+
+
+
+// Infinte Scroll
+import accenture from './infinite/accenture.webp'
+import amazon from './infinite/amazon.webp'
+import biz2credit from './infinite/biz2credit.webp'
+import blenheim from './infinite/blenheim.webp'
+import brigei2i from './infinite/brigei2i.webp'
+import capgemini from './infinite/Capgemini.webp'
+import citi from './infinite/citi.webp'
+import converhytics from './infinite/convergytics.webp'
+import genpact from './infinite/genpact.webp'
+import Google from './infinite/Google.webp'
+import groww from './infinite/groww.webp'
+import HDFC from './infinite/HDFC.webp'
+import Kmart from './infinite/Kmart.webp'
+import KMGP from './infinite/KMGP.webp'
+import mahindra from './infinite/mahindra.webp'
+import Marketine from './infinite/Marketine.webp'
+import Microsoft from './infinite/Microsoft.webp'
+import MIQ from './infinite/MIQ.webp'
+import Netflix from './infinite/Netflix.webp'
+import Novartis from './infinite/Novartis.webp'
+import paisabazzar from './infinite/paisa bazzar.webp'
+import Quantiphi from './infinite/Quantiphi.webp'
+import Target from './infinite/Target.webp'
+import Tatainsight from './infinite/TATA Insight.webp'
+import TATA from './infinite/tata steel.webp'
+import ValueLabs from './infinite/ValueLabs.webp'
+import Vedantu from './infinite/Vedantu.webp'
+import Walmart from './infinite/Walmart.webp'
+import yesbank from './infinite/Yes Bank.webp'
+import Zigram from './infinite/Zigram.webp'
+import Zip from './infinite/Zip.webp'
+import Zomato from './infinite/Zomato.webp'
+
+
 export default function Course() {
-  // Sample courses data
-  const courses = [
-    {
-      id: 1,
-      title: "Full Stack Data Science and AI",
-      description: "A comprehensive 6-month part-time course on Data Science and AI.",
-      image: courseImage1,
-      link: "/course/full-stack-data-science"
-    },
-    {
-      id: 2,
-      title: "Web Development with React",
-      description: "Learn modern web development with React, Redux, and Node.js.",
-      image: courseImage2,
-      link: "/course/web-development-react"
-    },
-    {
-      id: 3,
-      title: "Machine Learning for Beginners",
-      description: "Introduction to machine learning with hands-on projects.",
-      image: courseImage3,
-      link: "/course/machine-learning"
-    },
-  ];
+ 
 
 
   const [state, setstate] = useState( [{
@@ -251,78 +284,182 @@ export default function Course() {
     <>
     <Header></Header>
     <div className="main-section">
-    
 
-      <div className="course-main">
-        {/* Left Section - Course Details */}
-        <div className="course-left-side">
-          <p>Creating</p>
+  
+
+    <div style={{color:'white'}}>
+      <section className="hero-section">
+        <div className="hero-content">
           <h1>Certification in Full Stack Data Science and AI</h1>
+          <p className="rating">4.6+ ★★★★☆ (22534 Reviews)</p>
+          <p className="cohort">Next Cohort Starting On 14th January</p>
+          <div className="collaborations">
+            <p className="text-white">In collaboration with:</p>
+            <div className="row">
+             <div className="col-3"> <img className="bg-white rounded-4" width={'100%'} src="/src/features/courses/logos/IIT Guwahati.webp" alt="E&ICT Academy IIT Guwahati" />
+             </div>
+             <div className="col-3"><img className="bg-white rounded-4" width={'100%'} src="/src/features/courses/images/microsoft.png" alt="Microsoft" /></div>
+            </div>
+          </div>
           
-          <div className="calender">
-            Next cohort starting on 14th January
-          </div>
-
-          <p>In collaboration with:</p>
-          <div className="company-logo">
-            <div className="iit-logo">
-              <img className="img" src={iitguhati} alt="IIT Guwahati Logo" />
-            </div>
-            <div className="microsoft">
-              <img className="img" src={microsot} alt="Microsoft Logo" />
-            </div>
-          </div>
-
-          <div className="heding-about-course">
-            <p>Advanced Certification from E&ICT Academy, IIT Guwahati.</p>
-            <p>6 months part-time program with online classes</p>
-            <ul>
-              <li><p>Revised curriculum for post Chat-GPT era</p></li>
-              <li><p>No prior coding experience required</p></li>
-              <li><p>Suitable for final years, graduates, and early professionals.</p></li>
-            </ul>
-          </div>
-
-          <div className="bottom-button">
-            <button>Explore Program</button>
-            <button id="enroll">Enrol Now</button>
+          <ul className="features" >
+            <li>Advanced Certification from E&amp;ICT Academy, IIT Guwahati</li>
+            <li>6 months part-time program with online classes</li>
+            <li>Revised curriculum for post Chat-GPT era</li>
+            <li>No prior coding experience required</li>
+            <li>Suitable for final years, graduates, and early professionals</li>
+          </ul>
+          <div className="buttons">
+            <a href="#" className="btn explore">Explore Program</a>
+            <a href="#" className="btn enroll">Enroll Now</a>
           </div>
         </div>
-
-        {/* Right Section - Video and Demo Buttons */}
-        <div className="course-right-side">
-          <div className="video-section">
-            {/* Video content can be added here */}
+        <div className="hero-image">
+          <img src="/src/features/courses/images/course2.jpeg" alt="IIT Guwahati Campus" />
+        </div>
+      </section>
+      {/* Placement Section */}
+      <section className="placement-section">
+        <h2>
+          <span>Placements</span></h2>
+        <p>Kick start your Data Science career today with our flagship program in collaboration with E&amp;ICT IIT Guwahati. Learn Data Science with top engineers. Challenge yourself by building real-time projects.</p>
+        <div className="stats">
+          <div className="stat-item">
+            <h3>30,000+</h3>
+            <p>Students</p>
           </div>
-          <div className="demobutton">
-            <button>Book a Demo class</button>
-            <button>Request a Callback</button>
+          <div className="stat-item">
+            <h3>40 LPA</h3>
+            <p>Highest Salary</p>
+          </div>
+          <div className="stat-item">
+            <h3>15 LPA</h3>
+            <p>Average Salary</p>
+          </div>
+          <div className="stat-item">
+            <h3>700+</h3>
+            <p>Hiring Partners</p>
           </div>
         </div>
-      </div>
-
-      {/* Section for Other Courses */}
-      <section className="course-section">
-        <h1>OUR COURSES</h1>
-        <div className="course-cards-container">
-          {courses.map(course => (
-            <div className="course-card" key={course.id}>
-              <img className="course-card-img" src={course.image} alt={course.title} />
-              <div className="course-card-body">
-                <h2 className="course-card-title">{course.title}</h2>
-                <p className="course-card-description">{course.description}</p>
-                <a href={course.link} className="course-card-button">Explore Course</a>
-              </div>
-            </div>
-          ))}
-        </div>
-
-
-       
+        <a href="#" className="download-btn">Download Placement Report</a>
       </section>
 
 
+     
+        <div className="pt-3" style={{fontSize:'32px',marginLeft:'30%'}}>
+          <label>In Collaboration with <span className="highlight">E&amp;ICT, IIT Guwahati</span></label>
+          </div>
+        <div align='justify' className=" p-5">
+              <section className="partners">
+                <div className="partner-logo">
+                  <img src="/src/features/courses/logos/almabetter.webp" alt="AlmaBetter Logo" />
+                  <span className="partner-name">AlmaBetter</span>
+                </div>
+                <div className="partner-logo">
+                  <img className="bg-white" src="/src/features/courses/logos/IIT Guwahati.webp" alt="E&ICT Academy IIT Guwahati Logo" />
+                  <span className="partner-name">E&amp;ICT Academy IIT Guwahati</span>
+                </div>
+              </section>
+              <section className="description">
+                <p style={{color:'white'}}>Our partnership with E&amp;ICT Academy at IIT Guwahati reflects a shared commitment to advancing global education standards. This collaboration leverages IIT Guwahati's prestigious reputation in India and beyond to offer world-class educational opportunities and foster a global academic community.</p>
+              </section>
+        </div>
+        
+        <section className="benefits">
+          <div className="benefit">
+            <img src="/src/features/courses/logos/image_removebg_preview_40_1_f5daeee54f.webp" alt="Certificate Icon" />
+            <p style={{color:'white'}}>Advanced Certification from E&amp;ICT Academy, IIT Guwahati</p>
+          </div>
 
+          <div className="benefit">
+          <img src="/src/features/courses/logos/Group_65_242481ba3b.webp" alt="Guest Lectures Icon" />
+            <p style={{color:'white'}}>Guest lectures from IIT Guwahati Faculty</p>
+          </div>
+
+          <div className="benefit">
+          <img src="/src/features/courses/logos/calender_front_color_13231195c8.webp" alt="Deadline Extension Icon" />
+            <p style={{color:'white'}}>Deadline extension of 6 months for AlmaX Career Track</p>
+          </div>
+          
+
+          <div className="benefit">
+          <img src="/src/features/courses/logos/industry_immersion_17b9dd5bc8.webp" alt="Campus Immersion Icon" />
+            <p style={{color:'white'}}>2-day campus immersion program at IIT Guwahati</p>
+          </div>
+
+          <div className="benefit">
+          <img src="/src/features/courses/medium_Group_59_35ea989540.webp" alt="Mentors Icon" />
+            <p style={{color:'white'}}>Mentors from MAANG, Top Product companies</p>
+          </div>
+
+          <div className="benefit">
+          <img src="/src/features/courses/logos/medium_Group_56_3fb6dbb2c1.webp" alt="Curriculum Icon" />
+            <p style={{color:'white'}}>Intensive curriculum covering fundamentals to advanced concepts</p>
+          </div>
+        </section>
+      
+
+
+
+
+      <section className="success-stories" style={{backgroundColor: '#FFFFFF'}}>
+        <h1 style={{color:'black'}}>Success <span>Stories</span></h1>
+        <p>Meet our graduates who have not only secured new and better jobs but have also experienced significant salary hikes.</p>
+        <div className="stories-container">
+          <div className="story-card">
+            <div className="story-header">
+            </div>
+            <div className="story-content">
+              <img  className='bg-danger' src="/src/features/courses/person/Arkoparavo_Pradhan_e68d486271.webp" alt="Vanshika Raj" />
+              <div className="story-info">
+                <span className="status">Fresher</span>
+                <span className="arrow">→</span>
+                <span className="position">ML Engineer</span>
+                <span className="company">quantiphi</span>
+                <span className="linkedin-icon">LinkedIn</span>
+                <h2>Vanshika Raj</h2>
+                <p>"The program offered here is robust, well-guided and most importantly, has proven to work."</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div className="story-card">
+            <div className="story-header">
+            </div>
+            <div className="story-content">
+              <img  className='bg-danger' src="/src/features/courses/person/calender_front_color_13231195c8.webp" alt="Arkoparavo Pradhan" />
+              <div className="story-info">
+                <span className="status">Fresher</span>
+                <span className="arrow">→</span>
+                <span className="position">Data Analyst</span>
+                <span className="company">TATA STEEL</span>
+                <span className="linkedin-icon">LinkedIn</span>
+                <h2>Arkoparavo Pradhan</h2>
+                <p>"The best part about this program is that it is designed, so students don't feel overwhelmed."</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+          <div className="story-card">
+            <div className="story-header">
+            </div>
+            <div className="story-content">
+              <img  className='bg-danger'  src="/src/features/courses/person/Kamya_Malhotra_removebg_preview_de470a6afc.webp" alt="Kamya Malhotra" />
+              <div className="story-info">
+                <span className="status">Fresher</span>
+                <span className="arrow">→</span>
+                <span className="position">Stat Programmer</span>
+                <span className="company">Company Logo</span>
+                <span className="linkedin-icon">LinkedIn</span>
+                <h2>Kamya Malhotra</h2>
+                <p>"My experience at AlmaBetter was fabulous, and I'll always be thankful to the entire AlmaBetter team."</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br /><br /><br />
 
 
       <section>
@@ -352,7 +489,7 @@ export default function Course() {
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
 
-
+<hr />
                   <div class="course " onClick={Numerical}>
                       <div class="course-number mb-4">02 &ensp;</div>
                       <div class="course-info">
@@ -361,7 +498,7 @@ export default function Course() {
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-
+<hr />
                   <div class="course " onClick={Relational}>
                       <div class="course-number mb-4">03 &ensp;</div>
                       <div class="course-info">
@@ -370,7 +507,7 @@ export default function Course() {
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-
+<hr />
                   <div class="course " onClick={Data}>
                       <div class="course-number mb-4">04 &ensp;</div>
                       <div class="course-info">
@@ -379,7 +516,7 @@ export default function Course() {
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-
+<hr />
                   <div class="course " onClick={Applied}>
 
                       <div class="course-number mb-4">05 &ensp;</div>
@@ -389,7 +526,7 @@ export default function Course() {
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-
+<hr />
                   <div class="course " onClick={Machine} >
                       <div class="course-number mb-4">06 &ensp;</div> 
                       <div class="course-info">
@@ -443,13 +580,13 @@ export default function Course() {
      
         <div className="bg-black pt-5">
         {/* <img src='iconsset.PNG' alt="" width={'90%'} /> */}
-
+<hr />
        <center>
        <div className="row container ">
         {languageColl.map((item,index)=>
         <>
-        <div align='center' className="col-md-2 col-4 ">
-                <img className="border rounded-2 p-1 imgsizehover"  src={item.img} width={'40px'} height='40px' alt="" />
+        <div align='center' className="col-md-2 col-4 mb-5">
+                <img className=" rounded-2 p-1 imgsizehover"  src={item.img} width={'40px'} height='40px' alt="" />
                 <br /><br />
                 <p className="text-white text-center ">&ensp; {item.title}</p>
           </div>
@@ -462,6 +599,612 @@ export default function Course() {
         </div>
       </section>
 
+
+
+
+  <section>
+  <div className="certification-box mb-5">
+        <br /><br />
+        
+        <h1 style={{color:'black', marginLeft:'33%',fontSize:'28px', textTransform:'capitalize'}}>unlock your data science  
+        <span style={{color: 'red'}}> certifiction</span></h1>
+        <br />      
+        <p  className="text-center">elevate your career with esteemed certifiction, unlock new oppertunites and demonstrate your mastery in data science.</p>
+        
+        <div className="Certificate-option">
+          <h3 className="border-bottom">E&amp;ITC, IIT Guwahati</h3>
+          <h3 className="data-iit border-bottom"> Microsoft</h3>
+          <h3 className="data-iit border-bottom">almaBetter</h3>
+        </div>
+        <div className="row Certificate-option">
+          <div className="col-md-5">
+            <h6 className=""><strong>Advanced Certification from E&amp;ICT <br /> Academy, IIT Guwahati</strong></h6>
+            
+            <p className="">Upon successfully completing this program,<br />
+              you'll earn an Advanced Certiification in Full <br />
+              stack Data Science that is jointly offered by E&amp;ICT <br />
+              Academy, IIT Guwahati as the Knowledge Partner.
+              </p>
+            <br />
+            
+            <h6 className="">
+              <strong>Guest lectures from IIT G faculty</strong>
+            </h6>
+            
+            <p className="">Access to lectures from top faculties of IIT Guwahati</p>
+        
+            <h6 className=""><strong>2-day campus immersion at IIT Guwahati <br />
+            (optional)</strong></h6>
+            
+            <p className="">Experential learning opportunity at IIT Guwahati campus</p>
+            <br />
+            <div align='' className="m-start" >
+              <button className="button-explore p-2 me-2 rounded-3"> explore programe</button> 
+              <button className="button-download p-1  rounded-3"> download brochure</button>
+            </div>
+          </div>
+          <div className="col-md-5">
+            <img width={'100%'} className="" src="https://marketplace.canva.com/EAFtLMllF3s/1/0/1600w/canva-blue-and-gold-simple-certificate-zxaa6yB-uaU.jpg" alt />
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+<div style={{backgroundColor:'black' , width:'100%',  color:'white'}}>
+      <div  align='center'>
+        <br />
+        <h1  style={{fontSize:'32px', textTransform:'capitalize'}}>100% job assurance with <span className="text-danger "><u>allemx career track</u></span></h1>
+        <sub  className="">We have designed a dedicated data science career track along with career support services to help you become industry ready and make sure you land your dream job!</sub>
+        
+      </div>
+      <h2 className="job-headmain">AlmaX Eligibility Requirements</h2>
+      <div className="cert-cards m-4 p-5">
+        <div className="cert-cards-in m-3">
+          <img className="cert-img" src={graduation}/>
+          <h3 className="cert-head">Graduation Degree</h3>
+          <p className="cert-para">Must be a graduate at the time of AlmaX <br /> enrollment</p>
+        </div>
+        <div className="cert-cards-in m-3">
+          <img className="cert-img" src={foundation}/>
+          <h3 className="cert-head">Completed the Foundation Track</h3>
+          <p className="cert-para">Completed the foundation track of the course.</p>
+        </div>
+        <div className="cert-cards-in m-3">
+          <img className="cert-img" src={assement}/>
+          <h3 className="cert-head">Completed the foundation track of the course.</h3>
+          <p className="cert-para">Take entrance exam for AlmaX</p>
+        </div>
+      </div>
+    
+  
+      <br />
+      <h2 className="almax-carrer-services">AlmaX carrer services</h2>
+   
+
+      <div className="almax-div">
+        <div className="cert-cards p-5">
+          <div className="cert-cards-in m-3">
+            <img className="cert-img" src={support}/>
+            <h3 className="cert-head">Placement Support</h3>
+            <p className="cert-para">Complete support from our dedicated placement team until you get a job</p>
+          </div>
+          <div className="cert-cards-in m-3">           
+            <img className="cert-img" src={resume}/>
+            <h3 className="cert-head">Resume Building</h3>
+            <p className="cert-para">Resume sharing in our network of 700+ hiring partners</p>
+          </div>
+          <div className="cert-cards-in m-3">
+            <img className="cert-img" src={application}/>
+            <h3 className="cert-head">AlmaX Job Application</h3>
+            <p className="cert-para">End to end application tracking of multiple interview rounds</p>
+          </div>
+        </div>
+        
+        <div className="cert-cards p-5 ">
+          <div className="cert-cards-in m-3">
+            <img className="cert-img" src={interview}/>
+            <h3 className="cert-head">Mock Interviews</h3>
+            <p className="cert-para">Professional mock interviews assistance</p>
+          </div>
+          <div className="cert-cards-in m-3">
+            <img className="cert-img" src={course}/>
+            <h3 className="cert-head">Dedicated Career Coach</h3>
+            <p className="cert-para">Expert data science career coaches to guide you throughout the program</p>
+          </div>
+          <div className="cert-cards-in m-3">
+            <img className="cert-img" src={champion}/>
+            <h3 className="cert-head">Growth Champion</h3>
+            <p className="cert-para">Know learning strategies and get mentorship from our top Alumni.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div>
+        <div align='center'>
+        <h5><strong>Land your dream job at one of the leading tech companies</strong></h5>
+        <img  className="btn-secondary rounded-3 p-2" width={'80%'} src="/src/features/courses/images/companies.png" alt="" />
+        <br />
+        <br />
+        <u>Go to Program Fee section to know Career Services Fee.</u><br /><br />
+        <button className="btn-danger rounded-3 p-1">Explore Program</button><br /><br />
+        </div>
+      </div>
+  </div>
+      <br />
+
+    
+
+      <div className="">
+        <h1 className="a-program">A flex program created</h1>
+        <h1 className="just-for-u"><u className="">Just for you!</u></h1>
+
+<div align='justify' className="row ms-5 m-auto text-black">
+  <div className="col-md-6 p-0 m-3 first-row">
+      <div className="row ">
+        <div className="col-md-3 m-auto">
+        <img width='100%' src="/src/features/courses/images/Icon_1_8d39ad9702.webp" />
+        </div>
+        <div className="col-md-9 p-4">
+          <strong>What if I miss a class?</strong><br />
+          <i>Our class timings are 8 PM to 10:30 PM. In case you miss a
+            class, you can watch the recording later. If you miss multiple
+            classes, you can switch to another Cohort.</i>
+        </div>
+      </div>
+  </div>
+  <div className="col-md-6 p-0 m-3 first-row">
+      <div className="row ">
+        <div className="col-md-3 m-auto">
+        <img width='100%' src="/src/features/courses/images/icon_2_4b29c8db5a.webp" alt />
+        </div>
+        <div className="col-md-9 p-4">
+          <strong>What if I miss a class?</strong><br />
+          <i>Our class timings are 8 PM to 10:30 PM. In case you miss a
+            class, you can watch the recording later. If you miss multiple
+            classes, you can switch to another Cohort.</i>
+        </div>
+      </div>
+  </div>
+  <div className="col-md-6 p-0 m-3 first-row">
+      <div className="row ">
+        <div className="col-md-3 m-auto">
+        <img width='100%' src="/src/features/courses/images/icon_3_c030482cc1.webp" alt />
+        </div>
+        <div className="col-md-9 p-4">
+          <strong>What if I miss a class?</strong><br />
+          <i>Our class timings are 8 PM to 10:30 PM. In case you miss a
+            class, you can watch the recording later. If you miss multiple
+            classes, you can switch to another Cohort.</i>
+        </div>
+      </div>
+  </div>
+  <div className="col-md-6 p-0 m-3 first-row">
+      <div className="row ">
+        <div className="col-md-3 m-auto">
+        <img width='100%' src="/src/features/courses/images/icon4_ef18ddc009.webp" alt />
+        </div>
+        <div className="col-md-9 p-4">
+          <strong>What if I miss a class?</strong><br />
+          <i>Our class timings are 8 PM to 10:30 PM. In case you miss a
+            class, you can watch the recording later. If you miss multiple
+            classes, you can switch to another Cohort.</i>
+        </div>
+      </div>
+  </div>
+</div>
+       
+
+  <div className="Buttons"> 
+    <button className="program-button me-4" style={{marginLeft: '150px'}}>
+      <span className="button_top"> Download brochure </span>
+    </button>
+    <button className="program-button2">
+      <span className="button_top2"> Download Placement Report </span>
+    </button>
+  </div>
+    
+
+
+
+
+
+
+
+
+
+          <div className="Slider text-dark">
+                <h1 style={{ marginLeft: '250px' }}>Who we've helped</h1>
+                <div className="logos">
+                    <div className="logos-slide">
+                        <img src={accenture} />
+                        <img src={amazon} />
+                        <img src={biz2credit} />
+                        <img src={blenheim} />
+                        <img src={brigei2i} />
+                        <img src={capgemini} />
+                        <img src={citi} />
+                        
+                        <img src={converhytics} />
+                        <img src={genpact} />
+                        <img src={Google} />
+                        <img src={groww} />
+                        <img src={HDFC} />
+                        <img src={Kmart} />
+                        <img src={KMGP} />
+                        <img src={mahindra} />
+                        <img src={Marketine} />
+                        <img src={Microsoft} />
+                        <img src={MIQ} />
+                        <img src={Netflix} />
+                        <img src={Novartis} />
+                        <img src={paisabazzar} />
+                        <img src={Quantiphi} />
+                        <img src={Target} />
+                        <img src={Tatainsight} />
+                        <img src={TATA} />
+                        <img src={ValueLabs} />
+                        <img src={Vedantu} />
+                        <img src={Zigram} />
+                        <img src={Zip} />
+                        <img src={Zomato} />
+                        <img src={Walmart} />
+                    </div>
+                    <div className="logos-slide">
+                        <img src={accenture} />
+                        <img src={amazon} />
+                        <img src={biz2credit} />
+                        <img src={blenheim} />
+                        <img src={brigei2i} />
+                        <img src={capgemini} />
+                        <img src={citi} />
+                        <img src={converhytics} />
+                        <img src={genpact} />
+                        <img src={Google} />
+                        <img src={groww} />
+                        <img src={HDFC} />
+                        <img src={Kmart} />
+                        <img src={KMGP} />
+                        <img src={mahindra} />
+                        <img src={Marketine} />
+                        <img src={Microsoft} />
+                        <img src={MIQ} />
+                        <img src={Netflix} />
+                        <img src={Novartis} />
+                        <img src={paisabazzar} />
+                        <img src={Quantiphi} />
+                        <img src={Target} />
+                        <img src={Tatainsight} />
+                        <img src={TATA} />
+                        <img src={ValueLabs} />
+                        <img src={Vedantu} />
+                        <img src={Zigram} />
+                        <img src={Zip} />
+                        <img src={Zomato} />
+                        <img src={Walmart} />
+                    </div>
+                    
+                </div>
+    
+                <div className="Reverse-Slider">
+                    <div className="logos">
+                        <div className="logos-slide">
+                        <img src={accenture} />
+                        <img src={amazon} />
+                        <img src={biz2credit} />
+                        <img src={blenheim} />
+                        <img src={brigei2i} />
+                        <img src={capgemini} />
+                        <img src={citi} />
+                        <img src={converhytics} />
+                        <img src={genpact} />
+                        <img src={Google} />
+                        <img src={groww} />
+                        <img src={HDFC} />
+                        <img src={Kmart} />
+                        <img src={KMGP} />
+                        <img src={mahindra} />
+                        <img src={Marketine} />
+                        <img src={Microsoft} />
+                        <img src={MIQ} />
+                        <img src={Netflix} />
+                        <img src={Novartis} />
+                        <img src={paisabazzar} />
+                        <img src={Quantiphi} />
+                        <img src={Target} />
+                        <img src={Tatainsight} />
+                        <img src={TATA} />
+                        <img src={ValueLabs} />
+                        <img src={Vedantu} />
+                        <img src={Zigram} />
+                        <img src={Zip} />
+                        <img src={Zomato} />
+                        <img src={Walmart} />
+                    </div>
+                        <div className="logos-slide">
+                        <img src={accenture} />
+                        <img src={amazon} />
+                        <img src={biz2credit} />
+                        <img src={blenheim} />
+                        <img src={brigei2i} />
+                        <img src={capgemini} />
+                        <img src={citi} />
+                        <img src={converhytics} />
+                        <img src={genpact} />
+                        <img src={Google} />
+                        <img src={groww} />
+                        <img src={HDFC} />
+                        <img src={Kmart} />
+                        <img src={KMGP} />
+                        <img src={mahindra} />
+                        <img src={Marketine} />
+                        <img src={Microsoft} />
+                        <img src={MIQ} />
+                        <img src={Netflix} />
+                        <img src={Novartis} />
+                        <img src={paisabazzar} />
+                        <img src={Quantiphi} />
+                        <img src={Target} />
+                        <img src={Tatainsight} />
+                        <img src={TATA} />
+                        <img src={ValueLabs} />
+                        <img src={Vedantu} />
+                        <img src={Zigram} />
+                        <img src={Zip} />
+                        <img src={Zomato} />
+                        <img src={Walmart} />
+                    </div>
+                    </div>
+                </div>
+    
+                <div className="logos">
+                    <div className="logos-slide">
+                        <img src={accenture} />
+                        <img src={amazon} />
+                        <img src={biz2credit} />
+                        <img src={blenheim} />
+                        <img src={brigei2i} />
+                        <img src={capgemini} />
+                        <img src={citi} />
+                        <img src={converhytics} />
+                        <img src={genpact} />
+                        <img src={Google} />
+                        <img src={groww} />
+                        <img src={HDFC} />
+                        <img src={Kmart} />
+                        <img src={KMGP} />
+                        <img src={mahindra} />
+                        <img src={Marketine} />
+                        <img src={Microsoft} />
+                        <img src={MIQ} />
+                        <img src={Netflix} />
+                        <img src={Novartis} />
+                        <img src={paisabazzar} />
+                        <img src={Quantiphi} />
+                        <img src={Target} />
+                        <img src={Tatainsight} />
+                        <img src={TATA} />
+                        <img src={ValueLabs} />
+                        <img src={Vedantu} />
+                        <img src={Zigram} />
+                        <img src={Zip} />
+                        <img src={Zomato} />
+                        <img src={Walmart} />
+                    </div>
+                    <div className="logos-slide">
+                        <img src={accenture} />
+                        <img src={amazon} />
+                        <img src={biz2credit} />
+                        <img src={blenheim} />
+                        <img src={brigei2i} />
+                        <img src={capgemini} />
+                        <img src={citi} />
+                        <img src={converhytics} />
+                        <img src={genpact} />
+                        <img src={Google} />
+                        <img src={groww} />
+                        <img src={HDFC} />
+                        <img src={Kmart} />
+                        <img src={KMGP} />
+                        <img src={mahindra} />
+                        <img src={Marketine} />
+                        <img src={Microsoft} />
+                        <img src={MIQ} />
+                        <img src={Netflix} />
+                        <img src={Novartis} />
+                        <img src={paisabazzar} />
+                        <img src={Quantiphi} />
+                        <img src={Target} />
+                        <img src={Tatainsight} />
+                        <img src={TATA} />
+                        <img src={ValueLabs} />
+                        <img src={Vedantu} />
+                        <img src={Zigram} />
+                        <img src={Zip} />
+                        <img src={Zomato} />
+                        <img src={Walmart} />
+                    </div>
+                </div>
+            </div>
+<br /><br />
+
+        <h1 className="course-fees">Course</h1>
+        <h1 className="course-red"><u className="job-headu">fees</u></h1>
+        <br />
+        <br />
+        <div className="feeeees">
+          <button className="Tution-fees"><u>Tution Fees</u></button>
+          <button className="career-fees"><u>Career Services Fees</u></button>
+        </div>
+        <br />
+        <br />
+        <br />
+        <div className="cards-in-line">
+          <div className="card">
+            <div className="pricing-block-content">
+              <p className="pricing-plan">Premium</p>
+              <div className="price-value" data-currency="$ USD" data-currency-simple="USD">
+                <p className="price-company">AlmaBetter + Microsoft</p>
+                <p className="price-number">Rs.<span className="price-integer">50,000</span>/mo</p>
+              </div>
+              <div className="pricing-note">*Pay in easy EMIs starting at INR 7000 per month.</div>
+              <ul className="check-list" role="list">
+                <li className="check-list-item">
+                  <svg version={1.0} preserveAspectRatio="xMidYMid meet" height={16} viewBox="0 0 30 30.000001" zoomAndPan="magnify" width={16} xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style={{color: 'rgb(102, 78, 255)'}}>
+                    <defs>
+                      <clipPath id="id1">
+                        <path fill="#664eff" clipRule="nonzero" d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656" />
+                      </clipPath>
+                    </defs>
+                    <g clipPath="url(#id1)">
+                      <path fillRule="nonzero" fillOpacity={1} d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125" fill="#664eff" />
+                    </g></svg>Intensive data science curriculum covering <br />basic  to advance concepts
+                </li>
+                <li className="check-list-item">
+                  <svg version={1.0} preserveAspectRatio="xMidYMid meet" height={16} viewBox="0 0 30 30.000001" zoomAndPan="magnify" width={16} xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style={{color: 'rgb(102, 78, 255)'}}>
+                    <defs>
+                      <clipPath id="id1">
+                        <path fill="#664eff" clipRule="nonzero" d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656" />
+                      </clipPath>
+                    </defs>
+                    <g clipPath="url(#id1)">
+                      <path fillRule="nonzero" fillOpacity={1} d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125" fill="#664eff" />
+                    </g></svg>100+ Live Data Science classes, 8 PM to 10:30 <br />PM.  Lifetime access to all the class recordings
+                </li>
+                <li className="check-list-item">
+                  <svg version={1.0} preserveAspectRatio="xMidYMid meet" height={16} viewBox="0 0 30 30.000001" zoomAndPan="magnify" width={16} xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style={{color: 'rgb(102, 78, 255)'}}>
+                    <defs>
+                      <clipPath id="id1">
+                        <path fill="#664eff" clipRule="nonzero" d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656" />
+                      </clipPath>
+                    </defs>
+                    <g clipPath="url(#id1)">
+                      <path fillRule="nonzero" fillOpacity={1} d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125" fill="#664eff" />
+                    </g></svg>20+ capstone data science projects &amp; 1000+ <br />coding problems and assessments
+                </li>
+                <li className="check-list-item">
+                  <svg version={1.0} preserveAspectRatio="xMidYMid meet" height={16} viewBox="0 0 30 30.000001" zoomAndPan="magnify" width={16} xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style={{color: 'rgb(102, 78, 255)'}}>
+                    <defs>
+                      <clipPath id="id1">
+                        <path fill="#664eff" clipRule="nonzero" d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656" />
+                      </clipPath>
+                    </defs>
+                    <g clipPath="url(#id1)">
+                      <path fillRule="nonzero" fillOpacity={1} d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125" fill="#664eff" />
+                    </g></svg>50+ mock interviews with dedicated career coaches
+                </li>
+                <li className="check-list-item">
+                  <svg version={1.0} preserveAspectRatio="xMidYMid meet" height={16} viewBox="0 0 30 30.000001" zoomAndPan="magnify" width={16} xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style={{color: 'rgb(102, 78, 255)'}}>
+                    <defs>
+                      <clipPath id="id1">
+                        <path fill="#664eff" clipRule="nonzero" d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656" />
+                      </clipPath>
+                    </defs>
+                    <g clipPath="url(#id1)">
+                      <path fillRule="nonzero" fillOpacity={1} d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125" fill="#664eff" />
+                    </g></svg>Dual Certification
+                </li>
+              </ul>
+              <br />
+              <button className="button ">Enroll now</button>
+              <br />
+              <button className="button2"> Talk to our admission team</button>
+            </div>
+          </div>
+          {/* From Uiverse.io by absoluteSTrange */} 
+          <div className="card2">
+            <div className="pricing-block-content">
+              <p className="pricing-plan">Premium</p>
+              <div className="price-value" data-currency="$ USD" data-currency-simple="USD">
+                <p className="price-company">AlmaBetter + Microsoft</p>
+                <p className="price-number">Rs.<span className="price-integer">50,000</span>/mo</p>
+              </div>
+              <div className="pricing-note">*Pay in easy EMIs starting at INR 7000 per month.</div>
+              <ul className="check-list" role="list">
+                <li className="check-list-item">
+                  <svg version={1.0} preserveAspectRatio="xMidYMid meet" height={16} viewBox="0 0 30 30.000001" zoomAndPan="magnify" width={16} xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style={{color: 'rgb(102, 78, 255)'}}>
+                    <defs>
+                      <clipPath id="id1">
+                        <path fill="#664eff" clipRule="nonzero" d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656" />
+                      </clipPath>
+                    </defs>
+                    <g clipPath="url(#id1)">
+                      <path fillRule="nonzero" fillOpacity={1} d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125" fill="#664eff" />
+                    </g></svg>Intensive data science curriculum covering <br />basic  to advance concepts
+                </li>
+                <li className="check-list-item">
+                  <svg version={1.0} preserveAspectRatio="xMidYMid meet" height={16} viewBox="0 0 30 30.000001" zoomAndPan="magnify" width={16} xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style={{color: 'rgb(102, 78, 255)'}}>
+                    <defs>
+                      <clipPath id="id1">
+                        <path fill="#664eff" clipRule="nonzero" d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656" />
+                      </clipPath>
+                    </defs>
+                    <g clipPath="url(#id1)">
+                      <path fillRule="nonzero" fillOpacity={1} d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125" fill="#664eff" />
+                    </g></svg>100+ Live Data Science classes, 8 PM to 10:30 <br />PM.  Lifetime access to all the class recordings
+                </li>
+                <li className="check-list-item">
+                  <svg version={1.0} preserveAspectRatio="xMidYMid meet" height={16} viewBox="0 0 30 30.000001" zoomAndPan="magnify" width={16} xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style={{color: 'rgb(102, 78, 255)'}}>
+                    <defs>
+                      <clipPath id="id1">
+                        <path fill="#664eff" clipRule="nonzero" d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656" />
+                      </clipPath>
+                    </defs>
+                    <g clipPath="url(#id1)">
+                      <path fillRule="nonzero" fillOpacity={1} d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125" fill="#664eff" />
+                    </g></svg>20+ capstone data science projects &amp; 1000+ <br />coding problems and assessments
+                </li>
+                <li className="check-list-item">
+                  <svg version={1.0} preserveAspectRatio="xMidYMid meet" height={16} viewBox="0 0 30 30.000001" zoomAndPan="magnify" width={16} xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style={{color: 'rgb(102, 78, 255)'}}>
+                    <defs>
+                      <clipPath id="id1">
+                        <path fill="#664eff" clipRule="nonzero" d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656" />
+                      </clipPath>
+                    </defs>
+                    <g clipPath="url(#id1)">
+                      <path fillRule="nonzero" fillOpacity={1} d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125" fill="#664eff" />
+                    </g></svg>50+ mock interviews with dedicated career coaches
+                </li>
+                <li className="check-list-item">
+                  <svg version={1.0} preserveAspectRatio="xMidYMid meet" height={16} viewBox="0 0 30 30.000001" zoomAndPan="magnify" width={16} xmlnsXlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" style={{color: 'rgb(102, 78, 255)'}}>
+                    <defs>
+                      <clipPath id="id1">
+                        <path fill="#664eff" clipRule="nonzero" d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656" />
+                      </clipPath>
+                    </defs>
+                    <g clipPath="url(#id1)">
+                      <path fillRule="nonzero" fillOpacity={1} d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125" fill="#664eff" />
+                    </g></svg>Dual Certification
+                </li>
+              </ul>
+              <br />
+              <button className="button ">Enroll now</button>
+              <br />
+              <button className="button2"> Talk to our admission team</button>
+              <br /><br /><br /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    
+    
+    
+
     
     
 
@@ -470,7 +1213,7 @@ export default function Course() {
 
 
 </div>
-<Footer></Footer>
+
 </>
   );
 }

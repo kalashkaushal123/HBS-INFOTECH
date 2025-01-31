@@ -5,9 +5,10 @@
     overflow: hidden; /* Hide overflow */
     width: 100%; 
     position: relative; /* Position relative for absolute child */
-    top: 10em;
+    top: -5em;
     left: 10em;
     margin: auto;
+
 }
 
 .scrolling-text {
@@ -48,25 +49,16 @@
     }
 }
 
-
-
-
-.sr {
-
-overflow: hidden; /* Hide overflow */
-width: 100%; /* Full width */
-position: relative; /* Position relative for absolute child */
-/* top: 1em; */
-}
-
 .sc {
-display: inline-block; /* Inline block for animation */
-animation: key 6s linear infinite ; /* Animation properties */
+
+    display: inline-block; /* Inline block for animation */
+    animation: textscoll 6s linear infinite ; /* Animation properties */
+
 }
 
-@keyframes key {
+@keyframes textscoll {
     0% {
-        transform: translateX(-100%);
+        transform: translateX(-100px);
         opacity: 4;
         z-index: 2;
         display: none;
@@ -80,23 +72,13 @@ animation: key 6s linear infinite ; /* Animation properties */
         display: none;
         
     }
-    50% {
-        transform: translateX(-50%);
-        opacity: 4;
-        z-index: 2;
-        display: none;
-    }
     60% {
-        transform: translateX(100%);
+        transform: translateX(94%);
         opacity: 4;
         z-index: 2;
+        
     }
-
-    80% {
-        transform: translateX(10%);
-        opacity: 4;
-        z-index: 2;
-    }
+    
 
     75% {
         transform: translateX(10%);

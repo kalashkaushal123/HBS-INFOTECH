@@ -29,6 +29,21 @@ import SoftwareAuditing from './features/services/services_pages/SoftwareAuditin
 import SecurityAudit from './features/services/SecurityAudit/SecurityAudit';
 import NearshoringServices from './features/services/services_pages/NearshoringServices/NearshoringServices';
 
+import FinancialServices from './features/industries/industriesPages/FinancialServices/FinancialServices';
+import Telecom from './features/industries/industriesPages/Telecom/Telecom';
+import Media_Entertainment from './features/industries/industriesPages/Media&Entertainment/Media_Entertainment';
+import Biotech_Healthcare from './features/industries/industriesPages/Biotech&Healthcare/Biotech_Healthcare';
+import SportsBetting from './features/industries/industriesPages/SportsBetting/SportsBetting';
+import Manufacturing from './features/industries/industriesPages/Manufacturing/Manufacturing';
+import 'bootstrap/dist/css/bootstrap.min.css'
+import CourseMain from './features/coursemain/CourseMain';
+import CourseHome from './features/coursemain/coursehome/CourseHome'
+import CourseLearn from './features/coursemain/courselearn/CourseLearn';
+import CoursePractice from './features/coursemain/coursePractice/CoursePractice';
+import CourseProject from './features/coursemain/courseProject/CourseProject';
+import CourseClassroom from './features/coursemain/courseClassroom/CourseClassroom';
+import Mentorship from './features/coursemain/Mentorship/Mentorship';
+
 
 
 function App() {
@@ -154,12 +169,67 @@ function App() {
     {
       path:"/nearshoringservices",
       element:<NearshoringServices></NearshoringServices>
+    },
+    {
+      path:"/financialservices",
+      element:<FinancialServices></FinancialServices>
+    },
+    {
+      path:"/telecom",
+      element:<Telecom></Telecom>
+    },
+    {
+      path:"/media_entertainment",
+      element:<Media_Entertainment></Media_Entertainment>
+    },
+    {
+      path:"/biotech_healthcare",
+      element:<Biotech_Healthcare></Biotech_Healthcare>
+      
+    },
+    {
+      path:"/SportsBetting",
+      element:<SportsBetting></SportsBetting>
+    },
+    {
+      path:"/Manufacturing",
+      element:<Manufacturing></Manufacturing>
+    },
+    {
+      path:"/CourseMain",
+      element:<CourseMain></CourseMain>,
+      children:[
+        {
+          path:"/CourseMain/courseHome",
+          element:<CourseHome></CourseHome>
+        },
+        {
+          path:"/CourseMain/courseLean",
+          element:<CourseLearn></CourseLearn>
+        },
+        {
+          path:"/CourseMain/courspractice",
+          element:<CoursePractice></CoursePractice>
+        },
+        {
+          path:"/CourseMain/courseproject",
+          element:<CourseProject></CourseProject>
+        },
+        {
+          path:"/CourseMain/CourseClassroom",
+          element:<CourseClassroom></CourseClassroom>
+        },
+        {
+          path:"/CourseMain/Mentorship",
+          element:<Mentorship></Mentorship>
+        }
+      ]
     }
     
   ]);
 
   return (
-    <>     
+    <>
       <RouterProvider router={router} />
     </>
   );

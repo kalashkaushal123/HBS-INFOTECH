@@ -1,0 +1,64 @@
+.home-left, .learn-left, .classroom-left, .practice-left, .projects-left, .carriar-left, 
+.mentorship-left, .job-bord-left, .refer-eran-left, .community-left {
+  padding: 10px;
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+}
+
+.clicked {
+  background-color: lightcoral; 
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+/* Style the "Follow Us" section */
+.follow-us {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+.follow-us p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.follow-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* Style individual social media icons */
+.follow-icons svg {
+  font-size: 24px;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect for icons */
+.follow-icons svg:hover {
+  color: #0077b5; /* You can change this to any color you prefer */
+  transform: scale(1.1); /* Slightly enlarge icons on hover */
+}
+
+/* Optional: Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .follow-icons {
+    gap: 10px;
+  }
+
+  .follow-icons svg {
+    font-size: 20px;
+  }
+}

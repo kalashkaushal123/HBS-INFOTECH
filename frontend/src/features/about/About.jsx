@@ -3,6 +3,7 @@ import laptop from "../about/laptop.png";
 import microsot from '../courses/images/microsoft.png';
 import iitguhati from '../courses/images/iiguhati.png';
 import './about.css'
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -25,6 +26,7 @@ export default function About() {
               line of code we write contributes to the creation of robust, scalable,
               and future-proof digital solutions that stand the test of time.
             </p>
+            <br />
             <a href="/Discusswithus" className="button btn-primary text-decoration-none fs-5">Discuss with us</a>
           </div>
 
@@ -47,7 +49,9 @@ export default function About() {
 
     </div>
 
-    <div className="course-main">
+   <Link to="/course">
+
+   <div className="course-main">
             {/* Left Section - Course Details */}
             <div className="course-left-side">
               <p>Creating</p>
@@ -94,6 +98,7 @@ export default function About() {
               </div>
             </div>
           </div>
+   </Link>
 
 
     </>
