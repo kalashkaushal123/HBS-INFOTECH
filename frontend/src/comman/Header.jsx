@@ -20,9 +20,8 @@ export default function Header() {
         <div className="container d-flex justify-content-between align-items-center">
           {/* Left Side */}
           <div className='top'>
-            <div className="logo d-flex align-items-center">
-              <h1 className="mb-0 fs-4 fw-bold text-white">HBS INFOTECH</h1>
-            </div>
+            <div className="logo d-flex align-items-center"></div>
+            <h1 className="mb-0 fs-4 fw-bold text-white">HBS INFOTECH</h1>
           </div>
 
           {/* Right Side */}
