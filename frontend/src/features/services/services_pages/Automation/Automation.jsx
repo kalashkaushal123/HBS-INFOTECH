@@ -568,9 +568,9 @@ export default function Automation() {
 
 
         <div style={{display:'flex'}}>
-          <div className='gen'> 
+          <div className='auto_gen'> 
             <img src={card1} alt="" height='300px' />
-            <div className='gen_text'>
+            <div className='auto_gen_text'>
               Generative AI development services
             </div>
           
@@ -579,9 +579,9 @@ export default function Automation() {
             </div>
           </div>
 
-          <div className='gen'> 
+          <div className='auto_gen'> 
             <img src={card2} alt="" height='300px' />
-            <div className='gen_text'>
+            <div className='auto_gen_text'>
               Cloud consulting & services
             </div>
           
@@ -590,9 +590,9 @@ export default function Automation() {
             </div>
           </div>
 
-          <div className='gen'> 
+          <div className='auto_gen'> 
             <img src={card3} alt="" height='300px' />
-            <div className='gen_text'>
+            <div className='auto_gen_text'>
             Data science services
             </div>
           
@@ -610,9 +610,9 @@ export default function Automation() {
 
 
         <div style={{display:'flex'}}>
-          <div className='gen'> 
+          <div className='auto_gen'> 
             <img src={card4} alt="" height='300px' />
-            <div className='gen_text'>
+            <div className='auto_gen_text'>
             Financial services
             </div>
           
@@ -621,9 +621,9 @@ export default function Automation() {
             </div>
           </div>
 
-          <div className='gen'> 
+          <div className='auto_gen'> 
             <img src={card5} alt="" height='300px' />
-            <div className='gen_text'>
+            <div className='auto_gen_text'>
             Telecom
             </div>
           
@@ -632,9 +632,9 @@ export default function Automation() {
             </div>
           </div>
 
-          <div className='gen'> 
+          <div className='auto_gen'> 
             <img src={card6} alt="" height='300px' />
-            <div className='gen_text'>
+            <div className='auto_gen_text'>
             Sports betting
             </div>
           

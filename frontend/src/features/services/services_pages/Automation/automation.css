@@ -268,7 +268,7 @@ h2{
 
 
 
-.gen{
+.auto_gen{
     margin-right: 60px;
     height: 280px;
     width: 400px;
@@ -277,13 +277,13 @@ h2{
     position: relative;
     overflow: hidden;
 }
-.gen img{
+.auto_gen img{
     display: none;
 }
-.gen_text{
+.auto_gen_text{
     position: absolute;
     background-color: white;
-    font-size: 20px;
+    font-size: 1.1em;
     font-weight: 600;
     padding: 35px ;
     border-radius: 20px;
@@ -292,14 +292,14 @@ h2{
     width: 355px;
     transition: all 0.2s ease;
 }
-.gen:hover{
+.auto_gen:hover{
     background-image: none;
 
 }
-.gen:hover img{
+.auto_gen:hover img{
     display: block;
 }
-.gen:hover .gen_text{
+.auto_gen:hover .auto_gen_text{
     top: 160px;
 }
 .text{
