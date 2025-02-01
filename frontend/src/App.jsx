@@ -42,12 +42,15 @@ import CourseLearn from './features/coursemain/courselearn/CourseLearn';
 import CoursePractice from './features/coursemain/coursePractice/CoursePractice';
 import CourseProject from './features/coursemain/courseProject/CourseProject';
 import CourseClassroom from './features/coursemain/courseClassroom/CourseClassroom';
+import Upcoming from './features/coursemain/courseClassroom/classroom_children/upcoming';
+import Completed from './features/coursemain/courseClassroom/classroom_children/Completed';
 import Mentorship from './features/coursemain/Mentorship/Mentorship';
 import Book_a_session from './features/coursemain/Mentorship/Mentorship_children/Book_a_session';
 import Previous_Booking from './features/coursemain/Mentorship/Mentorship_children/Previous_Booking';
 import Manage_Booking from './features/coursemain/Mentorship/Mentorship_children/Manage_Booking';
 import RegisterPage from './comman/RegisterPage';
 import Login from './comman/Login';
+import CourseCarriar from './features/coursemain/coursecarriar/CourseCarriar';
 
 
 
@@ -222,8 +225,22 @@ function App() {
           element:<CourseProject></CourseProject>
         },
         {
+          path:"/CourseMain/CourseCarriar",
+          element:<CourseCarriar></CourseCarriar>
+        },
+        {
           path:"/CourseMain/CourseClassroom",
-          element:<CourseClassroom></CourseClassroom>
+          element:<CourseClassroom></CourseClassroom>,
+          children:[
+            {
+              path:"/CourseMain/CourseClassroom/upcoming",
+              element:<Upcoming ></Upcoming>
+            },
+            {
+              path:"/CourseMain/CourseClassroom/Completed",
+              element:<Completed></Completed>
+            }
+          ]
         },
         {
           path:"/CourseMain/Mentorship",

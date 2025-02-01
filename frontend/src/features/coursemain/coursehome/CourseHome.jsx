@@ -1,4 +1,3 @@
-import "./CourseHome.css";
 import { FaArrowRight } from "react-icons/fa";
 import { IoShareSocialOutline } from "react-icons/io5";
 
@@ -13,7 +12,7 @@ export default function CourseHome() {
         </div>
         <div className="flex bg-gradient-to-b from-gray-950 to-gray-700 w-[95%] h-[300px] rounded-md mx-auto p-4 mt-3">
           <div className="w-1/3">
-            <img src="https://img.youtube.com/vi/MytrG5K0gQo/0.jpg" alt="course" className="object-cover w-full h-full" />
+            <img src="https://img.youtube.com/vi/MytrG5K0gQo/0.jpg" alt="course" className="w-full h-full" />
           </div>
           <div className="w-2/3 p-4">
             <h1 className="text-white text-2xl my-4">AlmaBetter X WOOLF University, Master's Degree</h1>
@@ -25,10 +24,10 @@ export default function CourseHome() {
             </div>
           </div>
         </div>
-        <div className="course-home-block2">
-          <div className="course-home-block2-left-side">
-            <div className="course-home-block2-left-side-inside">
-              <h4>Full Stack Data Science Program</h4>
+        <div className="flex">
+          <div className="bg-white w-2/3 p-4 rounded-md m-4">
+            <div>
+              <h4 className="font-semibold">Full Stack Data Science Program</h4>
 
               <div className="">
                 <div class="flex gap-2 pb-4 sm:text-sm text-xs">
@@ -65,7 +64,7 @@ export default function CourseHome() {
 
 
           </div>
-          <div className="course-home-block2-right-side">
+          <div className="w-1/3 p-4 my-4 mr-4 bg-white rounded-md">
             <h5>Our Heros</h5>
               <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6tWkfCJfejkeaq78A0p6L5CZWFFVwxyz0DA&s" alt="" className="mx-auto" />
 
@@ -80,7 +79,7 @@ export default function CourseHome() {
           <p>see all</p>
         </div>
         <div className="flex gap-4 md:flex-row flex-col mx-4">
-          <div className="w-[400px] h-[250px] bg-white rounded-md p-4">
+          <div className="w-[400px] h-[300px] bg-white rounded-md p-4">
             <img src="https://almablog-media.s3.ap-south-1.amazonaws.com/small_Accenture_Emblem_1deca2b994.png" alt="" className="h-16 w-16 mx-auto"/>
             <h4 className="text-center text-xl mt-4">Accenture coding Problems</h4>
             <p className="text-gray-500 text-center">5 Questions | 75 Min</p>
@@ -89,7 +88,7 @@ export default function CourseHome() {
               <IoShareSocialOutline className="text-xl bg-red-100 mt-10 rounded-full text-red-500 "/>
             </div>
           </div>
-          <div className="w-[400px] h-[250px] bg-white rounded-md p-4">
+          <div className="w-[400px] h-[300px] bg-white rounded-md p-4">
             <img src="https://almablog-media.s3.ap-south-1.amazonaws.com/small_Dropbox_aaf7db0466.png" alt="" className="h-16 w-16 mx-auto"/>
             <h4 className="text-center text-xl mt-4">Dropbox Python Coding Problems</h4>
             <p className="text-gray-500 text-center">5 Questions | 75 Min</p>
@@ -98,7 +97,7 @@ export default function CourseHome() {
               <IoShareSocialOutline className="text-xl bg-red-100 mt-10 rounded-full text-red-500 "/>
             </div>
           </div>
-          <div className="w-[400px] h-[250px] bg-white rounded-md p-4">
+          <div className="w-[400px] h-[300px] bg-white rounded-md p-4">
             <img src="https://almablog-media.s3.ap-south-1.amazonaws.com/small_hcl_297d6306b4.png" alt="" className="h-16 w-16 mx-auto"/>
             <h4 className="text-center text-xl mt-4">HCLTech Python Coding Problems</h4>
             <p className="text-gray-500 text-center">5 Questions | 75 Min</p>
@@ -114,7 +113,7 @@ export default function CourseHome() {
           <p>see all</p>
         </div>
         <div className="flex gap-4 md:flex-row flex-col mx-4">
-          <div className="w-[400px] h-[250px] bg-white rounded-md p-4">
+          <div className="w-[400px] h-[300px] bg-white rounded-md p-4">
             <img src="https://i.fbcd.co/products/original/nn-circle-logo-design-2-26efa390c639dff63af2a65534db7225653faa175519ac6117f9dc8e99518f61.jpg" alt="" className="h-16 w-16 mx-auto"/>
             <h4 className="text-center text-xl mt-4">Neural Networks</h4>
             <div className="flex justify-between mt-2">
@@ -122,7 +121,7 @@ export default function CourseHome() {
               <IoShareSocialOutline className="text-xl bg-red-100 mt-10 rounded-full text-red-500 "/>
             </div>
           </div>
-          <div className="w-[400px] h-[250px] bg-white rounded-md p-4">
+          <div className="w-[400px] h-[300px] bg-white rounded-md p-4">
             <img src="https://almablog-media.s3.ap-south-1.amazonaws.com/small_microsoft_5867d21a95.jpg" alt="" className="h-16 w-16 mx-auto"/>
             <h4 className="text-center text-xl mt-4">Microsoft Data Analyst Mock Test</h4>
             <div className="flex justify-between mt-2">
@@ -130,7 +129,7 @@ export default function CourseHome() {
               <IoShareSocialOutline className="text-xl bg-red-100 mt-10 rounded-full text-red-500 "/>
             </div>
           </div>
-          <div className="w-[400px] h-[250px] bg-white rounded-md p-4">
+          <div className="w-[400px] h-[300px] bg-white rounded-md p-4">
             <img src="https://almablog-media.s3.ap-south-1.amazonaws.com/small_meta_1_aeb9b71355.png" alt="" className="h-16 w-16 mx-auto"/>
             <h4 className="text-center text-xl mt-4">Meta Data Scientist Mock Test</h4>
             <div className="flex justify-between mt-2">
@@ -148,7 +147,7 @@ export default function CourseHome() {
         </div>
 
         <div className="flex gap-4 md:flex-row flex-col mx-4">
-          <div className="w-[400px] h-[250px] bg-white rounded-md p-4">
+          <div className="w-[400px] h-[300px] bg-white rounded-md p-4">
             <img src="https://almablog-media.s3.ap-south-1.amazonaws.com/Cardiovascular_Risk_Prediction_0b3dca43ec.png" alt="" className="h-16 w-16 mx-auto"/>
             <h4 className="text-center text-xl mt-4">Cardiovascular Risk Prediction</h4>
             <p className="text-gray-500 text-center">Classification</p>
@@ -157,7 +156,7 @@ export default function CourseHome() {
               <IoShareSocialOutline className="text-xl bg-red-100 mt-10 rounded-full text-red-500 "/>
             </div>
           </div>
-          <div className="w-[400px] h-[250px] bg-white rounded-md p-4">
+          <div className="w-[400px] h-[300px] bg-white rounded-md p-4">
             <img src="https://almablog-media.s3.ap-south-1.amazonaws.com/Indi_Go_Logo_b6e3eef040.png" alt="" className="h-16 w-16 mx-auto"/>
             <h4 className="text-center text-xl mt-4">IndiGo Airline Passenger Referral Prediction</h4>
             <p className="text-gray-500 text-center">Classification</p>
@@ -166,7 +165,7 @@ export default function CourseHome() {
               <IoShareSocialOutline className="text-xl bg-red-100 mt-10 rounded-full text-red-500 "/>
             </div>
           </div>
-          <div className="w-[400px] h-[250px] bg-white rounded-md p-4">
+          <div className="w-[400px] h-[300px] bg-white rounded-md p-4">
             <img src="https://almablog-media.s3.ap-south-1.amazonaws.com/Credit_Card_Default_Prediction_848a34b423.png" alt="" className="h-16 w-16 mx-auto"/>
             <h4 className="text-center text-xl mt-4">Credit Card Default Prediction</h4>
             <p className="text-gray-500 text-center">Classification</p>
