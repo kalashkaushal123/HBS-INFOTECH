@@ -43,6 +43,9 @@ import CoursePractice from './features/coursemain/coursePractice/CoursePractice'
 import CourseProject from './features/coursemain/courseProject/CourseProject';
 import CourseClassroom from './features/coursemain/courseClassroom/CourseClassroom';
 import Mentorship from './features/coursemain/Mentorship/Mentorship';
+import Book_a_session from './features/coursemain/Mentorship/Mentorship_children/Book_a_session';
+import Previous_Booking from './features/coursemain/Mentorship/Mentorship_children/Previous_Booking';
+import Manage_Booking from './features/coursemain/Mentorship/Mentorship_children/Manage_Booking';
 
 
 
@@ -221,7 +224,25 @@ function App() {
         },
         {
           path:"/CourseMain/Mentorship",
-          element:<Mentorship></Mentorship>
+          element:<Mentorship></Mentorship>,
+          children:[
+            {
+              path:"/CourseMain/Mentorship/",
+              element:<Book_a_session></Book_a_session>
+            },
+            {
+              path:"/CourseMain/Mentorship/Book_a_session",
+              element:<Book_a_session></Book_a_session>
+            },
+            {
+              path:"/CourseMain/Mentorship/Previous_Booking",
+              element:<Previous_Booking></Previous_Booking>
+            },
+            {
+              path:"/CourseMain/Mentorship/Manage_Booking",
+              element:<Manage_Booking></Manage_Booking>
+            }
+          ]
         }
       ]
     }
