@@ -80,7 +80,7 @@ export default function Automation() {
       <img src={main_image} alt="" className='main_image' height='' />
       <br /><br /><br /><br /><br />
       <div className="gradient"></div>
-      <div className='main_text '>
+      <div className='main_text ' style={{margin:'0em 5em'}}>
         <div className='main_img'>
           <img src={setting} alt="" />
         </div>
@@ -437,18 +437,18 @@ export default function Automation() {
 
 
       
-      <div className="slider">
+      <div className="auto_slider">
           <button className='btn left' onClick={scrollLeft}>&#8249;</button>
-          <div className="slides" ref={containerRef}>
+          <div className="auto_slides" ref={containerRef}>
 
-            <div className="slide" style={{marginLeft:'160px'}}>
-              <div className="slide_img">
+            <div className="auto_slide" style={{marginLeft:'160px'}}>
+              <div className="auto_slide_img">
                 <img src={slide1} alt="" />
               </div>
-              <div className="slide_text">
-                <div className="image">
+              <div className="auto_slide_text">
+                <div className="auto_image">
                   <img src={slide} alt="" />
-                  <div className="txt">
+                  <div className="auto_txt">
                     KAROLINA BLOK <br/>
                     2024/04/04
                   </div>
@@ -458,14 +458,14 @@ export default function Automation() {
               </div>
             </div>
 
-            <div className="slide">
-            <div className="slide_img">
+            <div className="auto_slide">
+            <div className="auto_slide_img">
                 <img src={slide2} alt="" />
               </div>
-              <div className="slide_text" style={{backgroundColor:'black'}}>
-                <div className="image">
+              <div className="auto_slide_text" style={{backgroundColor:'black'}}>
+                <div className="auto_image">
                   <img src={slide} alt="" />
-                  <div className="txt">
+                  <div className="auto_txt">
                     KAROLINA BLOK <br/>
                     2023/09/28
                   </div>
@@ -475,14 +475,14 @@ export default function Automation() {
               </div>
             </div>
 
-            <div className="slide">
-            <div className="slide_img">
+            <div className="auto_slide">
+            <div className="auto_slide_img">
                 <img src={slide3} alt="" />
               </div>
-              <div className="slide_text" style={{backgroundColor:'rgb(210, 210, 210)', color:'black'}}>
-                <div className="image">
+              <div className="auto_slide_text" style={{backgroundColor:'rgb(210, 210, 210)', color:'black'}}>
+                <div className="auto_image">
                   <img src={slide} alt="" />
-                  <div className="txt">
+                  <div className="auto_txt">
                     KAROLINA BLOK <br/>
                     2023/08/03
                   </div>
@@ -492,14 +492,14 @@ export default function Automation() {
               </div>
             </div>
 
-            <div className="slide">
-            <div className="slide_img">
+            <div className="auto_slide">
+            <div className="auto_slide_img">
                 <img src={slide4} alt="" />
               </div>
-              <div className="slide_text">
-                <div className="image">
+              <div className="auto_slide_text">
+                <div className="auto_image">
                   <img src={slide} alt="" />
-                  <div className="txt">
+                  <div className="auto_txt">
                     KAROLINA BLOK <br/>
                     2023/03/23
                   </div>
@@ -509,14 +509,14 @@ export default function Automation() {
               </div>
             </div>
 
-            <div className="slide" style={{marginRight:'160px'}}>
-            <div className="slide_img">
+            <div className="auto_slide" style={{marginRight:'160px'}}>
+            <div className="auto_slide_img">
                 <img src={slide5} alt="" />
               </div>
-              <div className="slide_text" style={{backgroundColor:'black'}}>
-                <div className="image">
+              <div className="auto_slide_text" style={{backgroundColor:'black'}}>
+                <div className="auto_image">
                   <img src={slide} alt="" />
-                  <div className="txt">
+                  <div className="auto_txt">
                     KAROLINA BLOK <br/>
                     2023/02/16
                   </div>

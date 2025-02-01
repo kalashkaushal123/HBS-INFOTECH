@@ -312,22 +312,22 @@ h2{
 
 
 
-.slider{
+.auto_slider{
     position: relative;
 }
 
-.slides{
+.auto_slides{
     display: flex;
     width: 100%;
     overflow-x: scroll;
     scroll-behavior: smooth;
 }
 
-.slides::-webkit-scrollbar {
+.auto_slides::-webkit-scrollbar {
     display: none;
 }
 
-.slide{
+.auto_slide{
     height: 560px;
     width: 380px;
     margin-right: 20px;
@@ -338,35 +338,35 @@ h2{
     transition: all 0.3s ease-in-out;
 }
 
-.slide_img img{
+.auto_slide_img img{
     height: 220px;
     margin-left: -80px;
     transition: all 0.3s ease-in-out; 
 }
 
-.slide:hover{
+.auto_slide:hover{
     height: 580px;
 }
-.slide:hover .slide_img img{
+.auto_slide:hover .auto_slide_img img{
     height: 240px;
 }
 
-.image{
+.auto_image{
     display: flex;
 }
-.image img{
+.auto_image img{
     border-radius: 50%;
     height: 3.5rem;
 }
-.slide_text{
+.auto_slide_text{
     padding: 30px;
     color: white;
     font-size: 16px;
 }
-.txt{
+.auto_txt{
     margin-left: 1rem;
 }
-.slide_text p{
+.auto_slide_text p{
     color: white;
     font-size: 28px;
     font-weight: 600;
@@ -374,7 +374,7 @@ h2{
     height: 180px;
     overflow: hidden;
 }
-.slide_text button{
+.auto_slide_text button{
     border: 1px solid white;
     color: white;
     background-color: transparent;
@@ -410,7 +410,7 @@ h2{
     color: rgb(255, 25, 0);
 }
 
-.slider:hover .btn{
+.auto_slider:hover .btn{
     display: block;
 }
 
