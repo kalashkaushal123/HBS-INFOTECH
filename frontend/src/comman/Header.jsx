@@ -165,17 +165,13 @@ export default function Header() {
                       <li><Link to="/media_entertainment" style={{color:"black"}}>Media & Entertainment</Link></li>
                       <li><Link to="/SportsBetting" style={{color:"black"}}>Sports Betting</Link></li>
                       <li><Link to="/Manufacturing"  style={{color:"black"}}>Manufacturing</Link></li>
-                      
-                    
-                     
-                     
                     </ul>
                   </div>
                 </div>
               </li>
 
               <li className="nav-item">
-                <button className="signIn">Sign In</button>
+                <Link to="/login"><button className="signIn">Sign In</button></Link>
               </li>
             </ul>
           </div>

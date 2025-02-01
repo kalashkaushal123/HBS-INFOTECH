@@ -46,6 +46,9 @@ import Mentorship from './features/coursemain/Mentorship/Mentorship';
 import Book_a_session from './features/coursemain/Mentorship/Mentorship_children/Book_a_session';
 import Previous_Booking from './features/coursemain/Mentorship/Mentorship_children/Previous_Booking';
 import Manage_Booking from './features/coursemain/Mentorship/Mentorship_children/Manage_Booking';
+import RegisterPage from './comman/RegisterPage';
+import Login from './comman/Login';
+
 
 
 
@@ -245,7 +248,18 @@ function App() {
           ]
         }
       ]
+     
+    },
+    {
+      path:"/register",
+      element:<RegisterPage></RegisterPage>
+    },
+    {
+      path:"/login",
+      element:<Login></Login>
     }
+    
+
     
   ]);
 
