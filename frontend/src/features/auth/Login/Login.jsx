@@ -1,13 +1,17 @@
 import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
+import {useLoginMutation } from '../Login/authApi'
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
-  const [loading, setLoading] = useState(false);  // State for loading
+  const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+
+  // Use RTK Query hook for login mutation
+  const [login, { isLoading, error: apiError }] = useLoginMutation();
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -16,27 +20,17 @@ const Login = () => {
     setSuccess(""); // Reset success state
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/api/login/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ email, password }),
-      });
+      const credentials = { email, password };
+      const response = await login(credentials).unwrap(); // Execute login mutation
 
-      const data = await response.json();
-
-      if (response.ok) {
-        localStorage.setItem("authToken", data.token); // Store the token
-        setSuccess("Login successful!"); // Show success message
-        setTimeout(() => navigate("/CourseMain"), 1500); // Redirect after delay
-      } else {
-        setError(data.message || "Invalid credentials. Please try again.");
-      }
-    } catch (error) {
-      setError("Something went wrong. Please try again later.");
+      // If login is successful, store the token and navigate
+      localStorage.setItem("authToken", response.token);
+      setSuccess("Login successful! Redirecting...");
+      setTimeout(() => navigate("/CourseMain"), 1500); // Redirect after delay
+    } catch (err) {
+      setError(apiError?.message || "Something went wrong. Please try again later.");
     } finally {
-      setLoading(false); // Set loading to false when login is done (either success or error)
+      setLoading(false); // Set loading to false when login is done
     }
   };
 
@@ -72,9 +66,9 @@ const Login = () => {
           <button
             type="submit"
             className="w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600"
-            disabled={loading} // Disable the button while loading
+            disabled={isLoading} // Disable the button while loading
           >
-            {loading ? (
+            {isLoading ? (
               <div className="flex justify-center items-center">
                 <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white"></div> {/* Loader */}
               </div>
