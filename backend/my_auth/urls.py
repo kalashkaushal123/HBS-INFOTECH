@@ -14,6 +14,9 @@ urlpatterns = [
     path ('login/', login, name='email_pass_to_obtain_accesstoken'),
     path('resend-otp/', resend_otp, name='resend_otp'),
 
+    path('logout/', logout, name='logout'),
+
+
     # path('token/', TokenObtainPairView.as_view(), name='email_pass_to_obtain_pair'),
     # path('token/refresh/', TokenRefreshView.as_view(), name='refresh_token_to_obtain_acesstoken'),        
 ]

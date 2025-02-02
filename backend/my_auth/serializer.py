@@ -1,3 +1,4 @@
+import re
 from rest_framework import serializers
 from .models import *
 
@@ -16,6 +17,19 @@ class UserSerializer(serializers.ModelSerializer):
         
         if password != confirm_password:
             raise serializers.ValidationError("Passwords do not match.")
+        
+        # Validate password strength
+        if len(password) < 8:
+            raise serializers.ValidationError("Password must be at least 8 characters long.")
+        if not re.search(r'[A-Z]', password):
+            raise serializers.ValidationError("Password must contain at least one uppercase letter.")
+        if not re.search(r'[a-z]', password):
+            raise serializers.ValidationError("Password must contain at least one lowercase letter.")
+        if not re.search(r'\d', password):
+            raise serializers.ValidationError("Password must contain at least one digit.")
+        if not re.search(r'[!@#$%^&*(),.?":{}|<>]', password):
+            raise serializers.ValidationError("Password must contain at least one special symbol.")
+        
         return attrs
 
     def create(self, validated_data):
@@ -31,7 +45,6 @@ class UserSerializer(serializers.ModelSerializer):
         user.save()
         return user
 
-
 class VerifyAccountSerializer(serializers.Serializer):
     email = serializers.EmailField()
     otp = serializers.CharField(max_length=6)
@@ -43,30 +56,6 @@ class ResetPasswordSerializer(serializers.Serializer):
     email = serializers.EmailField()
     otp = serializers.CharField(max_length=6)
     new_password = serializers.CharField(write_only=True)
-
-
-# class AddressSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Address
-#         fields = "__all__"
-#         extra_kwargs = {
-#             'profile': {'required': False, 'write_only': True}  # Make profile non-required
-#         }
-
-# class ProfileSerializer(serializers.ModelSerializer):
-#     addresses = AddressSerializer(many=True)  # Nested AddressSerializer
-#     class Meta:
-#         model = Profile
-#         fields = "__all__"
-#     def update(self, instance, validated_data):
-#         # Prevent updating the email through the profile update API
-#         if 'email' in validated_data:
-#             validated_data.pop('email')  # Remove the email field if it's being updated
-        
-#         # Proceed with the update for other fields
-#         return super().update(instance, validated_data)
-
-# serializers.py
 
 class ForgotEmailSerializer(serializers.Serializer):
     email = serializers.EmailField(required=True)

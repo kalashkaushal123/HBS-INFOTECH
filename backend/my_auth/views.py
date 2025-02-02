@@ -198,7 +198,7 @@ def login(request):
             return Response({
                 'status': 200,
                 'message': 'Logged in successfully',
-                'data': {'Bearer token': access_token}
+                'data': {'Access token': access_token}
             })
 
         return Response({
@@ -329,3 +329,18 @@ def resend_otp(request):
 
     except Exception as e:
         return handle_error(e)
+    
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def logout(request):
+    try:
+        refresh_token = request.data.get('refresh_token')
+        if not refresh_token:
+            return Response({'status': 400, 'message': 'Refresh token is required.'}, status=status.HTTP_400_BAD_REQUEST)
+        
+        token = RefreshToken(refresh_token)
+        token.blacklist()
+
+        return Response({'status': 200, 'message': 'Logout successful.'}, status=status.HTTP_200_OK)
+    except Exception as e:
+        return Response({'status': 500, 'message': 'Internal server error', 'data': str(e)}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
