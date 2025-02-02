@@ -233,12 +233,24 @@
 .course{
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
+  padding: 0.4rem;
+  
+    
+  
 }
-.course:hover{
-  display: flex;
+
+
+.course:hover  {
+  background: linear-gradient(#1a1a1a, #1a1a1a) padding-box, linear-gradient(145deg, hsla(0, 0%, 100%, .4), #292929) border-box;
+    border: 1px solid transparent;
+ 
   align-items: center;
-  border: solid ;
-  /* background-color: gray; */
+  /* border: solid ; */
+  /* background-color: rgba(66, 66, 66, 0.797); */
+  color: white;
+  /* border-radius:4% */
+ 
 }
 
 
@@ -259,9 +271,12 @@
   color: white;
 }
 
-.title{
-  color: gray;
+.title:hover ~ .add-on{
+ 
+    
 }
+
+
 
 .add-on{
   color: gray;

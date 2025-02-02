@@ -315,7 +315,7 @@ export default function Course() {
           </div>
         </div>
         <div className="hero-image">
-          <img src="/src/features/courses/images/course2.jpeg" alt="IIT Guwahati Campus" />
+          <img width={'100%'} src="/src/features/courses/images/AI-full-stack.jpg" alt="IIT Guwahati Campus" />
         </div>
       </section>
       {/* Placement Section */}
@@ -388,7 +388,7 @@ export default function Course() {
           </div>
 
           <div className="benefit">
-          <img src="/src/features/courses/medium_Group_59_35ea989540.webp" alt="Mentors Icon" />
+          <img src="/src/features/courses/logos/medium_Group_59_35ea989540.webp" alt="Mentors Icon" />
             <p style={{color:'white'}}>Mentors from MAANG, Top Product companies</p>
           </div>
 
@@ -481,7 +481,7 @@ export default function Course() {
               <div class="section text-start " style={{position:"relative",left:'40%'}} >
                   
                   <div class="course " onClick={Introduction} >
-                      <div class="course-number mb-4 ">01 &ensp;</div>
+                      <div  class=" course-number ">01 &ensp;</div>
                       <div class="course-info p-0 m-0">
                           <h6 className="title text-white">Introduction to Computer Programming</h6>
                           <p class="add-on">Add-On: Pair Programming using ChatGPT</p>
@@ -489,46 +489,46 @@ export default function Course() {
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
 
-<hr />
+
                   <div class="course " onClick={Numerical}>
-                      <div class="course-number mb-4">02 &ensp;</div>
+                      <div class="course-number">02 &ensp;</div>
                       <div class="course-info">
                           <h6 className="title text-white">Numerical Programming in Python</h6>
                           <p class="add-on">Add-On: Data Wrangling using Pandas AI</p>
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-<hr />
+                  
                   <div class="course " onClick={Relational}>
-                      <div class="course-number mb-4">03 &ensp;</div>
+                      <div class="course-number">03 &ensp;</div>
                       <div class="course-info">
                           <h6 className="title text-white">Relational Databases</h6>
                           <p class="add-on">Add-On: ChatGPT for writing SQL queries</p>
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-<hr />
+                  
                   <div class="course " onClick={Data}>
-                      <div class="course-number mb-4">04 &ensp;</div>
+                      <div class="course-number">04 &ensp;</div>
                       <div class="course-info">
                           <h6 className="title text-white">Data Visualization Tools</h6>
                           <p class="add-on">Add-On: Creating presentations using ChatGPT</p>
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-<hr />
+                  
                   <div class="course " onClick={Applied}>
 
-                      <div class="course-number mb-4">05 &ensp;</div>
+                      <div class="course-number">05 &ensp; </div>
                       <div class="course-info">
                           <h6 className="title text-white">Applied Business Analytics</h6>
                           <p class="add-on">Add-On: Leveraging AI for equations simplified via ChatGPT</p>
                       </div>
                       <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-gray-400 group-hover:text-white block" height="32" width="32" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0V0z"></path><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path></svg>
                   </div>
-<hr />
+                  
                   <div class="course " onClick={Machine} >
-                      <div class="course-number mb-4">06 &ensp;</div> 
+                      <div class="course-number">06 &ensp;</div> 
                       <div class="course-info">
                           <h6 className="title text-white">Machine Learning & Generative AI with Microsoft Azure</h6>
                           <p class="add-on">Add-On: Use AI to create AI</p>
