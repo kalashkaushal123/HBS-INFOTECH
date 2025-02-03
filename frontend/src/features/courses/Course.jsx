@@ -283,13 +283,10 @@ export default function Course() {
   return (
     <>
     <Header></Header>
-    <div className="main-section">
-
-  
-
-    <div style={{color:'white'}}>
-      <section className="hero-section">
-        <div className="hero-content">
+   
+   <div className="row hero-section text-white bg-black">
+    <div className="col-md-6">
+    <div className=" bg-black p-4">
           <h1>Certification in Full Stack Data Science and AI</h1>
           <p className="rating">4.6+ ★★★★☆ (22534 Reviews)</p>
           <p className="cohort">Next Cohort Starting On 14th January</p>
@@ -313,91 +310,19 @@ export default function Course() {
             <a href="#" className="btn explore">Explore Program</a>
             <a href="#" className="btn enroll">Enroll Now</a>
           </div>
-        </div>
-        <div className="hero-image">
-          <img width={'100%'} src="/src/features/courses/images/AI-full-stack.jpg" alt="IIT Guwahati Campus" />
-        </div>
-      </section>
-      {/* Placement Section */}
-      <section className="placement-section">
-        <h2>
-          <span>Placements</span></h2>
-        <p>Kick start your Data Science career today with our flagship program in collaboration with E&amp;ICT IIT Guwahati. Learn Data Science with top engineers. Challenge yourself by building real-time projects.</p>
-        <div className="stats">
-          <div className="stat-item">
-            <h3>30,000+</h3>
-            <p>Students</p>
-          </div>
-          <div className="stat-item">
-            <h3>40 LPA</h3>
-            <p>Highest Salary</p>
-          </div>
-          <div className="stat-item">
-            <h3>15 LPA</h3>
-            <p>Average Salary</p>
-          </div>
-          <div className="stat-item">
-            <h3>700+</h3>
-            <p>Hiring Partners</p>
-          </div>
-        </div>
-        <a href="#" className="download-btn">Download Placement Report</a>
-      </section>
+    </div>
 
-
-     
-        <div className="pt-3" style={{fontSize:'32px',marginLeft:'30%'}}>
-          <label>In Collaboration with <span className="highlight">E&amp;ICT, IIT Guwahati</span></label>
-          </div>
-        <div align='justify' className=" p-5">
-              <section className="partners">
-                <div className="partner-logo">
-                  <img src="/src/features/courses/logos/almabetter.webp" alt="AlmaBetter Logo" />
-                  <span className="partner-name">AlmaBetter</span>
-                </div>
-                <div className="partner-logo">
-                  <img className="bg-white" src="/src/features/courses/logos/IIT Guwahati.webp" alt="E&ICT Academy IIT Guwahati Logo" />
-                  <span className="partner-name">E&amp;ICT Academy IIT Guwahati</span>
-                </div>
-              </section>
-              <section className="description">
-                <p style={{color:'white'}}>Our partnership with E&amp;ICT Academy at IIT Guwahati reflects a shared commitment to advancing global education standards. This collaboration leverages IIT Guwahati's prestigious reputation in India and beyond to offer world-class educational opportunities and foster a global academic community.</p>
-              </section>
-        </div>
+    </div>
+    <div className="col-md-6">
+    <img width={'100%'} src="/src/features/courses/images/AI-full-stack.jpg" alt="IIT Guwahati Campus" />
+  
+    
+    </div>
+   </div>
+    
         
-        <section className="benefits">
-          <div className="benefit">
-            <img src="/src/features/courses/logos/image_removebg_preview_40_1_f5daeee54f.webp" alt="Certificate Icon" />
-            <p style={{color:'white'}}>Advanced Certification from E&amp;ICT Academy, IIT Guwahati</p>
-          </div>
 
-          <div className="benefit">
-          <img src="/src/features/courses/logos/Group_65_242481ba3b.webp" alt="Guest Lectures Icon" />
-            <p style={{color:'white'}}>Guest lectures from IIT Guwahati Faculty</p>
-          </div>
 
-          <div className="benefit">
-          <img src="/src/features/courses/logos/calender_front_color_13231195c8.webp" alt="Deadline Extension Icon" />
-            <p style={{color:'white'}}>Deadline extension of 6 months for AlmaX Career Track</p>
-          </div>
-          
-
-          <div className="benefit">
-          <img src="/src/features/courses/logos/industry_immersion_17b9dd5bc8.webp" alt="Campus Immersion Icon" />
-            <p style={{color:'white'}}>2-day campus immersion program at IIT Guwahati</p>
-          </div>
-
-          <div className="benefit">
-          <img src="/src/features/courses/logos/medium_Group_59_35ea989540.webp" alt="Mentors Icon" />
-            <p style={{color:'white'}}>Mentors from MAANG, Top Product companies</p>
-          </div>
-
-          <div className="benefit">
-          <img src="/src/features/courses/logos/medium_Group_56_3fb6dbb2c1.webp" alt="Curriculum Icon" />
-            <p style={{color:'white'}}>Intensive curriculum covering fundamentals to advanced concepts</p>
-          </div>
-        </section>
-      
 
 
 
@@ -651,6 +576,49 @@ export default function Course() {
   </section>
 
 
+      
+   
+      {/* Placement Section */}
+      <section className="placement-section">
+        <h2>
+          <span>Placements</span></h2>
+        <p>Kick start your Data Science career today with our flagship program in collaboration with E&amp;ICT IIT Guwahati. Learn Data Science with top engineers. Challenge yourself by building real-time projects.</p>
+        <div className="stats">
+          <div className="stat-item">
+            <h3>30,000+</h3>
+            <p>Students</p>
+          </div>
+          <div className="stat-item">
+            <h3>40 LPA</h3>
+            <p>Highest Salary</p>
+          </div>
+          <div className="stat-item">
+            <h3>15 LPA</h3>
+            <p>Average Salary</p>
+          </div>
+          <div className="stat-item">
+            <h3>700+</h3>
+            <p>Hiring Partners</p>
+          </div>
+        </div>
+        <a href="#" className="download-btn">Download Placement Report</a>
+      </section>
+
+
+
+     
+       
+     
+        <div align='justify' className=" p-5 bg-black">
+              <section className="partners">
+             
+              </section>
+              <section className="description">
+                
+              </section>
+        </div>
+        
+     
 
 
 
@@ -658,9 +626,122 @@ export default function Course() {
 
 
 
+  <h1 className="text-black " style={{marginLeft:"13%"}}>Who we've helped</h1>
 
+  <marquee behavior="" direction="right"  className='' style={{marginTop:"-7%"}} >
+                        <label><img src={accenture} /></label>
+                        <label><img src={amazon} /></label>
+                        <label><img src={biz2credit} /></label>
+                        <label><img src={blenheim} /></label>
+                        <label><img src={brigei2i} /></label>
+                        <label><img src={capgemini} /></label>
+                        <label><img src={citi} /></label>
+                        
+                        <label><img src={converhytics} /></label>
+                        <label><img src={genpact} /></label>
+                        <label><img src={Google} /></label>
+                        <label><img src={groww} /></label>
+                        <label><img src={HDFC} /></label>
+                        <label><img src={Kmart} /></label>
+                        <label><img src={KMGP} /></label>
+                        <label><img src={mahindra} /></label>
+                        <label><img src={Marketine} /></label>
+                        <label><img src={Microsoft} /></label>
+                        <label><img src={MIQ} /></label>
+                        <label><img src={Netflix} /></label>
+                        <label><img src={Novartis} /></label>
+                        <label><img src={paisabazzar} /></label>
+                        <label><img src={Quantiphi} /></label>
+                        <label><img src={Target} /></label>
+                        <label><img src={Tatainsight} /></label>
+                        <label><img src={TATA} /></label>
+                        <label><img src={ValueLabs} /></label>
+                        <label><img src={Vedantu} /></label>
+                        <label><img src={Zigram} /></label>
+                        <label><img src={Zip} /></label>
+                        <label><img src={Zomato} /></label>
+                        <label><img src={Walmart} /></label>
+                      
 
+</marquee>
 
+<marquee behavior="" direction="left"  className='' style={{marginTop:"-7%"}} >
+                        <label><img src={accenture} /></label>
+                        <label><img src={amazon} /></label>
+                        <label><img src={biz2credit} /></label>
+                        <label><img src={blenheim} /></label>
+                        <label><img src={brigei2i} /></label>
+                        <label><img src={capgemini} /></label>
+                        <label><img src={citi} /></label>
+                        
+                        <label><img src={converhytics} /></label>
+                        <label><img src={genpact} /></label>
+                        <label><img src={Google} /></label>
+                        <label><img src={groww} /></label>
+                        <label><img src={HDFC} /></label>
+                        <label><img src={Kmart} /></label>
+                        <label><img src={KMGP} /></label>
+                        <label><img src={mahindra} /></label>
+                        <label><img src={Marketine} /></label>
+                        <label><img src={Microsoft} /></label>
+                        <label><img src={MIQ} /></label>
+                        <label><img src={Netflix} /></label>
+                        <label><img src={Novartis} /></label>
+                        <label><img src={paisabazzar} /></label>
+                        <label><img src={Quantiphi} /></label>
+                        <label><img src={Target} /></label>
+                        <label><img src={Tatainsight} /></label>
+                        <label><img src={TATA} /></label>
+                        <label><img src={ValueLabs} /></label>
+                        <label><img src={Vedantu} /></label>
+                        <label><img src={Zigram} /></label>
+                        <label><img src={Zip} /></label>
+                        <label><img src={Zomato} /></label>
+                        <label><img src={Walmart} /></label>
+                      
+
+</marquee>
+
+<marquee behavior="right" direction="right"  className='' style={{marginTop:"-7%"}}>
+                        <label><img src={accenture} /></label>
+                        <label><img src={amazon} /></label>
+                        <label><img src={biz2credit} /></label>
+                        <label><img src={blenheim} /></label>
+                        <label><img src={brigei2i} /></label>
+                        <label><img src={capgemini} /></label>
+                        <label><img src={citi} /></label>
+                        
+                        <label><img src={converhytics} /></label>
+                        <label><img src={genpact} /></label>
+                        <label><img src={Google} /></label>
+                        <label><img src={groww} /></label>
+                        <label><img src={HDFC} /></label>
+                        <label><img src={Kmart} /></label>
+                        <label><img src={KMGP} /></label>
+                        <label><img src={mahindra} /></label>
+                        <label><img src={Marketine} /></label>
+                        <label><img src={Microsoft} /></label>
+                        <label><img src={MIQ} /></label>
+                        <label><img src={Netflix} /></label>
+                        <label><img src={Novartis} /></label>
+                        <label><img src={paisabazzar} /></label>
+                        <label><img src={Quantiphi} /></label>
+                        <label><img src={Target} /></label>
+                        <label><img src={Tatainsight} /></label>
+                        <label><img src={TATA} /></label>
+                        <label><img src={ValueLabs} /></label>
+                        <label><img src={Vedantu} /></label>
+                        <label><img src={Zigram} /></label>
+                        <label><img src={Zip} /></label>
+                        <label><img src={Zomato} /></label>
+                        <label><img src={Walmart} /></label>
+                      
+
+</marquee>
+    
+
+  
+   
 <div style={{backgroundColor:'black' , width:'100%',  color:'white'}}>
       <div  align='center'>
         <br />
@@ -744,11 +825,22 @@ export default function Course() {
   </div>
       <br />
 
-    
 
-      <div className="">
-        <h1 className="a-program">A flex program created</h1>
-        <h1 className="just-for-u"><u className="">Just for you!</u></h1>
+      <div className="mt-5 ms-5 text-dark">
+               
+                 
+              
+              
+         
+                    
+            
+    
+             
+      </div>
+
+     
+      <h1 className="a-program">A flex program created</h1>
+      <h1 className="just-for-u"><u className="">Just for you!</u></h1>
 
 <div align='justify' className="row ms-5 m-auto text-black">
   <div className="col-md-6 p-0 m-3 first-row">
@@ -824,235 +916,24 @@ export default function Course() {
 
 
 
-          <div className="Slider text-dark">
-                <h1 style={{ marginLeft: '250px' }}>Who we've helped</h1>
-                <div className="logos">
-                    <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                    <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                    
-                </div>
-    
-                <div className="Reverse-Slider">
-                    <div className="logos">
-                        <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                        <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                    </div>
-                </div>
-    
-                <div className="logos">
-                    <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                    <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                </div>
-            </div>
-<br /><br />
 
-        <h1 className="course-fees">Course</h1>
-        <h1 className="course-red"><u className="job-headu">fees</u></h1>
+
+
+
+
+        <h1 className="course-fees">Course <span className="ms-0 job-headu"><u>fees</u></span></h1>
+        <h1 className=""><u ></u></h1>
         <br />
         <br />
         <div className="feeeees">
           <button className="Tution-fees"><u>Tution Fees</u></button>
           <button className="career-fees"><u>Career Services Fees</u></button>
         </div>
-        <br />
-        <br />
-        <br />
-        <div className="cards-in-line">
-          <div className="card">
-            <div className="pricing-block-content">
+        
+
+        <div align='center' className="d-flex " style={{marginLeft:"10rem"}}>
+          <div className="card  me-3" style={{width:"40%",height:"100%"}}>
+            <div className="">
               <p className="pricing-plan">Premium</p>
               <div className="price-value" data-currency="$ USD" data-currency-simple="USD">
                 <p className="price-company">AlmaBetter + Microsoft</p>
@@ -1118,13 +999,15 @@ export default function Course() {
               </ul>
               <br />
               <button className="button ">Enroll now</button>
+              <br />
               <br />
               <button className="button2"> Talk to our admission team</button>
             </div>
           </div>
-          {/* From Uiverse.io by absoluteSTrange */} 
-          <div className="card2">
-            <div className="pricing-block-content">
+
+
+          <div className="card " style={{width:"40%",height:"100%"}}>
+            <div className="">
               <p className="pricing-plan">Premium</p>
               <div className="price-value" data-currency="$ USD" data-currency-simple="USD">
                 <p className="price-company">AlmaBetter + Microsoft</p>
@@ -1191,13 +1074,13 @@ export default function Course() {
               <br />
               <button className="button ">Enroll now</button>
               <br />
+              <br />
               <button className="button2"> Talk to our admission team</button>
-              <br /><br /><br /><br />
             </div>
           </div>
         </div>
-      </div>
-    </div>
+      
+   
     <br />
     <br />
 
@@ -1212,7 +1095,7 @@ export default function Course() {
 
 
 
-</div>
+
 
 </>
   );
