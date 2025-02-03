@@ -283,7 +283,7 @@ export default function Course() {
   return (
     <>
     <Header></Header>
-    <div className="main-section">
+   
 
   
 
@@ -658,8 +658,119 @@ export default function Course() {
 
 
 
+  <h1 className="text-black " style={{marginLeft:"13%"}}>Who we've helped</h1>
 
+  <marquee behavior="" direction="right"  className='' style={{marginTop:"-7%"}} >
+                        <label><img src={accenture} /></label>
+                        <label><img src={amazon} /></label>
+                        <label><img src={biz2credit} /></label>
+                        <label><img src={blenheim} /></label>
+                        <label><img src={brigei2i} /></label>
+                        <label><img src={capgemini} /></label>
+                        <label><img src={citi} /></label>
+                        
+                        <label><img src={converhytics} /></label>
+                        <label><img src={genpact} /></label>
+                        <label><img src={Google} /></label>
+                        <label><img src={groww} /></label>
+                        <label><img src={HDFC} /></label>
+                        <label><img src={Kmart} /></label>
+                        <label><img src={KMGP} /></label>
+                        <label><img src={mahindra} /></label>
+                        <label><img src={Marketine} /></label>
+                        <label><img src={Microsoft} /></label>
+                        <label><img src={MIQ} /></label>
+                        <label><img src={Netflix} /></label>
+                        <label><img src={Novartis} /></label>
+                        <label><img src={paisabazzar} /></label>
+                        <label><img src={Quantiphi} /></label>
+                        <label><img src={Target} /></label>
+                        <label><img src={Tatainsight} /></label>
+                        <label><img src={TATA} /></label>
+                        <label><img src={ValueLabs} /></label>
+                        <label><img src={Vedantu} /></label>
+                        <label><img src={Zigram} /></label>
+                        <label><img src={Zip} /></label>
+                        <label><img src={Zomato} /></label>
+                        <label><img src={Walmart} /></label>
+                      
 
+</marquee>
+
+<marquee behavior="" direction="left"  className='' style={{marginTop:"-7%"}} >
+                        <label><img src={accenture} /></label>
+                        <label><img src={amazon} /></label>
+                        <label><img src={biz2credit} /></label>
+                        <label><img src={blenheim} /></label>
+                        <label><img src={brigei2i} /></label>
+                        <label><img src={capgemini} /></label>
+                        <label><img src={citi} /></label>
+                        
+                        <label><img src={converhytics} /></label>
+                        <label><img src={genpact} /></label>
+                        <label><img src={Google} /></label>
+                        <label><img src={groww} /></label>
+                        <label><img src={HDFC} /></label>
+                        <label><img src={Kmart} /></label>
+                        <label><img src={KMGP} /></label>
+                        <label><img src={mahindra} /></label>
+                        <label><img src={Marketine} /></label>
+                        <label><img src={Microsoft} /></label>
+                        <label><img src={MIQ} /></label>
+                        <label><img src={Netflix} /></label>
+                        <label><img src={Novartis} /></label>
+                        <label><img src={paisabazzar} /></label>
+                        <label><img src={Quantiphi} /></label>
+                        <label><img src={Target} /></label>
+                        <label><img src={Tatainsight} /></label>
+                        <label><img src={TATA} /></label>
+                        <label><img src={ValueLabs} /></label>
+                        <label><img src={Vedantu} /></label>
+                        <label><img src={Zigram} /></label>
+                        <label><img src={Zip} /></label>
+                        <label><img src={Zomato} /></label>
+                        <label><img src={Walmart} /></label>
+                      
+
+</marquee>
+
+<marquee behavior="right" direction="right"  className='' style={{marginTop:"-7%"}}>
+                        <label><img src={accenture} /></label>
+                        <label><img src={amazon} /></label>
+                        <label><img src={biz2credit} /></label>
+                        <label><img src={blenheim} /></label>
+                        <label><img src={brigei2i} /></label>
+                        <label><img src={capgemini} /></label>
+                        <label><img src={citi} /></label>
+                        
+                        <label><img src={converhytics} /></label>
+                        <label><img src={genpact} /></label>
+                        <label><img src={Google} /></label>
+                        <label><img src={groww} /></label>
+                        <label><img src={HDFC} /></label>
+                        <label><img src={Kmart} /></label>
+                        <label><img src={KMGP} /></label>
+                        <label><img src={mahindra} /></label>
+                        <label><img src={Marketine} /></label>
+                        <label><img src={Microsoft} /></label>
+                        <label><img src={MIQ} /></label>
+                        <label><img src={Netflix} /></label>
+                        <label><img src={Novartis} /></label>
+                        <label><img src={paisabazzar} /></label>
+                        <label><img src={Quantiphi} /></label>
+                        <label><img src={Target} /></label>
+                        <label><img src={Tatainsight} /></label>
+                        <label><img src={TATA} /></label>
+                        <label><img src={ValueLabs} /></label>
+                        <label><img src={Vedantu} /></label>
+                        <label><img src={Zigram} /></label>
+                        <label><img src={Zip} /></label>
+                        <label><img src={Zomato} /></label>
+                        <label><img src={Walmart} /></label>
+                      
+
+</marquee>
+    
 
 <div style={{backgroundColor:'black' , width:'100%',  color:'white'}}>
       <div  align='center'>
@@ -744,11 +855,193 @@ export default function Course() {
   </div>
       <br />
 
-    
 
-      <div className="">
-        <h1 className="a-program">A flex program created</h1>
-        <h1 className="just-for-u"><u className="">Just for you!</u></h1>
+      <div className="mt-5 ms-5 text-dark">
+               
+                 
+              
+              
+                    <div className="">
+                        {/* <img src={accenture} />
+                        <img src={amazon} />
+                        <img src={biz2credit} />
+                        <img src={blenheim} />
+                        <img src={brigei2i} />
+                        <img src={capgemini} />
+                        <img src={citi} />
+                        <img src={converhytics} />
+                        <img src={genpact} />
+                        <img src={Google} />
+                        <img src={groww} />
+                        <img src={HDFC} />
+                        <img src={Kmart} />
+                        <img src={KMGP} />
+                        <img src={mahindra} />
+                        <img src={Marketine} />
+                        <img src={Microsoft} />
+                        <img src={MIQ} />
+                        <img src={Netflix} />
+                        <img src={Novartis} />
+                        <img src={paisabazzar} />
+                        <img src={Quantiphi} />
+                        <img src={Target} />
+                        <img src={Tatainsight} />
+                        <img src={TATA} />
+                        <img src={ValueLabs} />
+                        <img src={Vedantu} />
+                        <img src={Zigram} />
+                        <img src={Zip} />
+                        <img src={Zomato} />
+                        <img src={Walmart} /> */}
+                    </div>
+                    
+            
+    
+                {/* <div className="">
+                    <div className="">
+                        <div className="">
+                        <img src={accenture} />
+                        <img src={amazon} />
+                        <img src={biz2credit} />
+                        <img src={blenheim} />
+                        <img src={brigei2i} />
+                        <img src={capgemini} />
+                        <img src={citi} />
+                        <img src={converhytics} />
+                        <img src={genpact} />
+                        <img src={Google} />
+                        <img src={groww} />
+                        <img src={HDFC} />
+                        <img src={Kmart} />
+                        <img src={KMGP} />
+                        <img src={mahindra} />
+                        <img src={Marketine} />
+                        <img src={Microsoft} />
+                        <img src={MIQ} />
+                        <img src={Netflix} />
+                        <img src={Novartis} />
+                        <img src={paisabazzar} />
+                        <img src={Quantiphi} />
+                        <img src={Target} />
+                        <img src={Tatainsight} />
+                        <img src={TATA} />
+                        <img src={ValueLabs} />
+                        <img src={Vedantu} />
+                        <img src={Zigram} />
+                        <img src={Zip} />
+                        <img src={Zomato} />
+                        <img src={Walmart} />
+                    </div>
+
+                        <div className="">
+                        <img src={accenture} />
+                        <img src={amazon} />
+                        <img src={biz2credit} />
+                        <img src={blenheim} />
+                        <img src={brigei2i} />
+                        <img src={capgemini} />
+                        <img src={citi} />
+                        <img src={converhytics} />
+                        <img src={genpact} />
+                        <img src={Google} />
+                        <img src={groww} />
+                        <img src={HDFC} />
+                        <img src={Kmart} />
+                        <img src={KMGP} />
+                        <img src={mahindra} />
+                        <img src={Marketine} />
+                        <img src={Microsoft} />
+                        <img src={MIQ} />
+                        <img src={Netflix} />
+                        <img src={Novartis} />
+                        <img src={paisabazzar} />
+                        <img src={Quantiphi} />
+                        <img src={Target} />
+                        <img src={Tatainsight} />
+                        <img src={TATA} />
+                        <img src={ValueLabs} />
+                        <img src={Vedantu} />
+                        <img src={Zigram} />
+                        <img src={Zip} />
+                        <img src={Zomato} />
+                        <img src={Walmart} />
+                    </div>
+                    </div>
+                </div> */}
+    
+                {/* <div className="logos">
+                    <div className="logos-slide">
+                        <img src={accenture} />
+                        <img src={amazon} />
+                        <img src={biz2credit} />
+                        <img src={blenheim} />
+                        <img src={brigei2i} />
+                        <img src={capgemini} />
+                        <img src={citi} />
+                        <img src={converhytics} />
+                        <img src={genpact} />
+                        <img src={Google} />
+                        <img src={groww} />
+                        <img src={HDFC} />
+                        <img src={Kmart} />
+                        <img src={KMGP} />
+                        <img src={mahindra} />
+                        <img src={Marketine} />
+                        <img src={Microsoft} />
+                        <img src={MIQ} />
+                        <img src={Netflix} />
+                        <img src={Novartis} />
+                        <img src={paisabazzar} />
+                        <img src={Quantiphi} />
+                        <img src={Target} />
+                        <img src={Tatainsight} />
+                        <img src={TATA} />
+                        <img src={ValueLabs} />
+                        <img src={Vedantu} />
+                        <img src={Zigram} />
+                        <img src={Zip} />
+                        <img src={Zomato} />
+                        <img src={Walmart} />
+                    </div>
+                    <div className="logos-slide">
+                        <img src={accenture} />
+                        <img src={amazon} />
+                        <img src={biz2credit} />
+                        <img src={blenheim} />
+                        <img src={brigei2i} />
+                        <img src={capgemini} />
+                        <img src={citi} />
+                        <img src={converhytics} />
+                        <img src={genpact} />
+                        <img src={Google} />
+                        <img src={groww} />
+                        <img src={HDFC} />
+                        <img src={Kmart} />
+                        <img src={KMGP} />
+                        <img src={mahindra} />
+                        <img src={Marketine} />
+                        <img src={Microsoft} />
+                        <img src={MIQ} />
+                        <img src={Netflix} />
+                        <img src={Novartis} />
+                        <img src={paisabazzar} />
+                        <img src={Quantiphi} />
+                        <img src={Target} />
+                        <img src={Tatainsight} />
+                        <img src={TATA} />
+                        <img src={ValueLabs} />
+                        <img src={Vedantu} />
+                        <img src={Zigram} />
+                        <img src={Zip} />
+                        <img src={Zomato} />
+                        <img src={Walmart} />
+                    </div>
+                </div> */}
+      </div>
+
+     
+      <h1 className="a-program">A flex program created</h1>
+      <h1 className="just-for-u"><u className="">Just for you!</u></h1>
 
 <div align='justify' className="row ms-5 m-auto text-black">
   <div className="col-md-6 p-0 m-3 first-row">
@@ -824,220 +1117,10 @@ export default function Course() {
 
 
 
-          <div className="Slider text-dark">
-                <h1 style={{ marginLeft: '250px' }}>Who we've helped</h1>
-                <div className="logos">
-                    <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                    <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                    
-                </div>
-    
-                <div className="Reverse-Slider">
-                    <div className="logos">
-                        <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                        <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                    </div>
-                </div>
-    
-                <div className="logos">
-                    <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                    <div className="logos-slide">
-                        <img src={accenture} />
-                        <img src={amazon} />
-                        <img src={biz2credit} />
-                        <img src={blenheim} />
-                        <img src={brigei2i} />
-                        <img src={capgemini} />
-                        <img src={citi} />
-                        <img src={converhytics} />
-                        <img src={genpact} />
-                        <img src={Google} />
-                        <img src={groww} />
-                        <img src={HDFC} />
-                        <img src={Kmart} />
-                        <img src={KMGP} />
-                        <img src={mahindra} />
-                        <img src={Marketine} />
-                        <img src={Microsoft} />
-                        <img src={MIQ} />
-                        <img src={Netflix} />
-                        <img src={Novartis} />
-                        <img src={paisabazzar} />
-                        <img src={Quantiphi} />
-                        <img src={Target} />
-                        <img src={Tatainsight} />
-                        <img src={TATA} />
-                        <img src={ValueLabs} />
-                        <img src={Vedantu} />
-                        <img src={Zigram} />
-                        <img src={Zip} />
-                        <img src={Zomato} />
-                        <img src={Walmart} />
-                    </div>
-                </div>
-            </div>
-<br /><br />
+
+
+
+
 
         <h1 className="course-fees">Course</h1>
         <h1 className="course-red"><u className="job-headu">fees</u></h1>
@@ -1196,7 +1279,7 @@ export default function Course() {
             </div>
           </div>
         </div>
-      </div>
+      
     </div>
     <br />
     <br />
@@ -1212,7 +1295,7 @@ export default function Course() {
 
 
 
-</div>
+
 
 </>
   );
