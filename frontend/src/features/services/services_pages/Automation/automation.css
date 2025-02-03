@@ -340,7 +340,6 @@ h2{
 
 .auto_slide_img img{
     height: 220px;
-    margin-left: -80px;
     transition: all 0.3s ease-in-out; 
 }
 
@@ -350,6 +349,8 @@ h2{
 .auto_slide:hover .auto_slide_img img{
     height: 240px;
 }
+
+
 
 .auto_image{
     display: flex;
@@ -388,7 +389,7 @@ h2{
 
 .btn{
     position: absolute;
-    font-size: 3em;
+    font-size: 2.5em;
     border-radius: 50%;
     height: 80px;
     width: 80px;

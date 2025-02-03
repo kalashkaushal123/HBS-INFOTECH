@@ -41,7 +41,6 @@ import { useRef } from 'react'
 export default function Automation() {
 
   const containerRef = useRef(null);
-  const clientRef = useRef(null);
 
   const scrollLeft = () => {
       containerRef.current.scrollBy({
@@ -57,17 +56,18 @@ export default function Automation() {
     });
   };
 
+  const clientRef = useRef(null);
 
   const Left = () => {
     clientRef.current.scrollBy({
-      left:-1000,
+      left:-1100,
       behavior: "smooth",
     });
   }
 
   const Right = () => {
     clientRef.current.scrollBy({
-      left:-1000,
+      left:1100,
       behavior: "smooth",
     });
   }
@@ -286,11 +286,11 @@ export default function Automation() {
       <section className='device'>
         <h2>Who we’ve helped</h2>
 
-        <div>
-          <img src={mobile} alt="" height='50px' />
-          <img src={orange} alt="" height='70px' className='dev_img' />
-          <img src={dvs} alt="" height='35px' className='dev_img' />
-          <img src={openBet} alt="" height='40px' className='dev_img' />
+        <div className='flex my-24'>
+          <img src={mobile} alt="" className='h-[3.5em] text-gray-500' />
+          <img src={orange} alt="" className='h-[4.5em] text-gray-500 ml-[4.5em]'/>
+          <img src={dvs} alt="" className='h-[2.5em] text-gray-500 ml-[4.5em]'/>
+          <img src={openBet} alt="" className='h-[2.5em] text-gray-500 ml-[4.5em]'/>
         </div>
       </section>
 
@@ -302,7 +302,7 @@ export default function Automation() {
 
         <div className='case_box'>
           <div className='case_img'>
-            <img src={case1} alt="" />
+            <img src={case1} alt="" className='h-[20em]' />
           </div>
           <div className='case_text'>
             <a href="">
@@ -317,7 +317,7 @@ export default function Automation() {
       
         <div className='case_box box1'>
           <div className='case_img'>
-            <img src={case2} alt="" />
+            <img src={case2} alt="" className='h-[20em]' />
           </div>
           <div className='case_text1'>
             <a href="">
@@ -443,7 +443,7 @@ export default function Automation() {
 
             <div className="auto_slide" style={{marginLeft:'160px'}}>
               <div className="auto_slide_img">
-                <img src={slide1} alt="" />
+                <img src={slide1} alt=""/>
               </div>
               <div className="auto_slide_text">
                 <div className="auto_image">
@@ -528,7 +528,7 @@ export default function Automation() {
 
           </div>
           <button className='btn right' onClick={scrollRight}>&#8250;</button>
-        </div>
+      </div>
 
 
       <div className='contain'>
@@ -569,7 +569,7 @@ export default function Automation() {
 
         <div style={{display:'flex'}}>
           <div className='auto_gen'> 
-            <img src={card1} alt="" height='300px' />
+            <img src={card1} alt="" className='h-[20em]' />
             <div className='auto_gen_text'>
               Generative AI development services
             </div>
@@ -580,7 +580,7 @@ export default function Automation() {
           </div>
 
           <div className='auto_gen'> 
-            <img src={card2} alt="" height='300px' />
+            <img src={card2} alt=""  className='h-[20em]' />
             <div className='auto_gen_text'>
               Cloud consulting & services
             </div>
@@ -591,7 +591,7 @@ export default function Automation() {
           </div>
 
           <div className='auto_gen'> 
-            <img src={card3} alt="" height='300px' />
+            <img src={card3} alt=""  className='h-[20em]' />
             <div className='auto_gen_text'>
             Data science services
             </div>
@@ -611,7 +611,7 @@ export default function Automation() {
 
         <div style={{display:'flex'}}>
           <div className='auto_gen'> 
-            <img src={card4} alt="" height='300px' />
+            <img src={card4} alt="" className='h-[20em]' />
             <div className='auto_gen_text'>
             Financial services
             </div>
@@ -622,7 +622,7 @@ export default function Automation() {
           </div>
 
           <div className='auto_gen'> 
-            <img src={card5} alt="" height='300px' />
+            <img src={card5} alt="" className='h-[20em]' />
             <div className='auto_gen_text'>
             Telecom
             </div>
@@ -633,7 +633,7 @@ export default function Automation() {
           </div>
 
           <div className='auto_gen'> 
-            <img src={card6} alt="" height='300px' />
+            <img src={card6} alt="" className='h-[20em]' />
             <div className='auto_gen_text'>
             Sports betting
             </div>
