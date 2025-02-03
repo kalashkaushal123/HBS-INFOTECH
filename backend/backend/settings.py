@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'rest_framework',  # Django REST framework
     'corsheaders',  # CORS headers
     'rest_framework_simplejwt.token_blacklist',
+    'video',
+    'storages',
+    's3direct',
 
 ]
 
@@ -124,7 +127,11 @@ USE_I18N = True
 USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+# Add this if you're using custom static directories
+# STATICFILES_DIRS = [
+#     BASE_DIR / "static",
+# ]
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
@@ -164,11 +171,21 @@ SIMPLE_JWT = {
     'AUTH_TOKEN_CLASSES': ('rest_framework_simplejwt.tokens.AccessToken',),
 }
 
+# AWS S3 settings
 AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 AWS_STORAGE_BUCKET_NAME = 'hbs-infotech-video'
-AWS_S3_REGION_NAME = 'Asia Pacific (Mumbai) ap-south-1' 
-AWS_S3_SIGNATURE_VERSION = 's3v4'
+AWS_S3_REGION_NAME = 'ap-south-1'
+AWS_S3_ENDPOINT_URL = 'https://s3.amazonaws.com'
+
+S3DIRECT_DESTINATIONS = {
+    'primary_destination': {
+        'key': 'uploads/',
+        'allowed': ['image/jpg', 'image/jpeg', 'image/png', 'video/mp4'],
+    },
+}
+
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -20,4 +20,6 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include('my_auth.urls')),
+    path('api/', include('video.urls')),
+    path('s3direct/', include('s3direct.urls')),
 ]
