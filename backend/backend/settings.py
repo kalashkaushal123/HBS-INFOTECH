@@ -4,7 +4,6 @@ from urllib.parse import urlparse
 from dotenv import load_dotenv
 from datetime import timedelta
 
-
 load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -41,7 +40,6 @@ INSTALLED_APPS = [
     'video',
     'storages',
     's3direct',
-
 ]
 
 MIDDLEWARE = [
@@ -74,17 +72,11 @@ TEMPLATES = [
     },
 ]
 
-tmpPostgres = urlparse(os.getenv("DATABASE_URL"))
-
 # Database setup
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': tmpPostgres.path.replace('/', ''),
-        'USER': tmpPostgres.username,
-        'PASSWORD': tmpPostgres.password,
-        'HOST': tmpPostgres.hostname,
-        'PORT': 5432,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -155,7 +147,6 @@ REST_FRAMEWORK = {
 
 CORS_ALLOW_ALL_ORIGINS = True  # Allows all origins (can be more restrictive)
 
-
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
@@ -184,7 +175,6 @@ S3DIRECT_DESTINATIONS = {
         'allowed': ['image/jpg', 'image/jpeg', 'image/png', 'video/mp4'],
     },
 }
-
 
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 MEDIA_URL = f'https://{AWS_STORAGE_BUCKET_NAME}.s3.{AWS_S3_REGION_NAME}.amazonaws.com/'
