@@ -293,7 +293,7 @@ export default function Telecom() {
           <img src={bg_image} alt="" className='w-[1620px] max-h-[25em]'/>
 
           <div className=' absolute top-[60px] left-[280px]'>
-            <h2>Explore proven DevOps strategies for telecom operators</h2>
+            <h2 className='text-black'>Explore proven DevOps strategies for telecom operators</h2>
 
             <p className='text-[18px] text-center' style={{margin:'50px 350px 0px 130px'}}>Read this ebook on implementing DevOps in telecom to learn insights from Red Hat and Software Mind experts on enhancing cloud environments, mitigating challenges to adoption and more.</p>
 
@@ -404,7 +404,7 @@ export default function Telecom() {
 
         <div style={{backgroundColor:'#E8E8E8', marginTop:'8em', padding:'7.5em 10em'}}>
 
-          <h2 className='mb-[2.7em]'>Who we’ve helped</h2>
+          <h2 className='mb-[2.7em] text-black'>Who we’ve helped</h2>
 
           <marquee behavior="smooth" direction="left" className='m-0'>
           <div className='flex h-[3em]'>
@@ -655,7 +655,7 @@ export default function Telecom() {
               <div className='flex'>
                 <div className=' bg-white text-[1.7em] h-[2.2em] w-[2.2em] font-bold text-orange-700' style={{padding:'0.4em 0.7em', borderRadius:'50%'}}>1</div>
                 <div className='ml-[1em]'>
-                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold'>Get in touch</h4>
+                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold text-black'>Get in touch</h4>
                   <p className='w-[23em] text-[0.9em]'>Use the contact form on our website and our experts will reach out to talk with you.</p>
                 </div>
               </div>
@@ -664,7 +664,7 @@ export default function Telecom() {
               <div className='flex mt-[2em]'>
                 <div className=' bg-white text-[1.7em] h-[2.2em] w-[2.2em] font-bold text-orange-700' style={{padding:'0.4em 0.7em', borderRadius:'50%'}}>2</div>
                 <div className='ml-[1em]'>
-                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold'>Tell us about your goals</h4>
+                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold text-black'>Tell us about your goals</h4>
                   <p className='w-[23em] text-[0.9em]'>A discovery call helps us understand your business context and expectations.</p>
                 </div>
               </div>
@@ -673,7 +673,7 @@ export default function Telecom() {
               <div className='flex mt-[2em]'>
                 <div className=' bg-white text-[1.7em] h-[2.2em] w-[2.2em] font-bold text-orange-700' style={{padding:'0.4em 0.7em', borderRadius:'50%'}}>3</div>
                 <div className='ml-[1em]'>
-                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold'>Discuss the technical details</h4>
+                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold text-black'>Discuss the technical details</h4>
                   <p className='w-[23em] text-[0.9em]'>With an NDA in place, we can clarify the business needs and technical requirements.</p>
                 </div>
               </div>
@@ -683,7 +683,7 @@ export default function Telecom() {
               <div className='flex mt-[2em]'>
                 <div className=' bg-white text-[1.7em] h-[2.2em] w-[2.2em] font-bold text-orange-700' style={{padding:'0.4em 0.7em', borderRadius:'50%'}}>4</div>
                 <div className='ml-[1em]'>
-                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold'>Conduct deep dive sessions</h4>
+                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold text-black'>Conduct deep dive sessions</h4>
                   <p className='w-[23em] text-[0.9em]'>We will carry out technical deep dive sessions and audit current platforms, integrations and processes if needed.</p>
                 </div>
               </div>
@@ -694,7 +694,7 @@ export default function Telecom() {
               <div className='flex'>
                 <div className=' bg-white text-[1.7em] h-[2.2em] w-[2.2em] font-bold text-orange-700' style={{padding:'0.4em 0.7em', borderRadius:'50%'}}>5</div>
                 <div className='ml-[1em]'>
-                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold'>Accept the cooperation proposal</h4>
+                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold text-black'>Accept the cooperation proposal</h4>
                   <p className='w-[23em] text-[0.9em]'>The proposal outlines the scope, team setup, timeline and budget we both agree on.</p>
                 </div>
               </div>
@@ -703,7 +703,7 @@ export default function Telecom() {
               <div className='flex mt-[2em]'>
                 <div className=' bg-white text-[1.7em] h-[2.2em] w-[2.2em] font-bold text-orange-700' style={{padding:'0.4em 0.7em', borderRadius:'50%'}}>6</div>
                 <div className='ml-[1em]'>
-                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold'>Let’s kick off the project</h4>
+                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold text-black'>Let’s kick off the project</h4>
                   <p className='w-[23em] text-[0.9em]'>With all the formalities done, we can establish ways of working and start the project.</p>
                 </div>
               </div>
@@ -712,7 +712,7 @@ export default function Telecom() {
               <div className='flex mt-[2em]'>
                 <div className=' bg-white text-[1.7em] h-[2.2em] w-[2.2em] font-bold text-orange-700' style={{padding:'0.4em 0.7em', borderRadius:'50%'}}>7</div>
                 <div className='ml-[1em]'>
-                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold'>Establish further cooperation</h4>
+                  <h4 className='mt-[0.7em] text-[1.2em] font-semibold text-black'>Establish further cooperation</h4>
                   <p className='w-[23em] text-[0.9em]'>After go-live, we ensure your services run smoothly by providing 24/7 SLA tailored to your needs.</p>
                 </div>
               </div>
@@ -728,10 +728,10 @@ export default function Telecom() {
         <div>
 
         <div className='auto_box m-[10em]'>
-          <h2 className='auto_box_heading'>
+          <h2 className='auto_box_heading  text-black'>
             Technologies
           </h2>
-          <p>
+          <p className=' text-black'>
             We deliver cross-functional teams that work with every crucial cloud technology and tool on the market. Here are just a few of the cloud-related tech stacks we operate with.
           </p>
         </div>
@@ -749,49 +749,49 @@ export default function Telecom() {
           <div className='flex'>
             <div className='w-[24.2em] p-[1.5em]' style={{border:'1px solid grey', borderRadius:'0.5em'}}>
               <div  onClick={() => setIsVisible5(!isVisible5)}>
-                <button className='telecom_box_heading text-[1.3em]'>Platforms</button>
+                <button className='telecom_box_heading text-[1.3em]  text-black'>Platforms</button>
               </div>
               <div>
                 <ul style={{margin:'1.1em 0em 0em 0em', padding:'0em', display: isVisible5 ? "block" : "none"}}>
-                  <li style={{margin:'0em'}}>UC: Cisco BroadWorks, Webex</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>5G: Casa Systems</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>MRF: Dialogic Powermedia XMS</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>SBC: Oracle Session Director</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>Opensource: OpenSIPS, Kamailio, FreeSwitch</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>NT Inventory: Netcracker</li>
+                  <li className=' text-black' style={{margin:'0em'}}>UC: Cisco BroadWorks, Webex</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>5G: Casa Systems</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>MRF: Dialogic Powermedia XMS</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>SBC: Oracle Session Director</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>Opensource: OpenSIPS, Kamailio, FreeSwitch</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>NT Inventory: Netcracker</li>
                 </ul>
               </div>
             </div>
 
             <div className='w-[24.2em] p-[1.5em] ml-[1em]' style={{border:'1px solid grey', borderRadius:'0.5em'}}>
               <div  onClick={() => setIsVisible6(!isVisible6)}>
-                <button className='telecom_box_heading text-[1.3em]'>Infrastructure and cloud</button>
+                <button className='telecom_box_heading text-[1.3em]  text-black'>Infrastructure and cloud</button>
               </div>
               <div>
                 <ul style={{margin:'1.1em 0em 0em 0em', padding:'0em', display: isVisible6 ? "block" : "none"}}>
-                  <li style={{margin:'0em'}}>Docker, Kubernetes</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>Ansible and Ansible Tower, Chef, Terraform</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>GCP, AWS, Azure</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>KVM, VMWare, Proxmox, Openstack</li>
+                  <li className=' text-black' style={{margin:'0em'}}>Docker, Kubernetes</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>Ansible and Ansible Tower, Chef, Terraform</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>GCP, AWS, Azure</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>KVM, VMWare, Proxmox, Openstack</li>
                 </ul>
               </div>
             </div>
 
             <div className='w-[24.2em] p-[1.5em] ml-[1em]' style={{border:'1px solid grey', borderRadius:'0.5em'}}>
               <div  onClick={() => setIsVisible7(!isVisible7)}>
-                <button className='telecom_box_heading text-[1.3em]'>Software technology stack</button>
+                <button className='telecom_box_heading text-[1.3em]  text-black'>Software technology stack</button>
               </div>
               <div>
                 <ul style={{margin:'1.1em 0em 0em 0em', padding:'0em', display: isVisible7 ? "block" : "none"}}>
-                  <li style={{margin:'0em'}}>Linux-based systems</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>SQL: MySQL, PostgreSQL, Oracle</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>NoSQL: MongoDB, Apache Cassandra, Redis, Hazelcast, KeyDB</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>LDAP: OpenDJ, OpenLDAP</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>Java: Spring Boot, Spring Reactive, Quarkus</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>Java EE/JAIN SLEE: Telscale, Metaswitch Rhino TAS, Jboss/Wildfly</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>Front-end: Angular, React, NodeJS</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>CI/CD: Gitlab, Jenkins, Teamcity, Gherkin, Cucumber, Azure DevOps</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>QA: Selenium, Playwright, CafeSip, Sipp, MTS, Protractor, Karate</li>
+                  <li className=' text-black' style={{margin:'0em'}}>Linux-based systems</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>SQL: MySQL, PostgreSQL, Oracle</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>NoSQL: MongoDB, Apache Cassandra, Redis, Hazelcast, KeyDB</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>LDAP: OpenDJ, OpenLDAP</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>Java: Spring Boot, Spring Reactive, Quarkus</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>Java EE/JAIN SLEE: Telscale, Metaswitch Rhino TAS, Jboss/Wildfly</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>Front-end: Angular, React, NodeJS</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>CI/CD: Gitlab, Jenkins, Teamcity, Gherkin, Cucumber, Azure DevOps</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>QA: Selenium, Playwright, CafeSip, Sipp, MTS, Protractor, Karate</li>
                 </ul>
               </div>
             </div>
@@ -799,16 +799,16 @@ export default function Telecom() {
           <div>
           <div className='w-[24.2em] p-[1.5em] mt-[1em]' style={{border:'1px solid grey', borderRadius:'0.5em'}}>
               <div  onClick={() => setIsVisible8(!isVisible8)}>
-                <button style={{fontSize:'1.3em'}} className='telecom_box_heading'>Monitoring and observability</button>
+                <button style={{fontSize:'1.3em'}} className='telecom_box_heading  text-black'>Monitoring and observability</button>
               </div>
               <div>
                 <ul style={{margin:'1.1em 0em 0em 0em', padding:'0em', display: isVisible8 ? "block" : "none"}}>
-                  <li style={{margin:'0em'}}>Elasticsearch and Elastic APM</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>OpenSearch</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>Grafana Stack (Grafana, Loki, Prometheus, Tempo)</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>InfluxDB, Telegraf</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>OpenTelemetry, Jaeger</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>Homer</li>
+                  <li className=' text-black' style={{margin:'0em'}}>Elasticsearch and Elastic APM</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>OpenSearch</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>Grafana Stack (Grafana, Loki, Prometheus, Tempo)</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>InfluxDB, Telegraf</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>OpenTelemetry, Jaeger</li>
+                  <li className=' text-black' style={{margin:'1em 0em 0em 0em'}}>Homer</li>
                 </ul>
               </div>
             </div>
@@ -822,7 +822,7 @@ export default function Telecom() {
         <div>
 
         <div className='auto_box m-[10em]'>
-          <h2 className='auto_box_heading w-[10em]'>
+          <h2 className='auto_box_heading w-[10em] text-black'>
             Read articles about telecommunication software development
           </h2>
           <p className='ml-[4.5em]'>
@@ -979,7 +979,7 @@ export default function Telecom() {
 
         <div className='tele_software'>
           <div>
-            <h2 className='tele_software_heading'>Telecom software development - FAQ</h2>
+            <h2 className='tele_software_heading  text-black'>Telecom software development - FAQ</h2>
           </div>
 
           <div className='tele_software_box'>
@@ -1043,7 +1043,7 @@ export default function Telecom() {
         <section className='auto'>
                
           <div className='auto_box'>
-            <h2 className='auto_box_heading'>
+            <h2 className='auto_box_heading  text-black'>
               Looking for other software services?
             </h2>
             <p>
@@ -1054,14 +1054,14 @@ export default function Telecom() {
        
 
 
-          <h2 className='mt-[100px] mb-[60px]'>Engineering and consultancy that deliver value</h2>
+          <h2 className='mt-[100px] mb-[60px]  text-black'>Engineering and consultancy that deliver value</h2>
        
        
        
           <div className='flex'>
             <div className='telecom'> 
               <img src={card1} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text  text-black' style={{fontSize:'1.1em'}}>
                 Generative AI development services
               </div>
                  
@@ -1072,7 +1072,7 @@ export default function Telecom() {
        
             <div className='telecom'> 
               <img src={card2} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Cloud consulting & services
               </div>
                  
@@ -1083,7 +1083,7 @@ export default function Telecom() {
        
             <div className='telecom'> 
               <img src={card3} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
               Digital transformation services
               </div>
                  
@@ -1096,14 +1096,14 @@ export default function Telecom() {
                
        
        
-          <h2 className='mt-[100px] mb-[60px]'>Engineering expertise that supports industries</h2>
+          <h2 className='mt-[100px] mb-[60px] text-black'>Engineering expertise that supports industries</h2>
        
        
        
           <div style={{display:'flex'}}>
             <div className='telecom '> 
               <img src={card6} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Financial services
               </div>
                  
@@ -1114,7 +1114,7 @@ export default function Telecom() {
        
             <div className='telecom'> 
               <img src={card5} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Sports betting 
               </div>
                  
@@ -1125,7 +1125,7 @@ export default function Telecom() {
        
             <div className='telecom'> 
               <img src={card4} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Biotech & Healthcare
               </div>
                  

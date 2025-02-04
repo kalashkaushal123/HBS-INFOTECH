@@ -138,7 +138,7 @@ export default function FinancialServices() {
     
             <div className='auto'>
                   <div className='auto-text'>
-                    <h2>
+                    <h2 className=' text-black'>
                       Automation testing services increase accuracy & speed up delivery
                     </h2>
                     <p>
@@ -323,8 +323,8 @@ export default function FinancialServices() {
     
     
      
-        <div className='whole-div mb-[18em]' style={{marginTop:'100px' ,width:'100%', height:'500px' ,backgroundColor:'#F8F8F8'}}>  
-          <h2 className=' w-5/12'>Supporting organizations in the financial services industry with software solutions</h2>
+        <div className='whole-div mb-[18em]' style={{marginTop:'150px' ,width:'100%', height:'500px' ,backgroundColor:'#F8F8F8'}}>  
+          <h2 className=' w-5/12 text-black'>Supporting organizations in the financial services industry with software solutions</h2>
           
           <div className='para'>
                     <div>
@@ -332,7 +332,7 @@ export default function FinancialServices() {
                       <div className='com'>
                         <div className='com_icon'><img src={checkbox} style={{width:'30px',height:'30px', marginTop:'10px',marginLeft:'10px'}} /></div>
                         <div className='com-text'>
-                          <h5 style={{fontWeight:'600'}}>Banks and financial institutions</h5>
+                          <h5 className=' text-black' style={{fontWeight:'600'}}>Banks and financial institutions</h5>
                           <p>Strengthen operations and security with our custom banking solutions. Enhance decision-making and improve financial performance through predictive analytics and risk management.</p>
                         </div>
                       </div>
@@ -341,7 +341,7 @@ export default function FinancialServices() {
                       <div className='com mt-1'>
                         <div className='com_icon'><img src={checkbox} style={{width:'30px',height:'30px', marginTop:'10px',marginLeft:'10px'}} /></div>
                           <div className='com-text'>
-                            <h5 style={{fontWeight:'600'}}>Fintech startups and scaleups</h5>
+                            <h5 className=' text-black' style={{fontWeight:'600'}}>Fintech startups and scaleups</h5>
                             <p>Scale business efficiently with innovative experts who leverage cost-effective cloud computing infrastructure to support growth, compete effectively and accelerate time-to-market.</p>
                         </div>
                       </div>
@@ -350,7 +350,7 @@ export default function FinancialServices() {
                       <div className='com mt-3'>
                         <div className='com_icon'><img src={checkbox} style={{width:'30px',height:'30px', marginTop:'10px',marginLeft:'10px'}} /></div>
                           <div className='com-text'>
-                            <h5 style={{fontWeight:'600'}}>Insurance companies</h5>
+                            <h5 className=' text-black' style={{fontWeight:'600'}}>Insurance companies</h5>
                             <p>Transform ways of working with digital solutions and process automation. Our AI and ML technologies help streamline claims processing and risk assessment, while improving customer satisfaction and operational efficiency.</p>
                         </div>  
                       </div>
@@ -359,7 +359,7 @@ export default function FinancialServices() {
                       <div className='com'>
                         <div className='com_icon'><img src={checkbox} style={{width:'30px',height:'30px', marginTop:'10px',marginLeft:'10px'}} /></div>
                           <div className='com-text'>
-                            <h5 style={{fontWeight:'600'}}>Investment firms</h5>
+                            <h5 className=' text-black' style={{fontWeight:'600'}}>Investment firms</h5>
                             <p>Optimize portfolio management, trading and analytics with our advanced tools. Gain predictive insights and make informed decisions that enhance returns, minimize risks and provide a competitive edge.</p>
                         </div>
                       </div>
@@ -370,7 +370,7 @@ export default function FinancialServices() {
               <div className='com'>
                 <div className='com_icon'><img src={checkbox} style={{width:'30px',height:'30px', marginTop:'10px',marginLeft:'10px'}} /></div>
                 <div className='com-text'>
-                  <h5 ><strong>Payment processors</strong></h5>
+                  <h5 className=' text-black' ><strong>Payment processors</strong></h5>
                   <p>Streamline your transaction processes and ensure compliance with our integration solutions. Advanced cybersecurity measures protect sensitive data and build trust with clients and partners.</p>
                 </div>
               </div>
@@ -378,7 +378,7 @@ export default function FinancialServices() {
               <div className='com'>
                 <div className='com_icon'><img src={checkbox} style={{width:'30px',height:'30px', marginTop:'10px',marginLeft:'10px'}} /></div>
                 <div className='com-text'>
-                  <h5 ><strong>Wealth management firms</strong></h5>
+                  <h5 className=' text-black' ><strong>Wealth management firms</strong></h5>
                   <p>Enhance wealth management services with tailored solutions that offer portfolio optimization and customer insights. Scalable cloud infrastructure supports growth, while robust cybersecurity protects client data and transactions.</p>
                 </div>
               </div>
@@ -386,7 +386,7 @@ export default function FinancialServices() {
               <div className='com'>
                 <div className='com_icon'><img src={checkbox} style={{width:'30px',height:'30px', marginTop:'10px',marginLeft:'10px'}} /></div>
                 <div className='com-text'>
-                  <h5 ><strong>Regulatory technology (RegTech) companies</strong></h5>
+                  <h5 className=' text-black' ><strong>Regulatory technology (RegTech) companies</strong></h5>
                   <p>Manage compliance efficiently with our automation strategies. Reduce the burden of manual reporting and mitigate risks, while ensuring scalability and efficiency in meeting regulatory demands.</p>
                 </div>
               </div>
@@ -394,7 +394,7 @@ export default function FinancialServices() {
               <div className='com'>
                 <div className='com_icon'><img src={checkbox} style={{width:'30px',height:'30px', marginTop:'10px',marginLeft:'10px'}} /></div>
                 <div className='com-text'>
-                  <h5 ><strong>Lending institutions</strong></h5>
+                  <h5 className=' text-black' ><strong>Lending institutions</strong></h5>
                   <p>Improve loan origination, underwriting and servicing processes. Implement data-driven risk assessment and AI-powered credit scoring models that boost decision-making and customer satisfaction.</p>
                 </div>
               </div>
@@ -408,7 +408,7 @@ export default function FinancialServices() {
 
         <div style={{backgroundColor:'#E8E8E8', marginTop:'8em', padding:'7.5em 10em'}}>
 
-          <h2 className='mb-[2.7em]'>Who we’ve helped</h2>
+          <h2 className='mb-[2.7em] text-black'>Who we’ve helped</h2>
 
           <marquee behavior="smooth" direction="left" className='m-0'>
           <div className='flex h-[3em]'>
@@ -590,7 +590,7 @@ export default function FinancialServices() {
       <div>
 
         <div className='auto_box m-[10em]'>
-          <h2 className='auto_box_heading' style={{width:'10em'}}>
+          <h2 className='auto_box_heading text-black' style={{width:'10em'}}>
             Finance software development insights
           </h2>
           <p className='ml-[4.5em]'>
@@ -740,7 +740,7 @@ export default function FinancialServices() {
 
       <div className='tele_software'>
           <div>
-            <h2 className='tele_software_heading'>Frequently asked questions (FAQ)</h2>
+            <h2 className='tele_software_heading text-black'>Frequently asked questions (FAQ)</h2>
           </div>
 
           <div className='tele_software_box'>
@@ -830,7 +830,7 @@ export default function FinancialServices() {
         <section className='auto'>
                
           <div className='auto_box'>
-            <h2 className='auto_box_heading'>
+            <h2 className='auto_box_heading text-black'>
               Looking for other software services?
             </h2>
             <p>
@@ -841,14 +841,14 @@ export default function FinancialServices() {
        
 
 
-          <h2 className='mt-[100px] mb-[60px]'>Engineering and consultancy that deliver value</h2>
+          <h2 className='mt-[100px] mb-[60px] text-black'>Engineering and consultancy that deliver value</h2>
        
        
        
           <div className='flex'>
             <div className='telecom'> 
               <img src={card1} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Generative AI development services
               </div>
                  
@@ -859,7 +859,7 @@ export default function FinancialServices() {
        
             <div className='telecom'> 
               <img src={card2} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Cloud consulting & services
               </div>
                  
@@ -870,7 +870,7 @@ export default function FinancialServices() {
        
             <div className='telecom'> 
               <img src={card3} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
               Digital transformation services
               </div>
                  
@@ -883,14 +883,14 @@ export default function FinancialServices() {
                
        
        
-          <h2 className='mt-[100px] mb-[60px]'>Engineering expertise that supports industries</h2>
+          <h2 className='mt-[100px] mb-[60px] text-black'>Engineering expertise that supports industries</h2>
        
        
        
           <div style={{display:'flex'}}>
             <div className='telecom '> 
               <img src={card6} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Telecom 
               </div>
                  
@@ -901,7 +901,7 @@ export default function FinancialServices() {
        
             <div className='telecom'> 
               <img src={card5} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Sports betting 
               </div>
                  
@@ -912,7 +912,7 @@ export default function FinancialServices() {
        
             <div className='telecom'> 
               <img src={card4} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Biotech & Healthcare
               </div>
                  

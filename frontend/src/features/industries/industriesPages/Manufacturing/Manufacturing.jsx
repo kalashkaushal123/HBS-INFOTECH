@@ -122,7 +122,7 @@ export default function Manufacturing() {
        
                <div className='auto'>
                      <div className='auto-text'>
-                       <h2>
+                       <h2 className=" text-black">
                          Automation testing services increase accuracy & speed up delivery
                        </h2>
                        <p>
@@ -246,7 +246,7 @@ export default function Manufacturing() {
        
         
            <div className='whole-div mb-[17em]' style={{marginTop:'100px' ,width:'100%', height:'500px' ,backgroundColor:'#F8F8F8'}}>  
-             <h2>Companies choose us as their AI & ML development partner</h2>
+             <h2 className=" text-black">Companies choose us as their AI & ML development partner</h2>
              
              <div className='para'>
                        <div>
@@ -331,7 +331,7 @@ export default function Manufacturing() {
 
         <div style={{backgroundColor:'#E8E8E8', marginTop:'8em', padding:'7.5em 10em'}}>
 
-          <h2 className='mb-[2.7em]'>Who we’ve helped</h2>
+          <h2 className='mb-[2.7em]  text-black'>Who we’ve helped</h2>
 
           <marquee behavior="smooth" direction="left" className='m-0'>
           <div className='flex h-[3em]'>
@@ -595,7 +595,7 @@ export default function Manufacturing() {
         <div>
 
         <div className='auto_box m-[10em]'>
-          <h2 className='auto_box_heading'>
+          <h2 className='auto_box_heading text-black'>
             Technologies
           </h2>
           <p>
@@ -612,43 +612,43 @@ export default function Manufacturing() {
           <div className='flex'>
             <div className='w-[24.2em] p-[1.5em]' style={{border:'1px solid grey', borderRadius:'0.5em'}}>
               <div  onClick={() => setIsVisible8(!isVisible8)}>
-                <button className='telecom_box_heading text-[1.3em]'>Platforms</button>
+                <button className='telecom_box_heading text-[1.3em] text-black'>Platforms</button>
               </div>
               <div>
                 <ul style={{margin:'1.1em 0em 0em 0em', padding:'0em', display: isVisible8 ? "block" : "none"}}>
-                  <li style={{margin:'0em'}}>Microsoft Azure IoT Suite</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>3Google Cloud IoT Core and AI Platform</li>
-                  <li style={{margin:'1em 0em 0em 0em'}}>AWS IoT Core and AWS SageMaker</li>
+                  <li className=" text-black" style={{margin:'0em'}}>Microsoft Azure IoT Suite</li>
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>3Google Cloud IoT Core and AI Platform</li>
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>AWS IoT Core and AWS SageMaker</li>
                 </ul>
               </div>
             </div>
 
             <div className='w-[24.2em] p-[1.5em] ml-[1em]' style={{border:'1px solid grey', borderRadius:'0.5em'}}>
               <div  onClick={() => setIsVisible9(!isVisible9)}>
-                <button className='telecom_box_heading text-[1.3em]'>Industrial Connectivity</button>
+                <button className='telecom_box_heading text-[1.3em] text-black'>Industrial Connectivity</button>
               </div>
               <div>
                 <ul style={{margin:'1.1em 0em 0em 0em', padding:'0em', display: isVisible9 ? "block" : "none"}}>
-                  <li style={{margin:'0em'}}>MODBUS</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>AWS IoT Expresslink</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>OPC UA</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>FreeRTOS</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>AWS IOT Core</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>ProfiBUS</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>MS Azzure IoT HUB</li>
+                  <li className=" text-black" style={{margin:'0em'}}>MODBUS</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>AWS IoT Expresslink</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>OPC UA</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>FreeRTOS</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>AWS IOT Core</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>ProfiBUS</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>MS Azzure IoT HUB</li>
                 </ul>
               </div>
             </div>
 
             <div className='w-[24.2em] p-[1.5em] ml-[1em]' style={{border:'1px solid grey', borderRadius:'0.5em'}}>
               <div  onClick={() => setIsVisible10(!isVisible10)}>
-                <button className='telecom_box_heading text-[1.3em]'>Cloud Tech</button>
+                <button className='telecom_box_heading text-[1.3em] text-black'>Cloud Tech</button>
               </div>
               <div>
                 <ul style={{margin:'1.1em 0em 0em 0em', padding:'0em', display: isVisible10 ? "block" : "none"}}>
-                  <li style={{margin:'0em'}}>Microsoft Azure</li> <br />  
-                  <li style={{margin:'1em 0em 0em 0em'}}>Amazon Web Services</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>Google Cloud Platform</li>
+                  <li className=" text-black" style={{margin:'0em'}}>Microsoft Azure</li> <br />  
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>Amazon Web Services</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>Google Cloud Platform</li>
                 </ul>
               </div>
             </div>
@@ -656,30 +656,30 @@ export default function Manufacturing() {
           <div className="flex ">
             <div className='w-[24.2em] p-[1.5em] mt-[1em]' style={{border:'1px solid grey', borderRadius:'0.5em'}}>
               <div  onClick={() => setIsVisible11(!isVisible11)}>
-                <button style={{fontSize:'1.3em'}} className='telecom_box_heading'>Azure</button>
+                <button style={{fontSize:'1.3em'}} className='telecom_box_heading text-black'>Azure</button>
               </div>
               <div>
                 <ul style={{margin:'1.1em 0em 0em 0em', padding:'0em', display: isVisible11 ? "block" : "none"}}>
-                  <li style={{margin:'0em'}}>Azure DevOps</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>Azure Sire Recovery</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>Azure Machine Learning</li>
+                  <li className=" text-black" style={{margin:'0em'}}>Azure DevOps</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>Azure Sire Recovery</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>Azure Machine Learning</li>
                 </ul>
               </div>
             </div>
 
             <div className='w-[24.2em] p-[1.5em] mt-[1em] ml-[1em]' style={{border:'1px solid grey', borderRadius:'0.5em'}}>
               <div  onClick={() => setIsVisible12(!isVisible12)}>
-                <button style={{fontSize:'1.3em'}} className='telecom_box_heading'>MLOPS</button>
+                <button style={{fontSize:'1.3em'}} className='telecom_box_heading text-black'>MLOPS</button>
               </div>
               <div>
                 <ul style={{margin:'1.1em 0em 0em 0em', padding:'0em', display: isVisible12 ? "block" : "none"}}>
-                  <li style={{margin:'0em'}}>AWS SageMaker</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>Generative AI</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>Kubeflow</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>Private Chat</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>Tensorflow</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>PyTorch</li> <br />
-                  <li style={{margin:'1em 0em 0em 0em'}}>TinyML</li> <br />
+                  <li className=" text-black" style={{margin:'0em'}}>AWS SageMaker</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>Generative AI</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>Kubeflow</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>Private Chat</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>Tensorflow</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>PyTorch</li> <br />
+                  <li className=" text-black" style={{margin:'1em 0em 0em 0em'}}>TinyML</li> <br />
                 </ul>
               </div>
             </div>
@@ -693,7 +693,7 @@ export default function Manufacturing() {
 
 
          <div className='auto_box mx-[10em] my-[5em]'>
-            <h2 className='auto_box_heading'>
+            <h2 className='auto_box_heading text-black'>
               Looking for other software services?
             </h2>
             <p>
@@ -838,7 +838,7 @@ export default function Manufacturing() {
 
          <div className='tele_software'>
           <div>
-            <h2 className='tele_software_heading'>Manufacturing software development – FAQ</h2>
+            <h2 className='tele_software_heading text-black'>Manufacturing software development – FAQ</h2>
           </div>
 
           <div className='tele_software_box'>
@@ -950,7 +950,7 @@ export default function Manufacturing() {
            <section className='auto'>
                
            <div className='auto_box'>
-            <h2 className='auto_box_heading'>
+            <h2 className='auto_box_heading text-black'>
               Looking for other software services?
             </h2>
             <p>
@@ -959,14 +959,14 @@ export default function Manufacturing() {
           </div>
        
        
-          <h2 className='mt-[100px] mb-[60px]'>Engineering and consultancy that deliver value</h2>
+          <h2 className='mt-[100px] mb-[60px] text-black'>Engineering and consultancy that deliver value</h2>
                      
                      
                      
           <div className='flex'>
             <div className='telecom'> 
               <img src={card1} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Generative AI development services
               </div>
                  
@@ -977,7 +977,7 @@ export default function Manufacturing() {
        
             <div className='telecom'> 
               <img src={card2} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Cloud consulting & services
               </div>
                  
@@ -988,7 +988,7 @@ export default function Manufacturing() {
        
             <div className='telecom'> 
               <img src={card3} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
               Digital transformation services
               </div>
                  
@@ -1001,14 +1001,14 @@ export default function Manufacturing() {
                
        
        
-          <h2 className='mt-[100px] mb-[60px]'>Engineering expertise that supports industries</h2>
+          <h2 className='mt-[100px] mb-[60px] text-black'>Engineering expertise that supports industries</h2>
        
        
        
           <div style={{display:'flex'}}>
             <div className='telecom '> 
               <img src={card6} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Financial services
               </div>
                  
@@ -1019,7 +1019,7 @@ export default function Manufacturing() {
        
             <div className='telecom'> 
               <img src={card5} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Sports betting 
               </div>
                  
@@ -1030,7 +1030,7 @@ export default function Manufacturing() {
        
             <div className='telecom'> 
               <img src={card4} alt="" className='h-[20em]' />
-              <div className='telecom_text' style={{fontSize:'1.1em'}}>
+              <div className='telecom_text text-black' style={{fontSize:'1.1em'}}>
                 Biotech & Healthcare
               </div>
                  
