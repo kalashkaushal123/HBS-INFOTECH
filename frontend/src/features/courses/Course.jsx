@@ -291,12 +291,12 @@ export default function Course() {
           <p className="rating">4.6+ ★★★★☆ (22534 Reviews)</p>
           <p className="cohort">Next Cohort Starting On 14th January</p>
           <div className="collaborations">
-            <p className="text-white">In collaboration with:</p>
-            <div className="row">
-             <div className="col-3"> <img className="bg-white rounded-4" width={'100%'} src="/src/features/courses/logos/IIT Guwahati.webp" alt="E&ICT Academy IIT Guwahati" />
-             </div>
-             <div className="col-3"><img className="bg-white rounded-4" width={'100%'} src="/src/features/courses/images/microsoft.png" alt="Microsoft" /></div>
-            </div>
+              <p className="text-white">In collaboration with:</p>
+              <div className="row">
+              <div className="col-3"> <img className="bg-white rounded-4" width={'100%'} src="/src/features/courses/logos/IIT Guwahati.webp" alt="E&ICT Academy IIT Guwahati" />
+              </div>
+              <div className="col-3"><img className="bg-white rounded-4" width={'100%'} src="/src/features/courses/images/microsoft.png" alt="Microsoft" /></div>
+              </div>
           </div>
           
           <ul className="features" >
@@ -314,7 +314,7 @@ export default function Course() {
 
     </div>
     <div className="col-md-6">
-    <img width={'100%'} src="/src/features/courses/images/AI-full-stack.jpg" alt="IIT Guwahati Campus" />
+    <img className="rounded-5 card m-0 p-0 shadow h-50" width={'100%'} src="/src/features/courses/images/AI-full-stack.jpg" alt="IIT Guwahati Campus" />
   
     
     </div>
@@ -331,62 +331,67 @@ export default function Course() {
         <h1 style={{color:'black'}}>Success <span>Stories</span></h1>
         <p>Meet our graduates who have not only secured new and better jobs but have also experienced significant salary hikes.</p>
         <div className="stories-container">
-          <div className="story-card">
-            <div className="story-header">
-            </div>
-            <div className="story-content">
-              <img  className='bg-danger' src="/src/features/courses/person/Arkoparavo_Pradhan_e68d486271.webp" alt="Vanshika Raj" />
-              <div className="story-info">
-                <span className="status">Fresher</span>
-                <span className="arrow">→</span>
-                <span className="position">ML Engineer</span>
-                <span className="company">quantiphi</span>
-                <span className="linkedin-icon">LinkedIn</span>
-                <h2>Vanshika Raj</h2>
-                <p>"The program offered here is robust, well-guided and most importantly, has proven to work."</p>
-                <a href="#">Read More</a>
+            <div className="story-card">
+              <div className="story-header">
+              </div>
+              <div className="story-content">
+                <img  className='bg-danger' src="/src/features/courses/person/Arkoparavo_Pradhan_e68d486271.webp" alt="Vanshika Raj" />
+                <div className="story-info">
+                  <div className="d-flex">
+                      <span className="status">Fresher →</span>               
+                      <span className="position">ML Engineer</span>               
+                  </div>
+                  <span className="linkedin-icon">LinkedIn</span>
+                  <h2>Vanshika Raj</h2>
+                  <p>"The program offered here is robust, well-guided and most importantly, has proven to work."</p>
+                  <a href="#">Read More</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="story-card">
-            <div className="story-header">
-            </div>
-            <div className="story-content">
-              <img  className='bg-danger' src="/src/features/courses/person/calender_front_color_13231195c8.webp" alt="Arkoparavo Pradhan" />
-              <div className="story-info">
-                <span className="status">Fresher</span>
-                <span className="arrow">→</span>
-                <span className="position">Data Analyst</span>
-                <span className="company">TATA STEEL</span>
-                <span className="linkedin-icon">LinkedIn</span>
-                <h2>Arkoparavo Pradhan</h2>
-                <p>"The best part about this program is that it is designed, so students don't feel overwhelmed."</p>
-                <a href="#">Read More</a>
+
+            <div className="story-card">
+              
+              <div className="story-content">
+                <img  className='bg-danger' src="/src/features/courses/person/calender_front_color_13231195c8.webp" alt="Arkoparavo Pradhan" />
+                <div className="story-info">
+                  <div className="d-flex">
+                  <span className="status">Fresher →</span>
+                  <span className="position">Data Analyst</span>
+                  {/* <span className="company">TATA STEEL</span> */}
+                  </div>
+                  <span className="linkedin-icon">LinkedIn</span>
+                  <h2>Arkoparavo Pradhan</h2>
+                  <p>"The best part about this program is that it is designed, so students don't feel overwhelmed."</p>
+                  <a href="#">Read More</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="story-card">
-            <div className="story-header">
-            </div>
-            <div className="story-content">
-              <img  className='bg-danger'  src="/src/features/courses/person/Kamya_Malhotra_removebg_preview_de470a6afc.webp" alt="Kamya Malhotra" />
-              <div className="story-info">
-                <span className="status">Fresher</span>
-                <span className="arrow">→</span>
-                <span className="position">Stat Programmer</span>
-                <span className="company">Company Logo</span>
-                <span className="linkedin-icon">LinkedIn</span>
-                <h2>Kamya Malhotra</h2>
-                <p>"My experience at AlmaBetter was fabulous, and I'll always be thankful to the entire AlmaBetter team."</p>
-                <a href="#">Read More</a>
+
+            <div className="story-card">
+              
+              <div className="story-content">
+                <img  className='bg-danger'  src="/src/features/courses/person/Kamya_Malhotra_removebg_preview_de470a6afc.webp" alt="Kamya Malhotra" />
+                
+                <div className="story-info">
+                  <div className="d-flex">
+                    <span className="status">Fresher →</span>
+                    <span className="position">Stat Programmer</span>
+                  
+                  </div>
+                  {/* <span className="company">Company Logo</span> */}
+                  <span className="linkedin-icon">LinkedIn</span>
+                  <h2>Kamya Malhotra</h2>
+                  <p>"My experience at AlmaBetter was fabulous, and I'll always be thankful to the entire AlmaBetter team."</p>
+                  <a href="#">Read More</a>
+                </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
       <br /><br /><br />
 
 
+{/*   Introduction to Computer Programming */}
       <section>
       <div className="bg-black text-white p-0 mt-5">
               <h1 className="text-center display-5 fw-bolder text-white">
@@ -504,7 +509,7 @@ export default function Course() {
 
      
         <div className="bg-black pt-5">
-        {/* <img src='iconsset.PNG' alt="" width={'90%'} /> */}
+        
 <hr />
        <center>
        <div className="row container ">
@@ -512,7 +517,7 @@ export default function Course() {
         <>
         <div align='center' className="col-md-2 col-4 mb-5">
                 <img className=" rounded-2 p-1 imgsizehover"  src={item.img} width={'40px'} height='40px' alt="" />
-                <br /><br />
+                
                 <p className="text-white text-center ">&ensp; {item.title}</p>
           </div>
         </>)}
@@ -523,7 +528,7 @@ export default function Course() {
               
         </div>
       </section>
-
+{/*   Introduction to Computer Programming  end */}
 
 
 
@@ -609,14 +614,127 @@ export default function Course() {
      
        
      
-        <div align='justify' className=" p-5 bg-black">
-              <section className="partners">
-             
-              </section>
-              <section className="description">
-                
-              </section>
-        </div>
+{/* marquee */}
+<section className="">
+
+<h1 className="text-black " style={{marginLeft:"13%"}}>Who we've helped</h1>
+
+<marquee scrollamount="15" behavior="alternate" direction="right"   className='' style={{marginTop:"-0%"}} >
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={accenture} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={amazon} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={biz2credit} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={blenheim} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={brigei2i} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={capgemini} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={citi} /></label>
+        
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={converhytics} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={genpact} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Google} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={groww} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={HDFC} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Kmart} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={KMGP} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={mahindra} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Marketine} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Microsoft} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={MIQ} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Netflix} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Novartis} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={paisabazzar} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Quantiphi} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Target} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Tatainsight} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={TATA} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={ValueLabs} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Vedantu} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Zigram} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Zip} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Zomato} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Walmart} /></label>
+      
+
+</marquee>
+
+<marquee scrollamount="15" behavior="alternate" direction="left"  className='' style={{marginTop:"-7%"}} >
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={accenture} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={amazon} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={biz2credit} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={blenheim} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={brigei2i} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={capgemini} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={citi} /></label>
+        
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={converhytics} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={genpact} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Google} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={groww} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={HDFC} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Kmart} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={KMGP} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={mahindra} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Marketine} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Microsoft} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={MIQ} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Netflix} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Novartis} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={paisabazzar} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Quantiphi} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Target} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Tatainsight} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={TATA} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={ValueLabs} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Vedantu} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Zigram} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Zip} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Zomato} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Walmart} /></label>
+      
+
+</marquee>
+
+<marquee scrollamount="15" behavior="alternate" direction="right"  className='' style={{marginTop:"-7%"}}>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Vedantu} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Zigram} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Zip} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Zomato} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Walmart} /></label>
+      
+        
+       <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Marketine} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Microsoft} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={accenture} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={amazon} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={biz2credit} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={blenheim} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={brigei2i} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={capgemini} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={citi} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={converhytics} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={genpact} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Google} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={groww} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={HDFC} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Kmart} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={KMGP} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={mahindra} /></label>
+        
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={MIQ} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Netflix} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Novartis} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={paisabazzar} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Quantiphi} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Target} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={Tatainsight} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={TATA} /></label>
+        <label className=""><img className="rounded-3 bg-white p-2 ms-5" width={'140px'} height={'100px'} src={ValueLabs} /></label>
+        
+
+</marquee>
+
+
+</section>
+{/* marquee end */}
         
      
 
@@ -626,119 +744,6 @@ export default function Course() {
 
 
 
-  <h1 className="text-black " style={{marginLeft:"13%"}}>Who we've helped</h1>
-
-  <marquee behavior="" direction="right"  className='' style={{marginTop:"-7%"}} >
-                        <label><img src={accenture} /></label>
-                        <label><img src={amazon} /></label>
-                        <label><img src={biz2credit} /></label>
-                        <label><img src={blenheim} /></label>
-                        <label><img src={brigei2i} /></label>
-                        <label><img src={capgemini} /></label>
-                        <label><img src={citi} /></label>
-                        
-                        <label><img src={converhytics} /></label>
-                        <label><img src={genpact} /></label>
-                        <label><img src={Google} /></label>
-                        <label><img src={groww} /></label>
-                        <label><img src={HDFC} /></label>
-                        <label><img src={Kmart} /></label>
-                        <label><img src={KMGP} /></label>
-                        <label><img src={mahindra} /></label>
-                        <label><img src={Marketine} /></label>
-                        <label><img src={Microsoft} /></label>
-                        <label><img src={MIQ} /></label>
-                        <label><img src={Netflix} /></label>
-                        <label><img src={Novartis} /></label>
-                        <label><img src={paisabazzar} /></label>
-                        <label><img src={Quantiphi} /></label>
-                        <label><img src={Target} /></label>
-                        <label><img src={Tatainsight} /></label>
-                        <label><img src={TATA} /></label>
-                        <label><img src={ValueLabs} /></label>
-                        <label><img src={Vedantu} /></label>
-                        <label><img src={Zigram} /></label>
-                        <label><img src={Zip} /></label>
-                        <label><img src={Zomato} /></label>
-                        <label><img src={Walmart} /></label>
-                      
-
-</marquee>
-
-<marquee behavior="" direction="left"  className='' style={{marginTop:"-7%"}} >
-                        <label><img src={accenture} /></label>
-                        <label><img src={amazon} /></label>
-                        <label><img src={biz2credit} /></label>
-                        <label><img src={blenheim} /></label>
-                        <label><img src={brigei2i} /></label>
-                        <label><img src={capgemini} /></label>
-                        <label><img src={citi} /></label>
-                        
-                        <label><img src={converhytics} /></label>
-                        <label><img src={genpact} /></label>
-                        <label><img src={Google} /></label>
-                        <label><img src={groww} /></label>
-                        <label><img src={HDFC} /></label>
-                        <label><img src={Kmart} /></label>
-                        <label><img src={KMGP} /></label>
-                        <label><img src={mahindra} /></label>
-                        <label><img src={Marketine} /></label>
-                        <label><img src={Microsoft} /></label>
-                        <label><img src={MIQ} /></label>
-                        <label><img src={Netflix} /></label>
-                        <label><img src={Novartis} /></label>
-                        <label><img src={paisabazzar} /></label>
-                        <label><img src={Quantiphi} /></label>
-                        <label><img src={Target} /></label>
-                        <label><img src={Tatainsight} /></label>
-                        <label><img src={TATA} /></label>
-                        <label><img src={ValueLabs} /></label>
-                        <label><img src={Vedantu} /></label>
-                        <label><img src={Zigram} /></label>
-                        <label><img src={Zip} /></label>
-                        <label><img src={Zomato} /></label>
-                        <label><img src={Walmart} /></label>
-                      
-
-</marquee>
-
-<marquee behavior="right" direction="right"  className='' style={{marginTop:"-7%"}}>
-                        <label><img src={accenture} /></label>
-                        <label><img src={amazon} /></label>
-                        <label><img src={biz2credit} /></label>
-                        <label><img src={blenheim} /></label>
-                        <label><img src={brigei2i} /></label>
-                        <label><img src={capgemini} /></label>
-                        <label><img src={citi} /></label>
-                        
-                        <label><img src={converhytics} /></label>
-                        <label><img src={genpact} /></label>
-                        <label><img src={Google} /></label>
-                        <label><img src={groww} /></label>
-                        <label><img src={HDFC} /></label>
-                        <label><img src={Kmart} /></label>
-                        <label><img src={KMGP} /></label>
-                        <label><img src={mahindra} /></label>
-                        <label><img src={Marketine} /></label>
-                        <label><img src={Microsoft} /></label>
-                        <label><img src={MIQ} /></label>
-                        <label><img src={Netflix} /></label>
-                        <label><img src={Novartis} /></label>
-                        <label><img src={paisabazzar} /></label>
-                        <label><img src={Quantiphi} /></label>
-                        <label><img src={Target} /></label>
-                        <label><img src={Tatainsight} /></label>
-                        <label><img src={TATA} /></label>
-                        <label><img src={ValueLabs} /></label>
-                        <label><img src={Vedantu} /></label>
-                        <label><img src={Zigram} /></label>
-                        <label><img src={Zip} /></label>
-                        <label><img src={Zomato} /></label>
-                        <label><img src={Walmart} /></label>
-                      
-
-</marquee>
-    
 
   
    
@@ -826,17 +831,6 @@ export default function Course() {
       <br />
 
 
-      <div className="mt-5 ms-5 text-dark">
-               
-                 
-              
-              
-         
-                    
-            
-    
-             
-      </div>
 
      
       <h1 className="a-program">A flex program created</h1>
@@ -1091,7 +1085,7 @@ export default function Course() {
     
     
 
-   
+   <Footer/>
 
 
 
